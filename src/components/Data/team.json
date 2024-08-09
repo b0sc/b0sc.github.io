@@ -1,0 +1,50 @@
+{
+    "team": [
+        {
+            "title": "CEO and Founder",
+            "name": "John Smith",
+            "description": "10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy",
+            "profile": "/team/c1.png",
+            "link": "/"
+        },
+        {
+            "title": "Director of Operations",
+            "name": "Jane Doe",
+            "description": "7+ years of experience in project management and team leadership. Strong organizational and communication skills",
+            "profile": "/team/c2.png",
+            "link": "/"
+        },
+        {
+            "title": "Senior SEO Specialist",
+            "name": "Michael Brown",
+            "description": "5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization",
+            "profile": "/team/c3.png",
+            "link": "/"
+        },
+        {
+            "title": "Senior SEO Specialist",
+            "name": "Michael Brown",
+            "description": "5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization",
+            "profile": "/team/c3.png",
+            "link": "/"
+        }
+    ],
+    "faqs": [
+        {
+            "question": "What is digital marketing?",
+            "answer": "Digital marketing is the use of online channels to promote products and services to a target audience. This can include social media, search engine optimization, email marketing, and more."
+        },
+        {
+            "question": "Why is digital marketing important?",
+            "answer": "Digital marketing allows businesses to reach a larger audience, target specific demographics, and track the effectiveness of their campaigns. It is essential for staying competitive in today's market."
+        },
+        {
+            "question": "How can digital marketing help my business?",
+            "answer": "Digital marketing can help your business increase brand awareness, generate leads, drive website traffic, and boost sales. It is a cost-effective way to reach your target audience and achieve your business goals."
+        },
+        {
+            "question": "What services do you offer?",
+            "answer": "We offer a wide range of digital marketing services, including search engine optimization, pay-per-click advertising, social media marketing, content creation, and more. Our team will work with you to develop a customized strategy that meets your needs and goals."
+        }
+    ]
+}
