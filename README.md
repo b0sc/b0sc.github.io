@@ -33,6 +33,7 @@ Also, make sure that Prettier is installed in your text editor. Add this to your
 }`
 
 You can also run this command for installing the extension. Open up the terminal in vscode and paste this line .
+
 `ext install astro-build.astro-vscode`
 
 ## 👀 Want to contribute?
