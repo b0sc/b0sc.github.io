@@ -23,6 +23,18 @@ All commands are run from the root of the project, from a terminal:
 | `npm run build`   | Build your production site to `./dist/`      |
 | `npm run preview` | Preview your build locally, before deploying |
 
+Also, make sure that Prettier is installed in your text editor. Add this to your settings.json in VS Code, as Prettier alone will not format Astro files correctly. You need this additional formatter for Astro. The npm plugins are taken care with devDependencies you don't have to worry about that.
+
+`{
+  "prettier.documentSelectors": ["**/*.astro"],
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}`
+
+You can also run this command for installing the extension. Open up the terminal in vscode and paste this line .
+`ext install astro-build.astro-vscode`
+
 ## 👀 Want to contribute?
 
 Feel free to check [Contribution Methods](CONTRIBUTING.md).
@@ -35,6 +47,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## 🌟 Resources
 
--   [Astro documentation](https://docs.astro.build).
-    -   `npm run astro ...` Run CLI commands like `astro add`, `astro check`
-    -   `npm run astro -- --help` Get help using the Astro CLI
+- [Astro documentation](https://docs.astro.build).
+  - `npm run astro ...` Run CLI commands like `astro add`, `astro check`
+  - `npm run astro -- --help` Get help using the Astro CLI
