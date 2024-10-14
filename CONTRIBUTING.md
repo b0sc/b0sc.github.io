@@ -1,109 +1,25 @@
-# Contributing Guidelines
+# I'm a Beginner
 
-A guide that everyone must follow to make contributions to this repository.
+A guide that everyone must follow to make contributions to this repository. If you don't have git on your machine, [install it](https://docs.github.com/en/get-started/quickstart/set-up-git). Below is a basic guide to help you get started, if you're new to git, GitHub, and contributing to a repository, we've set up a repo to make your [first contribution](https://github.com/b0sc/first-contributions) as easy as possible.
 
-<img align="right" width="300" src="./Assets/fork.png" alt="fork this repository" />
+1. Fork this repository.
+1. Clone the forked repository.
+1. Create a branch.
+1. Make necessary changes and commit those changes.
+1. Push changes to GitHub.
+1. Submit your changes for review by making a Pull Request, use [template](./docs/pull_request_template.md).
+1. Follow [Code of Conduct](./CODE_OF_CONDUCT.md) and Contribution Guidelines.
 
-#### If you don't have git on your machine, [install it](https://docs.github.com/en/get-started/quickstart/set-up-git).
+If you've completed all the tasks as requested, all your changes will be merged into the main branch of this project. You will get a notification email once the changes have been merged and you'll officially be a contributor.
 
-## Fork this repository
+# Guidelines
 
-Fork this repository by clicking on the fork button on the top of this page.
-This will create a copy of this repository in your account.
+- Make sure your editor supports formatting with [Prettier](https://prettier.io/docs/en/install), and format according to `.prettierrc` file before committing.
+- Use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) for commit messages.
+- Use [GitHub Flow](https://docs.github.com/en/get-started/using-github/github-flow) for branching and use [Pull Request Template](./docs/pull_request_template.md) for pull requests.
 
-## Clone the repository
+# Hacktoberfest
 
-<img align="right" width="300" src="./Assets/clone.png" alt="clone this repository" />
+If you're contributing in the month of October, you can also participate in the [Hacktoberfest](https://hacktoberfest.com/) event. Once you're registered there and have merged PRs with us, you'll be eligible to receive a free SWAG from BOSC.
 
-Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the code button and then click the _copy to clipboard_ icon.
-
-Open a terminal and run the following git command:
-
-```
-git clone "url you just copied"
-```
-
-where "url you just copied" (without the quotation marks) is the url to this repository (your fork of this project). See the previous steps to obtain the url.
-
-<img align="right" width="300" src="./Assets/copy-clone.png" alt="copy URL to clipboard" />
-
-For example:
-
-```
-git clone https://github.com/<your_name>/first-contributions.git
-```
-
-where `your_name` is your GitHub username. Here you're copying the contents of the first-contributions repository on GitHub to your computer.
-
-## Create a branch
-
-Change to the repository directory on your computer (if you are not already there):
-
-```
-cd first-contributions
-```
-
-Now create a branch using the `git checkout` command:
-
-```
-git checkout -b your-new-branch-name
-```
-
-For example:
-
-```
-git git checkout -b add-my-name
-```
-
-## Make necessary changes and commit those changes
-
-Now open any of the folders and add your assignments and projects there.
-
-If you go to the project directory and execute the command `git status`, you'll see there are changes.
-
-Add those changes to the branch you just created using the `git add` command:
-
-```
-git add Contribute.json
-```
-
-Now commit those changes using the `git commit` command:
-
-```
-git commit -m "Add your-name to Contributors list"
-```
-
-replacing `your-name` with your name.
-
-## Push changes to GitHub
-
-Push your changes using the command `git push`:
-
-```
-git push -u origin your-branch-name
-```
-
-replacing `your-branch-name` with the name of the branch you created earlier.
-
-<details>
-<summary> <strong>If you get any errors while pushing, click here:</strong> </summary>
-
-- ### Authentication Error
-     <pre>remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
-  remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
-  fatal: Authentication failed for 'https://github.com/<your-username>/first-contributions.git/'</pre>
-  Go to [GitHub's tutorial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) on generating and configuring an SSH key to your account.
-
-</details>
-
-## Submit your changes for review
-
-If you go to your repository on GitHub, you'll see a `Compare & pull request` button. Click on that button.
-
-<img style="float: right;" src="https://firstcontributions.github.io/assets/Readme/compare-and-pull.png" alt="create a pull request" />
-
-Now submit the pull request.
-
-<img style="float: right;" src="https://firstcontributions.github.io/assets/Readme/submit-pull-request.png" alt="submit pull request" />
-
-Soon I'll be merging all your changes into the main branch of this project. You will get a notification email once the changes have been merged.
+**Note:** _Only the Top 3 contributors will be eligible for the BOSC-SWAG, this Hacktoberfest-2024_

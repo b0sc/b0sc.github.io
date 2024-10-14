@@ -6,11 +6,35 @@ Made possible with the contributions of the BOSC community. 🚀
 
 The project is built using Astro.js and Tailwind CSS. Here's a quick look at the project structure:
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
+```bash
+.
+├── .astro
+│   ├── settings.json
+│   └── types.d.ts
+├── astro.config.mjs
+├── public/
+# Any static assets, like images, can be placed in the `public/` directory.
+├── src
+│   ├── components
+# There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+│   │   ├── Data/
+│   │   ├── Icons/
+│   │   ├── Navbar.astro
+│   │   └── Topic.astro
+│   ├── env.d.ts
+│   ├── layouts
+│   │   └── Layout.astro
+│   ├── pages
+# Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+│   │   ├── about.astro
+│   │   ├── blog.astro
+│   │   ├── blogs
+│   │   │   └── [id].astro
+│   │   └── index.astro
+│   └── styles
+│       └── global.css
+└── tsconfig.json
+```
 
 ## 🧞 Commands
 
@@ -23,7 +47,11 @@ All commands are run from the root of the project, from a terminal:
 | `npm run build`   | Build your production site to `./dist/`      |
 | `npm run preview` | Preview your build locally, before deploying |
 
-Also, make sure that Prettier is installed in your text editor. Add this to your settings.json in VS Code, as Prettier alone will not format Astro files correctly. You need this additional formatter for Astro. The npm plugins are taken care with devDependencies you don't have to worry about that.
+## 👀 Want to contribute?
+
+Feel free to check [Contribution Methods](CONTRIBUTING.md) and follow [Code of Conduct](CODE_OF_CONDUCT.md) before contributing.
+
+**Make sure that Prettier is installed in your text editor.** Add this to your `settings.json` in VS Code, as Prettier alone will not format Astro files correctly. You need this additional formatter for Astro. The npm plugins are taken care with devDependencies you don't have to worry about that.
 
 `{
   "prettier.documentSelectors": ["**/*.astro"],
@@ -36,18 +64,18 @@ You can also run this command for installing the extension. Open up the terminal
 
 `ext install astro-build.astro-vscode`
 
-## 👀 Want to contribute?
-
-Feel free to check [Contribution Methods](CONTRIBUTING.md).
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## 🙏 Acknowledgements
 
 ## 🌟 Resources
 
 - [Astro documentation](https://docs.astro.build).
   - `npm run astro ...` Run CLI commands like `astro add`, `astro check`
   - `npm run astro -- --help` Get help using the Astro CLI
+
+<!--
+references:
+https://github.com/manulthanura/Positivus
+https://github.com/godruoyi/gblog/tree/gblog-template
+ -->
