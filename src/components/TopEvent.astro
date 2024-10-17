@@ -5,6 +5,35 @@ import EventsData from "./Data/events.json"
 ---
 
 <Container>
+  <!-- idk what can go in this section, be creative and fill something -->
+  <div class="flex-row items-center my-6 p-14 bg-zinc-100 rounded-[45px]">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="justify-start items-center gap-[275px] flex">
+        <div
+          class="flex-col justify-start items-start gap-[26px] inline-flex text-black"
+        >
+          <div class="text-3xl font-medium">Our Latest Event</div>
+          <div class="text-lg font-normal">
+            Cyber security expert Mentor Mr.Diwas Subba will be joining us in
+            this event to give a beginner-friendly skills enhancement session on
+            RED TEAMING.
+          </div>
+          <a
+            href="/blog"
+            class="px-[35px] py-5 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-[14px] justify-start items-start gap-2.5 inline-flex"
+          >
+            <div class="text-center text-xl font-normal leading-7">
+              Participate
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="hidden md:grid justify-items-center -m-20">
+        <img src="/services/Illustration.svg" width="50%" alt="cat" />
+      </div>
+    </div>
+  </div>
+
   <div class="relative flex flex-col items-center md:flex-row" id="topevents">
     <!-- edit desc for sth related to events and club -->
     <Topic
@@ -47,35 +76,6 @@ import EventsData from "./Data/events.json"
         ))
       }
       <!-- card end-->
-    </div>
-  </div>
-
-  <!-- idk what can go in this section, be creative and fill something -->
-  <div class="flex-row items-center my-6 p-14 bg-zinc-100 rounded-[45px]">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <div class="justify-start items-center gap-[275px] flex">
-        <div
-          class="flex-col justify-start items-start gap-[26px] inline-flex text-black"
-        >
-          <div class="text-3xl font-medium">Our Latest Event</div>
-          <div class="text-lg font-normal">
-            Cyber security expert Mentor Mr.Diwas Subba will be joining us in
-            this event to give a beginner-friendly skills enhancement session on
-            RED TEAMING.
-          </div>
-          <a
-            href="/blog"
-            class="px-[35px] py-5 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-[14px] justify-start items-start gap-2.5 inline-flex"
-          >
-            <div class="text-center text-xl font-normal leading-7">
-              Participate
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="hidden md:grid justify-items-center -m-20">
-        <img src="/services/Illustration.svg" width="50%" alt="cat" />
-      </div>
     </div>
   </div>
 </Container>
