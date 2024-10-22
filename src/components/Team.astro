@@ -54,16 +54,16 @@ import Collapse from "./Collapse.astro"
   <div class="relative flex flex-col items-center md:flex-row">
     <Topic title="FAQs" description="Questions repeatedly asked to BOSC." />
   </div>
-  <!-- edit team.json file in faqs with the help of content creator -->
-  <div class="my-6">
-    <div class="space-y-10">
-      {
-        teamData.faqs.map((faq, key) => (
-          <Collapse label={faq.question} index={key + 1}>
-            {faq.answer}
-          </Collapse>
-        ))
-      }
-    </div>
+  
+  <!-- Adjust the grid layout and size of FAQ boxes -->
+  <div class="my-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+    {teamData.faqs.map((faq, key) => (
+      <Collapse 
+        key={key} 
+        label={faq.question} 
+        index={key + 1}>
+        {faq.answer}
+      </Collapse>
+    ))}
   </div>
 </Container>
