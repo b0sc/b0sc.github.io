@@ -15,34 +15,39 @@ import Collapse from "./Collapse.astro"
 
   <div class="flex-row items-center py-5" id="team">
     <div
-      class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4"
+      class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 xl:grid-cols-4 gap-4"
     >
-      {
-        teamData.team.map(({ title, description, name, link, profile }) => (
-          <div class="h-[300px] px-[25px] py-8  bg-white rounded-[40px] shadow-card border border-zinc-900 flex-col justify-start items-start gap-2.5 inline-flex text-black">
-            <div class="flex-col justify-start items-start gap-7 flex">
-              <div class="self-stretch justify-start items-start inline-flex">
-                <div class="grow shrink basis-0 justify-start items-center gap-6 flex">
-                  <div class="h-[92.82px] left-0 top-0 relative">
-                    <img src={profile} alt={name} />
-                  </div>
-                  <div class="flex-col justify-end items-start inline-flex">
-                    <div class="text-md font-normal">{title}</div>
-                    <div class="text-lg font-medium">{name}</div>
-                  </div>
+      {teamData.team.map(({ title, description, name, link, profile }) => (
+        <div class="h-[300px] px-[25px] py-8 bg-white rounded-[40px] shadow-card border border-zinc-900 flex-col justify-start items-start gap-2.5 inline-flex text-black">
+          <div class="flex-col justify-start items-start gap-7 flex w-full">
+            <div class="self-stretch justify-start items-start inline-flex">
+              <div class="grow shrink basis-0 justify-start items-center gap-5 flex">
+                <div class="h-[85px] w-[85px] left-0 top-0 relative">
+                  <img src={profile} alt={name} class="rounded-full"/>
                 </div>
-                <a class="top-0 right-0" href={link}>
-                  <img src="/team/lng.svg" alt="vector" />
-                </a>
+                <div class="flex-col justify-end items-start inline-flex">
+                  <div class="text-sm font-normal">{title}</div>
+                  <div class="text- font-medium">{name}</div>
+                </div>
               </div>
-              <hr class="w-full border border-black" />
-              <p class="text-sm md:text-base xl:text-md">{description}</p>
+              <a class="top-0 right-0" href={link}>
+                <img src="/team/lng.svg" alt="vector" />
+              </a>
+            </div>
+            <hr class="w-full border border-black" />
+  
+            <!-- Scrollable Paragraph -->
+            <div class="overflow-y-auto h-[100px] scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
+              <p class="text-sm md:text-md xl:text-md">
+                {description}
+              </p>
             </div>
           </div>
-        ))
-      }
+        </div>
+      ))}
     </div>
   </div>
+  
   <div class="w-full justify-center md:justify-end items-center inline-flex">
     <button
       class="px-8 py-5 bg-zinc-900 hover:bg-white rounded-2xl text-center text-white hover:text-black border text-xl font-normal leading-7"
@@ -67,3 +72,12 @@ import Collapse from "./Collapse.astro"
     ))}
   </div>
 </Container>
+
+<!-- Tailwind Custom Scrollbar CSS -->
+<style>
+  /* Custom thin scrollbar */
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 3px; /* Width of the scrollbar */
+  }
+
+</style>
