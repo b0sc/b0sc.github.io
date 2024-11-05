@@ -7,7 +7,7 @@ import Topic from "./Topic.astro"
   <div class="relative flex flex-col items-center md:flex-row" id="contact">
     <Topic
       title="Contact"
-      description="Connect with Us: We'll address your queries."
+      description="NEWSLETTER Launched: Subscribe to get updates on our events and workshops."
     />
   </div>
 
@@ -16,58 +16,49 @@ import Topic from "./Topic.astro"
   >
     <div class="row items-center py-12 px-4 md:px-20 md:w-8/12 md:py-10">
       <form action="#" class="space-y-8 md:w-full">
-        <div class="flex">
-          <div class="flex items-center me-4">
-            <input
-              id="inline-radio"
-              type="radio"
-              value=""
-              name="inline-radio-group"
-              class="w-4 h-4 text-lime bg-black border-black focus:ring-lime"
-            />
-            <label
-              for="inline-radio"
-              class="ms-2 text-base font-medium text-black">Say Hi</label
-            >
-          </div>
-          <div class="flex items-center me-4 mx-8 md:mx-20">
-            <input
-              id="inline-2-radio"
-              type="radio"
-              value=""
-              name="inline-radio-group"
-              class="w-4 h-4 text-lime bg-black border-black focus:ring-lime"
-            />
-            <label
-              for="inline-2-radio"
-              class="ms-2 text-base font-medium text-black">Membership</label
-            >
-          </div>
+        <div>
+          <strong>Feature your Blog</strong> -- <strong>
+            Partner with us</strong
+          > -- <strong> Or just say Hi</strong>.
+          <br /> You can also mail us at <strong>mail@bosc.org.np</strong> directly.
         </div>
         <div>
-          <label for="email" class="block mb-2 text-base font-medium text-black"
+          <label for="name" class="block mb-2 text-base font-medium text-black"
             >Name</label
           >
           <input
-            type="email"
-            id="email"
+            type="text"
+            id="name"
+            name="name"
             class="shadow-sm bg-white border text-black text-base rounded-lg focus:ring-black focus:border-black block w-full p-2.5"
-            placeholder="Name"
+            placeholder="John Doe"
             required
           />
         </div>
         <div>
-          <label
-            for="subject"
-            class="block mb-2 text-base font-medium text-black">Email</label
+          <label for="email" class="block mb-2 text-base font-medium text-black"
+            >Email</label
           >
-          <input
-            type="text"
-            id="subject"
-            class="block p-3 w-full text-base text-black bg-white rounded-lg border shadow-sm focus:ring-black focus:border-black"
-            placeholder="Email"
-            required
-          />
+          <div
+            class="relative flex flex-col items-center justify-between md:flex-row bg-zinc-100 rounded-[45px]"
+          >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="block p-3 w-full text-base text-black bg-white rounded-lg border shadow-sm focus:ring-black focus:border-black"
+              placeholder="john.doe@gmail.com"
+              required
+            />
+            <button
+              type="submit"
+              class="px-4 py-3 m-2 bg-zinc-900 rounded-[14px] justify-center gap-2.5 inline-flex"
+            >
+              <div class="text-center text-white text-xl font-normal leading-7">
+                Subscribe
+              </div>
+            </button>
+          </div>
         </div>
         <div class="sm:col-span-2">
           <label
@@ -79,7 +70,8 @@ import Topic from "./Topic.astro"
             id="message"
             rows="6"
             class="block p-2.5 w-full text-base text-black bg-white rounded-lg shadow-sm border focus:ring-black focus:border-black"
-            placeholder="Message"></textarea>
+            placeholder="I really like what BOSC is doing! Keep it up."
+          ></textarea>
         </div>
         <button
           type="submit"
