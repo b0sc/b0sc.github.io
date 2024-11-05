@@ -1,6 +1,7 @@
 [
   {
     "id": 27,
+    "type": "Event",
     "featured": false,
     "name_1": "Blogging Competition:",
     "name_2": "Call for Tech Writers",
@@ -31,6 +32,7 @@
   },
   {
     "id": 26,
+    "type": "Event",
     "featured": false,
     "name_1": "Hacktoberfest 2024:",
     "name_2": "Open Contributions",
@@ -50,7 +52,7 @@
       "social": "https://www.facebook.com/share/p/1W1nMPSLWz/",
       "registration": "https://github.com/b0sc"
     },
-    "images": ["events/26/pic1.jpg", "events/26/pic2.jpg"],
+    "images": ["/events/26/pic1.jpg", "/events/26/pic2.jpg"],
     "stats": {
       "participants": 26,
       "time": "15 days",
@@ -61,6 +63,7 @@
   },
   {
     "id": 25,
+    "type": "Event",
     "featured": false,
     "name_1": "Hacktoberfest 2024:",
     "name_2": "Guide to First-Contributions",
@@ -88,7 +91,7 @@
       "social": "https://www.facebook.com/share/p/12AXrPMrQCX/",
       "registration": "https://forms.gle/xEe39aBUHHUqUvVe8"
     },
-    "images": ["events/25/pic1.jpg"],
+    "images": ["/events/25/pic1.jpg"],
     "stats": {
       "participants": 15,
       "time": "2 hrs",
@@ -99,6 +102,7 @@
   },
   {
     "id": 24,
+    "type": "Event",
     "featured": false,
     "name_1": "Software Freedom Day:",
     "name_2": "Celebration 2024",
@@ -148,9 +152,9 @@
       "registration": "https://forms.gle/mxUZfyFA61jN2mjW8"
     },
     "images": [
-      "events/24/pic1.jpg",
-      "events/24/pic2.jpg",
-      "events/24/pic3.jpg"
+      "/events/24/pic1.jpg",
+      "/events/24/pic2.jpg",
+      "/events/24/pic3.jpg"
     ],
     "stats": {
       "participants": 50,
@@ -162,6 +166,7 @@
   },
   {
     "id": 23,
+    "type": "Event",
     "featured": false,
     "name_1": "Annual General Meeting:",
     "name_2": "AGM 2024",
@@ -189,7 +194,7 @@
       "social": "https://www.facebook.com/share/p/17p9AnqeE5/",
       "registration": ""
     },
-    "images": ["events/23/pic1.jpg", "events/23/pic2.jpg"],
+    "images": ["/events/23/pic1.jpg", "/events/23/pic2.jpg"],
     "stats": {
       "participants": 20,
       "time": "4 hrs",
@@ -200,6 +205,7 @@
   },
   {
     "id": 22,
+    "type": "Event",
     "featured": false,
     "name_1": "Cyber Security Event:",
     "name_2": "MITRE ATT&CK and OSINT Framework!",
@@ -228,9 +234,9 @@
       "registration": "https://tinyurl.com/MitreOsintWorkshop2024"
     },
     "images": [
-      "events/22/pic1.jpg",
-      "events/22/pic2.jpg",
-      "events/22/pic3.jpg"
+      "/events/22/pic1.jpg",
+      "/events/22/pic2.jpg",
+      "/events/22/pic3.jpg"
     ],
     "stats": {
       "participants": 20,
@@ -242,6 +248,7 @@
   },
   {
     "id": 21,
+    "type": "Event",
     "featured": false,
     "name_1": "BOSC Orientation:",
     "name_2": "General Members",
@@ -284,10 +291,10 @@
       "registration": "https://forms.gle/cyisykxr6RwpXCrm7"
     },
     "images": [
-      "events/21/pic1.jpg",
-      "events/21/pic2.jpg",
-      "events/21/pic3.jpg",
-      "events/21/pic4.jpg"
+      "/events/21/pic1.jpg",
+      "/events/21/pic2.jpg",
+      "/events/21/pic3.jpg",
+      "/events/21/pic4.jpg"
     ],
     "stats": {
       "participants": 20,
@@ -299,6 +306,7 @@
   },
   {
     "id": 20,
+    "type": "Event",
     "featured": false,
     "name_1": "Byte Sized Beginnings:",
     "name_2": "Web Dev Workshop",
@@ -326,7 +334,7 @@
       "social": "https://www.facebook.com/share/p/1DTTomE7Vm/",
       "registration": "https://forms.gle/Hg2mWX5AdbYdB2tH7"
     },
-    "images": ["events/20/pic1.jpg", "events/20/pic2.jpg"],
+    "images": ["/events/20/pic1.jpg", "/events/20/pic2.jpg"],
     "stats": {
       "participants": 40,
       "time": "3 hrs - 3 days",
@@ -337,6 +345,7 @@
   },
   {
     "id": 19,
+    "type": "Event",
     "featured": false,
     "name_1": "OSM:",
     "name_2": "Integration in Projects",
@@ -374,7 +383,7 @@
       }
     ],
     "guests": [],
-    "cover_photo": "/events/18/cover.jpg",
+    "cover_photo": "/events/19/cover.jpg",
     "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "links": {
       "blog": "/blogs/19",
@@ -382,9 +391,9 @@
       "registration": " https://forms.gle/xMzkozgfRGzMvNPW8"
     },
     "images": [
-      "events/19/pic1.jpg",
-      "events/19/pic2.jpg",
-      "events/19/pic3.jpg"
+      "/events/19/pic1.jpg",
+      "/events/19/pic2.jpg",
+      "/events/19/pic3.jpg"
     ],
     "stats": {
       "participants": 35,
@@ -396,6 +405,7 @@
   },
   {
     "id": 18,
+    "type": "Event",
     "featured": false,
     "name_1": "OSM Mapathon:",
     "name_2": "2023",
@@ -434,7 +444,7 @@
       "social": "https://www.facebook.com/share/p/17ki415CGn/",
       "registration": "https://bit.ly/40ntqfm"
     },
-    "images": ["events/18/pic1.jpg", "events/18/pic2.jpg"],
+    "images": ["/events/18/pic1.jpg", "/events/18/pic2.jpg"],
     "stats": {
       "participants": 40,
       "time": "3 hrs",
@@ -445,6 +455,7 @@
   },
   {
     "id": 17,
+    "type": "Event",
     "featured": false,
     "name_1": "Hacktoberfest 2023:",
     "name_2": "Open Contributions",
@@ -475,6 +486,7 @@
   },
   {
     "id": 16,
+    "type": "Event",
     "featured": false,
     "name_1": "Libre Office:",
     "name_2": "Localization Sprint 2023",
@@ -516,7 +528,7 @@
       "social": "https://www.facebook.com/share/p/14zNrKiuty/",
       "registration": "https://forms.gle/XDYyAMTy2JbpEYRe7"
     },
-    "images": ["/events/16/pic1.jpg", "events/16/pic2.jpg"],
+    "images": ["/events/16/pic1.jpg", "/events/16/pic2.jpg"],
     "stats": {
       "participants": 100,
       "time": "20 days",
@@ -527,6 +539,7 @@
   },
   {
     "id": 15,
+    "type": "Event",
     "featured": false,
     "name_1": "Software Freedom Day",
     "name_2": "Celebration 2023",
@@ -591,6 +604,7 @@
   },
   {
     "id": 14,
+    "type": "Event",
     "featured": false,
     "name_1": "Getting Started:",
     "name_2": "Git & GitHub",
@@ -640,6 +654,7 @@
   },
   {
     "id": 13,
+    "type": "Event",
     "featured": true,
     "name_1": "OSM Hackfest 2023:",
     "name_2": "Chitwan Region",
@@ -720,6 +735,7 @@
   },
   {
     "id": 12,
+    "type": "Event",
     "featured": false,
     "name_1": "OSM Hackfest 2023:",
     "name_2": "Getting Started with OSM",
@@ -775,6 +791,7 @@
   },
   {
     "id": 11,
+    "type": "Event",
     "featured": false,
     "name_1": "Introduction to Open Source:",
     "name_2": "Open Street Map",
@@ -827,6 +844,7 @@
   },
   {
     "id": 10,
+    "type": "Event",
     "featured": false,
     "name_1": "Annual General Meeting:",
     "name_2": "AGM 2023",
@@ -857,6 +875,7 @@
   },
   {
     "id": 9,
+    "type": "Event",
     "featured": false,
     "name_1": "Debian Meetup:",
     "name_2": "Nepal - BOSC",
@@ -909,6 +928,7 @@
   },
   {
     "id": 8,
+    "type": "Event",
     "featured": false,
     "name_1": "Hacktoberfest 2022:",
     "name_2": "with BOSC",
@@ -961,6 +981,7 @@
   },
   {
     "id": 7,
+    "type": "Event",
     "featured": false,
     "name_1": "Virtual Session:",
     "name_2": "Open Technologies for Public Good",
@@ -997,6 +1018,7 @@
   },
   {
     "id": 6,
+    "type": "Event",
     "featured": false,
     "name_1": "Introduction to:",
     "name_2": "Open Source",
@@ -1042,6 +1064,7 @@
   },
   {
     "id": 5,
+    "type": "Event",
     "featured": false,
     "name_1": "Virtual Webinar:",
     "name_2": "Counselling and Experience Sharing",
@@ -1094,6 +1117,7 @@
   },
   {
     "id": 4,
+    "type": "Event",
     "featured": false,
     "name_1": "Career Conclave:",
     "name_2": "2078",
@@ -1124,6 +1148,7 @@
   },
   {
     "id": 3,
+    "type": "Event",
     "featured": false,
     "name_1": "Virtual Webinar:",
     "name_2": "Javascript",
@@ -1162,6 +1187,7 @@
   },
   {
     "id": 2,
+    "type": "Event",
     "featured": false,
     "name_1": "Getting Started:",
     "name_2": "Bug Bounty 2021",
@@ -1222,6 +1248,7 @@
   },
   {
     "id": 1,
+    "type": "Event",
     "featured": false,
     "name_1": "Virtual Webinar:",
     "name_2": "Git & GitHub",

@@ -1,19 +1,80 @@
 ---
 import Container from "../../components/Container.astro"
 import Layout from "../../layouts/Layout.astro"
-import articlesData from "../../components//Data/articles.json"
+// import articlesData from "../../components//Data/articles.json"
+import eventsData from "../../components/Data/events.json"
 
 export async function getStaticPaths() {
-  return articlesData.map(
-    ({ id, title, publish_date, description, author, authorImage }) => {
+  return eventsData.map(
+    ({
+      id,
+      type,
+      featured,
+      name_1,
+      name_2,
+      desc,
+      year,
+      date,
+      time,
+      venue,
+      organizer,
+      partners,
+      mentors,
+      guests,
+      cover_photo,
+      background,
+      links,
+      images,
+      stats,
+    }) => {
       return {
         params: { id },
-        props: { id, title, publish_date, description, author, authorImage },
+        props: {
+          id,
+          type,
+          featured,
+          name_1,
+          name_2,
+          desc,
+          year,
+          date,
+          time,
+          venue,
+          organizer,
+          partners,
+          mentors,
+          guests,
+          cover_photo,
+          background,
+          links,
+          images,
+          stats,
+        },
       }
     }
   )
 }
-const { title, publish_date, description, author, authorImage } = Astro.props
+const {
+  id,
+  type,
+  featured,
+  name_1,
+  name_2,
+  desc,
+  year,
+  date,
+  time,
+  venue,
+  organizer,
+  partners,
+  mentors,
+  guests,
+  cover_photo,
+  background,
+  links,
+  images,
+  stats,
+} = Astro.props
 export const prerender = true
 ---
 
@@ -28,34 +89,97 @@ export const prerender = true
             <h2
               class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900"
             >
-              {title}
+              {name_1}
+              {name_2}
+              <br />
+              {year}
+              <br />
+              {venue}
+              <br />
+              {time}
             </h2>
-            <p class="mb-4">{description}</p>
+            <p class="mb-4">{desc}</p>
             <div class="flex justify-between items-center mt-6">
               <div class="flex items-center space-x-4">
                 <img
                   class="w-7 h-7 rounded-full"
-                  src={authorImage}
-                  alt={author + " cover"}
+                  src={cover_photo}
+                  alt={"cover"}
                 />
-                <span class="font-medium">
-                  {author}
-                </span>
+
+                {
+                  organizer.map((name) => (
+                    <span class="font-medium">{name}</span>
+                  ))
+                }
+                {
+                  partners.map((name) => (
+                    <span class="font-medium">{name}</span>
+                  ))
+                }
               </div>
-              <span class="text-sm">{publish_date}</span>
+              <span class="text-sm">{date}</span>
             </div>
-          </div>
-          <div class="grid grid-cols-2 gap-4 mt-8">
-            <img
-              class="w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
-              alt="office content 1"
-            />
-            <img
-              class="mt-4 w-full lg:mt-10 rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png"
-              alt="office content 2"
-            />
+            <div class="">
+              <div class="flex items center space-x-4">
+                Mentors:
+                {
+                  mentors.map((mentor) => (
+                    <span class="font-medium">{mentor.name}</span>
+                    <img class="w-10 h-10 rounded-full" src={mentor.image} alt="" />
+                    <span class="font-medium">{mentor.designation}</span>
+                    <span class="font-medium">{mentor.tag}</span>
+                    <a href={mentor.connect} target="_blank" rel="noopener noreferrer">Connect</a>
+                    <br />
+                  ))
+                }
+              </div>
+              <div class="space-x-4">
+                Guests:
+                {
+                  guests.map((guest) => (
+                    <span class="font-medium">{guest.name}</span>
+                    <img class="w-10 h-10 rounded-full" src={guest.image} alt="" />
+                    <span class="font-medium">{guest.designation}</span>
+                    <span class="font-medium">{guest.tag}</span>
+                    <a href={guest.connect} target="_blank" rel="noopener noreferrer">Connect</a>
+                    <br />
+                  ))
+                }
+              </div>
+
+              <span class="text-sm"
+                >Certificate: {
+                  stats.certificate ? "Provided" : "Not Provided"
+                }</span
+              >
+              <br />
+              <span class="text-sm">Entry Fee: {stats.entry_fee}</span>
+              <br />
+              <span class="text-sm">Participants: {stats.participants}</span>
+              <br />
+              <span class="text-sm"
+                >Prize: {stats.prize ? "SWAGs Givens" : "No Prizes"}</span
+              >
+              <br />
+              <span class="text-sm">Time: {stats.time}</span>
+              <br />
+
+              <a target="_blank" href={links.blog}>Blog Link</a>
+              <br />
+              <a target="_blank" href={links.registration}>
+                Registration Link</a
+              >
+              <br />
+              <a target="_blank" href={links.social}>Social Media Post Link</a>
+            </div>
+            <div class="grid grid-cols-2 gap-4 mt-8">
+              {
+                images.map((link) => (
+                  <img class="rounded-2xl" src={link} alt="cover" />
+                ))
+              }
+            </div>
           </div>
         </div>
       </section>
