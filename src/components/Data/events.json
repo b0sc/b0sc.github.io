@@ -1,0 +1,1261 @@
+[
+  {
+    "id": 27,
+    "featured": false,
+    "name_1": "Blogging Competition:",
+    "name_2": "Call for Tech Writers",
+    "desc": "📝 Are you passionate about technology and writing? 🚀 BOSC Club is excited to announce our Blogging Competition 2024! 🌟 Share your knowledge, insights, and experiences with the tech community. Whether you're a beginner or an experienced writer, this competition is for you. 🎉 Join us to showcase your writing skills, learn from others, and win exciting prizes! 🏆",
+    "year": 2024,
+    "date": "2024-11-12 - 2024-11-22",
+    "time": "00:00 AM",
+    "venue": "Physical - BMC, Naubigha",
+    "organizer": ["BOSC"],
+    "partners": [],
+    "mentors": [],
+    "guests": [],
+    "cover_photo": "",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "links": {
+      "blog": "/blogs/27",
+      "social": "",
+      "registration": ""
+    },
+    "images": [],
+    "stats": {
+      "participants": 0,
+      "time": "10 days",
+      "certificate": true,
+      "prize": true,
+      "entry_fee": "Free"
+    }
+  },
+  {
+    "id": 26,
+    "featured": false,
+    "name_1": "Hacktoberfest 2024:",
+    "name_2": "Open Contributions",
+    "desc": "🎉 Calling all developers and open– source enthusiasts!🚀BOSC Club is excited to kick off contributions for Hactoberfest 2024 💻 A 2 week long event. Let's collaborate, code, and grow the open–source community together 🌍",
+    "year": 2024,
+    "date": "2024-10-15 - 2024-10-31",
+    "time": "00:00 AM",
+    "venue": "Physical - BMC, Naubigha",
+    "organizer": ["BOSC"],
+    "partners": ["Hacktoberfest"],
+    "mentors": [],
+    "guests": [],
+    "cover_photo": "/events/26/cover.jpg",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "links": {
+      "blog": "/blogs/26",
+      "social": "https://www.facebook.com/share/p/1W1nMPSLWz/",
+      "registration": "https://github.com/b0sc"
+    },
+    "images": ["events/26/pic1.jpg", "events/26/pic2.jpg"],
+    "stats": {
+      "participants": 26,
+      "time": "15 days",
+      "certificate": false,
+      "prize": true,
+      "entry_fee": "Free"
+    }
+  },
+  {
+    "id": 25,
+    "featured": false,
+    "name_1": "Hacktoberfest 2024:",
+    "name_2": "Guide to First-Contributions",
+    "desc": "Its October 1 Today 🤝 Its Hacktober 1 Today. Register Now for the Guide to make the First Contributions To Hacktoberfest 2024. We'll hear from our speakers, discuss on topics you want to discuss, introduce you to our open source repositories and guide you to make your first contributions. 🚀 We're providing a Zero To Hero Guide for you to contribute in this Hacktoberfest either in Worldwide Public Projects or BOSC's in-house Projects. First we'll Introduce you to the Hacktoberfest Applications and Contributions and then we'll guide you to contribute in open source projects such as ours.",
+    "year": 2024,
+    "date": "2024-10-04",
+    "time": "5:00 PM",
+    "venue": "Virtual - Google Meet",
+    "organizer": ["BOSC"],
+    "partners": ["Hacktoberfest"],
+    "mentors": [],
+    "guests": [
+      {
+        "name": "Ashbin Wosti",
+        "image": "/default_mentor.jpg",
+        "designation": "Software Engineer at Bitcoin Nepal",
+        "tag": "Hacktoberfest Speaker",
+        "connect": "https://www.facebook.com/ashbin.wosti.1"
+      }
+    ],
+    "cover_photo": "/events/25/cover.jpg",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "links": {
+      "blog": "/blogs/25",
+      "social": "https://www.facebook.com/share/p/12AXrPMrQCX/",
+      "registration": "https://forms.gle/xEe39aBUHHUqUvVe8"
+    },
+    "images": ["events/25/pic1.jpg"],
+    "stats": {
+      "participants": 15,
+      "time": "2 hrs",
+      "certificate": false,
+      "prize": false,
+      "entry_fee": "Free"
+    }
+  },
+  {
+    "id": 24,
+    "featured": false,
+    "name_1": "Software Freedom Day:",
+    "name_2": "Celebration 2024",
+    "desc": "🌐 Get ready to celebrate innovation and the power of open-source technology at our upcoming Software Freedom Day event! 🚀 It's that time of the year again where you get free gifts, swags, and invaluable guidance from exceptional mentors and speakers in the FOSS industry. Join us to explore the endless possibilities of free and open-source software, share knowledge, and empower communities to embrace digital freedom.",
+    "year": 2024,
+    "date": "2024-09-21",
+    "time": "11:00 AM",
+    "venue": "Physical - BMC, Naubigha",
+    "organizer": ["BOSC"],
+    "partners": [],
+    "mentors": [],
+    "guests": [
+      {
+        "name": "Megha Raj Kandel",
+        "image": "/default_mentor.jpg",
+        "designation": "Cyber Security Enthusiast",
+        "tag": "SFD Speaker 2024",
+        "connect": "https://www.facebook.com/MeghaRajtech"
+      },
+      {
+        "name": "Sudikshya Ojha",
+        "image": "/default_mentor.jpg",
+        "designation": "Open Source Enthusiast",
+        "tag": "SFD Speaker 2024",
+        "connect": "https://www.facebook.com/sudikshya.321"
+      },
+      {
+        "name": "Bimal Dhital",
+        "image": "/default_mentor.jpg",
+        "designation": "Network Engineer & Linux Administrator",
+        "tag": "SFD Speaker 2024",
+        "connect": "https://www.facebook.com/shiyaruku"
+      },
+      {
+        "name": "Dipesh Sapkota",
+        "image": "/default_mentor.jpg",
+        "designation": "AI Enthusiast",
+        "tag": "SFD Speaker 2024",
+        "connect": "https://www.facebook.com/profile.php?id=61562080087964"
+      }
+    ],
+    "cover_photo": "/events/24/cover.jpg",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "links": {
+      "blog": "/blogs/24",
+      "social": "https://www.facebook.com/share/p/15ZX52HQYi/",
+      "registration": "https://forms.gle/mxUZfyFA61jN2mjW8"
+    },
+    "images": [
+      "events/24/pic1.jpg",
+      "events/24/pic2.jpg",
+      "events/24/pic3.jpg"
+    ],
+    "stats": {
+      "participants": 50,
+      "time": "5 hrs",
+      "certificate": false,
+      "prize": true,
+      "entry_fee": "Free"
+    }
+  },
+  {
+    "id": 23,
+    "featured": false,
+    "name_1": "Annual General Meeting:",
+    "name_2": "AGM 2024",
+    "desc": "Change is inevitable ! and so is a new tenure. Come, join us and be a part of an active community with your visions and ideas to push the club forward.",
+    "year": 2024,
+    "date": "2024-08-30",
+    "time": "11:00 AM",
+    "venue": "Physical - BMC, RMC Hall",
+    "organizer": ["BOSC"],
+    "partners": [],
+    "mentors": [],
+    "guests": [
+      {
+        "name": "Daya Ram Paudyal",
+        "image": "/default_mentor.jpg",
+        "designation": "Campus Chief, Birendra Multiple Campus",
+        "tag": "Professor",
+        "connect": "https://www.facebook.com/dayaram.paudyal"
+      }
+    ],
+    "cover_photo": "/events/23/cover.jpg",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "links": {
+      "blog": "/blogs/23",
+      "social": "https://www.facebook.com/share/p/17p9AnqeE5/",
+      "registration": ""
+    },
+    "images": ["events/23/pic1.jpg", "events/23/pic2.jpg"],
+    "stats": {
+      "participants": 20,
+      "time": "4 hrs",
+      "certificate": true,
+      "prize": true,
+      "entry_fee": "BOSC Membership"
+    }
+  },
+  {
+    "id": 22,
+    "featured": false,
+    "name_1": "Cyber Security Event:",
+    "name_2": "MITRE ATT&CK and OSINT Framework!",
+    "desc": "This is an excellent opportunity for all students interested in cybersecurity and threat analysis to gain valuable knowledge and practical experience.",
+    "year": 2024,
+    "date": "2024-07-12",
+    "time": "11:00 AM",
+    "venue": "Physical - UTech, Computer Lab",
+    "organizer": ["BOSC"],
+    "partners": ["Birendra IT Club"],
+    "mentors": [
+      {
+        "name": "Asim Tara Pathak",
+        "image": "/default_mentor.jpg",
+        "designation": "Threat Analyst at Sophos",
+        "tag": "CEH, PCAP, MOS",
+        "connect": "https://www.facebook.com/asim.atp"
+      }
+    ],
+    "guests": [],
+    "cover_photo": "/events/22/cover.jpg",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "links": {
+      "blog": "/blogs/22",
+      "social": "https://www.facebook.com/share/p/15c2sh91eQ/",
+      "registration": "https://tinyurl.com/MitreOsintWorkshop2024"
+    },
+    "images": [
+      "events/22/pic1.jpg",
+      "events/22/pic2.jpg",
+      "events/22/pic3.jpg"
+    ],
+    "stats": {
+      "participants": 20,
+      "time": "4 hrs",
+      "certificate": false,
+      "prize": false,
+      "entry_fee": "Rs.100"
+    }
+  },
+  {
+    "id": 21,
+    "featured": false,
+    "name_1": "BOSC Orientation:",
+    "name_2": "General Members",
+    "desc": "Welcome to BOSC! 🎉 We are excited to have you join our community. This orientation session is designed to help you get started with BOSC, learn about our mission, and discover the opportunities available to you. Whether you're a beginner or an experienced developer, we have something for everyone. Join us to meet our team, learn about our upcoming events, and get involved in open-source projects.",
+    "year": 2024,
+    "date": "2024-03-22",
+    "time": "11:00 AM",
+    "venue": "Physical - BMC, Naubigha",
+    "organizer": ["BOSC"],
+    "partners": [],
+    "mentors": [],
+    "guests": [
+      {
+        "name": "Bigyan Tamang",
+        "image": "/default_mentor.jpg",
+        "designation": "Network Engineer",
+        "tag": "General Member at BOSC",
+        "connect": "https://www.facebook.com/bigyantamang.bigyantamang.94"
+      },
+      {
+        "name": "Achyut Koirala",
+        "image": "/default_mentor.jpg",
+        "designation": "Backend Developer, Freelancer at Upwork",
+        "tag": "Community Manager at BOSC",
+        "connect": "https://www.facebook.com/axyut"
+      },
+      {
+        "name": "Shri Ram Lamichhane",
+        "image": "/default_mentor.jpg",
+        "designation": "Android Developer, Freelancer",
+        "tag": "General Member at BOSC",
+        "connect": "https://www.facebook.com/profile.php?id=100041710193260"
+      }
+    ],
+    "cover_photo": "/events/21/cover.jpg",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "links": {
+      "blog": "/blogs/21",
+      "social": "https://www.facebook.com/share/p/1B79GLZL5T/",
+      "registration": "https://forms.gle/cyisykxr6RwpXCrm7"
+    },
+    "images": [
+      "events/21/pic1.jpg",
+      "events/21/pic2.jpg",
+      "events/21/pic3.jpg",
+      "events/21/pic4.jpg"
+    ],
+    "stats": {
+      "participants": 20,
+      "time": "2 hrs",
+      "certificate": false,
+      "prize": true,
+      "entry_fee": "Free"
+    }
+  },
+  {
+    "id": 20,
+    "featured": false,
+    "name_1": "Byte Sized Beginnings:",
+    "name_2": "Web Dev Workshop",
+    "desc": "Beginner friendly workshop organized by Birendra Open Source Club for IT freshers, students will be guided from root about coding and the coding journey especially focusing on web development. All the new students are invited to this event, we suggest everyone to bring their laptop with Visual Studio Code installed.",
+    "year": 2024,
+    "date": "2024-02-04 - 2024-02-06",
+    "time": "11:30 AM",
+    "venue": "Physical - BMC, Naubigha",
+    "organizer": ["BOSC"],
+    "partners": [],
+    "mentors": [
+      {
+        "name": "Kushal Pathak",
+        "image": "/default_mentor.jpg",
+        "designation": "Frontend Developer",
+        "tag": "President at BOSC 2023/2024",
+        "connect": "https://www.facebook.com/kushalpathak.100"
+      }
+    ],
+    "guests": [],
+    "cover_photo": "/events/20/cover.jpg",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "links": {
+      "blog": "/blogs/20",
+      "social": "https://www.facebook.com/share/p/1DTTomE7Vm/",
+      "registration": "https://forms.gle/Hg2mWX5AdbYdB2tH7"
+    },
+    "images": ["events/20/pic1.jpg", "events/20/pic2.jpg"],
+    "stats": {
+      "participants": 40,
+      "time": "3 hrs - 3 days",
+      "certificate": true,
+      "prize": true,
+      "entry_fee": "Free"
+    }
+  },
+  {
+    "id": 19,
+    "featured": false,
+    "name_1": "OSM:",
+    "name_2": "Integration in Projects",
+    "desc": "Map Integration Workshop! 🗺️ Join us on a journey of exploration! We are excited to announce our upcoming event on the 'Integration of OpenStreetMap in Projects'. Learn how to integrate OSM in your webpages! Discover the power of maps for your website!",
+    "year": 2023,
+    "date": "2023-12-10",
+    "time": "11:30 AM",
+    "venue": "Physical - BMC, Naubigha",
+    "organizer": ["BOSC"],
+    "partners": [
+      "OpenMappingHub-AsiaPacific",
+      "Humanitarian OpenStreetMap Team"
+    ],
+    "mentors": [
+      {
+        "name": "Bigyan Tamang",
+        "image": "/default_mentor.jpg",
+        "designation": "Network Engineer",
+        "tag": "General Member at BOSC",
+        "connect": "https://www.facebook.com/bigyantamang.bigyantamang.94"
+      },
+      {
+        "name": "Achyut Koirala",
+        "image": "/default_mentor.jpg",
+        "designation": "Backend Developer, Freelancer at Upwork",
+        "tag": "Community Manager at BOSC",
+        "connect": "https://www.facebook.com/axyut"
+      },
+      {
+        "name": "LF Pemi Magar",
+        "image": "/default_mentor.jpg",
+        "designation": "Graphics Designer, Freelancer",
+        "tag": "General Member at BOSC",
+        "connect": "https://www.facebook.com/lf.pemi.magar"
+      }
+    ],
+    "guests": [],
+    "cover_photo": "/events/18/cover.jpg",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "links": {
+      "blog": "/blogs/19",
+      "social": "https://www.facebook.com/share/p/1BYNgRxqC2/",
+      "registration": " https://forms.gle/xMzkozgfRGzMvNPW8"
+    },
+    "images": [
+      "events/19/pic1.jpg",
+      "events/19/pic2.jpg",
+      "events/19/pic3.jpg"
+    ],
+    "stats": {
+      "participants": 35,
+      "time": "3 hrs",
+      "certificate": true,
+      "prize": true,
+      "entry_fee": "Free"
+    }
+  },
+  {
+    "id": 18,
+    "featured": false,
+    "name_1": "OSM Mapathon:",
+    "name_2": "2023",
+    "desc": "🌍 We're back with a map-tastic comeback! 🗺️ Get ready to make your mark once again at the OSM MAPATHON – it's a day of mapping mastery, training, and epic prizes! 🏆 Whether you're a mapping newbie or a seasoned pro, our OSM gurus are here to ignite your mapping passion. Plus, top mappers claim awesome rewards! Every participant scores exclusive T-shirts, stickers, and who knows what. Connect, compete, and conquer from the comfort of your home. Secure your spot now!🚀",
+    "year": 2023,
+    "date": "2023-11-10",
+    "time": "1:00 PM",
+    "venue": "Virtual - Google Meet",
+    "organizer": ["BOSC"],
+    "partners": [
+      "OpenMappingHub-AsiaPacific",
+      "Humanitarian OpenStreetMap Team",
+      "Dev </> Community Nepal"
+    ],
+    "mentors": [
+      {
+        "name": "Shristi Shrestha",
+        "image": "/default_mentor.jpg",
+        "designation": "OSM Guru",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.facebook.com/aswina.shrestha.5"
+      },
+      {
+        "name": "Pragya Pant",
+        "image": "/default_mentor.jpg",
+        "designation": "OSM Guru",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.facebook.com/pragya.pant.5"
+      }
+    ],
+    "guests": [],
+    "cover_photo": "/events/18/cover.jpg",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "links": {
+      "blog": "/blogs/18",
+      "social": "https://www.facebook.com/share/p/17ki415CGn/",
+      "registration": "https://bit.ly/40ntqfm"
+    },
+    "images": ["events/18/pic1.jpg", "events/18/pic2.jpg"],
+    "stats": {
+      "participants": 40,
+      "time": "3 hrs",
+      "certificate": false,
+      "prize": true,
+      "entry_fee": "Free"
+    }
+  },
+  {
+    "id": 17,
+    "featured": false,
+    "name_1": "Hacktoberfest 2023:",
+    "name_2": "Open Contributions",
+    "desc": "Register for BOSC Hacktoberfest 2023 ASAP and contribute to open-source projects.",
+    "year": 2023,
+    "date": "2023-10-23",
+    "time": "5:00 PM",
+    "venue": "Virtual - Google Meet",
+    "organizer": ["BOSC"],
+    "partners": [],
+    "mentors": [],
+    "guests": [],
+    "cover_photo": "/events/17/cover.jpg",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "links": {
+      "blog": "/blogs/17",
+      "social": "https://www.facebook.com/share/p/1YTBKzFZLw/",
+      "registration": "https://forms.gle/LaJhcuSeFapVW7ea6"
+    },
+    "images": [],
+    "stats": {
+      "participants": 20,
+      "time": "2 hrs",
+      "certificate": false,
+      "prize": true,
+      "entry_fee": "Free"
+    }
+  },
+  {
+    "id": 16,
+    "featured": false,
+    "name_1": "Libre Office:",
+    "name_2": "Localization Sprint 2023",
+    "desc": "It's already October, and how can someone still not contribute to the Open Source?? It's obviously FUN when there are exciting GIFTS waiting for you!! 😍 This Hacktoberfest, BOSC is introducing LibreOffice L10N Sprint 2023 in the community together with LibreOffice. JUMP IN and help with English to Nepali translation, together with friends.🔥 With support from our awesome community, LibreOffice is speaking Nepali again.🌟",
+    "year": 2023,
+    "date": "2023-10-11",
+    "time": "00:00 AM",
+    "venue": "Virtual - The Document Foundation, LibreOffice",
+    "organizer": ["The Document Foundation"],
+    "partners": ["BOSC", "NOSK", "KUOSC", "AskBuddie"],
+    "mentors": [
+      {
+        "name": "Saroj Dhakal",
+        "image": "/default_mentor.jpg",
+        "designation": "Wiki Contributor at Wikimedia",
+        "tag": "Expert",
+        "connect": "https://www.facebook.com/saroj.dhakal.9"
+      },
+      {
+        "name": "Suraj Bhattarai",
+        "image": "/default_mentor.jpg",
+        "designation": "Liasion at LibreOffice Nepal Community",
+        "tag": "Mentor",
+        "connect": "https://www.facebook.com/saroj.dhakal.9"
+      },
+      {
+        "name": "Aadarsha Dhakal",
+        "image": "/default_mentor.jpg",
+        "designation": "Co-ordniator at KUOSC",
+        "tag": "Mentor",
+        "connect": "https://www.facebook.com/aadarsha.dhakal.9"
+      }
+    ],
+    "guests": [],
+    "cover_photo": "/events/16/cover.jpg",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "links": {
+      "blog": "/blogs/16",
+      "social": "https://www.facebook.com/share/p/14zNrKiuty/",
+      "registration": "https://forms.gle/XDYyAMTy2JbpEYRe7"
+    },
+    "images": ["/events/16/pic1.jpg", "events/16/pic2.jpg"],
+    "stats": {
+      "participants": 100,
+      "time": "20 days",
+      "certificate": true,
+      "prize": true,
+      "entry_fee": "Free"
+    }
+  },
+  {
+    "id": 15,
+    "featured": false,
+    "name_1": "Software Freedom Day",
+    "name_2": "Celebration 2023",
+    "desc": "Fasten your seatbelt because Software Freedom Day is just around the corner! Discover the power of open-source at Software Freedom Day! Join us on September 16th at 11 AM, BMC, Nau Bigha. All are welcome to share, learn, and celebrate the freedom of software together!",
+    "year": 2023,
+    "date": "2023-09-16",
+    "time": "11:00 AM",
+    "venue": "Physical - BMC, Naubigha",
+    "organizer": ["BOSC"],
+    "partners": ["Birendra IT Club", "CCTOSC", "Dev </> Community Nepal"],
+    "mentors": [
+      {
+        "name": "Sushant Rimal",
+        "image": "/default_mentor.jpg",
+        "designation": "Founder, Leader at Dev </> Community Nepal",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.facebook.com/thedevcnepal"
+      }
+    ],
+    "guests": [
+      {
+        "name": "Rajiv Aryal",
+        "image": "/default_mentor.jpg",
+        "designation": "Web Developer at Mangobyte Digital",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.facebook.com/romeo.rajiv.52"
+      },
+      {
+        "name": "Ashbin Wosti",
+        "image": "/default_mentor.jpg",
+        "designation": "Software Engineer at Bitcoin Nepal",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.facebook.com/ashbin.wosti.1"
+      },
+      {
+        "name": "Pravin Gupta",
+        "image": "/default_mentor.jpg",
+        "designation": "Content Creator at Gupta Tutorial",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.facebook.com/prabin.gupta.92"
+      }
+    ],
+    "cover_photo": "/events/15/cover.jpg",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "links": {
+      "blog": "/blogs/15",
+      "social": "https://www.facebook.com/share/p/18ee2mUkgm/",
+      "registration": ""
+    },
+    "images": [
+      "/events/15/pic1.jpg",
+      "/events/15/pic2.jpg",
+      "/events/15/pic3.jpg"
+    ],
+    "stats": {
+      "participants": 30,
+      "time": "4 hrs",
+      "certificate": true,
+      "prize": true,
+      "entry_fee": "Free"
+    }
+  },
+  {
+    "id": 14,
+    "featured": false,
+    "name_1": "Getting Started:",
+    "name_2": "Git & GitHub",
+    "desc": "Are you eager to learn the foundations of version control and collaboration in software development? Look no further! Our club is hosting a hands-on session where you'll discover the power of Git and GitHub. Whether you're a beginner or have some experience, this event is perfect for you. We'll cover the basics of Git commands, remote repositories, collaboration techniques, and much more. You'll gain valuable insights into efficient code management and teamwork practices.",
+    "year": 2023,
+    "date": "2023-07-13 - 2023-07-14",
+    "time": "11:30 AM",
+    "venue": "Physical - BMC, Naubigha",
+    "organizer": ["BOSC"],
+    "partners": [],
+    "mentors": [
+      {
+        "name": "Bibek Chalise",
+        "image": "/default_mentor.jpg",
+        "designation": "Freelancer, Professor at Lumbini ICT Campus",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.facebook.com/IamBbek"
+      },
+      {
+        "name": "Akash Poudel",
+        "image": "/default_mentor.jpg",
+        "designation": "Ex-SDE Intern at CDAC",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.facebook.com/833P.L0G1C"
+      }
+    ],
+    "guests": [],
+    "cover_photo": "/events/14/cover.jpg",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "links": {
+      "blog": "/blogs/14",
+      "social": "https://www.facebook.com/share/p/15571V8j8M/",
+      "registration": "https://docs.google.com/forms/d/1z3jqx-jPfxZ2YfaMlSDOgCzceKD4OoCkRs2VYYB-Wdo/viewform"
+    },
+    "images": [
+      "/events/14/pic1.jpg",
+      "/events/14/pic2.jpg",
+      "/events/14/pic3.jpg"
+    ],
+    "stats": {
+      "participants": 55,
+      "time": "6 hrs - 2 days",
+      "certificate": true,
+      "prize": false,
+      "entry_fee": "Free"
+    }
+  },
+  {
+    "id": 13,
+    "featured": true,
+    "name_1": "OSM Hackfest 2023:",
+    "name_2": "Chitwan Region",
+    "desc": "The Hackathon organized by Birendra Open Source Club and supported by OpenStreetMap and Open Mapping Hub - Asia Pacific.! Get ready for an immersive coding experience that combines the power of open-source technology and mapping to create innovative solutions. 🤝💻🗺️",
+    "year": 2023,
+    "date": "2023-06-17 - 2023-06-18",
+    "time": "9:00 AM June 17 - 5:00 PM June 18",
+    "venue": "Physical - BMC, Naubigha",
+    "organizer": ["BOSC"],
+    "partners": [
+      "OpenMappingHub-AsiaPacific",
+      "Humanitarian OpenStreetMap Team",
+      "Birendra Multiple Campus",
+      "Indreni IT Club",
+      "Birendra IT Club",
+      "Balkumari BIM Club",
+      "New Capital College",
+      "Birendra Robotics Club",
+      "Dev </> Community Nepal",
+      "Saptagandaki IT Club",
+      "MBACES - Madan Bhandari Association of Computer Engineering Students",
+      "CSITAN-Chitwan",
+      "United Tech Club",
+      "Aarambha College",
+      "Expert Education"
+    ],
+    "mentors": [
+      {
+        "name": "Arun Kumar Pariyar",
+        "image": "/default_mentor.jpg",
+        "designation": "Debian Developer, Debian Project",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.facebook.com/geekyaaron"
+      },
+      {
+        "name": "Susil Subedi",
+        "image": "/default_mentor.jpg",
+        "designation": "CEO at Astranix",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.facebook.com/Sushilsubedi32"
+      },
+      {
+        "name": "Aswina Shrestha",
+        "image": "/default_mentor.jpg",
+        "designation": "OSM Guru",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.facebook.com/aswina.shrestha.5"
+      }
+    ],
+    "guests": [
+      {
+        "name": "Daya Ram Paudyal",
+        "image": "/default_mentor.jpg",
+        "designation": "Campus Chief, Birendra Multiple Campus",
+        "tag": "Professor",
+        "connect": "https://www.facebook.com/dayaram.paudyal"
+      }
+    ],
+    "cover_photo": "/events/13/cover.jpg",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "links": {
+      "blog": "/blogs/13",
+      "social": "https://www.facebook.com/share/p/15UcVngCDm/",
+      "registration": "https://forms.gle/escUhZsRrhfU2jF76"
+    },
+    "images": [
+      "/events/13/pic1.jpg",
+      "/events/13/pic2.jpg",
+      "/events/13/pic3.jpg"
+    ],
+    "stats": {
+      "participants": 100,
+      "time": "2 days",
+      "certificate": true,
+      "prize": true,
+      "entry_fee": "Free"
+    }
+  },
+  {
+    "id": 12,
+    "featured": false,
+    "name_1": "OSM Hackfest 2023:",
+    "name_2": "Getting Started with OSM",
+    "desc": "Pre Event for the Hackathon organized by Birendra Open Source Club, OSM Hackfest 2023-Chitwan Region",
+    "year": 2023,
+    "date": "2023-05-31 - 2023-06-01 - 2023-06-02",
+    "time": "12:00 - 1:00 PM",
+    "venue": "Physical - Balkumari, BMC, Saptagandaki, Virtual - Google Meet",
+    "organizer": ["BOSC"],
+    "partners": [
+      "OpenMappingHub-AsiaPacific",
+      "Humanitarian OpenStreetMap Team",
+      "Birendra Multiple Campus",
+      "Balkumari BIM Club",
+      "Saptagandaki IT Club"
+    ],
+    "mentors": [
+      {
+        "name": "Ashbin Wosti",
+        "image": "/default_mentor.jpg",
+        "designation": "Software Engineer at Bitcoin Nepal",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.facebook.com/ashbin.wosti.1"
+      },
+      {
+        "name": "Sushma Ghimire",
+        "image": "/default_mentor.jpg",
+        "designation": "Geospatial Analyst at Kathmandu Living Labs",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.facebook.com/aswina.shrestha.5"
+      }
+    ],
+    "guests": [],
+    "cover_photo": "/events/12/cover.jpg",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "links": {
+      "blog": "/blogs/12",
+      "social": "https://www.facebook.com/share/p/1FCtV8T5QY/",
+      "registration": " https://meet.google.com/uco-snto-pmb"
+    },
+    "images": [
+      "/events/12/pic1.jpg",
+      "/events/12/pic2.jpg",
+      "/events/12/pic3.jpg"
+    ],
+    "stats": {
+      "participants": 70,
+      "time": "3 days - 3 different events",
+      "certificate": false,
+      "prize": true,
+      "entry_fee": "Free"
+    }
+  },
+  {
+    "id": 11,
+    "featured": false,
+    "name_1": "Introduction to Open Source:",
+    "name_2": "Open Street Map",
+    "desc": "Get ready for an unforgettable experience! Join us for Introduction to Open Source with OpenStreetMap event.",
+    "year": 2023,
+    "date": "2023-05-23",
+    "time": "10:00 AM",
+    "venue": "Physical - BMC, Naubigha",
+    "organizer": ["BOSC"],
+    "partners": [
+      "OpenMappingHub-AsiaPacific",
+      "Humanitarian OpenStreetMap Team"
+    ],
+    "mentors": [
+      {
+        "name": "Gaurav Parajuli",
+        "image": "/default_mentor.jpg",
+        "designation": "OSM Guru",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.facebook.com/gaurav.parajuli.5"
+      },
+      {
+        "name": "Can Unen",
+        "image": "/default_mentor.jpg",
+        "designation": "OSM Guru",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.facebook.com/can.unen"
+      }
+    ],
+    "guests": [],
+    "cover_photo": "/events/11/cover.jpg",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "links": {
+      "blog": "/blogs/11",
+      "social": "https://www.facebook.com/share/p/15YqoDYGUE/",
+      "registration": "https://bit.ly/3H7aQj0"
+    },
+    "images": [
+      "/events/11/pic1.jpg",
+      "/events/11/pic2.jpg",
+      "/events/11/pic3.jpg"
+    ],
+    "stats": {
+      "participants": 45,
+      "time": "3 hours",
+      "certificate": false,
+      "prize": true,
+      "entry_fee": "Free"
+    }
+  },
+  {
+    "id": 10,
+    "featured": false,
+    "name_1": "Annual General Meeting:",
+    "name_2": "AGM 2023",
+    "desc": "Change is inevitable ! and so is a new tenure. Come, join us and be a part of an active community with your visions and ideas to push the club forward.",
+    "year": 2023,
+    "date": "2023-03-12",
+    "time": "10:00 AM",
+    "venue": "Physical - BMC, Naubigha",
+    "organizer": ["BOSC"],
+    "partners": [],
+    "mentors": [],
+    "guests": [],
+    "cover_photo": "/events/10/cover.jpg",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "links": {
+      "blog": "/blogs/10",
+      "social": "https://www.facebook.com/share/p/1B71VQ7rP8/",
+      "registration": "https://forms.gle/bQE4GZnmSGfCnYd39"
+    },
+    "images": ["/events/10/pic1.jpg", "/events/10/pic2.jpg"],
+    "stats": {
+      "participants": 50,
+      "time": "3 hours",
+      "certificate": false,
+      "prize": true,
+      "entry_fee": "Free"
+    }
+  },
+  {
+    "id": 9,
+    "featured": false,
+    "name_1": "Debian Meetup:",
+    "name_2": "Nepal - BOSC",
+    "desc": "Join us for an exciting Debian and Open-Source Meetup, where we will discuss the latest developments in these fields, share our experiences, and network with like-minded individuals. All are welcome!",
+    "year": 2023,
+    "date": "2023-01-17",
+    "time": "11:00 AM - 1:00 PM",
+    "venue": "Physical - BMC, Naubigha",
+    "organizer": ["BOSC"],
+    "partners": ["Debian"],
+    "mentors": [
+      {
+        "name": "Arun Kumar Pariyar",
+        "image": "/default_mentor.jpg",
+        "designation": "Debian Developer, Debian Project",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.facebook.com/geekyaaron"
+      },
+      {
+        "name": "Nisha Pariyar",
+        "image": "/default_mentor.jpg",
+        "designation": "Co-Founder, UbuntuDDE Project",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://facebook.com/nisha.pariyar"
+      },
+      {
+        "name": "Ananta Mishra",
+        "image": "/default_mentor.jpg",
+        "designation": "Package Maintainer, UbuntuDDE Project",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.facebook.com/ananta.mishraa"
+      }
+    ],
+    "guests": [],
+    "cover_photo": "/events/9/cover.jpg",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "links": {
+      "blog": "/blogs/9",
+      "social": "https://www.facebook.com/share/p/15V8Bq3FkL/",
+      "registration": "https://forms.gle/hTW7V97gfMguQUfb9"
+    },
+    "images": ["/events/9/pic1.jpg"],
+    "stats": {
+      "participants": 15,
+      "time": "2 hours",
+      "certificate": false,
+      "prize": false,
+      "entry_fee": "Free"
+    }
+  },
+  {
+    "id": 8,
+    "featured": false,
+    "name_1": "Hacktoberfest 2022:",
+    "name_2": "with BOSC",
+    "desc": "Contribute to OpenSource during October and get your hands on even more swags and gain valuable experience. Arrive early at event venue to get your hands on the kool swags.",
+    "year": 2022,
+    "date": "2022-10-11",
+    "time": "11:00 AM - 3:00 PM",
+    "venue": "Physical - BMC, Naubigha",
+    "organizer": ["BOSC"],
+    "partners": ["Birendra IT Club", "Microsoft Student Partners - MLSA"],
+    "mentors": [],
+    "guests": [
+      {
+        "name": "Ashbin Wosti",
+        "image": "/default_mentor.jpg",
+        "designation": "Software Engineer at Bitcoin Nepal",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.facebook.com/ashbin.wosti.1"
+      },
+      {
+        "name": "Sijan Neupane",
+        "image": "/default_mentor.jpg",
+        "designation": "Software Engineer at Great Bear Technologies",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.linkedin.com/in/sijanneupane"
+      },
+      {
+        "name": "Prabhat Amgain",
+        "image": "/default_mentor.jpg",
+        "designation": "Software Engineer",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.facebook.com/prabhat.amgain"
+      }
+    ],
+    "cover_photo": "/events/8/cover.jpg",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "links": {
+      "blog": "/blogs/8",
+      "social": "https://www.facebook.com/share/p/1CZEaRqEq2/",
+      "registration": "https://forms.gle/5fc2MvoMdf2rH8K87"
+    },
+    "images": ["/events/8/pic1.jpg", "/events/8/pic2.jpg"],
+    "stats": {
+      "participants": 35,
+      "time": "4 hours",
+      "certificate": false,
+      "prize": true,
+      "entry_fee": "Free"
+    }
+  },
+  {
+    "id": 7,
+    "featured": false,
+    "name_1": "Virtual Session:",
+    "name_2": "Open Technologies for Public Good",
+    "desc": "This virtual event will cover ideas of Free and Open Source Software, Open Data and OpenStreetMap, Engage the participant undergraduate students to be part of OSM HackFest 2022",
+    "year": 2022,
+    "date": "2022-07-03",
+    "time": "3:00 PM - 5:00 PM",
+    "venue": "Online - Google Meet",
+    "organizer": ["HOT", "OpenMappingHub-AsiaPacific"],
+    "partners": [
+      "BOSC",
+      "Open Tech Community",
+      "Open Knowledge Nepal",
+      "KLL",
+      "OSM Nepal"
+    ],
+    "mentors": [],
+    "guests": [],
+    "cover_photo": "/events/7/cover.jpg",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "links": {
+      "blog": "/blogs/7",
+      "social": "https://www.facebook.com/share/p/1Ay3ZQ1eoa/",
+      "registration": "https://docs.google.com/forms/d/e/1FAIpQLScg4jjNbIr4hB9D6FDQOz8zrc8LQy0D1Atbw_yZs-EEu7xhhA/viewform"
+    },
+    "images": [],
+    "stats": {
+      "participants": 20,
+      "time": "2 hours",
+      "certificate": false,
+      "prize": false,
+      "entry_fee": "Free"
+    }
+  },
+  {
+    "id": 6,
+    "featured": false,
+    "name_1": "Introduction to:",
+    "name_2": "Open Source",
+    "desc": "The event is mainly focused for the students who are beginners to open source community and are willing to get started with Open Source.",
+    "year": 2022,
+    "date": "2022-04-22",
+    "time": "10:00 AM - 11:30 PM",
+    "venue": "Physical - BMC, Naubigha",
+    "organizer": ["BOSC"],
+    "partners": [],
+    "mentors": [
+      {
+        "name": "Basanta Sharma",
+        "image": "/default_mentor.jpg",
+        "designation": "Network Engineer",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.facebook.com/smart.basanta.5"
+      },
+      {
+        "name": "Ashbin Wosti",
+        "image": "/default_mentor.jpg",
+        "designation": "Software Engineer at Bitcoin Nepal",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.facebook.com/ashbin.wosti.1"
+      }
+    ],
+    "guests": [],
+    "cover_photo": "/events/6/cover.jpg",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "links": {
+      "blog": "/blogs/6",
+      "social": "https://www.facebook.com/share/p/17yeXFSzKF/",
+      "registration": "https://docs.google.com/forms/d/e/1FAIpQLSc_6PS8RtjTGlE9a89xrErRJYkNP1fQIkriikXm5VPF9QlcSA/viewform"
+    },
+    "images": ["/events/6/pic1.jpg"],
+    "stats": {
+      "participants": 50,
+      "time": "2 hours",
+      "certificate": false,
+      "prize": true,
+      "entry_fee": "Free"
+    }
+  },
+  {
+    "id": 5,
+    "featured": false,
+    "name_1": "Virtual Webinar:",
+    "name_2": "Counselling and Experience Sharing",
+    "desc": "This event is packed with Introduction and Beginner level courses of JS. The session will cover all the basics of Javascript and how you can start your career as a Javascript Developer.",
+    "year": 2022,
+    "date": "2022-02-12",
+    "time": "11:00 AM - 1:00 PM",
+    "venue": "Online - Microsoft Teams",
+    "organizer": ["BOSC"],
+    "partners": ["BOSR-Club"],
+    "mentors": [],
+    "guests": [
+      {
+        "name": "Dil Shahi",
+        "image": "/default_mentor.jpg",
+        "designation": "CEO at Kasturi Sanjaal Pvt. Ltd.",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.facebook.com/dshahi468"
+      },
+      {
+        "name": "Kshitij Dhakal",
+        "image": "/default_mentor.jpg",
+        "designation": "Android Developer",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.facebook.com/kshitij.dhakal.3"
+      },
+      {
+        "name": "Sijan Neupane",
+        "image": "/default_mentor.jpg",
+        "designation": "Software Engineer at Great Bear Technologies",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.linkedin.com/in/sijanneupane"
+      }
+    ],
+    "cover_photo": "/events/5/cover.jpg",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "links": {
+      "blog": "/blogs/5",
+      "social": "https://www.facebook.com/share/p/1ALLRXaisi/",
+      "registration": "https://forms.gle/xjuMqbtRXeiUDYJg8"
+    },
+    "images": ["/events/5/pic1.jpg"],
+    "stats": {
+      "participants": 20,
+      "time": "2 hours",
+      "certificate": false,
+      "prize": true,
+      "entry_fee": "Free"
+    }
+  },
+  {
+    "id": 4,
+    "featured": false,
+    "name_1": "Career Conclave:",
+    "name_2": "2078",
+    "desc": "The biggest educational event dedicated for +2 pass out students in Chitwan. This event is being organised with the aim of bringing together the students and Colleges of Chitwan. It will act as a bridge between those confused students and the faculties of University. Teachers and expertise of different field will be providing detailed knowledge about different fields in which students can build their career on. Let's Scooby-Doo this Grand Event!!!!",
+    "year": 2022,
+    "date": "2022-01-01",
+    "time": "11:00 AM - 4:00 PM",
+    "venue": "Hotel Mansarovar, Narayangarh, Narayani Kinar",
+    "organizer": ["BOSC", "CSITAN-Chitwan"],
+    "partners": ["BOSR-Club", "CSITAN-Chitwan"],
+    "mentors": [],
+    "guests": [],
+    "cover_photo": "/events/4/cover.jpg",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "links": {
+      "blog": "/blogs/4",
+      "social": "https://www.facebook.com/share/p/12B5nmpB4Sy/",
+      "registration": "https://docs.google.com/forms/d/e/1FAIpQLSf_vqWGxIO_6Rp8ZLOKmCRLK8N8Q5utsnGqA7lGuWjSdMD9hA/viewform?fbclid=IwY2xjawGWxchleHRuA2FlbQIxMAABHW1JczuEZraXNTaALBu_8YoEsi15TMdm-MLm2LNRsuwZYsIcWXRJnb68Sg_aem_kVnIiZ0q7In8_aM-FEIOqw"
+    },
+    "images": [],
+    "stats": {
+      "participants": 60,
+      "time": "3 hours",
+      "certificate": false,
+      "prize": false,
+      "entry_fee": "Free"
+    }
+  },
+  {
+    "id": 3,
+    "featured": false,
+    "name_1": "Virtual Webinar:",
+    "name_2": "Javascript",
+    "desc": "This event is packed with Introduction and Beginner level courses of JS. The session will cover all the basics of Javascript and how you can start your career as a Javascript Developer.",
+    "year": 2021,
+    "date": "2021-07-17",
+    "time": "05:00 PM",
+    "venue": "Online - Google Meet",
+    "organizer": ["BOSC"],
+    "partners": ["BOSR-Club"],
+    "mentors": [
+      {
+        "name": "Saroj Dahal",
+        "image": "/default_mentor.jpg",
+        "designation": "Web and Desktop App Developer",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.facebook.com/saroj.dahal.9"
+      }
+    ],
+    "guests": [],
+    "cover_photo": "/events/3/cover.jpg",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "links": {
+      "blog": "/blogs/3",
+      "social": "https://www.facebook.com/share/p/12B5nmpB4Sy/",
+      "registration": "https://docs.google.com/forms/d/e/1FAIpQLSf_vqWGxIO_6Rp8ZLOKmCRLK8N8Q5utsnGqA7lGuWjSdMD9hA/viewform?fbclid=IwY2xjawGWxchleHRuA2FlbQIxMAABHW1JczuEZraXNTaALBu_8YoEsi15TMdm-MLm2LNRsuwZYsIcWXRJnb68Sg_aem_kVnIiZ0q7In8_aM-FEIOqw"
+    },
+    "images": [],
+    "stats": {
+      "participants": 40,
+      "time": "2 hours",
+      "certificate": false,
+      "prize": false,
+      "entry_fee": "Free"
+    }
+  },
+  {
+    "id": 2,
+    "featured": false,
+    "name_1": "Getting Started:",
+    "name_2": "Bug Bounty 2021",
+    "desc": "This event will guide you to start career as professional bug hunter. Our mentor will guide you the ways you may find bugs and how you can report bugs. The session will cover full information about current scenario of bug hunting. We have inspirational bug bounty hunters from Nepal as guests who will share their journey as bug bounty hunter and suggest you the basics of getting started.",
+    "year": 2021,
+    "date": "2021-06-05",
+    "time": "05:00 - 7:00 PM",
+    "venue": "Online - Google Meet",
+    "organizer": ["BOSC"],
+    "partners": ["BOSR-Club"],
+    "mentors": [
+      {
+        "name": "Captain Nick Lucifer",
+        "image": "/default_mentor.jpg",
+        "designation": "Bug Bounty Hunter",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.facebook.com/nick.lucifer.7"
+      }
+    ],
+    "guests": [
+      {
+        "name": "Bishal Shrestha",
+        "image": "/default_mentor.jpg",
+        "designation": "Bug Bounty Hunter",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.facebook.com/bishal.shrestha.9"
+      },
+      {
+        "name": "Binit Ghimire",
+        "image": "/default_mentor.jpg",
+        "designation": "Bug Bounty Hunter",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.facebook.com/binit.ghimire.7"
+      },
+      {
+        "name": "Saughat Pokhrel",
+        "image": "/default_mentor.jpg",
+        "designation": "Bug Bounty Hunter",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.facebook.com/saughat.pokhrel.7"
+      }
+    ],
+    "cover_photo": "/events/2/cover.jpg",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "links": {
+      "blog": "/blogs/2",
+      "social": "https://www.facebook.com/share/p/12H8XDzChaR/",
+      "registration": "https://forms.gle/i1RrUoX6gYXEjTgo7"
+    },
+    "images": ["/events/2/pic1.jpg"],
+    "stats": {
+      "participants": 155,
+      "time": "3 hours",
+      "certificate": false,
+      "prize": false,
+      "entry_fee": "Free"
+    }
+  },
+  {
+    "id": 1,
+    "featured": false,
+    "name_1": "Virtual Webinar:",
+    "name_2": "Git & GitHub",
+    "desc": "The webinar will cover all the Essentials of Git & Github to get you started. Event will guide you to Opensource community & set your path as Opensource developer.",
+    "year": 2021,
+    "date": "2021-05-05",
+    "time": "02:00 PM",
+    "venue": "Online - Microsoft Teams",
+    "organizer": ["BOSC"],
+    "partners": ["CSITAN-Chitwan", "BOSR-Club"],
+    "mentors": [
+      {
+        "name": "Ananta Mishra",
+        "image": "/default_mentor.jpg",
+        "designation": "Frontend Developer",
+        "tag": "Open Source Enthusiast",
+        "connect": "https://www.facebook.com/ananta.mishra.9"
+      }
+    ],
+    "guests": [],
+    "cover_photo": "/events/1/cover.jpg",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "links": {
+      "blog": "/blogs/1",
+      "social": "https://www.facebook.com/share/p/12H8XDzChaR/",
+      "registration": "https://forms.gle/i1RrUoX6gYXEjTgo7"
+    },
+    "images": ["/events/1/pic1.jpg"],
+    "stats": {
+      "participants": 50,
+      "time": "2 hours",
+      "certificate": false,
+      "prize": false,
+      "entry_fee": "Free"
+    }
+  }
+]
