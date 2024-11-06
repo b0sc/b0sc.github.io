@@ -15,7 +15,15 @@ import Topic from "./Topic.astro"
     class="relative flex flex-col items-center md:flex-row my-6 bg-zinc-100 rounded-[45px]"
   >
     <div class="row items-center py-12 px-4 md:px-20 md:w-8/12 md:py-10">
-      <form action="#" class="space-y-8 md:w-full">
+      <form class="space-y-8 md:w-full" id="cn-form">
+        <input
+          id="cn-next"
+          type="hidden"
+          name="_next"
+          value="https://bosc.org.np"
+        />
+        <input id="cn-template" type="hidden" name="_template" value="box" />
+        <input id="cn-captcha" type="hidden" name="_captcha" value="true" />
         <div>
           <strong>Feature your Blog</strong> -- <strong>
             Partner with us</strong
@@ -28,7 +36,7 @@ import Topic from "./Topic.astro"
           >
           <input
             type="text"
-            id="name"
+            id="cn-name"
             name="name"
             class="shadow-sm bg-white border text-black text-base rounded-lg focus:ring-black focus:border-black block w-full p-2.5"
             placeholder="John Doe"
@@ -44,19 +52,22 @@ import Topic from "./Topic.astro"
           >
             <input
               type="email"
-              id="email"
+              id="cn-email"
               name="email"
               class="block p-3 w-full text-base text-black bg-white rounded-lg border shadow-sm focus:ring-black focus:border-black"
               placeholder="john.doe@gmail.com"
               required
             />
             <button
+              id="cn-subs-btn"
               type="submit"
               class="px-4 py-3 m-2 bg-zinc-900 rounded-[14px] justify-center gap-2.5 inline-flex"
             >
-              <div class="text-center text-white text-xl font-normal leading-7">
+              <span
+                class="text-center text-white text-xl font-normal leading-7"
+              >
                 Subscribe
-              </div>
+              </span>
             </button>
           </div>
         </div>
@@ -67,13 +78,15 @@ import Topic from "./Topic.astro"
             >Message</label
           >
           <textarea
-            id="message"
+            id="cn-msg"
+            name="message"
             rows="6"
             class="block p-2.5 w-full text-base text-black bg-white rounded-lg shadow-sm border focus:ring-black focus:border-black"
             placeholder="I really like what BOSC is doing! Keep it up."
           ></textarea>
         </div>
         <button
+          id="cn-msg-btn"
           type="submit"
           class="w-full py-5 bg-zinc-900 rounded-[14px] justify-center gap-2.5 inline-flex"
         >
@@ -82,6 +95,95 @@ import Topic from "./Topic.astro"
           </div>
         </button>
       </form>
+      <script>
+        function handleSubscribe(data: FormData, subscriptionOnly: boolean) {
+          // Remove fields except name and email
+          data.delete("message")
+          data.delete("_next")
+          data.delete("_template")
+          data.delete("_captcha")
+
+          const object = Object.fromEntries(data)
+          const json = JSON.stringify(object)
+
+          fetch("https://send.pageclip.co/gkvJhyG5fe5tl24xWfyxR7UrqiJ42zpt", {
+            method: "POST",
+            body: json,
+            headers: {
+              "Content-Type": "application/json",
+            },
+          })
+            .then((response) => {
+              console.log("Subscription successful:", response.statusText)
+              if (subscriptionOnly) {
+                if (response.status === 200) {
+                  alert("Successfully subscribed! 🎉")
+                }
+                if (response.redirected) {
+                  window.location.href = response.url
+                }
+              }
+            })
+            .catch((error) => {
+              console.error("Error during subscription:", error)
+            })
+        }
+
+        function handleMessage(data: string) {
+          // TODO: notifiy the user that the message is being sent and replace message after success response
+          // formsubmit is free thus is very slow and unreliable reponse is given regarding cors -- [idk] submissions per month
+          // https://web3forms.com/ and https://formspark.io/ are better alternatives with -- 250 submissions per month
+          fetch("https://formsubmit.co/ajax/8c368e944b0e888ffcb863838e3fbc00", {
+            method: "POST",
+            body: data,
+            mode: "cors",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+            },
+            referrerPolicy: "no-referrer-when-downgrade",
+          })
+            .then((response) => {
+              // console.log("Message Response:", response)
+              return response.json()
+            })
+            .then((data) => {
+              console.log("Message Success Response:", data)
+              if (data.success) {
+                alert("Message sent successfully!")
+              }
+            })
+            .catch((error) => console.error("Error sending message:", error))
+        }
+
+        document.getElementById("cn-form")?.addEventListener("submit", (e) => {
+          e.preventDefault()
+          const form = document.getElementById("cn-form") as HTMLFormElement
+          const formData = new FormData(form)
+          const obj = Object.fromEntries(formData)
+          const json = JSON.stringify(obj)
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+          const subscriptionOnly = obj.message === ""
+          if (
+            obj.name === "" ||
+            obj.email === "" ||
+            !emailRegex.test(obj.email?.toString())
+          ) {
+            alert("Common! Fill the form correctly.")
+            return
+          }
+          handleSubscribe(formData, subscriptionOnly)
+          if (!subscriptionOnly) {
+            handleMessage(json)
+          }
+
+          // reset state
+          form.reset()
+          const currentUrl = window.location.href
+          const baseUrl = currentUrl.split("?")[0]
+          window.history.replaceState({}, "", baseUrl)
+        })
+      </script>
     </div>
     <div class="hidden md:grid md:justify-items-end md:w-4/12 md:py-2">
       <img src="./clients/contact.svg" alt="c" width="80%" />
