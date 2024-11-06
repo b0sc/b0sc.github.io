@@ -22,11 +22,17 @@ import { ViewTransitions } from "astro:transitions"
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <ViewTransitions />
+    <ViewTransitions /><link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
   </head>
   <body class="bg-white font-SpaceGrotesk">
     <Navbar />
     <slot />
-    <Footer />
+    <Footer /><script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   </body>
 </html>

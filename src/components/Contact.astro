@@ -1,6 +1,7 @@
 ---
 import Container from "./Container.astro"
 import Topic from "./Topic.astro"
+import Toastify from "toastify-js"
 ---
 
 <Container>
@@ -96,6 +97,12 @@ import Topic from "./Topic.astro"
         </button>
       </form>
       <script>
+        import {
+          NotifySuccess,
+          NotifyError,
+          NotifyMessage,
+        } from "../utils/notify"
+
         function handleSubscribe(data: FormData, subscriptionOnly: boolean) {
           // Remove fields except name and email
           data.delete("message")
@@ -106,25 +113,35 @@ import Topic from "./Topic.astro"
           const object = Object.fromEntries(data)
           const json = JSON.stringify(object)
 
+          let toast: NotifyMessage
+          if (subscriptionOnly) {
+            toast = new NotifyMessage("Subscribing...", -1)
+            toast.show()
+          }
           fetch("https://send.pageclip.co/gkvJhyG5fe5tl24xWfyxR7UrqiJ42zpt", {
             method: "POST",
             body: json,
             headers: {
               "Content-Type": "application/json",
             },
+            referrerPolicy: "origin-when-cross-origin",
+            mode: "cors",
           })
             .then((response) => {
-              console.log("Subscription successful:", response.statusText)
+              console.log("Subscription status:", response.statusText)
               if (subscriptionOnly) {
                 if (response.status === 200) {
-                  alert("Successfully subscribed! 🎉")
+                  toast.hide()
+                  NotifySuccess("Successfully subscribed! 🎉")
                 }
-                if (response.redirected) {
-                  window.location.href = response.url
-                }
+                // if (response.redirected) {
+                //   window.location.href = response.url
+                // }
               }
             })
             .catch((error) => {
+              toast.hide()
+              NotifyError("Unable to subscribe. Still Under Development.")
               console.error("Error during subscription:", error)
             })
         }
@@ -133,6 +150,11 @@ import Topic from "./Topic.astro"
           // TODO: notifiy the user that the message is being sent and replace message after success response
           // formsubmit is free thus is very slow and unreliable reponse is given regarding cors -- [idk] submissions per month
           // https://web3forms.com/ and https://formspark.io/ are better alternatives with -- 250 submissions per month
+          const msg = new NotifyMessage(
+            "Sending... Feel free to browse the website.",
+            -1
+          )
+          msg.show()
           fetch("https://formsubmit.co/ajax/8c368e944b0e888ffcb863838e3fbc00", {
             method: "POST",
             body: data,
@@ -141,7 +163,7 @@ import Topic from "./Topic.astro"
               "Content-Type": "application/json",
               Accept: "application/json",
             },
-            referrerPolicy: "no-referrer-when-downgrade",
+            referrerPolicy: "origin-when-cross-origin",
           })
             .then((response) => {
               // console.log("Message Response:", response)
@@ -150,10 +172,15 @@ import Topic from "./Topic.astro"
             .then((data) => {
               console.log("Message Success Response:", data)
               if (data.success) {
-                alert("Message sent successfully!")
+                msg.hide()
+                NotifySuccess("Message sent successfully!")
               }
             })
-            .catch((error) => console.error("Error sending message:", error))
+            .catch((error) => {
+              msg.hide()
+              console.error("Error sending message:", error)
+              NotifyError("Message partially sent. Still Under Development.")
+            })
         }
 
         document.getElementById("cn-form")?.addEventListener("submit", (e) => {
@@ -169,7 +196,7 @@ import Topic from "./Topic.astro"
             obj.email === "" ||
             !emailRegex.test(obj.email?.toString())
           ) {
-            alert("Common! Fill the form correctly.")
+            NotifyError("Common! Fill the form correctly.")
             return
           }
           handleSubscribe(formData, subscriptionOnly)
