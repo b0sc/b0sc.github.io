@@ -1,5 +1,5 @@
-export const NotifySuccess = (msg: string) => {
-  //   console.log("Toast message sent!")
+export const NotifySuccess = (msg) => {
+  // console.log("Toast message sent!")
 
   // code editor might show error here but it will work fine
   Toastify({
@@ -19,7 +19,7 @@ export const NotifySuccess = (msg: string) => {
   }).showToast()
 }
 
-export const NotifyError = (msg: string) => {
+export const NotifyError = (msg) => {
   Toastify({
     text: msg,
     duration: 3000,
@@ -39,7 +39,7 @@ export const NotifyError = (msg: string) => {
 
 // NotifyMessage class
 export class NotifyMessage {
-  constructor(msg: string, time: number) {
+  constructor(msg, time) {
     this.toast = Toastify({
       text: msg,
       duration: time,
