@@ -9,16 +9,16 @@
     "year": 2024,
     "date": "2024-11-12 - 2024-11-22",
     "time": "00:00 AM",
-    "venue": "Physical - BMC, Naubigha",
+    "venue": "Virtual - Website and Social Media",
     "organizer": ["BOSC"],
     "partners": [],
     "mentors": [],
     "guests": [],
     "cover_photo": "",
-    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/27",
-      "social": "",
+      "social": "https://www.facebook.com/birendraopensourceclub",
       "registration": ""
     },
     "images": [],
@@ -27,13 +27,13 @@
       "time": "10 days",
       "certificate": true,
       "prize": true,
-      "entry_fee": "Free"
+      "entry_fee": 0
     }
   },
   {
     "id": 26,
     "type": "Event",
-    "featured": false,
+    "featured": true,
     "name_1": "Hacktoberfest 2024:",
     "name_2": "Open Contributions",
     "desc": "🎉 Calling all developers and open– source enthusiasts!🚀BOSC Club is excited to kick off contributions for Hactoberfest 2024 💻 A 2 week long event. Let's collaborate, code, and grow the open–source community together 🌍",
@@ -46,7 +46,7 @@
     "mentors": [],
     "guests": [],
     "cover_photo": "/events/26/cover.jpg",
-    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/26",
       "social": "https://www.facebook.com/share/p/1W1nMPSLWz/",
@@ -58,7 +58,14 @@
       "time": "15 days",
       "certificate": false,
       "prize": true,
-      "entry_fee": "Free"
+      "entry_fee": 0,
+      "points": [
+        "☄️  61  Commits",
+        "✅  26  Merged_Pull_Requests",
+        "🍴  25  Forks",
+        "📒  18  Closed_Issues",
+        "⭐  11  Stars"
+      ]
     }
   },
   {
@@ -85,7 +92,7 @@
       }
     ],
     "cover_photo": "/events/25/cover.jpg",
-    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/25",
       "social": "https://www.facebook.com/share/p/12AXrPMrQCX/",
@@ -97,22 +104,22 @@
       "time": "2 hrs",
       "certificate": false,
       "prize": false,
-      "entry_fee": "Free"
+      "entry_fee": 0
     }
   },
   {
     "id": 24,
     "type": "Event",
-    "featured": false,
-    "name_1": "Software Freedom Day:",
-    "name_2": "Celebration 2024",
+    "featured": true,
+    "name_1": "Software Freedom Day 2024:",
+    "name_2": "Celebration",
     "desc": "🌐 Get ready to celebrate innovation and the power of open-source technology at our upcoming Software Freedom Day event! 🚀 It's that time of the year again where you get free gifts, swags, and invaluable guidance from exceptional mentors and speakers in the FOSS industry. Join us to explore the endless possibilities of free and open-source software, share knowledge, and empower communities to embrace digital freedom.",
     "year": 2024,
     "date": "2024-09-21",
     "time": "11:00 AM",
     "venue": "Physical - BMC, Naubigha",
     "organizer": ["BOSC"],
-    "partners": [],
+    "partners": ["CFC-Chitwan", "Dev </> Community Nepal", "CSITAN-Chitwan"],
     "mentors": [],
     "guests": [
       {
@@ -145,7 +152,7 @@
       }
     ],
     "cover_photo": "/events/24/cover.jpg",
-    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "background": "bg-lime",
     "links": {
       "blog": "/blogs/24",
       "social": "https://www.facebook.com/share/p/15ZX52HQYi/",
@@ -161,7 +168,14 @@
       "time": "5 hrs",
       "certificate": false,
       "prize": true,
-      "entry_fee": "Free"
+      "entry_fee": 0,
+      "points": [
+        "🧑🏻‍💻 50+ audience",
+        "🗿  8+ Sessions (Activities, Games and Open Mic)",
+        "🌏  4+ College's and Faculties Participation",
+        "🎁  10+ Swags and Gifts Distributed",
+        "🎗  Juniors, Seniors and Graduates"
+      ]
     }
   },
   {
@@ -188,7 +202,7 @@
       }
     ],
     "cover_photo": "/events/23/cover.jpg",
-    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/23",
       "social": "https://www.facebook.com/share/p/17p9AnqeE5/",
@@ -200,7 +214,7 @@
       "time": "4 hrs",
       "certificate": true,
       "prize": true,
-      "entry_fee": "BOSC Membership"
+      "entry_fee": 0
     }
   },
   {
@@ -227,7 +241,7 @@
     ],
     "guests": [],
     "cover_photo": "/events/22/cover.jpg",
-    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/22",
       "social": "https://www.facebook.com/share/p/15c2sh91eQ/",
@@ -243,7 +257,7 @@
       "time": "4 hrs",
       "certificate": false,
       "prize": false,
-      "entry_fee": "Rs.100"
+      "entry_fee": 100
     }
   },
   {
@@ -284,7 +298,7 @@
       }
     ],
     "cover_photo": "/events/21/cover.jpg",
-    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/21",
       "social": "https://www.facebook.com/share/p/1B79GLZL5T/",
@@ -301,7 +315,7 @@
       "time": "2 hrs",
       "certificate": false,
       "prize": true,
-      "entry_fee": "Free"
+      "entry_fee": 0
     }
   },
   {
@@ -328,7 +342,7 @@
     ],
     "guests": [],
     "cover_photo": "/events/20/cover.jpg",
-    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/20",
       "social": "https://www.facebook.com/share/p/1DTTomE7Vm/",
@@ -340,7 +354,7 @@
       "time": "3 hrs - 3 days",
       "certificate": true,
       "prize": true,
-      "entry_fee": "Free"
+      "entry_fee": 0
     }
   },
   {
@@ -384,7 +398,7 @@
     ],
     "guests": [],
     "cover_photo": "/events/19/cover.jpg",
-    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/19",
       "social": "https://www.facebook.com/share/p/1BYNgRxqC2/",
@@ -400,7 +414,7 @@
       "time": "3 hrs",
       "certificate": true,
       "prize": true,
-      "entry_fee": "Free"
+      "entry_fee": 0
     }
   },
   {
@@ -438,7 +452,7 @@
     ],
     "guests": [],
     "cover_photo": "/events/18/cover.jpg",
-    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/18",
       "social": "https://www.facebook.com/share/p/17ki415CGn/",
@@ -450,7 +464,7 @@
       "time": "3 hrs",
       "certificate": false,
       "prize": true,
-      "entry_fee": "Free"
+      "entry_fee": 0
     }
   },
   {
@@ -469,7 +483,7 @@
     "mentors": [],
     "guests": [],
     "cover_photo": "/events/17/cover.jpg",
-    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/17",
       "social": "https://www.facebook.com/share/p/1YTBKzFZLw/",
@@ -481,7 +495,7 @@
       "time": "2 hrs",
       "certificate": false,
       "prize": true,
-      "entry_fee": "Free"
+      "entry_fee": 0
     }
   },
   {
@@ -522,7 +536,7 @@
     ],
     "guests": [],
     "cover_photo": "/events/16/cover.jpg",
-    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/16",
       "social": "https://www.facebook.com/share/p/14zNrKiuty/",
@@ -534,7 +548,7 @@
       "time": "20 days",
       "certificate": true,
       "prize": true,
-      "entry_fee": "Free"
+      "entry_fee": 0
     }
   },
   {
@@ -583,7 +597,7 @@
       }
     ],
     "cover_photo": "/events/15/cover.jpg",
-    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/15",
       "social": "https://www.facebook.com/share/p/18ee2mUkgm/",
@@ -599,7 +613,7 @@
       "time": "4 hrs",
       "certificate": true,
       "prize": true,
-      "entry_fee": "Free"
+      "entry_fee": 0
     }
   },
   {
@@ -633,7 +647,7 @@
     ],
     "guests": [],
     "cover_photo": "/events/14/cover.jpg",
-    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/14",
       "social": "https://www.facebook.com/share/p/15571V8j8M/",
@@ -649,7 +663,7 @@
       "time": "6 hrs - 2 days",
       "certificate": true,
       "prize": false,
-      "entry_fee": "Free"
+      "entry_fee": 0
     }
   },
   {
@@ -714,7 +728,7 @@
       }
     ],
     "cover_photo": "/events/13/cover.jpg",
-    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/13",
       "social": "https://www.facebook.com/share/p/15UcVngCDm/",
@@ -730,7 +744,14 @@
       "time": "2 days",
       "certificate": true,
       "prize": true,
-      "entry_fee": "Free"
+      "entry_fee": 0,
+      "points": [
+        "🧑🏻‍💻 100+ participants from all over Nepal   safas  asf as f asf a",
+        "🗿  10+ Mentors and Guest Speakers",
+        "🎁  NPR 25k worth Prize Pool",
+        "🧑🏻‍💻 2 days Non Stop Action",
+        "💲 Free Entry, Free Food and Accommodation"
+      ]
     }
   },
   {
@@ -770,7 +791,7 @@
     ],
     "guests": [],
     "cover_photo": "/events/12/cover.jpg",
-    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/12",
       "social": "https://www.facebook.com/share/p/1FCtV8T5QY/",
@@ -786,7 +807,7 @@
       "time": "3 days - 3 different events",
       "certificate": false,
       "prize": true,
-      "entry_fee": "Free"
+      "entry_fee": 0
     }
   },
   {
@@ -823,7 +844,7 @@
     ],
     "guests": [],
     "cover_photo": "/events/11/cover.jpg",
-    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/11",
       "social": "https://www.facebook.com/share/p/15YqoDYGUE/",
@@ -839,7 +860,7 @@
       "time": "3 hours",
       "certificate": false,
       "prize": true,
-      "entry_fee": "Free"
+      "entry_fee": 0
     }
   },
   {
@@ -858,7 +879,7 @@
     "mentors": [],
     "guests": [],
     "cover_photo": "/events/10/cover.jpg",
-    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/10",
       "social": "https://www.facebook.com/share/p/1B71VQ7rP8/",
@@ -870,7 +891,7 @@
       "time": "3 hours",
       "certificate": false,
       "prize": true,
-      "entry_fee": "Free"
+      "entry_fee": 0
     }
   },
   {
@@ -911,7 +932,7 @@
     ],
     "guests": [],
     "cover_photo": "/events/9/cover.jpg",
-    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/9",
       "social": "https://www.facebook.com/share/p/15V8Bq3FkL/",
@@ -923,7 +944,7 @@
       "time": "2 hours",
       "certificate": false,
       "prize": false,
-      "entry_fee": "Free"
+      "entry_fee": 0
     }
   },
   {
@@ -964,7 +985,7 @@
       }
     ],
     "cover_photo": "/events/8/cover.jpg",
-    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/8",
       "social": "https://www.facebook.com/share/p/1CZEaRqEq2/",
@@ -976,7 +997,7 @@
       "time": "4 hours",
       "certificate": false,
       "prize": true,
-      "entry_fee": "Free"
+      "entry_fee": 0
     }
   },
   {
@@ -1001,7 +1022,7 @@
     "mentors": [],
     "guests": [],
     "cover_photo": "/events/7/cover.jpg",
-    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/7",
       "social": "https://www.facebook.com/share/p/1Ay3ZQ1eoa/",
@@ -1013,7 +1034,7 @@
       "time": "2 hours",
       "certificate": false,
       "prize": false,
-      "entry_fee": "Free"
+      "entry_fee": 0
     }
   },
   {
@@ -1047,7 +1068,7 @@
     ],
     "guests": [],
     "cover_photo": "/events/6/cover.jpg",
-    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/6",
       "social": "https://www.facebook.com/share/p/17yeXFSzKF/",
@@ -1059,7 +1080,7 @@
       "time": "2 hours",
       "certificate": false,
       "prize": true,
-      "entry_fee": "Free"
+      "entry_fee": 0
     }
   },
   {
@@ -1100,7 +1121,7 @@
       }
     ],
     "cover_photo": "/events/5/cover.jpg",
-    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/5",
       "social": "https://www.facebook.com/share/p/1ALLRXaisi/",
@@ -1112,7 +1133,7 @@
       "time": "2 hours",
       "certificate": false,
       "prize": true,
-      "entry_fee": "Free"
+      "entry_fee": 0
     }
   },
   {
@@ -1131,7 +1152,7 @@
     "mentors": [],
     "guests": [],
     "cover_photo": "/events/4/cover.jpg",
-    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/4",
       "social": "https://www.facebook.com/share/p/12B5nmpB4Sy/",
@@ -1143,7 +1164,7 @@
       "time": "3 hours",
       "certificate": false,
       "prize": false,
-      "entry_fee": "Free"
+      "entry_fee": 0
     }
   },
   {
@@ -1170,7 +1191,7 @@
     ],
     "guests": [],
     "cover_photo": "/events/3/cover.jpg",
-    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/3",
       "social": "https://www.facebook.com/share/p/12B5nmpB4Sy/",
@@ -1182,7 +1203,7 @@
       "time": "2 hours",
       "certificate": false,
       "prize": false,
-      "entry_fee": "Free"
+      "entry_fee": 0
     }
   },
   {
@@ -1231,7 +1252,7 @@
       }
     ],
     "cover_photo": "/events/2/cover.jpg",
-    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/2",
       "social": "https://www.facebook.com/share/p/12H8XDzChaR/",
@@ -1243,7 +1264,7 @@
       "time": "3 hours",
       "certificate": false,
       "prize": false,
-      "entry_fee": "Free"
+      "entry_fee": 0
     }
   },
   {
@@ -1270,7 +1291,7 @@
     ],
     "guests": [],
     "cover_photo": "/events/1/cover.jpg",
-    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/1",
       "social": "https://www.facebook.com/share/p/12H8XDzChaR/",
@@ -1282,7 +1303,7 @@
       "time": "2 hours",
       "certificate": false,
       "prize": false,
-      "entry_fee": "Free"
+      "entry_fee": 0
     }
   }
 ]

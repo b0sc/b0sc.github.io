@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "name1": "OSM Hackfest 2023",
-    "name2": "Chitwan Region",
+    "name1": "Setting Up Servers",
+    "name2": "and Routers",
     "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "/services/ag.svg",
     "link": "/",
@@ -10,8 +10,8 @@
   },
   {
     "id": 2,
-    "name1": "MITRE ATT&CK and",
-    "name2": "OSINT Framework session",
+    "name1": "Hardening your Linux",
+    "name2": "and Network Security",
     "background": "h-[310px] p-12 bg-lime rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "/services/ag.svg",
     "link": "/",
@@ -19,8 +19,8 @@
   },
   {
     "id": 3,
-    "name1": "Byte-Sized Beginnings:",
-    "name2": "Web Dev Workshop",
+    "name1": "Python Programming:",
+    "name2": "Resources for Beginners",
     "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
     "arrow": "/services/aw.svg",
     "link": "/",
@@ -28,8 +28,8 @@
   },
   {
     "id": 4,
-    "name1": "Software Freedom Day",
-    "name2": "Celebration",
+    "name1": "Grasping the Opportunities:",
+    "name2": "Networking and Communication",
     "background": "h-[310px] p-12 bg-lime rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "/services/ag.svg",
     "link": "/",

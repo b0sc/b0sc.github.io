@@ -3,78 +3,78 @@
     {
       "title": "President",
       "name": "Achyut Koirala",
-      "description": "10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy",
-      "profile": "/team/prof.png",
-      "link": "/"
+      "description": "2+ Years of Experience in Backend Development. Proficient in Go and Node.js. Open Source Contributor and API Penetration Tester.",
+      "profile": "/team/tenure-2025/achyut-president.jpeg",
+      "link": "https://achyutkoirala.com.np"
     },
     {
       "title": "Vice-President",
       "name": "Shriram Lamichhane",
-      "description": "7+ years of experience in project management and team leadership. Strong organizational and communication skills",
-      "profile": "/team/prof.png",
-      "link": "/"
+      "description": "2+ Years of Experience as Android Developer. Proficient in Java and Kotlin. Open Source Enthusiast. Cyber Security Enthusiast and Freelancer.",
+      "profile": "/team/tenure-2025/shriram-vp.jpg",
+      "link": "https://www.youtube.com/thesrzone"
     },
     {
       "title": "Secretary",
       "name": "Smarika Bhatta",
-      "description": "5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization",
-      "profile": "/team/prof.png",
-      "link": "/"
+      "description": "Frontend Developer. Proficient in React and Vue. Open Source Enthusiast. Skilled in Leadership and Management.",
+      "profile": "/team/tenure-2025/smarika-secretary.jpg",
+      "link": "https://www.facebook.com/smarika.bhatta.925"
     },
     {
       "title": "Joint-Secretary",
       "name": "Jasmine Bhagat",
-      "description": "5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization",
-      "profile": "/team/prof.png",
-      "link": "/"
+      "description": "1+ Year of Experience in Cyber Security. Frontend Developer. Actively Practice Cyber Security. Skilled in Leadership and Management.",
+      "profile": "/team/tenure-2025/jasmine-js.png",
+      "link": "https://www.facebook.com/jasmine.bhagat.733"
     },
     {
       "title": "Treasurer",
       "name": "Roshani Sharma",
-      "description": "1 year of experience in digital marketing and content creation. Proficient in social media management and community building",
-      "profile": "/team/roshani.png",
+      "description": "1+ year of Experience in digital marketing and content creation. Proficient in social media management and community building",
+      "profile": "/team/tenure-2025/roshani-treasurer.png",
       "link": "https://www.linkedin.com/in/roshani-sharma-634217282/"
     },
     {
       "title": "Web Engineer",
       "name": "Bijesh Ghimire",
-      "description": "5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization",
+      "description": "Frontend Developer. Proficient in React and Vue. Open Source Enthusiast. Skilled in Bash Scripting, Automation and CI/CD and Linux Administration and Network Hardening.",
       "profile": "/team/prof.png",
-      "link": "/"
+      "link": "https://github.com/BIIJESH"
     },
     {
       "title": "Graphics Handler",
       "name": "L.F. Pemi Magar",
-      "description": "5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization",
-      "profile": "/team/prof.png",
-      "link": "/"
+      "description": "2+ years of experience in Graphics Designing, UI/UX and content creation. Proficient in Photoshop, Canva, Figma, keyword research and on-page optimization",
+      "profile": "/team/tenure-2025/lf-gh.png",
+      "link": "https://lfmgr.github.io/Portfolio/"
     },
     {
       "title": "Graphics Handler",
       "name": "Yogesh Sunar",
-      "description": "5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization",
-      "profile": "/team/prof.png",
-      "link": "/"
+      "description": "1+ years of experience in Graphics Designing, UI/UX and content creation. Proficient in Photoshop, Canva, Figma, keyword research and on-page optimization",
+      "profile": "/team/tenure-2025/yogesh-gh.jpg",
+      "link": "https://www.facebook.com/yogesh.sunar.507"
     },
     {
-      "title": "Community Manager",
+      "title": "Social Media Handler",
       "name": "Yasika Shrestha",
-      "description": "5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization",
-      "profile": "/team/prof.png",
-      "link": "/"
+      "description": "2+ years of experience in content creation and Social Media Handling. Proficient in keyword research and on-page optimization",
+      "profile": "/team/tenure-2025/yasika-cm.jpg",
+      "link": "https://www.facebook.com/yasika.shrestha.96"
     },
     {
-      "title": "Social Media Manager",
+      "title": "Social Media Handler",
       "name": "Bimal Rana Magar",
-      "description": "5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization",
-      "profile": "/team/prof.png",
-      "link": "/"
+      "description": "1+ years of experience in content creation and Social Media Handling. Proficient in keyword research and on-page optimization",
+      "profile": "/team/tenure-2025/bimal-cm.png",
+      "link": "https://www.facebook.com/bimal.ranamagar.161"
     },
     {
       "title": "Outreach Manager",
       "name": "Sandhya Bhattarai",
-      "description": "A strong communicator with leadership experience and skilled in teamwork ",
-      "profile": "/team/sandhya.jpg",
+      "description": "Frontend Developer. Proficient in React and Vue. Open Source Enthusiast. A strong communicator with leadership experience and skilled in teamwork ",
+      "profile": "/team/tenure-2025/sandhya-om.jpg",
       "link": "/www.linkedin.com/in/sandhya-bhattarai"
     }
   ],

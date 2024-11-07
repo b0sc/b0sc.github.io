@@ -1,5 +1,6 @@
 ---
 import Container from "./Container.astro"
+import ArticleIcon from "./Icons/ArticleIcon.astro"
 import Topic from "./Topic.astro"
 ---
 
@@ -7,7 +8,7 @@ import Topic from "./Topic.astro"
   <div class="relative flex flex-col items-center md:flex-row" id="contact">
     <Topic
       title="Contact"
-      description="NEWSLETTER Launched: Subscribe to get updates on our events and workshops."
+      description="Feature your Blog -- Partner with us -- Or just say Hi -- You can also mail us at mail@bosc.org.np directly."
     />
   </div>
 
@@ -15,20 +16,18 @@ import Topic from "./Topic.astro"
     class="relative flex flex-col items-center md:flex-row my-6 bg-zinc-100 rounded-[45px]"
   >
     <div class="row items-center py-12 px-4 md:px-20 md:w-8/12 md:py-10">
-      <form class="space-y-8 md:w-full" id="cn-form">
-        <input
-          id="cn-next"
-          type="hidden"
-          name="_next"
-          value="https://bosc.org.np"
-        />
-        <input id="cn-template" type="hidden" name="_template" value="box" />
-        <input id="cn-captcha" type="hidden" name="_captcha" value="true" />
+      <form class="space-y-4 md:w-full" id="cn-form">
         <div>
-          <strong>Feature your Blog</strong> -- <strong>
-            Partner with us</strong
-          > -- <strong> Or just say Hi</strong>.
-          <br /> You can also mail us at <strong>mail@bosc.org.np</strong> directly.
+          <span
+            class="bg-lime text-black text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded"
+          >
+            <ArticleIcon />
+            <strong>NEWSLETTER - Launched 💬</strong>
+          </span>
+          <br />
+          <strong>Subscribe </strong> to get updates of our <strong>
+            future events</strong
+          > and workshops.
         </div>
         <div>
           <label for="name" class="block mb-2 text-base font-medium text-black"
@@ -61,11 +60,9 @@ import Topic from "./Topic.astro"
             <button
               id="cn-subs-btn"
               type="submit"
-              class="px-4 py-3 m-2 bg-zinc-900 rounded-[14px] justify-center gap-2.5 inline-flex"
+              class="px-4 py-3 m-2 text-white bg-zinc-900 rounded-[14px] justify-center gap-2.5 inline-flex hover:bg-zinc-100 hover:text-black border"
             >
-              <span
-                class="text-center text-white text-xl font-normal leading-7"
-              >
+              <span class="text-center text-xl font-normal leading-7">
                 Subscribe
               </span>
             </button>
@@ -88,12 +85,20 @@ import Topic from "./Topic.astro"
         <button
           id="cn-msg-btn"
           type="submit"
-          class="w-full py-5 bg-zinc-900 rounded-[14px] justify-center gap-2.5 inline-flex"
+          class="w-full text-white py-5 bg-zinc-900 rounded-[14px] justify-center gap-2.5 inline-flex hover:text-black hover:bg-zinc-100 border"
         >
-          <div class="text-center text-white text-xl font-normal leading-7">
+          <div class="text-center text-xl font-normal leading-7">
             Send Message
           </div>
         </button>
+        <input
+          id="cn-next"
+          type="hidden"
+          name="_next"
+          value="https://bosc.org.np"
+        />
+        <input id="cn-template" type="hidden" name="_template" value="box" />
+        <input id="cn-captcha" type="hidden" name="_captcha" value="true" />
       </form>
       <script>
         import {
@@ -140,7 +145,17 @@ import Topic from "./Topic.astro"
             })
             .catch((error) => {
               toast.hide()
-              NotifyError("Unable to subscribe. Still Under Development.")
+              if (
+                error.message === "Failed to fetch" &&
+                error.name === "TypeError"
+              ) {
+                // if the error is due to CORS
+                NotifySuccess(
+                  "Partially Subscribed. We will get back to you soon."
+                )
+              } else {
+                NotifyError("Unable to subscribe. Still Under Development.")
+              }
               console.error("Error during subscription:", error)
             })
         }
@@ -165,8 +180,11 @@ import Topic from "./Topic.astro"
             referrerPolicy: "origin-when-cross-origin",
           })
             .then((response) => {
-              // console.log("Message Response:", response)
-              return response.json()
+              if (response.ok) {
+                return response.json()
+              } else {
+                console.log("Failed to send message. response:", response)
+              }
             })
             .then((data) => {
               console.log("Message Success Response:", data)
@@ -177,8 +195,17 @@ import Topic from "./Topic.astro"
             })
             .catch((error) => {
               msg.hide()
-              console.error("Error sending message:", error)
-              NotifyError("Message partially sent. Still Under Development.")
+              if (
+                error.message === "Failed to fetch" &&
+                error.name === "TypeError"
+              ) {
+                // if the error is due to CORS
+                NotifySuccess(
+                  "Message partially sent. We will get back to you soon."
+                )
+              } else {
+                NotifyError("Failed to send message. Still Under Development.")
+              }
             })
         }
 

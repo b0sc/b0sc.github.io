@@ -1,7 +1,5 @@
 export const NotifySuccess = (msg) => {
-  // console.log("Toast message sent!")
-
-  // code editor might show error here but it will work fine
+  // code editor might show import error when the file is typescript
   Toastify({
     text: msg,
     duration: 3000,
@@ -43,7 +41,6 @@ export class NotifyMessage {
     this.toast = Toastify({
       text: msg,
       duration: time,
-      //   destination: "/",
       newWindow: false,
       close: false,
       gravity: "bottom",

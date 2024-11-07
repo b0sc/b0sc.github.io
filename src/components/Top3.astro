@@ -1,0 +1,101 @@
+---
+import events from "../components/Data/events.json"
+import VideoIcon from "./Icons/VideoIcon.astro"
+---
+
+<div class="py-6 px-0 mx-auto max-w-screen-xl lg:py-8 lg:px-4 sm:py-12 md:py-8">
+  <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+    <h2 class="mb-3 text-4xl tracking-tight font-extrabold text-gray-900">
+      Featured Events
+    </h2>
+    <p class="mb-4 font-light text-gray-500 sm:text-xl">
+      Since 2021, BOSC has sucessfully conducted
+      <strong> {events.length}</strong> events and workshops.
+      <a class="inline font-normal" href="/blogs"> See All </a>
+      <!-- change href to /timeline when timeline is done -->
+    </p>
+  </div>
+  <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+    <!-- Card -->
+    {
+      events
+        .filter((event, i) => event.featured)
+        .sort((a, b) => b.id - a.id)
+        .slice(0, 3)
+        .map((event, i) => (
+          <div
+            class={
+              "flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 rounded-3xl justify-between shadow-card" +
+              " " +
+              // event.background +
+              ((i == 0 && "bg-zinc-200") ||
+                (i == 1 && "bg-zinc-300") ||
+                (i == 2 && "bg-zinc-200"))
+            }
+          >
+            <span class="bg-lime text-black text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded w-max mx-auto mb-2">
+              <VideoIcon />
+              <strong>
+                {i == 0 && "Influential"}
+                {i == 1 && "People's Favorite"}
+                {i == 2 && "Most Popular"}
+              </strong>
+            </span>
+            <h3 class="mb-4 text-2xl font-semibold">
+              {event.name_1} {event.name_2}
+            </h3>
+            <p class="font-light text-gray-500 sm:text-lg">
+              {(event.stats.prize ||
+                event.stats.certificate ||
+                event.stats.entry_fee === 0) && (
+                <span>
+                  {event.stats.prize && (
+                    <span class="bg-zinc-800 text-lime text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
+                      Prizes
+                    </span>
+                  )}
+                  {event.stats.certificate && (
+                    <span class="bg-zinc-800 text-lime text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
+                      Certificate
+                    </span>
+                  )}
+                  {event.stats.entry_fee === 0 && (
+                    <span class="bg-zinc-800 text-lime text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
+                      Free Entry
+                    </span>
+                  )}
+                </span>
+              )}
+            </p>
+            <div class="flex justify-center items-baseline my-8">
+              <img
+                src={
+                  event.images.length === 0
+                    ? event.cover_photo
+                    : event.images[0]
+                }
+                alt={event.name_1}
+                class="rounded-2xl"
+              />
+            </div>
+            <div class="max-w-lg mx-auto flex flex-col justify-between ">
+              <ul role="list" class="mb-8 space-y-4 text-left">
+                {event.stats.points &&
+                  event.stats.points.slice(0, 5).map((point) => (
+                    <li class="flex items-center space-x-3">
+                      <span class=" line-clamp-1">{point}</span>
+                    </li>
+                  ))}
+              </ul>
+              <a
+                href={event.links.blog}
+                class="text-black hover:text-white bg-lime hover:bg-black focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+              >
+                Read More
+              </a>
+            </div>
+          </div>
+        ))
+    }
+  </div>
+</div>
