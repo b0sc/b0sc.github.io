@@ -1,10 +1,21 @@
 ---
-import Container from "../components/Container.astro"
 import Layout from "../layouts/Layout.astro"
-// import articlesData from "../components//Data/articles.json"
-import eventsData from "../components/Data/events.json"
+import Container from "../components/Container.astro"
 import ArticleIcon from "../components/Icons/ArticleIcon.astro"
 import VideoIcon from "../components/Icons/VideoIcon.astro"
+import eventsData from "../components/Data/events.json"
+import type { CollectionEntry } from "astro:content"
+import { getCollection } from "astro:content"
+import ArticleCard from "../components/ArticleCard.astro"
+
+const currentPage: number | null = +Astro.url.searchParams.get("page")! || 1
+
+const allBlogArticles: CollectionEntry<"blog">[] = (
+  await getCollection("blog")
+).sort(
+  (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
+    b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+)
 ---
 
 <Layout title="BOSC - Blog">
@@ -23,10 +34,12 @@ import VideoIcon from "../components/Icons/VideoIcon.astro"
           </p>
         </div>
         <div class="grid gap-8 lg:grid-cols-2">
+          {allBlogArticles.map((article) => <ArticleCard article={article} />)}
+        </div>
+        <div class="grid gap-8 lg:grid-cols-2">
           {
             eventsData.map(
               ({
-                id,
                 type,
                 name_1,
                 name_2,
@@ -34,16 +47,18 @@ import VideoIcon from "../components/Icons/VideoIcon.astro"
                 desc,
                 organizer,
                 cover_photo,
+                id,
               }) => (
                 <article class="p-6 bg-white rounded-3xl border border-gray-200 shadow-card">
                   <div class="flex justify-between items-center mb-5 text-gray-500">
                     <span class="bg-lime text-black text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
-                      {type == "Article" ? <ArticleIcon /> : <VideoIcon />}
+                      {type === "Article" ? <ArticleIcon /> : <VideoIcon />}
                       {type}
                     </span>
-                    {organizer.map((name) => (
-                      <span class="font-medium">{name}</span>
-                    ))}
+                    {organizer &&
+                      organizer.map((name: string) => (
+                        <span class="font-medium">{name}</span>
+                      ))}
                     <span class="text-sm">{date}</span>
                   </div>
                   <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
@@ -58,7 +73,7 @@ import VideoIcon from "../components/Icons/VideoIcon.astro"
                         alt="cover"
                       />
                     </div>
-                    <div class=" flex items-center space-x-4">
+                    <div class="flex items-center space-x-4">
                       <p
                         class="mb-5 font-light text-gray-500"
                         style="white-space: pre-line inline-flex items-center "
