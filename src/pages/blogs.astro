@@ -1,109 +1,48 @@
 ---
 import Layout from "../layouts/Layout.astro"
 import Container from "../components/Container.astro"
-import ArticleIcon from "../components/Icons/ArticleIcon.astro"
-import VideoIcon from "../components/Icons/VideoIcon.astro"
 import eventsData from "../components/Data/events.json"
 import type { CollectionEntry } from "astro:content"
 import { getCollection } from "astro:content"
 import ArticleCard from "../components/ArticleCard.astro"
+import EventCard from "../components/EventCard.astro"
 
 const currentPage: number | null = +Astro.url.searchParams.get("page")! || 1
 
-const allBlogArticles: CollectionEntry<"blog">[] = (
-  await getCollection("blog")
-).sort(
+const articles: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
   (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
     b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 )
 ---
 
 <Layout title="BOSC - Blog">
-  <main class="space-y-20">
+  <main>
     <Container>
       <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
+          <!-- <h2
+            class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900"
+          >
+            Articles and Events Blogs
+          </h2> -->
+        </div>
+        <div class="space-y-8">
           <h2
             class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900"
           >
-            Our Blogs
+            Articles
           </h2>
-          <p class="font-light text-gray-500 sm:text-xl">
-            We use an agile approach to test assumptions and connect with the
-            needs of your audience early and often.
-          </p>
-        </div>
-        <div class="grid gap-8 lg:grid-cols-2">
-          {allBlogArticles.map((article) => <ArticleCard article={article} />)}
-        </div>
-        <div class="grid gap-8 lg:grid-cols-2">
-          {
-            eventsData.map(
-              ({
-                type,
-                name_1,
-                name_2,
-                date,
-                desc,
-                organizer,
-                cover_photo,
-                id,
-              }) => (
-                <article class="p-6 bg-white rounded-3xl border border-gray-200 shadow-card">
-                  <div class="flex justify-between items-center mb-5 text-gray-500">
-                    <span class="bg-lime text-black text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
-                      {type === "Article" ? <ArticleIcon /> : <VideoIcon />}
-                      {type}
-                    </span>
-                    {organizer &&
-                      organizer.map((name: string) => (
-                        <span class="font-medium">{name}</span>
-                      ))}
-                    <span class="text-sm">{date}</span>
-                  </div>
-                  <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                    {name_1} {name_2}
-                  </h2>
-
-                  <div class="flex justify-between items-center">
-                    <div class="w-full flex items-center space-x-4 m-4">
-                      <img
-                        class="w-40 rounded-2xl"
-                        src={cover_photo || "/services/Illustration.svg"}
-                        alt="cover"
-                      />
-                    </div>
-                    <div class="flex items-center space-x-4">
-                      <p
-                        class="mb-5 font-light text-gray-500"
-                        style="white-space: pre-line inline-flex items-center "
-                      >
-                        {desc}{" "}
-                        <a
-                          href={`/blogs/${id}`}
-                          class="inline-flex items-center font-medium text-black hover:text-lime"
-                        >
-                          Read more
-                          <svg
-                            class="ml-2 w-4 h-4"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                              clip-rule="evenodd"
-                            />
-                          </svg>
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-              )
-            )
-          }
+          <div class="grid gap-8 lg:grid-cols-2">
+            <ArticleCard articles={articles} />
+          </div>
+          <h2
+            class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900"
+          >
+            Events
+          </h2>
+          <div class="grid gap-8 lg:grid-cols-2">
+            <EventCard eventsData={eventsData} />
+          </div>
         </div>
       </div>
     </Container>

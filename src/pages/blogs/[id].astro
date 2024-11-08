@@ -86,6 +86,27 @@ export const prerender = true
           class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6"
         >
           <div class="font-light text-gray-500 sm:text-lg">
+            <a
+              href="/blogs"
+              class="inline-flex items-center font-medium text-black hover:text-lime my-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="h-6 w-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M7 16l-4-4m0 0l4-4m-4 4h18"
+                >
+                </path>
+              </svg>
+              <span class="ml-1 font-bold text-lg">All Articles</span>
+            </a>
             <h2
               class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900"
             >
@@ -125,12 +146,24 @@ export const prerender = true
                 Mentors:
                 {
                   mentors.map((mentor) => (
-                    <span class="font-medium">{mentor.name}</span>
-                    <img class="w-10 h-10 rounded-full" src={mentor.image} alt="" />
-                    <span class="font-medium">{mentor.designation}</span>
-                    <span class="font-medium">{mentor.tag}</span>
-                    <a href={mentor.connect} target="_blank" rel="noopener noreferrer">Connect</a>
-                    <br />
+                    <div>
+                      <span class="font-medium">{mentor.name}</span>
+                      <img
+                        class="w-10 h-10 rounded-full"
+                        src={mentor.image}
+                        alt=""
+                      />
+                      <span class="font-medium">{mentor.designation}</span>
+                      <span class="font-medium">{mentor.tag}</span>
+                      <a
+                        href={mentor.connect}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Connect
+                      </a>
+                      <br />
+                    </div>
                   ))
                 }
               </div>
@@ -138,12 +171,24 @@ export const prerender = true
                 Guests:
                 {
                   guests.map((guest) => (
-                    <span class="font-medium">{guest.name}</span>
-                    <img class="w-10 h-10 rounded-full" src={guest.image} alt="" />
-                    <span class="font-medium">{guest.designation}</span>
-                    <span class="font-medium">{guest.tag}</span>
-                    <a href={guest.connect} target="_blank" rel="noopener noreferrer">Connect</a>
-                    <br />
+                    <div>
+                      <span class="font-medium">{guest.name}</span>
+                      <img
+                        class="w-10 h-10 rounded-full"
+                        src={guest.image}
+                        alt=""
+                      />
+                      <span class="font-medium">{guest.designation}</span>
+                      <span class="font-medium">{guest.tag}</span>
+                      <a
+                        href={guest.connect}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Connect
+                      </a>
+                      <br />
+                    </div>
                   ))
                 }
               </div>

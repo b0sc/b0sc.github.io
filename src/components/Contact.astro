@@ -145,9 +145,7 @@ import Topic from "./Topic.astro"
             })
             .catch((error) => {
               toast.hide()
-              if (
-                error.name === "TypeError"
-              ) {
+              if (error.name === "TypeError") {
                 // if the error is due to CORS
                 NotifySuccess(
                   "Partially Subscribed. We will get back to you soon."
@@ -160,7 +158,6 @@ import Topic from "./Topic.astro"
         }
 
         function handleMessage(data: string) {
-          // TODO: notifiy the user that the message is being sent and replace message after success response
           // formsubmit is free thus is very slow and unreliable reponse is given regarding cors -- [idk] submissions per month
           // https://web3forms.com/ and https://formspark.io/ are better alternatives with -- 250 submissions per month
           const msg = new NotifyMessage(
