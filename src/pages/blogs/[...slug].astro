@@ -4,6 +4,7 @@ import Container from "../../components/Container.astro"
 import { getCollection } from "astro:content"
 import { formatDate } from "../../utils/utils"
 import "../../styles/global.css"
+import type { CollectionEntry } from "astro:content"
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection("blog")
@@ -13,7 +14,7 @@ export async function getStaticPaths() {
   }))
 }
 
-const { entry } = Astro.props as { entry: any }
+const { entry } = Astro.props as { entry: CollectionEntry<"blog"> }
 
 const { Content } = await entry.render()
 ---

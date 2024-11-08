@@ -19,7 +19,7 @@ import VideoIcon from "./Icons/VideoIcon.astro"
     <!-- Card -->
     {
       events
-        .filter((event, i) => event.featured)
+        .filter((event) => event.featured)
         .sort((a, b) => b.id - a.id)
         .slice(0, 3)
         .map((event, i) => (

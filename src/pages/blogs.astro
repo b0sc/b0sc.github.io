@@ -7,8 +7,6 @@ import { getCollection } from "astro:content"
 import ArticleCard from "../components/ArticleCard.astro"
 import EventCard from "../components/EventCard.astro"
 
-const currentPage: number | null = +Astro.url.searchParams.get("page")! || 1
-
 const articles: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
   (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
     b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
