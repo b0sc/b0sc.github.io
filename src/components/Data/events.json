@@ -3,13 +3,13 @@
     "id": 27,
     "type": "Event",
     "featured": false,
-    "name_1": "Blogging Competition:",
-    "name_2": "Call for Tech Writers",
-    "desc": "📝 Are you passionate about technology and writing? 🚀 BOSC Club is excited to announce our Blogging Competition 2024! 🌟 Share your knowledge, insights, and experiences with the tech community. Whether you're a beginner or an experienced writer, this competition is for you. 🎉 Join us to showcase your writing skills, learn from others, and win exciting prizes! 🏆",
+    "name_1": "Call For BOSC Membership:",
+    "name_2": "Fall 2024",
+    "desc": "🎉 BOSC Club is excited to announce the opening of membership applications for the Fall 2024 term! 🚀 Join our vibrant community of developers, designers, and open-source enthusiasts to collaborate, learn, and grow together. Whether you're a beginner or an experienced professional, we have something for everyone. Apply now to become a part of our active community and unlock a world of opportunities in the open-source ecosystem.",
     "year": 2024,
-    "date": "2024-11-12 - 2024-11-22",
+    "date": "2024-11-15 - 2024-11-30",
     "time": "00:00 AM",
-    "venue": "Virtual - Website and Social Media",
+    "venue": "Virtual - Register through Google Form",
     "organizer": ["BOSC"],
     "partners": [],
     "mentors": [],
@@ -19,13 +19,13 @@
     "links": {
       "blog": "/blogs/27",
       "social": "https://www.facebook.com/birendraopensourceclub",
-      "registration": ""
+      "registration": "https://docs.google.com/forms/d/e/1FAIpQLScBEBy9pD3Zo2dta8jceMdlYgqNzQG9SIEh-7j38oR2Rzrl_A/viewform"
     },
     "images": [],
     "stats": {
       "participants": 0,
-      "time": "10 days",
-      "certificate": true,
+      "time": "15 days",
+      "certificate": false,
       "prize": true,
       "entry_fee": 0
     }
