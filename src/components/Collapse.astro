@@ -16,8 +16,7 @@ const { label, index = null } = Astro.props
               index && (
                 <>
                   <p class="text-5xl font-medium flex items-center">{index}</p>
-                  <!-- Initially clamp to 2 lines, expand when clicked -->
-                  <p class="text-2xl px-4 overflow-hidden text-ellipsis line-clamp-2 group-focus:line-clamp-none transition-all duration-500">
+                  <p class="text-xl px-4 overflow-hidden text-ellipsis line-clamp-2 group-focus:line-clamp-none transition-all duration-500">
                     {label}
                   </p>
                 </>
