@@ -1,0 +1,57 @@
+[
+  {
+    "_comment": "this is a sample object, to be filled by the organizer of the event --\n-- view this file for extra information https://github.com/b0sc/b0sc.github.io/blob/main/src/components/Data/events.json --\n-- change the values only where there is // comments",
+    "id": 0,
+    "type": "Event",
+    "featured": false,
+    "name_1": "// Event Name",
+    "name_2": "// Secondary Name or Subtitle",
+    "desc": "// Description",
+    "year": 2024,
+    "date": "// date in 2024-12-30 format, eg: `2024-12-30` or `2024-12-30 to 2024-12-31`",
+    "time": "// time in 00:00 AM format, leave empty if not applicable or is an all/multi day event, eg: `11:30 AM`",
+    "venue": "// Location details, eg `Virtual - Google Meet` or `Birendra Campus, Bharatpur`",
+    "organizer": ["// array", "of", "organizers", "eg", "Your Organization"],
+    "partners": [
+      "// array",
+      "of",
+      "partners",
+      "eg",
+      "BOSC",
+      "Other Community Partners"
+    ],
+    "mentors": [
+      {
+        "name": "// Name --\n-- leave the mentors array empty if there are no mentors, eg: []",
+        "image": "/default_mentor.jpg",
+        "designation": "// Software Engineer at Example Company",
+        "tag": "// a tagline, known for, quote etc",
+        "connect": "// social media link, eg: https://www.facebook.com/username"
+      }
+    ],
+    "guests": [
+      {
+        "name": "// Name -- leave the guests array empty if there are no guests, eg: []",
+        "image": "/default_mentor.jpg",
+        "designation": "// Software Engineer at Example Company --\n-- leave the image field above empty if there is no live image url",
+        "tag": "// a tagline, known for, quote etc",
+        "connect": "// social media link, eg: https://www.facebook.com/username"
+      }
+    ],
+    "cover_photo": "// live url of the cover photo, you can copy the image path from your facebook post's image or upload it to the server/drive and use the link",
+    "background": "bg-zinc-100",
+    "links": {
+      "blog": "// link to the blog post or event page",
+      "social": "// link to the social media post",
+      "registration": "// link to the registration page, leave empty if not applicable"
+    },
+    "images": [],
+    "stats": {
+      "participants": 0,
+      "time": "// duration of the event, eg: `2 hours`, `3 days`  --\n-- change below boolean values to true if applicable --\n-- write the number for entry_fee, leave 0 for if it's free",
+      "certificate": false,
+      "prize": false,
+      "entry_fee": 0
+    }
+  }
+]
