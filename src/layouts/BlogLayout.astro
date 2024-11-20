@@ -23,9 +23,8 @@ const { title, description, pubDate, viewCount } = Astro.props
     </header>
     <main id="blogclass">
       <slot />
-      </main>
+    </main>
   </body>
-
   <script>
     let copyButtonLabel = "Copy Code"
     let codeBlocks = Array.from(document.querySelectorAll("pre"))
@@ -38,28 +37,31 @@ const { title, description, pubDate, viewCount } = Astro.props
       copyButton.className = "copy-code"
       copyButton.innerHTML = copyButtonLabel
 
-      codeBlock.setAttribute("tabindex", "0")
-      codeBlock.appendChild(copyButton)
-      codeBlock.parentNode.insertBefore(wrapper, codeBlock)
-      wrapper.appendChild(codeBlock)
+      const parentNode = codeBlock.parentNode
+      if (parentNode) {
+        codeBlock.setAttribute("tabindex", "0")
+        codeBlock.appendChild(copyButton)
+        parentNode.insertBefore(wrapper, codeBlock) 
+        wrapper.appendChild(codeBlock)
 
-      copyButton.addEventListener("click", async () => {
-        await copyCode(codeBlock, copyButton)
-      })
+        copyButton.addEventListener("click", async () => {
+          await copyCode(codeBlock, copyButton)
+        })
+      }
     }
 
-    async function copyCode(block, button) {
+    async function copyCode(block: HTMLElement, button: HTMLButtonElement) {
       let code = block.querySelector("code")
-      let text = code.innerText
+      if (code) {
+        let text = code.innerText
+        await navigator.clipboard.writeText(text)
 
-      await navigator.clipboard.writeText(text)
+        button.innerText = "Code Copied"
 
-      button.innerText = "Code Copied"
-
-      setTimeout(() => {
-        button.innerText = copyButtonLabel
-      }, 700)
+        setTimeout(() => {
+          button.innerText = copyButtonLabel
+        }, 700)
+      }
     }
   </script>
 </html>
-<!-- //TODO:spoiler not working also fix blockquote -->
