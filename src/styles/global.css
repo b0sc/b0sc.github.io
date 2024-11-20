@@ -3,18 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  h1 {
-    @apply text-3xl;
-  }
-
-  h2 {
-    @apply text-2xl;
-  }
-
-  h3 {
-    @apply text-xl;
-  }
-
   .font-outline {
     -webkit-text-stroke: 2.5px black;
     background-color: transparent;
@@ -24,6 +12,7 @@
     -webkit-text-stroke: 1.2px black;
     background-color: transparent;
   }
+
 }
 
 /* custom scrollbar */

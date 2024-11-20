@@ -1,0 +1,65 @@
+---
+import "../styles/bloglayout.css"
+interface Props {
+  title: string
+  description: string
+  pubDate: string
+  viewCount: number
+}
+
+const { title, description, pubDate, viewCount } = Astro.props
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header>
+      <p>Published on {pubDate}</p>
+      <p>Viewed by {viewCount} folks</p>
+    </header>
+    <main id="blogclass">
+      <slot />
+      </main>
+  </body>
+
+  <script>
+    let copyButtonLabel = "Copy Code"
+    let codeBlocks = Array.from(document.querySelectorAll("pre"))
+
+    for (let codeBlock of codeBlocks) {
+      let wrapper = document.createElement("div")
+      wrapper.style.position = "relative"
+
+      let copyButton = document.createElement("button")
+      copyButton.className = "copy-code"
+      copyButton.innerHTML = copyButtonLabel
+
+      codeBlock.setAttribute("tabindex", "0")
+      codeBlock.appendChild(copyButton)
+      codeBlock.parentNode.insertBefore(wrapper, codeBlock)
+      wrapper.appendChild(codeBlock)
+
+      copyButton.addEventListener("click", async () => {
+        await copyCode(codeBlock, copyButton)
+      })
+    }
+
+    async function copyCode(block, button) {
+      let code = block.querySelector("code")
+      let text = code.innerText
+
+      await navigator.clipboard.writeText(text)
+
+      button.innerText = "Code Copied"
+
+      setTimeout(() => {
+        button.innerText = copyButtonLabel
+      }, 700)
+    }
+  </script>
+</html>
+<!-- //TODO:spoiler not working also fix blockquote -->

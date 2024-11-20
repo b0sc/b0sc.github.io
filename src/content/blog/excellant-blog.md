@@ -2,6 +2,7 @@
 title: "How Is Markdown Rendered?"
 pubDate: 2024-01-15
 author: "Genius"
+layout: ../../layouts/BlogLayout.astro
 authImage: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
 image: "image4.png"
 slug: markdown-renderer
@@ -21,7 +22,25 @@ type: "Article"
 $ echo "Hello, World!"
 ```
 
-`copy this`
+<br>
+
+```python
+# Simple test script
+print("Hello, World!")
+
+# Adding numbers
+a = 5
+b = 3
+print("Sum:", a + b)
+
+# Check if a number is even or odd
+num = 7
+if num % 2 == 0:
+    print(num, "is even.")
+else:
+    print(num, "is odd.")
+```
+`this is a code` 
 
 <br />
 
@@ -41,14 +60,28 @@ italic _italic_
 
 numbers list
 
-1. list
+1. first
+1. second
+1. third
 1. list
 
-bullets list
 
-- list
-- list
+- originallist
+- bullets list
+  - list
+  - list
+    - list
+      - list
 
 ![image](https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png)
 
 markdown test
+
+try to put this on 
+
+
+---
+
+..and after a horizontal rule
+
+> this is a blockquote

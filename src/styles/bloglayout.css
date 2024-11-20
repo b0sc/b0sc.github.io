@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-5xl;
+  }
+
+  h2 {
+    @apply text-3xl;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  #blogclass * {
+    ul {
+      list-style: disc;
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    ul ul {
+      list-style-type: circle;
+    }
+
+    ul ul ul {
+      list-style-type: square;
+    }
+
+    ul ul ul ::marker {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+ol {
+  list-style: decimal;
+  padding-left: 20px;
+}
+
+.copy-code {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #3730a3;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.copy-code:hover {
+  background-color: #312e81;
+}
+
+code {
+  background-color: #07090f;
+  color: #bbbbbb;
+}
