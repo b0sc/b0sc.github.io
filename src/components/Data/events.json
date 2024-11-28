@@ -1,5 +1,51 @@
 [
   {
+    "id": 28,
+    "type": "Event",
+    "featured": false,
+    "name_1": "Career Guidance",
+    "name_2": " & Entrepreneurship",
+    "desc": "🚀 For students applying to Foreign Countries and professionals looking to explore new opportunities in the tech industry. Our Experienced Mentors will guide you to excel at what you do and help you plan your career.",
+    "year": 2024,
+    "date": "2024-12-06",
+    "time": "10:00 AM",
+    "venue": "Physical - BMC, Naubigha",
+    "organizer": ["BOSC"],
+    "partners": [],
+    "mentors": [
+      {
+        "name": "Banshaj Poudel",
+        "image": "/default_mentor.jpg",
+        "designation": "GitHub Campus Expert🚩 | Huawei Seeds for the Future 2022",
+        "tag": "Open Mic Speaker",
+        "connect": "https://www.linkedin.com/in/banshaj/"
+      },
+      {
+        "name": "Sangin Sapkota",
+        "image": "/default_mentor.jpg",
+        "designation": "Co-Founder and CEO at Bitflux Technologies Nepal",
+        "tag": "Open Mic Speaker",
+        "connect": "https://www.linkedin.com/in/sangin-sapkota/"
+      }
+    ],
+    "guests": [],
+    "cover_photo": "",
+    "background": "bg-zinc-100",
+    "links": {
+      "blog": "/blogs/28",
+      "social": "https://www.facebook.com/birendraopensourceclub",
+      "registration": "https://docs.google.com/forms/d/e/1FAIpQLSfAOzpzRovUwRroqmnT3NgOznK-6718bCXivnFKbwwbG1vKnA/viewform"
+    },
+    "images": [],
+    "stats": {
+      "participants": 0,
+      "time": "1hr",
+      "certificate": false,
+      "prize": false,
+      "entry_fee": 0
+    }
+  },
+  {
     "id": 27,
     "type": "Event",
     "featured": false,
@@ -7,7 +53,7 @@
     "name_2": "Fall 2024",
     "desc": "🎉 BOSC Club is excited to announce the opening of membership applications for the Fall 2024 term! 🚀 Join our vibrant community of developers, designers, and open-source enthusiasts to collaborate, learn, and grow together. Whether you're a beginner or an experienced professional, we have something for everyone. Apply now to become a part of our active community and unlock a world of opportunities in the open-source ecosystem.",
     "year": 2024,
-    "date": "2024-11-15 - 2024-11-30",
+    "date": "2024-11-21 - 2024-12-21",
     "time": "00:00 AM",
     "venue": "Virtual - Register through Google Form",
     "organizer": ["BOSC"],
