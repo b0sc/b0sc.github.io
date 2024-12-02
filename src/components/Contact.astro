@@ -113,16 +113,19 @@ import Topic from "./Topic.astro"
           data.delete("_next")
           data.delete("_template")
           data.delete("_captcha")
+          data.append("username",data.get('name'))
+          data.delete("name")
 
           const object = Object.fromEntries(data)
           const json = JSON.stringify(object)
+          console.log(json)
 
           let toast: NotifyMessage
           if (subscriptionOnly) {
             toast = new NotifyMessage("Subscribing...", -1)
             toast.show()
           }
-          fetch("https://send.pageclip.co/gkvJhyG5fe5tl24xWfyxR7UrqiJ42zpt", {
+          fetch("https://api.bosc.org.np/api/user", {
             method: "POST",
             body: json,
             headers: {
@@ -130,6 +133,7 @@ import Topic from "./Topic.astro"
             },
             referrerPolicy: "origin-when-cross-origin",
             mode: "cors",
+
           })
             .then((response) => {
               console.log("Subscription status:", response.statusText)
