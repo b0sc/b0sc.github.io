@@ -113,7 +113,7 @@ import Topic from "./Topic.astro"
           data.delete("_next")
           data.delete("_template")
           data.delete("_captcha")
-          data.append("username", data.get("name"))
+          data.append("username", data.get("name") || "")
           data.delete("name")
 
           const object = Object.fromEntries(data)
