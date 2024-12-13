@@ -1,5 +1,51 @@
 [
   {
+    "id": 29,
+    "type": "Event",
+    "featured": false,
+    "name_1": "3 Days Graphics",
+    "name_2": " Designing Workshop",
+    "desc": "Join us for an exciting 3-day graphics design workshop organized by the Birendra Open Source Club in collaboration with the Rotaract Club of Narayani Mid Town and Paradise Infotech!",
+    "year": 2024,
+    "date": "2024-12-22",
+    "time": "09:00 AM",
+    "venue": "RMC Hall - BMC, 10 Bigha",
+    "organizer": ["BOSC"],
+    "partners": ["Paradise Infotech","Rotaract Club of Narayani Mid Town"],
+    "mentors": [
+      {
+        "name": "Kailash Khatri   ",
+        "image": "/workshop.jpg",
+        "designation": "Senior Graphics Designer | Paradise Infotech",
+        "tag": "Graphics Mentor",
+        "connect": "https://www.facebook.com/kailash.khatri.52687"
+      },
+      {
+        "name": "Rupesh Thapaliya",
+        "image": "/workshop.jpg",
+        "designation": "Senior Graphics Designer | Paradise Infotech",
+        "tag": "Graphics Mentor",
+        "connect": "https://www.facebook.com/joker.rups"
+      }
+    ],
+    "guests": [],
+    "cover_photo": "/events/29/cover.jpg",
+    "background": "bg-zinc-100",
+    "links": {
+      "blog": "/blogs/29",
+      "social": "https://www.facebook.com/share/p/1CwFidfakT/",
+      "registration": "https://docs.google.com/forms/d/e/1FAIpQLScVIwyWJ1TGmo0UbbAdHQ-6R0zZn8brmqBcs3KhGy8MVCe8TQ/viewform"
+    },
+    "images": [],
+    "stats": {
+      "participants": 35,
+      "time": "3-Days",
+      "certificate": true,
+      "prize": true,
+      "entry_fee": 0
+    }
+  },
+  {
     "id": 28,
     "type": "Event",
     "featured": false,

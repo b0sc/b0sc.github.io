@@ -125,7 +125,7 @@ import Topic from "./Topic.astro"
             toast = new NotifyMessage("Subscribing...", -1)
             toast.show()
           }
-          fetch("https://api.bosc.org.np/user", {
+          fetch("https://localhost:8787/api/user/newsletter", {
             method: "POST",
             body: json,
             headers: {
@@ -160,81 +160,81 @@ import Topic from "./Topic.astro"
             })
         }
 
-        function handleMessage(data: string) {
-          // formsubmit is free thus is very slow and unreliable reponse is given regarding cors -- [idk] submissions per month
-          // https://web3forms.com/ and https://formspark.io/ are better alternatives with -- 250 submissions per month
-          const msg = new NotifyMessage(
-            "Sending... Feel free to browse the website.",
-            -1
-          )
-          msg.show()
-          fetch("https://formsubmit.co/ajax/8c368e944b0e888ffcb863838e3fbc00", {
-            method: "POST",
-            body: data,
-            mode: "cors",
-            headers: {
-              "Content-Type": "application/json",
-              Accept: "application/json",
-            },
-            referrerPolicy: "origin-when-cross-origin",
-          })
-            .then((response) => {
-              if (response.ok) {
-                return response.json()
-              } else {
-                console.log("Failed to send message. response:", response)
-              }
-            })
-            .then((data) => {
-              console.log("Message Success Response:", data)
-              if (data.success) {
-                msg.hide()
-                NotifySuccess("Message sent successfully!")
-              }
-            })
-            .catch((error) => {
-              msg.hide()
-              if (
-                error.message === "Failed to fetch" &&
-                error.name === "TypeError"
-              ) {
-                // if the error is due to CORS
-                NotifySuccess(
-                  "Message partially sent. We will get back to you soon."
-                )
-              } else {
-                NotifyError("Failed to send message. Still Under Development.")
-              }
-            })
-        }
-
-        document.getElementById("cn-form")?.addEventListener("submit", (e) => {
-          e.preventDefault()
-          const form = document.getElementById("cn-form") as HTMLFormElement
-          const formData = new FormData(form)
-          const obj = Object.fromEntries(formData)
-          const json = JSON.stringify(obj)
-          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-          const subscriptionOnly = obj.message === ""
-          if (
-            obj.name === "" ||
-            obj.email === "" ||
-            !emailRegex.test(obj.email?.toString())
-          ) {
-            NotifyError("Common! Fill the form correctly.")
-            return
-          }
-          handleSubscribe(formData, subscriptionOnly)
-          if (!subscriptionOnly) {
-            handleMessage(json)
-          }
-
-          // reset state
-          form.reset()
-          const currentUrl = window.location.href
-          const baseUrl = currentUrl.split("?")[0]
-          window.history.replaceState({}, "", baseUrl)
-        })
+         function handleMessage(data: string) {
+           // formsubmit is free thus is very slow and unreliable reponse is given regarding cors -- [idk] submissions per month
+           // https://web3forms.com/ and https://formspark.io/ are better alternatives with -- 250 submissions per month
+           const msg = new NotifyMessage(
+             "Sending... Feel free to browse the website.",
+             -1
+           )
+           msg.show()
+           fetch("https://formsubmit.co/ajax/8c368e944b0e888ffcb863838e3fbc00", {
+             method: "POST",
+             body: data,
+             mode: "cors",
+             headers: {
+               "Content-Type": "application/json",
+               Accept: "application/json",
+             },
+             referrerPolicy: "origin-when-cross-origin",
+           })
+             .then((response) => {
+               if (response.ok) {
+                 return response.json()
+               } else {
+                 console.log("Failed to send message. response:", response)
+               }
+             })
+             .then((data) => {
+               console.log("Message Success Response:", data)
+               if (data.success) {
+                 msg.hide()
+                 NotifySuccess("Message sent successfully!")
+               }
+             })
+             .catch((error) => {
+               msg.hide()
+               if (
+                 error.message === "Failed to fetch" &&
+                 error.name === "TypeError"
+               ) {
+                 // if the error is due to CORS
+                 NotifySuccess(
+                   "Message partially sent. We will get back to you soon."
+                 )
+               } else {
+                 NotifyError("Failed to send message. Still Under Development.")
+               }
+             })
+         }
+        
+         document.getElementById("cn-form")?.addEventListener("submit", (e) => {
+           e.preventDefault()
+           const form = document.getElementById("cn-form") as HTMLFormElement
+           const formData = new FormData(form)
+           const obj = Object.fromEntries(formData)
+           const json = JSON.stringify(obj)
+           const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+           const subscriptionOnly = obj.message === ""
+           if (
+             obj.name === "" ||
+             obj.email === "" ||
+             !emailRegex.test(obj.email?.toString())
+           ) {
+             NotifyError("Common! Fill the form correctly.")
+             return
+           }
+           handleSubscribe(formData, subscriptionOnly)
+           if (!subscriptionOnly) {
+             handleMessage(json)
+           }
+        
+           // reset state
+           form.reset()
+           const currentUrl = window.location.href
+           const baseUrl = currentUrl.split("?")[0]
+           window.history.replaceState({}, "", baseUrl)
+         })
       </script>
     </div>
     <div class="hidden md:grid md:justify-items-end md:w-4/12 md:py-2">
