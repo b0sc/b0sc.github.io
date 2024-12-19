@@ -169,14 +169,15 @@ import BoscIcon from "./../Icons/BoscIcon.astro"
                     />
                   </div>
                 </a>
-                <a
+                <button
                   class="justify-start items-center gap-[15px] inline-flex"
-                  href={event.links.social}
+                  data-link={event.links.blog}
+                  id="share1"
                 >
                   <div class="w-[41px] h-[41px] relative">
                     <img class="w-[41px] h-[41px]" src="/share.png" />
                   </div>
-                </a>
+                </button>
               </>
             </div>
           </div>
@@ -184,3 +185,14 @@ import BoscIcon from "./../Icons/BoscIcon.astro"
       </div>
     ))
 }
+<script>
+  import { NotifySuccess } from "../../utils/notify"
+  const shareBtn = document.getElementById("share2") as HTMLButtonElement
+  shareBtn.addEventListener("click", () => {
+    const bloglink =
+      window.location.href.replace(/\/+$/, "") +
+      shareBtn.getAttribute("data-link")
+    navigator.clipboard.writeText(bloglink)
+    NotifySuccess("Link copied to clipboard.")
+  })
+</script>

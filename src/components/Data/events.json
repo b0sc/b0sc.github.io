@@ -11,18 +11,18 @@
     "time": "09:00 AM",
     "venue": "RMC Hall - BMC, 10 Bigha",
     "organizer": ["BOSC"],
-    "partners": ["Paradise Infotech","Rotaract Club of Narayani Mid Town"],
+    "partners": ["Paradise Infotech", "Rotaract Club of Narayani Mid Town"],
     "mentors": [
       {
         "name": "Kailash Khatri   ",
-        "image": "/workshop.jpg",
+        "image": "/default_mentor.jpg",
         "designation": "Senior Graphics Designer | Paradise Infotech",
         "tag": "Graphics Mentor",
         "connect": "https://www.facebook.com/kailash.khatri.52687"
       },
       {
         "name": "Rupesh Thapaliya",
-        "image": "/workshop.jpg",
+        "image": "/default_mentor.jpg",
         "designation": "Senior Graphics Designer | Paradise Infotech",
         "tag": "Graphics Mentor",
         "connect": "https://www.facebook.com/joker.rups"
@@ -33,12 +33,12 @@
     "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/29",
-      "social": "https://www.facebook.com/share/p/1CwFidfakT/",
+      "social": "https://www.facebook.com/share/p/15Qkca3pyF/",
       "registration": "https://docs.google.com/forms/d/e/1FAIpQLScVIwyWJ1TGmo0UbbAdHQ-6R0zZn8brmqBcs3KhGy8MVCe8TQ/viewform"
     },
     "images": [],
     "stats": {
-      "participants": 35,
+      "participants": 50,
       "time": "3-Days",
       "certificate": true,
       "prize": true,
@@ -68,16 +68,21 @@
       }
     ],
     "guests": [],
-    "cover_photo": "/events/28/cover.jpeg",
+    "cover_photo": "/events/28/cover.png",
     "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/28",
       "social": "https://www.facebook.com/birendraopensourceclub",
       "registration": "https://docs.google.com/forms/d/e/1FAIpQLSfAOzpzRovUwRroqmnT3NgOznK-6718bCXivnFKbwwbG1vKnA/viewform"
     },
-    "images": [],
+    "images": [
+      "/events/28/pic1.jpg",
+      "/events/28/pic2.jpg",
+      "/events/28/pic3.jpg",
+      "/events/28/pic4.jpg"
+    ],
     "stats": {
-      "participants": 0,
+      "participants": 40,
       "time": "1hr",
       "certificate": false,
       "prize": false,
@@ -90,7 +95,7 @@
     "featured": false,
     "name_1": "Call For BOSC Membership:",
     "name_2": "Fall 2024",
-    "desc": "🎉 BOSC Club is excited to announce the opening of membership applications for the Fall 2024 term! 🚀 Join our vibrant community of developers, designers, and open-source enthusiasts to collaborate, learn, and grow together. Whether you're a beginner or an experienced professional, we have something for everyone. Apply now to become a part of our active community and unlock a world of opportunities in the open-source ecosystem.",
+    "desc": "🎉 BOSC Club is excited to announce the opening of membership applications for the Fall 2024 term! 🚀 Join our vibrant community of developers, designers, and open-source enthusiasts to collaborate, learn, and grow together. Whether you're a beginner or an experienced professional, we have something for everyone.",
     "year": 2024,
     "date": "2024-11-21 - 2024-12-21",
     "time": "00:00 AM",
@@ -99,7 +104,7 @@
     "partners": [],
     "mentors": [],
     "guests": [],
-    "cover_photo": "",
+    "cover_photo": "/events/27/cover.png",
     "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/27",
@@ -108,7 +113,7 @@
     },
     "images": [],
     "stats": {
-      "participants": 0,
+      "participants": 25,
       "time": "15 days",
       "certificate": false,
       "prize": true,
@@ -121,7 +126,7 @@
     "featured": true,
     "name_1": "Hacktoberfest 2024:",
     "name_2": "Open Contributions",
-    "desc": "🎉 Calling all developers and open– source enthusiasts!🚀BOSC Club is excited to kick off contributions for Hactoberfest 2024 💻 A 2 week long event. Let's collaborate, code, and grow the open–source community together 🌍",
+    "desc": "Calling all developers and open– source enthusiasts!🚀BOSC Club is excited to kick off contributions for Hactoberfest 2024 💻 A 2 week long event. Let's collaborate, code, and grow the open–source community together 🌍",
     "year": 2024,
     "date": "2024-10-15 - 2024-10-31",
     "time": "00:00 AM",
@@ -159,7 +164,7 @@
     "featured": false,
     "name_1": "Hacktoberfest 2024:",
     "name_2": "Guide to First-Contributions",
-    "desc": "Its October 1 Today 🤝 Its Hacktober 1 Today. Register Now for the Guide to make the First Contributions To Hacktoberfest 2024. We'll hear from our speakers, discuss on topics you want to discuss, introduce you to our open source repositories and guide you to make your first contributions. 🚀 We're providing a Zero To Hero Guide for you to contribute in this Hacktoberfest either in Worldwide Public Projects or BOSC's in-house Projects. First we'll Introduce you to the Hacktoberfest Applications and Contributions and then we'll guide you to contribute in open source projects such as ours.",
+    "desc": "Its October 1 Today 🤝 Its Hacktober 1 Today. Register Now for the Guide to make the First Contributions To Hacktoberfest 2024. We'll hear from our speakers, discuss on topics you want to discuss, introduce you to our open source repositories and guide you to make your first contributions. 🚀 We're providing a Zero To Hero Guide for you to contribute in this Hacktoberfest either in Worldwide Public Projects or BOSC's in-house Projects. ",
     "year": 2024,
     "date": "2024-10-04",
     "time": "5:00 PM",

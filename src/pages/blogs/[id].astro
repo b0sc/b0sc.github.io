@@ -3,6 +3,7 @@ import Container from "../../components/Container.astro"
 import Layout from "../../layouts/Layout.astro"
 // import articlesData from "../../components//Data/articles.json"
 import eventsData from "../../components/Data/events.json"
+import BoscIcon from "../../components/Icons/BoscIcon.astro"
 
 export async function getStaticPaths() {
   return eventsData.map(
@@ -78,150 +79,238 @@ const {
 export const prerender = true
 ---
 
-<Layout title="Welcome to My site">
-  <main class="space-y-40 mb-40 pt-24">
+<Layout title={name_1}>
+  <main class="space-y-20 mb-20 pt-12">
     <Container>
       <section class="bg-white">
+        <div class="font-light text-gray-500 sm:text-lg">
+          <a
+            href="/blogs"
+            class="inline-flex items-center font-medium text-black hover:text-lime my-4"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="h-6 w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M7 16l-4-4m0 0l4-4m-4 4h18"
+              >
+              </path>
+            </svg>
+            <span class="ml-1 font-bold text-lg">All Articles</span>
+          </a>
+        </div>
         <div
           class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6"
         >
-          <div class="font-light text-gray-500 sm:text-lg">
-            <a
-              href="/blogs"
-              class="inline-flex items-center font-medium text-black hover:text-lime my-4"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                class="h-6 w-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M7 16l-4-4m0 0l4-4m-4 4h18"
-                >
-                </path>
-              </svg>
-              <span class="ml-1 font-bold text-lg">All Articles</span>
-            </a>
-            <h2
-              class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900"
+          <div class="mb-4">
+            <div class="justify-items-center">
+              <img
+                src={cover_photo === ""
+                  ? "/services/Illustration.svg"
+                  : cover_photo}
+                alt="cover photo"
+                class="rounded-2xl w-96"
+              />
+            </div>
+          </div>
+          <div
+            class="font-normal text-gray-500 flex-col justify-start items-start flex"
+          >
+            <span
+              class="mb-4 text-5xl tracking-tight font-extrabold text-gray-900"
             >
               {name_1}
+              {" "}
               {name_2}
               <br />
-              {year}
-              <br />
-              {venue}
-              <br />
-              {time}
-            </h2>
-            <p class="mb-4">{desc}</p>
-            <div class="flex justify-between items-center mt-6">
-              <div class="flex items-center space-x-4">
-                <img
-                  class="w-7 h-7 rounded-full"
-                  src={cover_photo}
-                  alt={"cover"}
-                />
-
-                {
-                  organizer.map((name) => (
-                    <span class="font-medium">{name}</span>
-                  ))
-                }
-                {
-                  partners.map((name) => (
-                    <span class="font-medium">{name}</span>
-                  ))
-                }
-              </div>
-              <span class="text-sm">{date}</span>
-            </div>
-            <div class="">
-              <div class="flex items center space-x-4">
-                Mentors:
-                {
-                  mentors.map((mentor) => (
-                    <div>
-                      <span class="font-medium">{mentor.name}</span>
+            </span>
+            <p class="font-light text-gray-500 sm:text-lg mb-4">
+              {
+                (stats.prize || stats.certificate || stats.entry_fee === 0) && (
+                  <span>
+                    {stats.prize && (
+                      <span class="bg-zinc-800 text-lime text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
+                        Prizes
+                      </span>
+                    )}
+                    {stats.certificate && (
+                      <span class="bg-zinc-800 text-lime text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
+                        Certificate
+                      </span>
+                    )}
+                    {stats.entry_fee === 0 && (
+                      <span class="bg-zinc-800 text-lime text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
+                        Free Entry
+                      </span>
+                    )}
+                  </span>
+                )
+              }
+            </p>
+            {/* <!-- Organizer --> */}
+            <span class="mb-2 text-2xl">
+              Organizer by {" "}
+              {
+                organizer.map((name, i) => (
+                  <span class="font-medium">
+                    {name === "BOSC" ? (
                       <img
-                        class="w-10 h-10 rounded-full"
-                        src={mentor.image}
-                        alt=""
+                        src="/logo-only.png"
+                        alt="birendra-open-source-club-logo"
+                        class="w-[70px] inline-flex"
                       />
-                      <span class="font-medium">{mentor.designation}</span>
-                      <span class="font-medium">{mentor.tag}</span>
-                      <a
-                        href={mentor.connect}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Connect
-                      </a>
-                      <br />
-                    </div>
-                  ))
-                }
-              </div>
-              <div class="space-x-4">
-                Guests:
-                {
-                  guests.map((guest) => (
-                    <div>
-                      <span class="font-medium">{guest.name}</span>
-                      <img
-                        class="w-10 h-10 rounded-full"
-                        src={guest.image}
-                        alt=""
-                      />
-                      <span class="font-medium">{guest.designation}</span>
-                      <span class="font-medium">{guest.tag}</span>
-                      <a
-                        href={guest.connect}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Connect
-                      </a>
-                      <br />
-                    </div>
-                  ))
-                }
-              </div>
+                    ) : (
+                      name
+                    )}
+                    {organizer.length === i + 1 ? "" : "🤝"}
+                  </span>
+                ))
+              }
+            </span>
+            <!-- Partners -->
+            {
+              partners.length > 0 && (
+                <span class="mb-2 text-2xl">
+                  Partnered with:{" "}
+                  {partners.map((name, i) => (
+                    <span class="bg-lime text-black text-xl font-medium inline-flex items-center px-2.5 py-0.5 rounded">
+                      {name}
+                      {partners.length === i + 1 ? "" : "🤝"}
+                    </span>
+                  ))}
+                </span>
+              )
+            }
+            {/* <!-- Time --> */}
+            <span class="mb-2 text-2xl">
+              Time:{" "}
+              <span class="font-medium">
+                {time === "00:00 AM" || time === "" ? stats.time : time}
+              </span>
+            </span>
+            {/* <!-- Venue --> */}
+            <span class="mb-2 text-2xl">
+              Venue: <span class="font-medium">{venue}</span>
+            </span>
+            <span class="mb-2 text-2xl">
+              Date: <span class="font-medium">{date}</span>
+            </span>
+            {/* <!-- Entry Fee --> */}
+            {
+              stats.entry_fee !== 0 && (
+                <span class="mb-2 text-2xl">
+                  Entry Fee: <span class="font-medium">{stats.entry_fee}</span>
+                </span>
+              )
+            }
 
-              <span class="text-sm"
-                >Certificate: {
-                  stats.certificate ? "Provided" : "Not Provided"
-                }</span
-              >
-              <br />
-              <span class="text-sm">Entry Fee: {stats.entry_fee}</span>
-              <br />
-              <span class="text-sm">Participants: {stats.participants}</span>
-              <br />
-              <span class="text-sm"
-                >Prize: {stats.prize ? "SWAGs Givens" : "No Prizes"}</span
-              >
-              <br />
-              <span class="text-sm">Time: {stats.time}</span>
-              <br />
+            <button
+              class="justify-start items-center gap-[15px] inline-flex"
+              id="share"
+            >
+              <div class="text-2xl font-normal leading-7">Share</div>
+              <div class="w-[41px] h-[41px] relative">
+                <img class="w-[41px] h-[41px]" src="/share.png" />
+              </div>
+            </button>
+          </div>
+        </div>
+        <div
+          class="font-normal text-gray-500 flex-col justify-center items-center text-center flex w-full"
+        >
+          <p class="m-4 text-xl">{desc}</p>
+        </div>
+        <div
+          class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6"
+        >
+          <div class="">
+            {
+              mentors && mentors.length > 0 && (
+                <div class="">
+                  Mentors:
+                  {mentors.map((mentor) => (
+                    <div class="flex items-center space-x-4 mb-2">
+                      <div>
+                        <img
+                          class="w-10 h-10 rounded-full"
+                          src={mentor.image}
+                          alt="mentor image"
+                        />
+                      </div>
+                      <div class="flex flex-col">
+                        <a
+                          href={mentor.connect}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <span class="font-medium">{mentor.name}</span>
+                          {" 🗿"}
+                          <span class="font-medium">{mentor.tag}</span>
+                        </a>
+                        <span class="font-medium">{mentor.designation}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )
+            }
+            {
+              guests && guests.length > 0 && (
+                <div class="">
+                  Guests:{" "}
+                  {guests.map((guest) => (
+                    <div class="flex items-center space-x-4 mb-2">
+                      <div>
+                        <img
+                          class="w-10 h-10 rounded-full"
+                          src={guest.image}
+                          alt="guest image"
+                        />
+                      </div>
+                      <div class="flex flex-col">
+                        <a
+                          href={guest.connect}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <span class="font-medium">{guest.name}</span>
+                          {" 🗿"}
+                          <span class="font-medium">{guest.tag}</span>
+                        </a>
+                        <span class="font-medium">{guest.designation}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )
+            }
 
-              <a target="_blank" href={links.blog}>Blog Link</a>
-              <br />
-              <a target="_blank" href={links.registration}>
-                Registration Link</a
-              >
-              <br />
-              <a target="_blank" href={links.social}>Social Media Post Link</a>
+            <div class="flex flex-col mb-4">
+              <span class="text-m">Participants: {stats.participants}</span>
+              <span class="text-m">Event Time: {stats.time}</span>
             </div>
+            <a
+              href={links.registration === ""
+                ? links.social
+                : links.registration}
+              target="_blank"
+              class="px-5 py-1.5 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-xl justify-center items-center inline-flex"
+            >
+              <div class="text-xl font-normal leading-7">Participate</div>
+            </a>
+          </div>
+          <div class="mb-4">
             <div class="grid grid-cols-2 gap-4 mt-8">
               {
                 images.map((link) => (
-                  <img class="rounded-2xl" src={link} alt="cover" />
+                  <img class="rounded-2xl" src={link} alt={"src " + link} />
                 ))
               }
             </div>
@@ -231,3 +320,12 @@ export const prerender = true
     </Container>
   </main>
 </Layout>
+
+<script>
+  import { NotifySuccess } from "../../utils/notify"
+  const shareBtn = document.getElementById("share") as HTMLButtonElement
+  shareBtn.addEventListener("click", () => {
+    navigator.clipboard.writeText(window.location.href)
+    NotifySuccess("Link copied to clipboard")
+  })
+</script>

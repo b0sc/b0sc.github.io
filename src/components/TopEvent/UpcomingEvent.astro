@@ -173,14 +173,15 @@ const upcomingEImage =
             />
           </div>
         </a>
-        <a
+        <button
           class="justify-start items-center gap-[15px] inline-flex"
-          href={upcomingE.links.social}
+          id="share2"
+          data-link={upcomingE.links.blog}
         >
           <div class="w-[41px] h-[41px] relative">
             <img class="w-[41px] h-[41px]" src="/share.png" />
           </div>
-        </a>
+        </button>
       </div>
     </div>
   </div>
@@ -188,3 +189,14 @@ const upcomingEImage =
     <img src={upcomingEImage} width="50%" alt="cat" class="rounded-2xl" />
   </div>
 </div>
+<script>
+  import { NotifySuccess } from "../../utils/notify"
+  const shareBtn = document.getElementById("share2") as HTMLButtonElement
+  shareBtn.addEventListener("click", () => {
+    const bloglink =
+      window.location.href.replace(/\/+$/, "") +
+      shareBtn.getAttribute("data-link")
+    navigator.clipboard.writeText(bloglink)
+    NotifySuccess("Link copied to clipboard.")
+  })
+</script>
