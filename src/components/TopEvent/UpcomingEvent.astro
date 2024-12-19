@@ -191,12 +191,14 @@ const upcomingEImage =
 </div>
 <script>
   import { NotifySuccess } from "../../utils/notify"
-  const shareBtn = document.getElementById("share2") as HTMLButtonElement
-  shareBtn.addEventListener("click", () => {
-    const bloglink =
-      window.location.href.replace(/\/+$/, "") +
-      shareBtn.getAttribute("data-link")
-    navigator.clipboard.writeText(bloglink)
-    NotifySuccess("Link copied to clipboard.")
-  })
+  const shareBtn2 = document.getElementById("share2") as HTMLButtonElement
+  if (shareBtn2) {
+    shareBtn2.addEventListener("click", () => {
+      const bloglink =
+        window.location.href.replace(/\/+$/, "") +
+        shareBtn2.getAttribute("data-link")
+      navigator.clipboard.writeText(bloglink)
+      NotifySuccess("Link copied to clipboard.")
+    })
+  }
 </script>
