@@ -2,37 +2,38 @@
   {
     "id": 1,
     "name1": "Setting Up Servers",
-    "name2": "and Routers",
+    "name2": "with TV Setup Box",
     "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "/services/ag.svg",
-    "link": "/",
-    "image": "/services/01.svg"
-  },
-  {
-    "id": 2,
-    "name1": "Hardening your Linux",
-    "name2": "and Network Security",
-    "background": "h-[310px] p-12 bg-lime rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-    "arrow": "/services/ag.svg",
-    "link": "/",
-    "image": "/services/02.svg"
-  },
-  {
-    "id": 3,
-    "name1": "Python Programming:",
-    "name2": "Resources for Beginners",
-    "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
-    "arrow": "/services/aw.svg",
-    "link": "/",
+    "link": "/blogs/servers-with-setup-box",
     "image": "/services/03.svg"
   },
   {
-    "id": 4,
-    "name1": "Grasping the Opportunities:",
-    "name2": "Networking and Communication",
+    "id": 2,
+    "name1": "Develop, Host, Deploy:",
+    "name2": "Complete BOSC pipeline",
+    "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
+    "arrow": "/services/aw.svg",
+    "link": "/blogs/bosc-pipeline",
+    "image": "/services/01.svg"
+  },
+  {
+    "id": 3,
+    "name1": "GitHub Field Day 2024:",
+    "name2": "Experience",
     "background": "h-[310px] p-12 bg-lime rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "/services/ag.svg",
-    "link": "/",
+    "link": "/blogs/github-fieldday-experience-2024",
+    "image": "/services/02.svg"
+  },
+
+  {
+    "id": 4,
+    "name1": "Your First:",
+    "name2": "GitHub Contribution",
+    "background": "h-[310px] p-12 bg-lime rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "arrow": "/services/ag.svg",
+    "link": "/blogs/first-contributions",
     "image": "/services/05.svg"
   }
 ]
