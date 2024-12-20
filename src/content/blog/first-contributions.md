@@ -1,19 +1,24 @@
 ---
 title: "Making Your First GitHub Contribution"
 pubDate: 2024-10-01
-author: "Super Genius"
-authImage: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
-image: "image4.png"
+author: "Achyut Koirala"
+layout: ../../layouts/BlogLayout.astro
+authImage: "/team/tenure-2025/achyut-president.jpeg"
+coverImage: "/team1.jpg"
 slug: first-contributions
 summary: "Making your first contribution to an open-source project can be intimidating. This guide will help you get started."
 type: "Article"
 ---
 
-# About this File
+## Important Files
 
 For any popular open source project a `CONTRIBUTING.md` file is a path to get started with contributing to the project. It will give basic information about how to contribute as well open pull request with templates and such.
 
-# First Contributions
+---
+
+<br>
+
+## First Contributions
 
 This project aims to simplify and guide the way beginners make their first contribution. If you are looking to make your first contribution, follow the steps below.
 
@@ -21,10 +26,14 @@ This project aims to simplify and guide the way beginners make their first contr
 
 #### If you don't have git on your machine, [install it](https://docs.github.com/en/get-started/quickstart/set-up-git).
 
-## Fork this repository
+<br>
 
-Fork this repository by clicking on the fork button on the top of this page.
+## Fork a repository
+
+Fork [this](https://github.com/first-contributions) repository by clicking on the fork button on the top of this page.
 This will create a copy of this repository in your account.
+
+<br>
 
 ## Clone the repository
 
@@ -50,6 +59,8 @@ git clone https://github.com/<your_name>/first-contributions.git
 
 where `your_name` is your GitHub username. Here you're copying the contents of the first-contributions repository on GitHub to your computer.
 
+<br>
+
 ## Create a branch
 
 Change to the repository directory on your computer (if you are not already there):
@@ -70,6 +81,8 @@ For example:
 git checkout -b add-my-name
 ```
 
+<br>
+
 ## Make necessary changes and commit those changes
 
 Now open `Contribute.json` file in a text editor, add your name to it. Don't add it at the beginning or end of the file. Put it anywhere in between. Now, save the file.
@@ -89,6 +102,8 @@ git commit -m "contribution: Added [your-name] to Contributors list"
 ```
 
 replacing `your-name` with your name.
+
+<br>
 
 ## Push changes to GitHub
 
@@ -111,6 +126,8 @@ replacing `your-branch-name` with the name of the branch you created earlier.
 
 </details>
 
+<br>
+
 ## Submit your changes for review
 
 If you go to your repository on GitHub, you'll see a `Contribute` button. Click on that button.
@@ -124,6 +141,8 @@ Some Repository will have a template for the pull request. If there is a templat
 <img style="float: right;" src="https://firstcontributions.github.io/assets/Readme/submit-pull-request.png" alt="submit pull request" />
 
 Soon I'll be merging all your changes into the main branch of this project. You will get a notification email once the changes have been merged.
+
+<br>
 
 ## Where to go from here?
 

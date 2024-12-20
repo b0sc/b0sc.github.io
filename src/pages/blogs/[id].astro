@@ -4,6 +4,7 @@ import Layout from "../../layouts/Layout.astro"
 // import articlesData from "../../components//Data/articles.json"
 import eventsData from "../../components/Data/events.json"
 import BoscIcon from "../../components/Icons/BoscIcon.astro"
+import { formatDate } from "../../utils/utils"
 
 export async function getStaticPaths() {
   return eventsData.map(
@@ -123,6 +124,11 @@ export const prerender = true
           <div
             class="font-normal text-gray-500 flex-col justify-start items-start flex"
           >
+            <span class="mb-2 text-xl flex w-full justify-start">
+              <span class="font-medium"
+                >{"📌 " + formatDate(new Date(date))}</span
+              >
+            </span>
             <span
               class="mb-4 text-5xl tracking-tight font-extrabold text-gray-900"
             >
@@ -155,7 +161,7 @@ export const prerender = true
               }
             </p>
             {/* <!-- Organizer --> */}
-            <span class="mb-2 text-2xl">
+            <span class="mb-2 text-2xl font-medium">
               Organizer by {" "}
               {
                 organizer.map((name, i) => (
@@ -174,6 +180,14 @@ export const prerender = true
                 ))
               }
             </span>
+
+            {/* <!-- Time --> */}
+            <span class="mb-2 text-2xl">
+              <span class="font-medium">{venue}</span>
+              <span class="font-medium">
+                {time === "00:00 AM" || time === "" ? stats.time : time}
+              </span>
+            </span>
             <!-- Partners -->
             {
               partners.length > 0 && (
@@ -188,20 +202,6 @@ export const prerender = true
                 </span>
               )
             }
-            {/* <!-- Time --> */}
-            <span class="mb-2 text-2xl">
-              Time:{" "}
-              <span class="font-medium">
-                {time === "00:00 AM" || time === "" ? stats.time : time}
-              </span>
-            </span>
-            {/* <!-- Venue --> */}
-            <span class="mb-2 text-2xl">
-              Venue: <span class="font-medium">{venue}</span>
-            </span>
-            <span class="mb-2 text-2xl">
-              Date: <span class="font-medium">{date}</span>
-            </span>
             {/* <!-- Entry Fee --> */}
             {
               stats.entry_fee !== 0 && (
@@ -234,7 +234,7 @@ export const prerender = true
             {
               mentors && mentors.length > 0 && (
                 <div class="">
-                  Mentors:
+                  Mentors
                   {mentors.map((mentor) => (
                     <div class="flex items-center space-x-4 mb-2">
                       <div>
@@ -250,7 +250,9 @@ export const prerender = true
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <span class="font-medium">{mentor.name}</span>
+                          <span class="font-medium bg-zinc-800 text-lime inline-flex items-center px-2.5 py-0.5 rounded hover:bg-lime hover:text-black">
+                            {mentor.name}
+                          </span>
                           {" 🗿"}
                           <span class="font-medium">{mentor.tag}</span>
                         </a>
@@ -264,7 +266,7 @@ export const prerender = true
             {
               guests && guests.length > 0 && (
                 <div class="">
-                  Guests:{" "}
+                  Guests{" "}
                   {guests.map((guest) => (
                     <div class="flex items-center space-x-4 mb-2">
                       <div>
@@ -280,7 +282,9 @@ export const prerender = true
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <span class="font-medium">{guest.name}</span>
+                          <span class="font-medium bg-zinc-800 text-lime inline-flex items-center px-2.5 py-0.5 rounded hover:bg-lime hover:text-black">
+                            {guest.name}
+                          </span>
                           {" 🗿"}
                           <span class="font-medium">{guest.tag}</span>
                         </a>
@@ -292,9 +296,12 @@ export const prerender = true
               )
             }
 
-            <div class="flex flex-col mb-4">
-              <span class="text-m">Participants: {stats.participants}</span>
-              <span class="text-m">Event Time: {stats.time}</span>
+            <div class="flex flex-col mb-4 mt-4">
+              Additional Details
+              <span class="text-m font-medium"
+                >Participants: {stats.participants}</span
+              >
+              <span class="text-m font-medium">Event Time: {stats.time}</span>
             </div>
             <a
               href={links.registration === ""

@@ -18,8 +18,8 @@ const { title, description, pubDate, viewCount } = Astro.props
   </head>
   <body>
     <header>
-      <p>Published on {pubDate}</p>
-      <p>Viewed by {viewCount} folks</p>
+      <!-- <p>Published on {pubDate}</p>
+      <p>Viewed by {viewCount} folks</p> -->
     </header>
     <main id="blogclass">
       <slot />
@@ -41,7 +41,7 @@ const { title, description, pubDate, viewCount } = Astro.props
       if (parentNode) {
         codeBlock.setAttribute("tabindex", "0")
         codeBlock.appendChild(copyButton)
-        parentNode.insertBefore(wrapper, codeBlock) 
+        parentNode.insertBefore(wrapper, codeBlock)
         wrapper.appendChild(codeBlock)
 
         copyButton.addEventListener("click", async () => {

@@ -19,8 +19,8 @@ const { entry } = Astro.props as { entry: CollectionEntry<"blog"> }
 const { Content } = await entry.render()
 ---
 
-<Layout title="Welcome to My site">
-  <main class="space-y-40 mb-40 pt-24">
+<Layout title={entry.data.title}>
+  <main class="space-y-60 mb-60 pt-30">
     <Container>
       <section class="bg-white">
         <div
@@ -48,17 +48,25 @@ const { Content } = await entry.render()
               </svg>
               <span class="ml-1 font-bold text-lg">All Articles</span>
             </a>
-            <h2
-              class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900"
+            <div
+              class="md:pr-0 md:pl-0 sm:pl-0 sm:pr-0 xs:pl-0 xs:pr-0 lg:pl-60 lg:pr-60"
             >
-              {entry.data.title}
-            </h2>
-            <h3 class="text-lg mb-2">
-              Written by {entry.data.author} on {formatDate(entry.data.pubDate)}
-            </h3>
-            <br />
-            <div class="content">
-              <Content />
+              <div class="text-center">
+                <h2
+                  class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900"
+                >
+                  {entry.data.title}
+                </h2>
+                <h3 class="text-lg mb-2">
+                  Written by {entry.data.author} on {
+                    formatDate(entry.data.pubDate)
+                  }
+                </h3>
+                <br />
+              </div>
+              <div class="content gap-[20px]">
+                <Content />
+              </div>
             </div>
           </div>
         </div>

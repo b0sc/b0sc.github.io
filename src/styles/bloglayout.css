@@ -4,11 +4,15 @@
 
 @layer base {
   h1 {
-    @apply text-5xl;
+    @apply text-4xl;
+    margin-bottom: 10px;
+    margin-top: 5px;
   }
 
   h2 {
-    @apply text-3xl;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    @apply text-2xl;
   }
 
   h3 {
@@ -16,6 +20,23 @@
   }
 
   #blogclass * {
+    a {
+      color: #030303;
+      text-shadow:
+        0 0 7px #0b6645,
+        0 0 10px #054723,
+        0 0 21px #013511,
+        0 0 42px #901818,
+        0 0 82px #760c0c,
+        0 0 92px #860606,
+        0 0 102px rgb(1, 7, 5),
+        0 0 151px rgb(0, 8, 5);
+    }
+
+    li {
+      padding-left: 20px;
+    }
+
     ul {
       list-style: disc;
       margin: 0;
