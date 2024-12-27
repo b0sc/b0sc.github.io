@@ -2,9 +2,9 @@
 title: "Making Your First GitHub Contribution"
 pubDate: 2024-10-01
 author: "Achyut Koirala"
-layout: ../../layouts/BlogLayout.astro
+# layout: ../../layouts/BlogLayout.astro
 authImage: "/team/tenure-2025/achyut-president.jpeg"
-coverImage: "/team1.jpg"
+coverImage: "/blogs_assets/first-contributions/clone.png"
 slug: first-contributions
 summary: "Making your first contribution to an open-source project can be intimidating. This guide will help you get started."
 type: "Article"

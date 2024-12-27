@@ -2,9 +2,9 @@
 title: "GitHub Field Day Experience 2024"
 pubDate: 2024-12-15
 author: "Achyut Koirala"
-layout: ../../layouts/BlogLayout.astro
+# layout: ../../layouts/BlogLayout.astro
 authImage: "/team/tenure-2025/achyut-president.jpeg"
-coverImage: "/team1.jpg"
+coverImage: "/blogs_assets/github-fieldday-exp-2024/cover.jpg"
 slug: github-fieldday-experience-2024
 summary: "Fully immerse yourself in the GitHub Field Day experience with this comprehensive guide. Learn how to make the most of the event and network with fellow developers."
 type: "Article"

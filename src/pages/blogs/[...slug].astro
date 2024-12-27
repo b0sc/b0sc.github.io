@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro"
 import Container from "../../components/Container.astro"
 import { getCollection } from "astro:content"
 import { formatDate } from "../../utils/utils"
+import "../../styles/bloglayout.css"
 import "../../styles/global.css"
 import type { CollectionEntry } from "astro:content"
 
@@ -19,7 +20,12 @@ const { entry } = Astro.props as { entry: CollectionEntry<"blog"> }
 const { Content } = await entry.render()
 ---
 
-<Layout title={entry.data.title}>
+<Layout
+  title={entry.data.title}
+  description={entry.data.summary}
+  image={entry.data.coverImage}
+  url={"https://bosc.org.np/blogs/" + entry.slug}
+>
   <main class="space-y-60 mb-60 pt-30">
     <Container>
       <section class="bg-white">
@@ -64,7 +70,7 @@ const { Content } = await entry.render()
                 </h3>
                 <br />
               </div>
-              <div class="content gap-[20px]">
+              <div class="content gap-[20px]" id="blogclass">
                 <Content />
               </div>
             </div>
@@ -73,4 +79,43 @@ const { Content } = await entry.render()
       </section>
     </Container>
   </main>
+  <script>
+    let copyButtonLabel = "Copy Code"
+    let codeBlocks = Array.from(document.querySelectorAll("pre"))
+
+    for (let codeBlock of codeBlocks) {
+      let wrapper = document.createElement("div")
+      wrapper.style.position = "relative"
+
+      let copyButton = document.createElement("button")
+      copyButton.className = "copy-code"
+      copyButton.innerHTML = copyButtonLabel
+
+      const parentNode = codeBlock.parentNode
+      if (parentNode) {
+        codeBlock.setAttribute("tabindex", "0")
+        codeBlock.appendChild(copyButton)
+        parentNode.insertBefore(wrapper, codeBlock)
+        wrapper.appendChild(codeBlock)
+
+        copyButton.addEventListener("click", async () => {
+          await copyCode(codeBlock, copyButton)
+        })
+      }
+    }
+
+    async function copyCode(block: HTMLElement, button: HTMLButtonElement) {
+      let code = block.querySelector("code")
+      if (code) {
+        let text = code.innerText
+        await navigator.clipboard.writeText(text)
+
+        button.innerText = "Code Copied"
+
+        setTimeout(() => {
+          button.innerText = copyButtonLabel
+        }, 700)
+      }
+    }
+  </script>
 </Layout>

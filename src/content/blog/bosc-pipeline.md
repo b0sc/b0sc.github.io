@@ -2,9 +2,9 @@
 title: "Develop, Host, Deploy: Complete BOSC pipeline"
 pubDate: 2024-11-30
 author: "Achyut Koirala"
-layout: ../../layouts/BlogLayout.astro
+# layout: ../../layouts/BlogLayout.astro
 authImage: "/team/tenure-2025/achyut-president.jpeg"
-coverImage: "/team1.jpg"
+coverImage: "/blogs_assets/bosc-pipeline/cover.png"
 slug: bosc-pipeline
 summary: "Learn how BOSC has managed to streamline the development, hosting, and deployment process with a single pipeline, everything for free. $0 cost."
 type: "Article"
