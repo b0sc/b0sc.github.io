@@ -6,6 +6,8 @@ import type { CollectionEntry } from "astro:content"
 import { getCollection } from "astro:content"
 import ArticleCard from "../components/ArticleCard.astro"
 import EventCard from "../components/EventCard.astro"
+import MemberCard from "../components/MemberCard.astro"
+import teamData from "../components/Data/team.json"
 
 const articles: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
   (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
@@ -21,33 +23,232 @@ const articles: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
 >
   <main>
     <Container>
-      <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-        <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
-          <!-- <h2
-            class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900"
-          >
-            Articles and Events Blogs
-          </h2> -->
-        </div>
-        <div class="space-y-8">
-          <h2
-            class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900"
-          >
-            Articles
-          </h2>
-          <div class="grid gap-8 lg:grid-cols-2">
-            <ArticleCard articles={articles} />
+      <div class="flex flex-col md:flex-row">
+        <!-- Tabs - Horizontal on mobile, Vertical on desktop -->
+        <div class="md:w-48 bg-white shadow-lg md:min-h-screen">
+          <div class="md:sticky md:top-0 pt-4 pr-2">
+            <!-- Tab Container - Horizontal scrolling on mobile -->
+            <div
+              class="flex md:flex-col space-x-4 md:space-x-0 md:space-y-2 overflow-x-auto md:overflow-x-visible pb-2 md:pb-0"
+            >
+              <button
+                id="articles-tab"
+                class="whitespace-nowrap px-4 py-2 text-left rounded-md transition-colors hover:bg-gray-100 tab-button"
+                data-tab="articles"
+              >
+                Articles
+              </button>
+              <button
+                id="events-tab"
+                class="whitespace-nowrap px-4 py-2 text-left rounded-md transition-colors hover:bg-gray-100 tab-button"
+                data-tab="events"
+              >
+                Events
+              </button>
+              <button
+                id="opportunities-tab"
+                class="whitespace-nowrap px-4 py-2 text-left rounded-md transition-colors hover:bg-gray-100 tab-button"
+                data-tab="opportunities"
+              >
+                Opportunities
+              </button>
+              <button
+                id="members-tab"
+                class="whitespace-nowrap px-4 py-2 text-left rounded-md transition-colors hover:bg-gray-100 tab-button"
+                data-tab="members"
+              >
+                Members
+              </button>
+              <button
+                id="alumni-tab"
+                class="whitespace-nowrap px-4 py-2 text-left rounded-md transition-colors hover:bg-gray-100 tab-button"
+                data-tab="alumni"
+              >
+                Alumni
+              </button>
+              <button
+                id="history-tab"
+                class="whitespace-nowrap px-4 py-2 text-left rounded-md transition-colors hover:bg-gray-100 tab-button"
+                data-tab="history"
+              >
+                History
+              </button>
+            </div>
           </div>
-          <h2
-            class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900"
-          >
-            Events
-          </h2>
-          <div class="grid gap-8 lg:grid-cols-2">
-            <EventCard eventsData={eventsData} />
+        </div>
+
+        <!-- Content Area -->
+        <div class="flex-1 p-4">
+          <div id="articles-content" class="content-section">
+            <h2
+              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900"
+            >
+              Articles
+            </h2>
+            <div class="grid gap-8 lg:grid-cols-2">
+              <ArticleCard articles={articles} />
+            </div>
+          </div>
+
+          <div id="events-content" class="content-section hidden">
+            <h2
+              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900"
+            >
+              Events
+            </h2>
+            <p class="mb-4 font-light text-gray-500 sm:text-xl">
+              Since 2021, BOSC has sucessfully conducted
+              <strong> {eventsData.length}</strong> events and workshops.
+            </p>
+            <div class="grid gap-8 lg:grid-cols-2">
+              <EventCard eventsData={eventsData} />
+            </div>
+          </div>
+          <div id="opportunities-content" class="content-section">
+            <h2
+              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900"
+            >
+              International Opportunities - Scholarships, Mentorship
+            </h2>
+            <div class="grid gap-8 lg:grid-cols-2">
+              <!-- <ArticleCard articles={articles} /> -->
+            </div>
+          </div>
+          <div id="history-content" class="content-section">
+            <h2
+              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900"
+            >
+              History | Timeline
+            </h2>
+            <div>
+              <h1>BOSC EVENTS TIMELINE</h1>
+              <h2>
+                use the events.json file to map the events and display them in a
+                timeline. <br />
+                Will incorporate 2 ideas at once: History of BOSC and All the events
+                throughout the tenures in the timeline.
+              </h2>
+              <br />
+              <h1>
+                WE NEED YOUR HELP!!! <a
+                  class="text-zinc-900 border border-lime"
+                  href="https://github.com/b0sc/b0sc.github.io/issues/16"
+                  >Contribute here
+                  https://github.com/b0sc/b0sc.github.io/issues/16</a
+                >
+              </h1>
+              <br />
+              <h1>
+                For now <a href="/blogs">See Events from Blogs</a>
+              </h1>
+              <p>This page is under construction. Please check back later.</p>
+            </div>
+          </div>
+          <div id="members-content" class="content-section">
+            <h2
+              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900"
+            >
+              Members
+            </h2>
+            <div
+              class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 xl:grid-cols-3 gap-4"
+            >
+              {
+                teamData.members.map(
+                  ({ title, description, name, link, profile }) => (
+                    <MemberCard
+                      title={title}
+                      description={description}
+                      name={name}
+                      link={link}
+                      profile={profile}
+                    />
+                  )
+                )
+              }
+            </div>
+          </div>
+          <div id="alumni-content" class="content-section">
+            <h2
+              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900"
+            >
+              Alumni
+            </h2>
+            <div
+              class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 xl:grid-cols-3 gap-4"
+            >
+              {
+                teamData.alumni.map(
+                  ({ title, description, name, link, profile }) => (
+                    <MemberCard
+                      title={title}
+                      description={description}
+                      name={name}
+                      link={link}
+                      profile={profile}
+                    />
+                  )
+                )
+              }
+            </div>
           </div>
         </div>
       </div>
     </Container>
   </main>
 </Layout>
+
+<style>
+  .tab-button.active {
+    @apply bg-zinc-900 text-white;
+  }
+</style>
+
+<script>
+  function initializeTabs() {
+    function updateActiveTab(tabId: string) {
+      // Update tab buttons
+      document.querySelectorAll(".tab-button").forEach((button) => {
+        button.classList.remove("active")
+        if (button.getAttribute("data-tab") === tabId) {
+          button.classList.add("active")
+        }
+      })
+
+      // Update content visibility
+      document.querySelectorAll(".content-section").forEach((section) => {
+        section.classList.add("hidden")
+      })
+      document.getElementById(`${tabId}-content`)?.classList.remove("hidden")
+    }
+
+    // Handle hash changes
+    function handleHash() {
+      const hash = window.location.hash.slice(1) || "articles"
+      updateActiveTab(hash)
+    }
+
+    // Add click event listeners to tabs
+    document.querySelectorAll(".tab-button").forEach((button) => {
+      button.addEventListener("click", (e) => {
+        const tab = (e.currentTarget as HTMLElement).getAttribute("data-tab")
+        if (tab) {
+          window.location.hash = tab
+          updateActiveTab(tab)
+        }
+      })
+    })
+
+    // Handle hash changes
+    window.addEventListener("hashchange", handleHash)
+
+    // Handle initial load
+    handleHash()
+  }
+
+  // Run on initial page load
+  initializeTabs()
+
+  // Re-run when navigating between pages (Astro View Transitions)
+  document.addEventListener("astro:page-load", initializeTabs)
+</script>

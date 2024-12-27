@@ -1,12 +1,25 @@
 ---
 import Container from "../../components/Container.astro"
 import Layout from "../../layouts/Layout.astro"
-// import articlesData from "../../components//Data/articles.json"
 import eventsData from "../../components/Data/events.json"
-import BoscIcon from "../../components/Icons/BoscIcon.astro"
 import { formatDate } from "../../utils/utils"
+import { getCollection } from "astro:content"
+import type { CollectionEntry } from "astro:content"
+
+// export async function getStaticPaths() {
+//   const blogEntries = await getCollection("blog")
+//   return blogEntries.map((entry: any) => ({
+//     params: { slug: entry.slug },
+//     props: { entry },
+//   }))
+// }
+
+// const { entry } = Astro.props as { entry: CollectionEntry<"blog"> }
+
+// const { Content } = await entry.render()
 
 export async function getStaticPaths() {
+  // const eventsBlogs = await getCollection("events_blog")
   return eventsData.map(
     ({
       id,
@@ -91,7 +104,7 @@ export const prerender = true
       <section class="bg-white">
         <div class="font-light text-gray-500 sm:text-lg">
           <a
-            href="/blogs"
+            href="/blogs#events"
             class="inline-flex items-center font-medium text-black hover:text-lime my-4"
           >
             <svg
@@ -109,7 +122,7 @@ export const prerender = true
               >
               </path>
             </svg>
-            <span class="ml-1 font-bold text-lg">All Articles</span>
+            <span class="ml-1 font-bold text-lg">All Events</span>
           </a>
         </div>
         <div

@@ -1,5 +1,36 @@
 [
   {
+    "id": 30,
+    "type": "Event",
+    "featured": false,
+    "name_1": "BOSC Orientation:",
+    "name_2": "Meet and Greet",
+    "desc": "Welcome to BOSC! 🎉 We are excited to have you join our community. This orientation session is for new General Members to Meet and Greet our Alumni. Learn from their mistakes and seek guidance.",
+    "year": 2025,
+    "date": "2025-01-12",
+    "time": "07:00 AM",
+    "venue": "Kalika fedi",
+    "organizer": ["BOSC"],
+    "partners": [],
+    "mentors": [],
+    "guests": [],
+    "cover_photo": "",
+    "background": "bg-zinc-100",
+    "links": {
+      "blog": "/blogs/30",
+      "social": "https://www.facebook.com/birendraopensourceclub",
+      "registration": ""
+    },
+    "images": [],
+    "stats": {
+      "participants": 30,
+      "time": "4 hours",
+      "certificate": false,
+      "prize": true,
+      "entry_fee": 0
+    }
+  },
+  {
     "id": 29,
     "type": "Event",
     "featured": false,

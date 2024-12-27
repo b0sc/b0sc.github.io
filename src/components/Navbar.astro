@@ -1,7 +1,6 @@
 ---
 const navLinks = [
-  { href: "/about", label: "About us" },
-  { href: "/jobs", label: "Jobs" },
+  // { href: "/about", label: "About us" },
   { href: "/notes", label: "Notes" },
   { href: "/mentorship", label: "Mentorship" },
   // { href: "/#topevents", label: "Top Events" },
@@ -43,14 +42,14 @@ import Container from "./Container.astro"
         </button>
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul
-            class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white"
+            class="font-medium flex flex-col p-2 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white"
           >
             {
               navLinks.map((link) => (
                 <li>
                   <a
                     href={link.href}
-                    class="inline-block rounded hover:border-gray-200 text-black hover:bg-zinc-200 rounded md:bg-transparent p-3"
+                    class="inline-block rounded hover:border-gray-200 text-black hover:bg-zinc-200 rounded md:bg-transparent p-2"
                   >
                     {link.label}
                   </a>
@@ -63,21 +62,17 @@ import Container from "./Container.astro"
                 href="https://forms.gle/cyisykxr6RwpXCrm7"
                 target="_blank"
               >
-                <h2 class="text-center text-xl font-normal leading-7">
-                  Get Membership
-                </h2>
+                <h2 class="text-center text-xl font-normal leading-7">Join</h2>
               </a>
             </li>
           </ul>
         </div>
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
           <a
-            class="px-6 py-3 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex"
+            class="px-4 py-2 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex"
             href="https://forms.gle/cyisykxr6RwpXCrm7"
             target="_blank"
-            ><h2 class="text-center text-xl font-normal leading-7">
-              Get Membership
-            </h2>
+            ><h2 class="text-center text-xl font-normal leading-7">Join</h2>
           </a>
         </div>
       </div>

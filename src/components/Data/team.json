@@ -1,5 +1,5 @@
 {
-  "team": [
+  "executives": [
     {
       "title": "President",
       "name": "Achyut Koirala",
@@ -76,6 +76,24 @@
       "description": "Frontend Developer. Proficient in React and Vue. Open Source Enthusiast. A strong communicator with leadership experience and skilled in teamwork ",
       "profile": "/team/tenure-2025/sandhya-om.jpg",
       "link": "/www.linkedin.com/in/sandhya-bhattarai"
+    }
+  ],
+  "members": [
+    {
+      "title": "General Member",
+      "name": "Hero Person",
+      "description": "Starting out fresh in the field of technology. Interested in learning new things and exploring new opportunities.",
+      "profile": "/team/prof.png",
+      "link": "https://facebook.com/birendraopensourceclub"
+    }
+  ],
+  "alumni": [
+    {
+      "title": "President | 2023-2024",
+      "name": "Kushal Pathak",
+      "description": "2+ Years of Experience in Software Development. Proficient in React and Node.js. Open Source Contributor. Interested in learning new things and exploring new opportunities.",
+      "profile": "/team/prof.png",
+      "link": "https://facebook.com/birendraopensourceclub"
     }
   ],
   "faqs": [

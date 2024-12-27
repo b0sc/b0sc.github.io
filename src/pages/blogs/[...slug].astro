@@ -6,6 +6,7 @@ import { formatDate } from "../../utils/utils"
 import "../../styles/bloglayout.css"
 import "../../styles/global.css"
 import type { CollectionEntry } from "astro:content"
+import type { MarkdownLayoutProps } from "astro"
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection("blog")
@@ -16,7 +17,6 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props as { entry: CollectionEntry<"blog"> }
-
 const { Content } = await entry.render()
 ---
 
@@ -34,7 +34,7 @@ const { Content } = await entry.render()
         >
           <div class="font-light text-gray-500 sm:text-lg">
             <a
-              href="/blogs"
+              href="/blogs#articles"
               class="inline-flex items-center font-medium text-black hover:text-lime my-4"
             >
               <svg
