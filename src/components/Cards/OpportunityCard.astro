@@ -53,7 +53,7 @@ const { opportunities } = Astro.props as Props
           >
             {op.desc.length > 150 ? `${op.desc.substring(0, 150)}...` : op.desc}{" "}
             <a
-              class="gap-[10px] flex justify-start items-center"
+              class="gap-[10px] flex sm:justify-start justify-center items-center"
               href={op.quicklinks.registration}
               target="_blank"
             >
