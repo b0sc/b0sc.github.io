@@ -4,10 +4,13 @@ import Container from "../components/Container.astro"
 import eventsData from "../components/Data/events.json"
 import type { CollectionEntry } from "astro:content"
 import { getCollection } from "astro:content"
-import ArticleCard from "../components/ArticleCard.astro"
-import EventCard from "../components/EventCard.astro"
-import MemberCard from "../components/MemberCard.astro"
+import ArticleCard from "../components/Cards/ArticleCard.astro"
+import EventCard from "../components/Cards/EventCard.astro"
+import MemberCard from "../components/Cards/MemberCard.astro"
 import teamData from "../components/Data/team.json"
+import oData from "../components/Data/opportunities.json"
+import Timeline from "../components/Timeline.astro"
+import OpportunityCard from "../components/Cards/OpportunityCard.astro"
 
 const articles: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
   (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
@@ -108,64 +111,21 @@ const articles: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
             <h2
               class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900"
             >
-              International Opportunities - Scholarships, Mentorship
+              Opportunities in IT - International, National
             </h2>
             <div class="grid gap-8 lg:grid-cols-2">
-              <!-- <ArticleCard articles={articles} /> -->
+              <OpportunityCard opportunities={oData} />
             </div>
           </div>
-          <div id="history-content" class="content-section">
-            <h2
-              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900"
-            >
-              History | Timeline
-            </h2>
-            <div>
-              <h1>BOSC EVENTS TIMELINE</h1>
-              <h2>
-                use the events.json file to map the events and display them in a
-                timeline. <br />
-                Will incorporate 2 ideas at once: History of BOSC and All the events
-                throughout the tenures in the timeline.
-              </h2>
-              <br />
-              <h1>
-                WE NEED YOUR HELP!!! <a
-                  class="text-zinc-900 border border-lime"
-                  href="https://github.com/b0sc/b0sc.github.io/issues/16"
-                  >Contribute here
-                  https://github.com/b0sc/b0sc.github.io/issues/16</a
-                >
-              </h1>
-              <br />
-              <h1>
-                For now <a href="/blogs">See Events from Blogs</a>
-              </h1>
-              <p>This page is under construction. Please check back later.</p>
-            </div>
-          </div>
+
           <div id="members-content" class="content-section">
             <h2
               class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900"
             >
               Members
             </h2>
-            <div
-              class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 xl:grid-cols-3 gap-4"
-            >
-              {
-                teamData.members.map(
-                  ({ title, description, name, link, profile }) => (
-                    <MemberCard
-                      title={title}
-                      description={description}
-                      name={name}
-                      link={link}
-                      profile={profile}
-                    />
-                  )
-                )
-              }
+            <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
+              <MemberCard members={teamData.members} />
             </div>
           </div>
           <div id="alumni-content" class="content-section">
@@ -174,23 +134,17 @@ const articles: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
             >
               Alumni
             </h2>
-            <div
-              class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 xl:grid-cols-3 gap-4"
-            >
-              {
-                teamData.alumni.map(
-                  ({ title, description, name, link, profile }) => (
-                    <MemberCard
-                      title={title}
-                      description={description}
-                      name={name}
-                      link={link}
-                      profile={profile}
-                    />
-                  )
-                )
-              }
+            <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
+              <MemberCard members={teamData.alumni} />
             </div>
+          </div>
+          <div id="history-content" class="content-section">
+            <h2
+              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900"
+            >
+              History | Timeline
+            </h2>
+            <Timeline />
           </div>
         </div>
       </div>

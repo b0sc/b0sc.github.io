@@ -1,0 +1,177 @@
+---
+import ArticleIcon from "../../components/Icons/ArticleIcon.astro"
+import VideoIcon from "../../components/Icons/VideoIcon.astro"
+import OpportunitiesData from "../../components/Data/opportunities.json"
+import BoscIcon from "../Icons/BoscIcon.astro"
+
+interface Props {
+  opportunities: typeof OpportunitiesData
+}
+
+const { opportunities } = Astro.props as Props
+---
+
+{
+  opportunities.map((op) => (
+    <article class="p-6 bg-white rounded-3xl border border-gray-200 shadow-card">
+      <div class="flex justify-between items-center mb-5 text-gray-500">
+        <span class="bg-lime text-black text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
+          {op.country === "International" ? <ArticleIcon /> : <VideoIcon />}
+          {op.country}
+        </span>
+        {op.organizer &&
+          op.organizer.map((name: string) => (
+            <>
+              {name === "BOSC" ? (
+                <BoscIcon hidden="true" />
+              ) : (
+                <span class="hidden sm:block font-medium">{name}</span>
+              )}
+            </>
+          ))}
+        <span class="bg-lime text-black text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
+          {op.platform}
+        </span>
+      </div>
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-center">
+        {op.name}
+      </h2>
+
+      {/* <a href={`/blogs/${op.id}`}> */}
+      <div class="flex flex-col sm:flex-row justify-between items-center">
+        <div class="w-full flex justify-center items-center space-x-4 sm:m-4">
+          <img
+            class="w-50 rounded"
+            src={op.cover_photo || "/services/Illustration.svg"}
+            alt="cover"
+          />
+        </div>
+        <div class="w-full flex flex-col items-center space-x-0 sm:space-x-4">
+          <p
+            class="mb-5 font-light text-gray-500 text-center sm:text-left"
+            style="white-space: pre-line"
+          >
+            {op.desc.length > 150 ? `${op.desc.substring(0, 150)}...` : op.desc}{" "}
+            <a
+              class="gap-[10px] flex justify-start items-center"
+              href={op.quicklinks.registration}
+              target="_blank"
+            >
+              <span class="font-medium">Visit</span>
+              <img
+                class="w-[21px] h-[21px]"
+                src="/share.png"
+                alt="share icon"
+              />
+            </a>
+          </p>
+        </div>
+      </div>
+      {/* </a> */}
+
+      <div class="font-normal text-gray-500 flex-col justify-start items-start flex">
+        {(op.stats.prize ||
+          op.stats.certificate ||
+          op.stats.fee === 0 ||
+          op.stats.stipend != 0) && (
+          <p class="flex font-light text-gray-500 sm:text-lg m-2 items-center w-full justify-around">
+            {/* <span> */}
+            {op.stats.prize && (
+              <span class="bg-zinc-800 text-lime text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
+                Prizes
+              </span>
+            )}
+            {op.stats.certificate && (
+              <span class="bg-zinc-800 text-lime text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
+                Certificate
+              </span>
+            )}
+            {op.stats.fee === 0 && (
+              <span class="bg-zinc-800 text-lime text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
+                Free
+              </span>
+            )}
+            {op.stats.stipend != 0 && (
+              <span class="bg-zinc-800 text-lime text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
+                Stipend
+              </span>
+            )}
+            {/* </span> */}
+          </p>
+        )}
+        {op.partners.length > 0 && (
+          <span>
+            Partners:
+            {op.partners.map((name, i) => (
+              <span class="font-medium">
+                {name}
+                {op.partners.length === i + 1 ? "" : "🤝"}
+              </span>
+            ))}
+          </span>
+        )}
+        {op.mentors.filter((mentor) => mentor.name !== "").length > 0 && (
+          <span>
+            Mentors:{" "}
+            {op.mentors.map((mentor) => (
+              <>
+                <a
+                  class="font-medium border-b border-dashed border-zinc-800"
+                  href={mentor.connect}
+                  target="_blank"
+                >
+                  {mentor.name}
+                </a>
+                {" 🗿"}
+              </>
+            ))}
+          </span>
+        )}
+        {op.guests.filter((guest) => guest.name !== "").length > 0 && (
+          <span>
+            Guests:{" "}
+            {op.guests.map((guest, i) => (
+              <>
+                <a
+                  class="font-medium border-b border-dashed border-zinc-800"
+                  href={guest.connect}
+                  target="_blank"
+                >
+                  {guest.name}
+                </a>
+                {"🎙️"}
+              </>
+            ))}
+          </span>
+        )}
+        <span>
+          Opens: <span class="font-medium">{op.opens}</span>
+        </span>
+        <span>
+          Every: <span class="font-medium">{op.every}</span>
+        </span>
+        {op.stats.fee !== 0 && (
+          <span>
+            Entry Fee: <span class="font-medium">{op.stats.fee}</span>
+          </span>
+        )}
+        {op.stats.stipend !== 0 && (
+          <span>
+            Stipend: NRS. <span class="font-medium">{op.stats.stipend}</span>
+          </span>
+        )}
+        {op.requirements.length > 0 && (
+          <span>
+            Requirements{" "}
+            {op.requirements.map((req) => (
+              <>
+                <br />
+                <span class="font-medium">{req}</span>
+              </>
+            ))}
+          </span>
+        )}
+      </div>
+    </article>
+  ))
+}

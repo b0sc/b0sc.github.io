@@ -11,7 +11,7 @@ import TempData from "./Data/top-blogs.json"
       description="Read the latest blogs from our community members and stay updated with the latest trends in the tech industry."
     />
   </div>
-  <div class="flex-row items-center py-5">
+  <div class="flex-row items-center py-5 hidden md:block">
     <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4">
       <!-- edit events.json to replace its image and also map only first 6 items from events.json -->
       {
@@ -47,5 +47,16 @@ import TempData from "./Data/top-blogs.json"
       }
       <!-- card end-->
     </div>
+  </div>
+  <div class="w-full justify-center md:justify-end inline-flex">
+    <a
+      class="px-9 py-5 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex"
+      rel="noopener noreferrer"
+      href="/blogs#articles"
+    >
+      <h2 class="text-center text-xl font-normal leading-7">
+        Read Blog Articles
+      </h2>
+    </a>
   </div>
 </Container>

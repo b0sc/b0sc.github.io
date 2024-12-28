@@ -1,9 +1,9 @@
 ---
-
+const { hidden } = Astro.props as { hidden?: boolean }
 ---
 
 <img
   src="/logo-only.png"
   alt="birendra-open-source-club-logo"
-  class="w-10 inline-flex"
+  class={`w-10 inline-flex ${hidden ? "hidden sm:inline-flex" : ""}`}
 />

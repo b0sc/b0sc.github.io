@@ -79,12 +79,10 @@ import Container from "./Container.astro"
     </Container>
   </nav>
 </header>
-
 <script is:inline>
-  document.addEventListener("DOMContentLoaded", () => {
+  function initNavbar() {
     const navbar = document.getElementById("navbar-default")
 
-    // Check if navbar exists before adding event listeners
     if (navbar) {
       const toggleButton = document.querySelector(
         '[data-collapse-toggle="navbar-default"]'
@@ -92,9 +90,9 @@ import Container from "./Container.astro"
       const navLinks = navbar.querySelectorAll("a")
 
       if (toggleButton) {
-        toggleButton.addEventListener("click", () =>
+        toggleButton.addEventListener("click", () => {
           navbar.classList.toggle("hidden")
-        )
+        })
       } else {
         console.warn(
           "Navbar toggle button not found. Toggle functionality might be affected."
@@ -102,12 +100,24 @@ import Container from "./Container.astro"
       }
 
       navLinks.forEach((link) =>
-        link.addEventListener("click", () => navbar.classList.add("hidden"))
+        link.addEventListener("click", () => {
+          navbar.classList.add("hidden")
+        })
       )
     } else {
       console.warn(
         "Navbar element with ID 'navbar-default' not found. Navigation functionality might be affected."
       )
     }
+  }
+
+  // Reinitialize navbar on Astro navigation
+  document.addEventListener("astro:page-load", () => {
+    initNavbar()
+  })
+
+  // Initialize navbar on first load
+  document.addEventListener("DOMContentLoaded", () => {
+    initNavbar()
   })
 </script>

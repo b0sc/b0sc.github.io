@@ -1,0 +1,41 @@
+---
+interface Props {
+  members: {
+    title: string
+    description: string
+    name: string
+    link: string
+    profile: string
+  }[]
+}
+
+const { members } = Astro.props as Props
+---
+
+{
+  members.map(({ title, description, name, link, profile }) => (
+    <div class="h-[300px] px-[25px] py-8 bg-white rounded-[40px] shadow-card border border-zinc-900 flex-col justify-start items-start gap-2.5 inline-flex text-black">
+      <div class="flex-col justify-start items-start gap-7 flex w-full">
+        <div class="self-stretch justify-start items-start inline-flex">
+          <div class="grow shrink basis-0 justify-start items-center gap-5 flex">
+            <div class="h-[85px] w-[85px] left-0 top-0 relative">
+              <img src={profile} alt={name} class="rounded-full" />
+            </div>
+            <div class="flex-col justify-end items-start inline-flex">
+              <div class="text-sm font-normal">{title}</div>
+              <div class="text- font-medium">{name}</div>
+            </div>
+          </div>
+          <a class="top-0 right-0" href={link}>
+            <img src="/team/lng.svg" alt="vector" />
+          </a>
+        </div>
+        <hr class="w-full border border-black" />
+
+        <div class="overflow-y-auto h-[100px] scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
+          <p class="text-sm md:text-md xl:text-md">{description}</p>
+        </div>
+      </div>
+    </div>
+  ))
+}

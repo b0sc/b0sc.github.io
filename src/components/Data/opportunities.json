@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "country": "International",
+    "name": "GitHub Campus Expert",
+    "desc": "GitHub Campus Experts are students who build technical communities on campus, with training and support from GitHub.",
+    "opens": "Feburary | August",
+    "every": "6 months",
+    "platform": "Virtual",
+    "organizer": ["GitHub"],
+    "partners": [],
+    "mentors": [
+      {
+        "name": "Trainers from GitHub",
+        "image": "/default_mentor.jpg",
+        "designation": "GitHub Campus Expert",
+        "tag": "GitHub Employee",
+        "connect": "https://www.facebook.com/birendraopensourceclub"
+      }
+    ],
+    "guests": [
+      {
+        "name": "",
+        "image": "/default_mentor.jpg",
+        "designation": "GitHub Campus Expert",
+        "tag": "GitHub Employee",
+        "connect": "https://www.facebook.com/birendraopensourceclub"
+      }
+    ],
+    "cover_photo": "/opportunities/github.jpg",
+    "quicklinks": {
+      "social": "https://www.facebook.com/birendraopensourceclub",
+      "registration": "https://education.github.com/campus_experts"
+    },
+    "stats": {
+      "applicants": 30000,
+      "certificate": true,
+      "prize": true,
+      "fee": 0,
+      "stipend": 0,
+      "duration": "3 months",
+      "commitment": "10 hours/week"
+    },
+    "requirements": [
+      "Must be a student with 1 year left",
+      "Must have GitHub Student Developer Pack"
+    ]
+  }
+]

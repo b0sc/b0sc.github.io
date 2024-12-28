@@ -3,7 +3,7 @@ import Container from "./Container.astro"
 import Topic from "./Topic.astro"
 import teamData from "./Data/team.json"
 import Collapse from "./Collapse.astro"
-import MemberCard from "./MemberCard.astro"
+import MemberCard from "./Cards/MemberCard.astro"
 ---
 
 <Container>
@@ -16,21 +16,9 @@ import MemberCard from "./MemberCard.astro"
 
   <div class="flex-row items-center py-5" id="team">
     <div
-      class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 xl:grid-cols-4 gap-4"
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4"
     >
-      {
-        teamData.executives.map(
-          ({ title, description, name, link, profile }) => (
-            <MemberCard
-              title={title}
-              description={description}
-              name={name}
-              link={link}
-              profile={profile}
-            />
-          )
-        )
-      }
+      <MemberCard members={teamData.executives} />
     </div>
     <div class="w-full justify-center md:justify-end items-center inline-flex">
       <a

@@ -150,9 +150,19 @@ const upcomingEImage =
             </span>
           )
         }
+        <button
+          class="justify-start items-center gap-[10px] inline-flex"
+          id="share2"
+          data-link={upcomingE.links.blog}
+        >
+          <div class="font-medium leading-7">Share</div>
+          <div class="w-[21px] h-[21px] relative">
+            <img class="w-[21px] h-[21px]" src="/share.png" />
+          </div>
+        </button>
       </div>
 
-      <div class="inline-flex gap-4">
+      <div class="flex gap-4">
         <a
           href={upcomingE.links.registration === ""
             ? upcomingE.links.social
@@ -166,22 +176,13 @@ const upcomingEImage =
           href={upcomingE.links.blog}
         >
           <div class="text-xl font-normal leading-7">Learn more</div>
-          <div class="w-[41px] h-[41px] relative">
+          <div class="w-[41px] h-[41px] relative hidden sm:block">
             <img
               class="w-[41px] h-[41px] left-0 top-0 absolute"
               src="/services/aw.svg"
             />
           </div>
         </a>
-        <button
-          class="justify-start items-center gap-[15px] inline-flex"
-          id="share2"
-          data-link={upcomingE.links.blog}
-        >
-          <div class="w-[41px] h-[41px] relative">
-            <img class="w-[41px] h-[41px]" src="/share.png" />
-          </div>
-        </button>
       </div>
     </div>
   </div>
