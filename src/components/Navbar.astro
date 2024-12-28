@@ -90,20 +90,18 @@ import Container from "./Container.astro"
       const navLinks = navbar.querySelectorAll("a")
 
       if (toggleButton) {
-        toggleButton.addEventListener("click", () => {
-          navbar.classList.toggle("hidden")
-        })
+        toggleButton.removeEventListener("click", toggleNavbar)
+        toggleButton.addEventListener("click", toggleNavbar)
       } else {
         console.warn(
           "Navbar toggle button not found. Toggle functionality might be affected."
         )
       }
 
-      navLinks.forEach((link) =>
-        link.addEventListener("click", () => {
-          navbar.classList.add("hidden")
-        })
-      )
+      navLinks.forEach((link) => {
+        link.removeEventListener("click", closeNavbar)
+        link.addEventListener("click", closeNavbar)
+      })
     } else {
       console.warn(
         "Navbar element with ID 'navbar-default' not found. Navigation functionality might be affected."
@@ -111,13 +109,26 @@ import Container from "./Container.astro"
     }
   }
 
-  // Reinitialize navbar on Astro navigation
-  document.addEventListener("astro:page-load", () => {
-    initNavbar()
-  })
+  function toggleNavbar() {
+    const navbar = document.getElementById("navbar-default")
+    if (navbar) {
+      navbar.classList.toggle("hidden")
+    }
+  }
 
-  // Initialize navbar on first load
-  document.addEventListener("DOMContentLoaded", () => {
-    initNavbar()
-  })
+  function closeNavbar() {
+    const navbar = document.getElementById("navbar-default")
+    if (navbar) {
+      navbar.classList.add("hidden")
+    }
+  }
+
+  // Ensure navbar is initialized properly
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initNavbar)
+  } else {
+    initNavbar() // DOM already loaded
+  }
+
+  document.addEventListener("astro:page-load", initNavbar)
 </script>
