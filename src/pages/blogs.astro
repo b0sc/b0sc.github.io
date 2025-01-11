@@ -84,63 +84,67 @@ const articles: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
         <div class="flex-1 p-4">
           <div id="articles-content" class="content-section">
             <h2
-              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900"
+              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 text-center"
             >
               Articles
             </h2>
-            <div class="grid gap-8 lg:grid-cols-2">
+            <div class="grid gap-8 lg:grid-cols-2 mt-12">
               <ArticleCard articles={articles} />
             </div>
           </div>
 
-          <div id="events-content" class="content-section hidden">
+          <div id="events-content" class="content-section">
             <h2
-              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900"
+              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 text-center"
             >
               Events
             </h2>
-            <p class="mb-4 font-light text-gray-500 sm:text-xl">
+            <p class="mb-4 font-light text-gray-500 sm:text-xl text-center">
               Since 2021, BOSC has sucessfully conducted
               <strong> {eventsData.length}</strong> events and workshops.
             </p>
-            <div class="grid gap-8 lg:grid-cols-2">
+            <div class="grid gap-8 lg:grid-cols-2 mt-12">
               <EventCard eventsData={eventsData} />
             </div>
           </div>
           <div id="opportunities-content" class="content-section">
             <h2
-              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900"
+              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 text-center"
             >
               Opportunities in IT - International, National
             </h2>
-            <div class="grid gap-8 lg:grid-cols-2">
+            <div class="grid gap-8 lg:grid-cols-2 mt-12">
               <OpportunityCard opportunities={oData} />
             </div>
           </div>
 
           <div id="members-content" class="content-section">
             <h2
-              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900"
+              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 text-center"
             >
               Members
             </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 mt-12"
+            >
               <MemberCard members={teamData.members} />
             </div>
           </div>
           <div id="alumni-content" class="content-section">
             <h2
-              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900"
+              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 text-center"
             >
               Alumni
             </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 mt-12"
+            >
               <MemberCard members={teamData.alumni} />
             </div>
           </div>
           <div id="history-content" class="content-section">
             <h2
-              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900"
+              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 text-center"
             >
               History | Timeline
             </h2>

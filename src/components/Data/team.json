@@ -16,10 +16,10 @@
     },
     {
       "title": "Secretary",
-      "name": "Smarika Bhatta",
-      "description": "Frontend Developer. Proficient in React and Vue. Open Source Enthusiast. Skilled in Leadership and Management.",
-      "profile": "/team/tenure-2025/smarika-secretary.jpg",
-      "link": "https://www.facebook.com/smarika.bhatta.925"
+      "name": "L.F. Pemi Magar",
+      "description": "2+ years of experience in Graphics Designing, UI/UX and content creation. Proficient in Photoshop, Canva, Figma, keyword research and on-page optimization",
+      "profile": "/team/tenure-2025/lf-gh.png",
+      "link": "https://lfmgr.github.io/Portfolio/"
     },
     {
       "title": "Joint-Secretary",
@@ -41,13 +41,6 @@
       "description": "Frontend Developer. Proficient in React and Vue. Open Source Enthusiast. Skilled in Bash Scripting, Automation and CI/CD and Linux Administration and Network Hardening.",
       "profile": "/team/prof.png",
       "link": "https://github.com/BIIJESH"
-    },
-    {
-      "title": "Graphics Handler",
-      "name": "L.F. Pemi Magar",
-      "description": "2+ years of experience in Graphics Designing, UI/UX and content creation. Proficient in Photoshop, Canva, Figma, keyword research and on-page optimization",
-      "profile": "/team/tenure-2025/lf-gh.png",
-      "link": "https://lfmgr.github.io/Portfolio/"
     },
     {
       "title": "Graphics Handler",
@@ -76,6 +69,13 @@
       "description": "Frontend Developer. Proficient in React and Vue. Open Source Enthusiast. A strong communicator with leadership experience and skilled in teamwork ",
       "profile": "/team/tenure-2025/sandhya-om.jpg",
       "link": "/www.linkedin.com/in/sandhya-bhattarai"
+    },
+    {
+      "title": "Executive",
+      "name": "Smarika Bhatta",
+      "description": "Frontend Developer. Proficient in React and Vue. Open Source Enthusiast. Skilled in Leadership and Management.",
+      "profile": "/team/tenure-2025/smarika-secretary.jpg",
+      "link": "https://www.facebook.com/smarika.bhatta.925"
     }
   ],
   "members": [
