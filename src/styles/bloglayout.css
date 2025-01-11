@@ -3,34 +3,64 @@
 @tailwind utilities;
 
 @layer base {
-  h1 {
-    @apply text-4xl;
-    margin-bottom: 10px;
-    margin-top: 5px;
-  }
+  #blogclass {
+    h1 {
+      @apply text-4xl;
+      margin-bottom: 5px;
+      margin-top: 30px;
+      font-weight: 600;
+    }
+    h2 {
+      margin-bottom: 5px;
+      margin-top: 25px;
+      font-weight: 500;
+      @apply text-3xl;
+    }
+    h3 {
+      /* margin-bottom: 5px; */
+      margin-top: 20px;
+      font-weight: 500;
+      @apply text-xl;
+    }
 
-  h2 {
-    margin-bottom: 10px;
-    margin-top: 5px;
-    @apply text-2xl;
-  }
+    img {
+      @apply rounded;
+    }
 
-  h3 {
-    @apply text-xl;
-  }
+    p {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
 
-  #blogclass * {
+    strong {
+      font-weight: 600;
+    }
+
     a {
       color: #030303;
       text-shadow:
         0 0 7px #0b6645,
-        0 0 10px #054723,
-        0 0 21px #013511,
-        0 0 42px #901818,
-        0 0 82px #760c0c,
-        0 0 92px #860606,
-        0 0 102px rgb(1, 7, 5),
-        0 0 151px rgb(0, 8, 5);
+        0 0 10px #1a9351,
+        0 0 21px #537fee,
+        0 0 42px #a54444,
+        0 0 82px #8f5050,
+        0 0 92px #ba9090,
+        0 0 102px rgb(140, 211, 241),
+        0 0 151px rgb(148, 181, 207);
+    }
+
+    a:hover {
+      color: #030303;
+      /* reverse text shadow when hovered */
+      text-shadow:
+        0 0 7px rgb(153, 247, 3),
+        0 0 10px rgb(3, 249, 36),
+        0 0 21px #508806,
+        0 0 42px #27ca65,
+        0 0 82px #013a63,
+        0 0 92px #68069c,
+        0 0 102px #6c0448,
+        0 0 151px #250112;
     }
 
     li {
@@ -77,6 +107,8 @@ ol {
 }
 
 code {
-  background-color: #07090f;
+  background-color: #27292f;
+  border: rgb(95, 97, 95) 1px solid;
   color: #bbbbbb;
+  padding: 0 0.5rem;
 }
