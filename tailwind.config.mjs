@@ -15,6 +15,7 @@ export default {
       gray: "#0D0C22",
       stone: "#231F20",
       lime: "#B9FF66",
+      green: "#4CAF50",
       blue: {
         100: "#E6F0FF",
         200: "#C0D8FF",
