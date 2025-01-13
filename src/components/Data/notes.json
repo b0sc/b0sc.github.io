@@ -1,0 +1,54 @@
+[
+  {
+    "id": 4,
+    "faculty": "BCA",
+    "semester": [
+      {
+        "1": [
+          "Maths",
+          "English",
+          "social"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "faculty": "CSIT",
+    "semester": [
+      {
+        "1": [
+          "Maths",
+          "English",
+          "social"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "faculty": "BICTE",
+    "semester": [
+      {
+        "1": [
+          "Maths",
+          "English",
+          "social"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "faculty": "BIT",
+    "semester": [
+      {
+        "1": [
+          "Maths",
+          "English",
+          "social"
+        ]
+      }
+    ]
+  }
+]

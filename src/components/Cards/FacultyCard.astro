@@ -1,0 +1,13 @@
+---
+import NotesData from "../../components/Data/notes.json"
+interface Props {
+  note: typeof NotesData[0]
+}
+const { note } = Astro.props as Props
+---
+
+<article class="p-6 bg-white rounded-3xl border border-gray-200 shadow-card">
+  <div class="flex justify-between items-center mb-5 text-gray-500">
+    {note.id && note.faculty}
+  </div>
+</article>
