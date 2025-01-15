@@ -1,7 +1,7 @@
 ---
 import NotesData from "../../components/Data/notes.json"
 interface Props {
-  note: typeof NotesData[0]
+  note: (typeof NotesData)[0]
 }
 const { note } = Astro.props as Props
 ---

@@ -1,15 +1,15 @@
 [
   {
-    "id": 30,
+    "id": 31,
     "type": "Event",
     "featured": false,
     "name_1": "BOSC Orientation:",
     "name_2": "Meet and Greet",
     "desc": "Welcome to BOSC! 🎉 We are excited to have you join our community. This orientation session is for new General Members to Meet and Greet our Alumni. Learn from their mistakes and seek guidance.",
     "year": 2025,
-    "date": "2025-01-12",
-    "time": "07:00 AM",
-    "venue": "Kalika fedi",
+    "date": "2025-01-17",
+    "time": "12:00 PM",
+    "venue": "Ramnagar Bhateri Tree House",
     "organizer": ["BOSC"],
     "partners": [],
     "mentors": [],
@@ -27,6 +27,37 @@
       "time": "4 hours",
       "certificate": false,
       "prize": true,
+      "entry_fee": 0
+    }
+  },
+  {
+    "id": 30,
+    "type": "Event",
+    "featured": false,
+    "name_1": "Orientation Program For:",
+    "name_2": "New IT Studens",
+    "desc": "Birendra Open Source Club (BOSC) organized an engaging orientation program for the new batch of IT students, with over 100 students in attendance. The event was graced by the presence of Assistant Campus Chief, Kishor Sir, as the chief guest. Several speakers gave insightful presentations on various topics, helping the newcomers understand the academic environment and opportunities available at Birendra Multiple Campus. LF Pemi Magar delivered a detailed presentation on college functioning, including an overview of the bachelor’s program, the roles of faculty members, and available sports activities.",
+    "year": 2025,
+    "date": "2024-11-29",
+    "time": "07:00 AM",
+    "venue": "BMC Hall Naubigha",
+    "organizer": ["BOSC"],
+    "partners": [],
+    "mentors": [],
+    "guests": [],
+    "cover_photo": "",
+    "background": "bg-zinc-100",
+    "links": {
+      "blog": "/blogs/30",
+      "social": "https://www.facebook.com/birendraopensourceclub",
+      "registration": ""
+    },
+    "images": [],
+    "stats": {
+      "participants": 100,
+      "time": "4 hours",
+      "certificate": false,
+      "prize": false,
       "entry_fee": 0
     }
   },
