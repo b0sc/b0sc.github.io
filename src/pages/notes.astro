@@ -23,18 +23,18 @@ import Layout from "../layouts/Layout.astro"
               class="flex md:flex-col space-x-4 md:space-x-0 md:space-y-2 overflow-x-auto md:overflow-x-visible pb-2 md:pb-0"
             >
               <button
-                id="bit-tab"
-                class="whitespace-nowrap px-4 py-2 text-left rounded-md transition-colors hover:bg-gray-100 tab-button"
-                data-tab="bit"
-              >
-                BIT
-              </button>
-              <button
                 id="csit-tab"
                 class="whitespace-nowrap px-4 py-2 text-left rounded-md transition-colors hover:bg-gray-100 tab-button"
                 data-tab="csit"
               >
                 CSIT
+              </button>
+              <button
+                id="bit-tab"
+                class="whitespace-nowrap px-4 py-2 text-left rounded-md transition-colors hover:bg-gray-100 tab-button"
+                data-tab="bit"
+              >
+                BIT
               </button>
               <button
                 id="bca-tab"
@@ -55,18 +55,6 @@ import Layout from "../layouts/Layout.astro"
         </div>
         <!-- Content Area -->
         <div class="flex-1 p-4">
-          <div id="bit-content" class="content-section">
-            <h2
-              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 text-center"
-            >
-              BIT
-            </h2>
-            <div class="grid gap-8 lg:grid-cols-2 mt-12">
-              <FacultyCard
-                note={notes.filter((obj) => obj.faculty == "BIT")[0]}
-              />
-            </div>
-          </div>
           <div id="csit-content" class="content-section">
             <h2
               class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 text-center"
@@ -75,7 +63,19 @@ import Layout from "../layouts/Layout.astro"
             </h2>
             <div class="grid gap-8 lg:grid-cols-2 mt-12">
               <FacultyCard
-                note={notes.filter((obj) => obj.faculty == "CSIT")[0]}
+                notes={notes.filter((obj) => obj.faculty == "CSIT")}
+              />
+            </div>
+          </div>
+          <div id="bit-content" class="content-section">
+            <h2
+              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 text-center"
+            >
+              BIT
+            </h2>
+            <div class="grid gap-8 lg:grid-cols-2 mt-12">
+              <FacultyCard
+                notes={notes.filter((obj) => obj.faculty == "BIT")}
               />
             </div>
           </div>
@@ -87,7 +87,7 @@ import Layout from "../layouts/Layout.astro"
             </h2>
             <div class="grid gap-8 lg:grid-cols-2 mt-12">
               <FacultyCard
-                note={notes.filter((obj) => obj.faculty == "BCA")[0]}
+                notes={notes.filter((obj) => obj.faculty == "BCA")}
               />
             </div>
           </div>
@@ -102,7 +102,7 @@ import Layout from "../layouts/Layout.astro"
               class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 mt-12"
             >
               <FacultyCard
-                note={notes.filter((obj) => obj.faculty == "BICTE")[0]}
+                notes={notes.filter((obj) => obj.faculty == "BICTE")}
               />
             </div>
           </div>

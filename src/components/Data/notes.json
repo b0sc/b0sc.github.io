@@ -1,53 +1,139 @@
 [
   {
-    "id": 4,
+    "id": 6,
     "faculty": "BCA",
-    "semester": [
+    "semester": 1,
+    "subjects": [
       {
-        "1": [
-          "Maths",
-          "English",
-          "social"
-        ]
+        "name": "Maths",
+        "link": " "
+      },
+      {
+        "name": "English",
+        "link": " "
+      },
+      {
+        "name": "social",
+        "link": " "
+      },
+      {
+        "name": "gk",
+        "link": " "
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "faculty": "CSIT",
+    "semester": 1,
+    "subjects": [
+      {
+        "name": "Maths",
+        "link": " "
+      },
+      {
+        "name": "English",
+        "link": " "
+      },
+      {
+        "name": "social",
+        "link": " "
+      },
+      {
+        "name": "gk",
+        "link": " "
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "faculty": "BICTE",
+    "semester": 1,
+    "subjects": [
+      {
+        "name": "maths",
+        "link": " "
+      },
+      {
+        "name": "english",
+        "link": " "
+      },
+      {
+        "name": "social",
+        "link": " "
+      },
+      {
+        "name": "gk",
+        "link": " "
       }
     ]
   },
   {
     "id": 3,
-    "faculty": "CSIT",
-    "semester": [
+    "faculty": "BIT",
+    "semester": 1,
+    "subjects": [
       {
-        "1": [
-          "Maths",
-          "English",
-          "social"
-        ]
+        "name": "maths",
+        "link": " "
+      },
+      {
+        "name": "english",
+        "link": " "
+      },
+      {
+        "name": "social",
+        "link": " "
+      },
+      {
+        "name": "gk",
+        "link": " "
       }
     ]
   },
   {
     "id": 2,
-    "faculty": "BICTE",
-    "semester": [
+    "faculty": "BIT",
+    "semester": 2,
+    "subjects": [
       {
-        "1": [
-          "Maths",
-          "English",
-          "social"
-        ]
+        "name": "maths",
+        "link": " "
+      },
+      {
+        "name": "english",
+        "link": " "
+      },
+      {
+        "name": "social",
+        "link": " "
+      },
+      {
+        "name": "gk",
+        "link": " "
       }
     ]
   },
   {
     "id": 1,
     "faculty": "BIT",
-    "semester": [
+    "semester": 3,
+    "subjects": [
       {
-        "1": [
-          "Maths",
-          "English",
-          "social"
-        ]
+        "name": "maths",
+        "link": " "
+      },
+      {
+        "name": "english",
+        "link": " "
+      },
+      {
+        "name": "social",
+        "link": " "
+      },
+      {
+        "name": "gk",
+        "link": " "
       }
     ]
   }
