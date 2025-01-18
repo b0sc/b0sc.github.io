@@ -192,14 +192,20 @@ const upcomingEImage =
 </div>
 <script>
   import { NotifySuccess } from "../../utils/notify"
-  const shareBtn2 = document.getElementById("share2") as HTMLButtonElement
-  if (shareBtn2) {
-    shareBtn2.addEventListener("click", () => {
-      const bloglink =
-        window.location.href.replace(/\/+$/, "") +
-        shareBtn2.getAttribute("data-link")
-      navigator.clipboard.writeText(bloglink)
-      NotifySuccess("Link copied to clipboard.")
-    })
+
+  // Function to initialize the share button
+  function initShareButton() {
+    const shareBtn2 = document.getElementById("share2") as HTMLButtonElement
+    if (shareBtn2) {
+      shareBtn2.addEventListener("click", () => {
+        const bloglink =
+          window.location.href.replace(/\/+$/, "") +
+          shareBtn2.getAttribute("data-link")
+        navigator.clipboard.writeText(bloglink)
+        NotifySuccess("Link copied to clipboard.")
+      })
+    }
   }
+
+  document.addEventListener("astro:page-load", initShareButton)
 </script>
