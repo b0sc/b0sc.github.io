@@ -3,6 +3,45 @@
     "id": 31,
     "type": "Event",
     "featured": false,
+    "name_1": "Linux Workshop:",
+    "name_2": "Installation and CLI Basics",
+    "desc": "Join us to learn the basics of Linux installation and CLI commands. This workshop is designed for beginners who want to get started with Linux and learn how to use the command line interface.",
+    "year": 2025,
+    "date": "2025-01-25",
+    "time": "12:00 PM",
+    "venue": "Naubigha, BMC",
+    "organizer": ["BOSC"],
+    "partners": [],
+    "mentors": [
+      {
+        "name": "Bijesh Ghimire",
+        "image": "/default_mentor.jpg",
+        "designation": "Backend Developer, Freelancer",
+        "tag": "Linux Tinkerer, Uses Arch BTW",
+        "connect": "https://www.linkedin.com/in/washbin"
+      }
+    ],
+    "guests": [],
+    "cover_photo": "",
+    "background": "bg-zinc-100",
+    "links": {
+      "blog": "/blogs/32",
+      "social": "https://www.facebook.com/birendraopensourceclub",
+      "registration": ""
+    },
+    "images": [],
+    "stats": {
+      "participants": 15,
+      "time": "3 hours",
+      "certificate": false,
+      "prize": false,
+      "entry_fee": 0
+    }
+  },
+  {
+    "id": 31,
+    "type": "Event",
+    "featured": false,
     "name_1": "BOSC Orientation:",
     "name_2": "Meet and Greet",
     "desc": "Welcome to BOSC! 🎉 We are excited to have you join our community. This orientation session is for new General Members to Meet and Greet our Alumni. Learn from their mistakes and seek guidance.",
@@ -18,20 +57,34 @@
         "name": "Ashbin Wosti",
         "image": "/default_mentor.jpg",
         "designation": "Software Engineer at Bitcoin Nepal",
-        "tag": "Hacktoberfest Speaker",
-        "connect": "https://www.facebook.com/ashbin.wosti.1"
+        "tag": "Tinkerer, Elixir, Phoenix Framework",
+        "connect": "https://www.linkedin.com/in/washbin"
+      },
+      {
+        "name": "Prabhat Amgain",
+        "image": "/default_mentor.jpg",
+        "designation": "Software Engineer, Freelancer",
+        "tag": "Open Source enthusiast",
+        "connect": "https://www.linkedin.com/in/prabhat-amgain-5093001b2"
+      },
+      {
+        "name": "Basanta Sharma Gyawali",
+        "image": "/default_mentor.jpg",
+        "designation": "Network Addict | Software Programmer",
+        "tag": "PHP | Laravel | Unity | MySQL | Vue ",
+        "connect": "https://www.linkedin.com/in/smartbasanta"
       }
     ],
-    "cover_photo": "",
+    "cover_photo": "/events/31/cover.JPG",
     "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/31",
       "social": "https://www.facebook.com/birendraopensourceclub",
       "registration": ""
     },
-    "images": [],
+    "images": ["/events/31/pic1.JPG", "/events/31/pic2.JPG"],
     "stats": {
-      "participants": 30,
+      "participants": 18,
       "time": "4 hours",
       "certificate": false,
       "prize": true,
