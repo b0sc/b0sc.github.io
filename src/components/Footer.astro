@@ -1,5 +1,6 @@
 ---
 import Container from "./Container.astro"
+const date = new Date().getFullYear()
 ---
 
 <footer class="bg-lime bg-fixed bg-bottom text-black">
@@ -43,8 +44,9 @@ import Container from "./Container.astro"
             <a
               href="https://github.com/b0sc/b0sc.github.io"
               target="_blank"
-              rel="noopener noreferrer">bosc@2024</a
-            >
+              rel="noopener noreferrer"
+              >bosc@{date}
+            </a>
           </div>
         </div>
       </div>
