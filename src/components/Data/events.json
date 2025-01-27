@@ -10,7 +10,9 @@
     "date": "2025-01-25",
     "time": "12:00 PM",
     "venue": "Naubigha, BMC",
-    "organizer": ["BOSC"],
+    "organizer": [
+      "BOSC"
+    ],
     "partners": [],
     "mentors": [
       {
@@ -18,18 +20,22 @@
         "image": "/default_mentor.jpg",
         "designation": "Backend Developer, Freelancer",
         "tag": "Linux Tinkerer, Uses Arch BTW",
-        "connect": "https://www.linkedin.com/in/washbin"
+        "connect": "https://www.linkedin.com/in/bijeshghimire"
       }
     ],
     "guests": [],
-    "cover_photo": "",
+    "cover_photo": "/events/32/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
       "blog": "/blogs/32",
       "social": "https://www.facebook.com/birendraopensourceclub",
       "registration": ""
     },
-    "images": [],
+    "images": [
+      "/events/32/linux1.jpg",
+      "/events/32/linux2.jpg",
+      "/events/32/linux3.jpg"
+    ],
     "stats": {
       "participants": 15,
       "time": "3 hours",
@@ -49,7 +55,9 @@
     "date": "2025-01-17",
     "time": "12:00 PM",
     "venue": "Ramnagar Bhateri Tree House",
-    "organizer": ["BOSC"],
+    "organizer": [
+      "BOSC"
+    ],
     "partners": [],
     "mentors": [],
     "guests": [
@@ -82,7 +90,10 @@
       "social": "https://www.facebook.com/birendraopensourceclub",
       "registration": ""
     },
-    "images": ["/events/31/pic1.JPG", "/events/31/pic2.JPG"],
+    "images": [
+      "/events/31/pic1.JPG",
+      "/events/31/pic2.JPG"
+    ],
     "stats": {
       "participants": 18,
       "time": "4 hours",
@@ -102,8 +113,13 @@
     "date": "2024-12-22",
     "time": "09:00 AM",
     "venue": "RMC Hall - BMC, 10 Bigha",
-    "organizer": ["BOSC"],
-    "partners": ["Paradise Infotech", "Rotaract Club of Narayani Mid Town"],
+    "organizer": [
+      "BOSC"
+    ],
+    "partners": [
+      "Paradise Infotech",
+      "Rotaract Club of Narayani Mid Town"
+    ],
     "mentors": [
       {
         "name": "Kailash Khatri",
@@ -152,7 +168,9 @@
     "date": "2024-12-06",
     "time": "10:00 AM",
     "venue": "Physical - BMC, Naubigha",
-    "organizer": ["BOSC"],
+    "organizer": [
+      "BOSC"
+    ],
     "partners": [],
     "mentors": [
       {
@@ -196,7 +214,9 @@
     "date": "2024-11-29",
     "time": "10:00 AM",
     "venue": "BMC Hall Naubigha",
-    "organizer": ["BOSC"],
+    "organizer": [
+      "BOSC"
+    ],
     "partners": [],
     "mentors": [],
     "guests": [
@@ -229,7 +249,10 @@
       "social": "https://www.facebook.com/birendraopensourceclub",
       "registration": ""
     },
-    "images": ["/events/28/orientation.jpg", "/events/28/orientation2.jpg"],
+    "images": [
+      "/events/28/orientation.jpg",
+      "/events/28/orientation2.jpg"
+    ],
     "stats": {
       "participants": 100,
       "time": "2 hours",
@@ -249,7 +272,9 @@
     "date": "2024-11-21",
     "time": "00:00 AM",
     "venue": "Virtual - Register through Google Form",
-    "organizer": ["BOSC"],
+    "organizer": [
+      "BOSC"
+    ],
     "partners": [],
     "mentors": [],
     "guests": [],
@@ -280,8 +305,12 @@
     "date": "2024-10-15",
     "time": "00:00 AM",
     "venue": "Physical - BMC, Naubigha",
-    "organizer": ["BOSC"],
-    "partners": ["Hacktoberfest"],
+    "organizer": [
+      "BOSC"
+    ],
+    "partners": [
+      "Hacktoberfest"
+    ],
     "mentors": [],
     "guests": [],
     "cover_photo": "/events/26/cover.jpg",
@@ -291,7 +320,10 @@
       "social": "https://www.facebook.com/share/p/1W1nMPSLWz/",
       "registration": "https://github.com/b0sc"
     },
-    "images": ["/events/26/pic1.jpg", "/events/26/pic2.jpg"],
+    "images": [
+      "/events/26/pic1.jpg",
+      "/events/26/pic2.jpg"
+    ],
     "stats": {
       "participants": 26,
       "time": "15 days",
@@ -318,8 +350,12 @@
     "date": "2024-10-04",
     "time": "5:00 PM",
     "venue": "Virtual - Google Meet",
-    "organizer": ["BOSC"],
-    "partners": ["Hacktoberfest"],
+    "organizer": [
+      "BOSC"
+    ],
+    "partners": [
+      "Hacktoberfest"
+    ],
     "mentors": [],
     "guests": [
       {
@@ -337,7 +373,9 @@
       "social": "https://www.facebook.com/share/p/12AXrPMrQCX/",
       "registration": "https://forms.gle/xEe39aBUHHUqUvVe8"
     },
-    "images": ["/events/25/pic1.jpg"],
+    "images": [
+      "/events/25/pic1.jpg"
+    ],
     "stats": {
       "participants": 15,
       "time": "2 hrs",
@@ -357,8 +395,14 @@
     "date": "2024-09-21",
     "time": "11:00 AM",
     "venue": "Physical - BMC, Naubigha",
-    "organizer": ["BOSC"],
-    "partners": ["CFC-Chitwan", "Dev </> Community Nepal", "CSITAN-Chitwan"],
+    "organizer": [
+      "BOSC"
+    ],
+    "partners": [
+      "CFC-Chitwan",
+      "Dev </> Community Nepal",
+      "CSITAN-Chitwan"
+    ],
     "mentors": [],
     "guests": [
       {
@@ -428,7 +472,9 @@
     "date": "2024-08-30",
     "time": "11:00 AM",
     "venue": "Physical - BMC, RMC Hall",
-    "organizer": ["BOSC"],
+    "organizer": [
+      "BOSC"
+    ],
     "partners": [],
     "mentors": [],
     "guests": [
@@ -447,7 +493,10 @@
       "social": "https://www.facebook.com/share/p/17p9AnqeE5/",
       "registration": ""
     },
-    "images": ["/events/23/pic1.jpg", "/events/23/pic2.jpg"],
+    "images": [
+      "/events/23/pic1.jpg",
+      "/events/23/pic2.jpg"
+    ],
     "stats": {
       "participants": 20,
       "time": "4 hrs",
@@ -467,8 +516,12 @@
     "date": "2024-07-12",
     "time": "11:00 AM",
     "venue": "Physical - UTech, Computer Lab",
-    "organizer": ["BOSC"],
-    "partners": ["Birendra IT Club"],
+    "organizer": [
+      "BOSC"
+    ],
+    "partners": [
+      "Birendra IT Club"
+    ],
     "mentors": [
       {
         "name": "Asim Tara Pathak",
@@ -510,7 +563,9 @@
     "date": "2024-03-22",
     "time": "11:00 AM",
     "venue": "Physical - BMC, Naubigha",
-    "organizer": ["BOSC"],
+    "organizer": [
+      "BOSC"
+    ],
     "partners": [],
     "mentors": [],
     "guests": [
@@ -568,7 +623,9 @@
     "date": "2024-02-04",
     "time": "11:30 AM",
     "venue": "Physical - BMC, Naubigha",
-    "organizer": ["BOSC"],
+    "organizer": [
+      "BOSC"
+    ],
     "partners": [],
     "mentors": [
       {
@@ -587,7 +644,10 @@
       "social": "https://www.facebook.com/share/p/1DTTomE7Vm/",
       "registration": "https://forms.gle/Hg2mWX5AdbYdB2tH7"
     },
-    "images": ["/events/20/pic1.jpg", "/events/20/pic2.jpg"],
+    "images": [
+      "/events/20/pic1.jpg",
+      "/events/20/pic2.jpg"
+    ],
     "stats": {
       "participants": 40,
       "time": "3 hrs - 3 days",
@@ -607,7 +667,9 @@
     "date": "2023-12-10",
     "time": "11:30 AM",
     "venue": "Physical - BMC, Naubigha",
-    "organizer": ["BOSC"],
+    "organizer": [
+      "BOSC"
+    ],
     "partners": [
       "OpenMappingHub-AsiaPacific",
       "Humanitarian OpenStreetMap Team"
@@ -667,7 +729,9 @@
     "date": "2023-11-10",
     "time": "1:00 PM",
     "venue": "Virtual - Google Meet",
-    "organizer": ["BOSC"],
+    "organizer": [
+      "BOSC"
+    ],
     "partners": [
       "OpenMappingHub-AsiaPacific",
       "Humanitarian OpenStreetMap Team",
@@ -697,7 +761,10 @@
       "social": "https://www.facebook.com/share/p/17ki415CGn/",
       "registration": "https://bit.ly/40ntqfm"
     },
-    "images": ["/events/18/pic1.jpg", "/events/18/pic2.jpg"],
+    "images": [
+      "/events/18/pic1.jpg",
+      "/events/18/pic2.jpg"
+    ],
     "stats": {
       "participants": 40,
       "time": "3 hrs",
@@ -717,7 +784,9 @@
     "date": "2023-10-23",
     "time": "5:00 PM",
     "venue": "Virtual - Google Meet",
-    "organizer": ["BOSC"],
+    "organizer": [
+      "BOSC"
+    ],
     "partners": [],
     "mentors": [],
     "guests": [],
@@ -748,8 +817,15 @@
     "date": "2023-10-11",
     "time": "00:00 AM",
     "venue": "Virtual - The Document Foundation, LibreOffice",
-    "organizer": ["The Document Foundation"],
-    "partners": ["BOSC", "NOSK", "KUOSC", "AskBuddie"],
+    "organizer": [
+      "The Document Foundation"
+    ],
+    "partners": [
+      "BOSC",
+      "NOSK",
+      "KUOSC",
+      "AskBuddie"
+    ],
     "mentors": [
       {
         "name": "Saroj Dhakal",
@@ -781,7 +857,10 @@
       "social": "https://www.facebook.com/share/p/14zNrKiuty/",
       "registration": "https://forms.gle/XDYyAMTy2JbpEYRe7"
     },
-    "images": ["/events/16/pic1.jpg", "/events/16/pic2.jpg"],
+    "images": [
+      "/events/16/pic1.jpg",
+      "/events/16/pic2.jpg"
+    ],
     "stats": {
       "participants": 100,
       "time": "20 days",
@@ -801,8 +880,14 @@
     "date": "2023-09-16",
     "time": "11:00 AM",
     "venue": "Physical - BMC, Naubigha",
-    "organizer": ["BOSC"],
-    "partners": ["Birendra IT Club", "CCTOSC", "Dev </> Community Nepal"],
+    "organizer": [
+      "BOSC"
+    ],
+    "partners": [
+      "Birendra IT Club",
+      "CCTOSC",
+      "Dev </> Community Nepal"
+    ],
     "mentors": [
       {
         "name": "Sushant Rimal",
@@ -866,7 +951,9 @@
     "date": "2023-07-13 - 2023-07-14",
     "time": "11:30 AM",
     "venue": "Physical - BMC, Naubigha",
-    "organizer": ["BOSC"],
+    "organizer": [
+      "BOSC"
+    ],
     "partners": [],
     "mentors": [
       {
@@ -916,7 +1003,9 @@
     "date": "2023-06-17",
     "time": "9:00 AM June 17 - 5:00 PM June 18",
     "venue": "Physical - New Capital College, Tandi, Chitwan",
-    "organizer": ["BOSC"],
+    "organizer": [
+      "BOSC"
+    ],
     "partners": [
       "OpenMappingHub-AsiaPacific",
       "Humanitarian OpenStreetMap Team",
@@ -1004,7 +1093,9 @@
     "date": "2023-05-31",
     "time": "12:00 - 1:00 PM",
     "venue": "Physical - Balkumari, BMC, Saptagandaki, Virtual - Google Meet",
-    "organizer": ["BOSC"],
+    "organizer": [
+      "BOSC"
+    ],
     "partners": [
       "OpenMappingHub-AsiaPacific",
       "Humanitarian OpenStreetMap Team",
@@ -1060,7 +1151,9 @@
     "date": "2023-05-23",
     "time": "10:00 AM",
     "venue": "Physical - BMC, Naubigha",
-    "organizer": ["BOSC"],
+    "organizer": [
+      "BOSC"
+    ],
     "partners": [
       "OpenMappingHub-AsiaPacific",
       "Humanitarian OpenStreetMap Team"
@@ -1113,7 +1206,9 @@
     "date": "2023-03-12",
     "time": "10:00 AM",
     "venue": "Physical - BMC, Naubigha",
-    "organizer": ["BOSC"],
+    "organizer": [
+      "BOSC"
+    ],
     "partners": [],
     "mentors": [],
     "guests": [],
@@ -1124,7 +1219,10 @@
       "social": "https://www.facebook.com/share/p/1B71VQ7rP8/",
       "registration": "https://forms.gle/bQE4GZnmSGfCnYd39"
     },
-    "images": ["/events/10/pic1.jpg", "/events/10/pic2.jpg"],
+    "images": [
+      "/events/10/pic1.jpg",
+      "/events/10/pic2.jpg"
+    ],
     "stats": {
       "participants": 50,
       "time": "3 hours",
@@ -1144,8 +1242,12 @@
     "date": "2023-01-17",
     "time": "11:00 AM - 1:00 PM",
     "venue": "Physical - BMC, Naubigha",
-    "organizer": ["BOSC"],
-    "partners": ["Debian"],
+    "organizer": [
+      "BOSC"
+    ],
+    "partners": [
+      "Debian"
+    ],
     "mentors": [
       {
         "name": "Arun Kumar Pariyar",
@@ -1177,7 +1279,9 @@
       "social": "https://www.facebook.com/share/p/15V8Bq3FkL/",
       "registration": "https://forms.gle/hTW7V97gfMguQUfb9"
     },
-    "images": ["/events/9/pic1.jpg"],
+    "images": [
+      "/events/9/pic1.jpg"
+    ],
     "stats": {
       "participants": 15,
       "time": "2 hours",
@@ -1197,8 +1301,13 @@
     "date": "2022-10-11",
     "time": "11:00 AM - 3:00 PM",
     "venue": "Physical - BMC, Naubigha",
-    "organizer": ["BOSC"],
-    "partners": ["Birendra IT Club", "Microsoft Student Partners - MLSA"],
+    "organizer": [
+      "BOSC"
+    ],
+    "partners": [
+      "Birendra IT Club",
+      "Microsoft Student Partners - MLSA"
+    ],
     "mentors": [],
     "guests": [
       {
@@ -1230,7 +1339,10 @@
       "social": "https://www.facebook.com/share/p/1CZEaRqEq2/",
       "registration": "https://forms.gle/5fc2MvoMdf2rH8K87"
     },
-    "images": ["/events/8/pic1.jpg", "/events/8/pic2.jpg"],
+    "images": [
+      "/events/8/pic1.jpg",
+      "/events/8/pic2.jpg"
+    ],
     "stats": {
       "participants": 35,
       "time": "4 hours",
@@ -1250,7 +1362,10 @@
     "date": "2022-07-03",
     "time": "3:00 PM - 5:00 PM",
     "venue": "Online - Google Meet",
-    "organizer": ["HOT", "OpenMappingHub-AsiaPacific"],
+    "organizer": [
+      "HOT",
+      "OpenMappingHub-AsiaPacific"
+    ],
     "partners": [
       "BOSC",
       "Open Tech Community",
@@ -1287,7 +1402,9 @@
     "date": "2022-04-22",
     "time": "10:00 AM - 11:30 PM",
     "venue": "Physical - BMC, Naubigha",
-    "organizer": ["BOSC"],
+    "organizer": [
+      "BOSC"
+    ],
     "partners": [],
     "mentors": [
       {
@@ -1313,7 +1430,9 @@
       "social": "https://www.facebook.com/share/p/17yeXFSzKF/",
       "registration": "https://docs.google.com/forms/d/e/1FAIpQLSc_6PS8RtjTGlE9a89xrErRJYkNP1fQIkriikXm5VPF9QlcSA/viewform"
     },
-    "images": ["/events/6/pic1.jpg"],
+    "images": [
+      "/events/6/pic1.jpg"
+    ],
     "stats": {
       "participants": 50,
       "time": "2 hours",
@@ -1333,8 +1452,12 @@
     "date": "2022-02-12",
     "time": "11:00 AM - 1:00 PM",
     "venue": "Online - Microsoft Teams",
-    "organizer": ["BOSC"],
-    "partners": ["BOSR-Club"],
+    "organizer": [
+      "BOSC"
+    ],
+    "partners": [
+      "BOSR-Club"
+    ],
     "mentors": [],
     "guests": [
       {
@@ -1366,7 +1489,9 @@
       "social": "https://www.facebook.com/share/p/1ALLRXaisi/",
       "registration": "https://forms.gle/xjuMqbtRXeiUDYJg8"
     },
-    "images": ["/events/5/pic1.jpg"],
+    "images": [
+      "/events/5/pic1.jpg"
+    ],
     "stats": {
       "participants": 20,
       "time": "2 hours",
@@ -1386,8 +1511,14 @@
     "date": "2022-01-01",
     "time": "11:00 AM - 4:00 PM",
     "venue": "Hotel Mansarovar, Narayangarh, Narayani Kinar",
-    "organizer": ["BOSC", "CSITAN-Chitwan"],
-    "partners": ["BOSR-Club", "CSITAN-Chitwan"],
+    "organizer": [
+      "BOSC",
+      "CSITAN-Chitwan"
+    ],
+    "partners": [
+      "BOSR-Club",
+      "CSITAN-Chitwan"
+    ],
     "mentors": [],
     "guests": [],
     "cover_photo": "/events/4/cover.jpg",
@@ -1417,8 +1548,12 @@
     "date": "2021-07-17",
     "time": "05:00 PM",
     "venue": "Online - Google Meet",
-    "organizer": ["BOSC"],
-    "partners": ["BOSR-Club"],
+    "organizer": [
+      "BOSC"
+    ],
+    "partners": [
+      "BOSR-Club"
+    ],
     "mentors": [
       {
         "name": "Saroj Dahal",
@@ -1456,8 +1591,12 @@
     "date": "2021-06-05",
     "time": "05:00 - 7:00 PM",
     "venue": "Online - Google Meet",
-    "organizer": ["BOSC"],
-    "partners": ["BOSR-Club"],
+    "organizer": [
+      "BOSC"
+    ],
+    "partners": [
+      "BOSR-Club"
+    ],
     "mentors": [
       {
         "name": "Captain Nick Lucifer",
@@ -1497,7 +1636,9 @@
       "social": "https://www.facebook.com/share/p/12H8XDzChaR/",
       "registration": "https://forms.gle/i1RrUoX6gYXEjTgo7"
     },
-    "images": ["/events/2/pic1.jpg"],
+    "images": [
+      "/events/2/pic1.jpg"
+    ],
     "stats": {
       "participants": 155,
       "time": "3 hours",
@@ -1517,8 +1658,13 @@
     "date": "2021-05-05",
     "time": "02:00 PM",
     "venue": "Online - Microsoft Teams",
-    "organizer": ["BOSC"],
-    "partners": ["CSITAN-Chitwan", "BOSR-Club"],
+    "organizer": [
+      "BOSC"
+    ],
+    "partners": [
+      "CSITAN-Chitwan",
+      "BOSR-Club"
+    ],
     "mentors": [
       {
         "name": "Ananta Mishra",
@@ -1536,7 +1682,9 @@
       "social": "https://www.facebook.com/share/p/12H8XDzChaR/",
       "registration": "https://forms.gle/i1RrUoX6gYXEjTgo7"
     },
-    "images": ["/events/1/pic1.jpg"],
+    "images": [
+      "/events/1/pic1.jpg"
+    ],
     "stats": {
       "participants": 50,
       "time": "2 hours",
