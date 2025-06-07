@@ -131,52 +131,53 @@
   ],
   "alumni": [
     {
-      "title": "President | 2023-2024",
-      "name": "Kushal Pathak",
-      "description": "2+ Years of Experience in Software Development. Proficient in React and Node.js. Open Source Contributor. Interested in learning new things and exploring new opportunities.",
-      "profile": "/team/prof.png",
+      "title": "President | 2022-2023",
+      "name": "Prabhat Amgain",
+      "description": "As 1st president of BOSC, Prabhat started open source culture in Birendra Multiple Campus",
+      "profile": "/team/tenure-first/prabhat.jpg",
+      "link": "https://facebook.com/birendraopensourceclub"
+    },
+    {
+      "title": "Advisor | 2021-2023",
+      "name": "Rajiv Aryal",
+      "description": "Rajiv's suggestions and advices to this new open source team led to the success of open source culture at BMC",
+      "profile": "/team/tenure-first/rajiv.jpg",
+      "link": "https://facebook.com/birendraopensourceclub"
+    },
+    {
+      "title": "Secretary | 2022-2023",
+      "name": "Ashbin Wosti",
+      "description": "Ashbin as a secretary accomplished wonders as BOSC reached over 500+ followers from different events and workshops.",
+      "profile": "/team/tenure-first/ashbin.jpg",
+      "link": "https://facebook.com/birendraopensourceclub"
+    },
+    {
+      "title": "Treasurer | 2022-2023",
+      "name": "Binaye Marahattha",
+      "description": "Binaye's efforts helped BOSC secure fundings from international organizations like OpenStreetMap and HOT, which made OSM 2023 Hackathon possible",
+      "profile": "/team/tenure-first/binaye.png",
+      "link": "https://facebook.com/birendraopensourceclub"
+    },
+
+    {
+      "title": "Executive | 2022-2023",
+      "name": "Basanta Sharma Gyawali",
+      "description": "Basanta's contributions to the club were invaluable, helping to shape the direction and success of BOSC.",
+      "profile": "/team/tenure-first/basanta.png",
       "link": "https://facebook.com/birendraopensourceclub"
     },
     {
       "title": "President | 2023-2024",
       "name": "Kushal Pathak",
-      "description": "2+ Years of Experience in Software Development. Proficient in React and Node.js. Open Source Contributor. Interested in learning new things and exploring new opportunities.",
-      "profile": "/team/prof.png",
+      "description": "Kushal as a president led the club to new heights, expanding its reach and impact within the open source community.",
+      "profile": "/team/tenure-2024/kushal.jpg",
       "link": "https://facebook.com/birendraopensourceclub"
     },
     {
-      "title": "President | 2023-2024",
-      "name": "Kushal Pathak",
-      "description": "2+ Years of Experience in Software Development. Proficient in React and Node.js. Open Source Contributor. Interested in learning new things and exploring new opportunities.",
-      "profile": "/team/prof.png",
-      "link": "https://facebook.com/birendraopensourceclub"
-    },
-    {
-      "title": "President | 2023-2024",
-      "name": "Kushal Pathak",
-      "description": "2+ Years of Experience in Software Development. Proficient in React and Node.js. Open Source Contributor. Interested in learning new things and exploring new opportunities.",
-      "profile": "/team/prof.png",
-      "link": "https://facebook.com/birendraopensourceclub"
-    },
-    {
-      "title": "President | 2023-2024",
-      "name": "Kushal Pathak",
-      "description": "2+ Years of Experience in Software Development. Proficient in React and Node.js. Open Source Contributor. Interested in learning new things and exploring new opportunities.",
-      "profile": "/team/prof.png",
-      "link": "https://facebook.com/birendraopensourceclub"
-    },
-    {
-      "title": "President | 2023-2024",
-      "name": "Kushal Pathak",
-      "description": "2+ Years of Experience in Software Development. Proficient in React and Node.js. Open Source Contributor. Interested in learning new things and exploring new opportunities.",
-      "profile": "/team/prof.png",
-      "link": "https://facebook.com/birendraopensourceclub"
-    },
-    {
-      "title": "President | 2023-2024",
-      "name": "Kushal Pathak",
-      "description": "2+ Years of Experience in Software Development. Proficient in React and Node.js. Open Source Contributor. Interested in learning new things and exploring new opportunities.",
-      "profile": "/team/prof.png",
+      "title": "Vice-President | 2023-2024",
+      "name": "Ushan Khadka",
+      "description": "Ushan's leadership as vice-president was instrumental in guiding the club through its activities and initiatives, fostering a collaborative environment.",
+      "profile": "/team/tenure-2024/ushan.png",
       "link": "https://facebook.com/birendraopensourceclub"
     }
   ],
