@@ -14,7 +14,7 @@ const { eventsData } = Astro.props as Props
   eventsData.map((event) => (
     <article class="p-6 bg-white rounded-3xl border border-gray-200 shadow-card">
       <div class="flex justify-between items-center mb-5 text-gray-500">
-        <span class="bg-lime text-black text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
+        <span class="bg-lime-500 text-black text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
           {event.type === "Article" ? <ArticleIcon /> : <VideoIcon />}
           {event.type}
         </span>
@@ -28,7 +28,7 @@ const { eventsData } = Astro.props as Props
               )}
             </>
           ))}
-        <span class="bg-lime text-black text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
+        <span class="bg-lime-500 text-black text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
           {event.date}
         </span>
       </div>
@@ -61,7 +61,7 @@ const { eventsData } = Astro.props as Props
       <div class="w-full justify-center items-center align-center inline-flex">
         <a
           href={`/blogs/${event.id}`}
-          class="inline-flex items-center font-medium text-black hover:text-lime "
+          class="inline-flex items-center font-medium text-black hover:text-lime-500 "
         >
           Read more
           <svg

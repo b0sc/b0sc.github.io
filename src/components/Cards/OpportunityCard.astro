@@ -15,7 +15,7 @@ const { opportunities } = Astro.props as Props
   opportunities.map((op) => (
     <article class="p-6 bg-white rounded-3xl border border-gray-200 shadow-card">
       <div class="flex justify-between items-center mb-5 text-gray-500">
-        <span class="bg-lime text-black text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
+        <span class="bg-lime-500 text-black text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
           {op.country === "International" ? <ArticleIcon /> : <VideoIcon />}
           {op.country}
         </span>
@@ -29,7 +29,7 @@ const { opportunities } = Astro.props as Props
               )}
             </>
           ))}
-        <span class="bg-lime text-black text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
+        <span class="bg-lime-500 text-black text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
           {op.platform}
         </span>
       </div>
@@ -77,22 +77,22 @@ const { opportunities } = Astro.props as Props
           <p class="flex font-light text-gray-500 sm:text-lg m-2 items-center w-full justify-around">
             {/* <span> */}
             {op.stats.prize && (
-              <span class="bg-zinc-800 text-lime text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
+              <span class="bg-zinc-800 text-lime-500 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
                 Prizes
               </span>
             )}
             {op.stats.certificate && (
-              <span class="bg-zinc-800 text-lime text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
+              <span class="bg-zinc-800 text-lime-500 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
                 Certificate
               </span>
             )}
             {op.stats.fee === 0 && (
-              <span class="bg-zinc-800 text-lime text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
+              <span class="bg-zinc-800 text-lime-500 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
                 Free
               </span>
             )}
             {op.stats.stipend != 0 && (
-              <span class="bg-zinc-800 text-lime text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
+              <span class="bg-zinc-800 text-lime-500 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
                 Stipend
               </span>
             )}

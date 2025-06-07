@@ -21,7 +21,7 @@
     "id": 3,
     "name1": "GitHub Field Day 2024:",
     "name2": "Experience",
-    "background": "h-[310px] p-12 bg-lime rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "background": "h-[310px] p-12 bg-lime-500 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "/services/ag.svg",
     "link": "/blogs/github-fieldday-experience-2024",
     "image": "/services/02.svg"
@@ -31,7 +31,7 @@
     "id": 4,
     "name1": "Your First:",
     "name2": "GitHub Contribution",
-    "background": "h-[310px] p-12 bg-lime rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "background": "h-[310px] p-12 bg-lime-500 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "/services/ag.svg",
     "link": "/blogs/first-contributions",
     "image": "/services/05.svg"

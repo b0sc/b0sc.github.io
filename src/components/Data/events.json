@@ -434,7 +434,7 @@
       }
     ],
     "cover_photo": "/events/24/cover.jpg",
-    "background": "bg-lime",
+    "background": "bg-lime-500",
     "links": {
       "blog": "/blogs/24",
       "social": "https://www.facebook.com/share/p/15ZX52HQYi/",

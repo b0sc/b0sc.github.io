@@ -33,7 +33,7 @@ import VideoIcon from "./../Icons/VideoIcon.astro"
                 (i == 2 && "bg-zinc-200"))
             }
           >
-            <span class="bg-lime text-black text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded w-max mx-auto mb-2">
+            <span class="bg-lime-500 text-black text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded w-max mx-auto mb-2">
               <VideoIcon />
               <strong>
                 {i == 0 && "Influential"}
@@ -50,17 +50,17 @@ import VideoIcon from "./../Icons/VideoIcon.astro"
                 event.stats.entry_fee === 0) && (
                 <span>
                   {event.stats.prize && (
-                    <span class="bg-zinc-800 text-lime text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
+                    <span class="bg-zinc-800 text-lime-500 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
                       Prizes
                     </span>
                   )}
                   {event.stats.certificate && (
-                    <span class="bg-zinc-800 text-lime text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
+                    <span class="bg-zinc-800 text-lime-500 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
                       Certificate
                     </span>
                   )}
                   {event.stats.entry_fee === 0 && (
-                    <span class="bg-zinc-800 text-lime text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
+                    <span class="bg-zinc-800 text-lime-500 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
                       Free Entry
                     </span>
                   )}
@@ -89,7 +89,7 @@ import VideoIcon from "./../Icons/VideoIcon.astro"
               </ul>
               <a
                 href={event.links.blog}
-                class="text-black hover:text-white bg-lime hover:bg-black focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                class="text-black hover:text-white bg-lime-500 hover:bg-black focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
               >
                 Read More
               </a>
