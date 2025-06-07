@@ -1,0 +1,62 @@
+---
+import Layout from "../../layouts/Layout.astro"
+import Container from "../../components/Container.astro"
+import NavbarNotes from "../../components/NavbarNotes.astro"
+
+export function getStaticPaths() {
+  const faculties = ["bca", "csit", "bit", "bicte"]
+  return faculties.map((faculty) => ({ params: { faculty } }))
+}
+
+const { faculty } = Astro.params
+
+type FacultyKey = "bca" | "csit" | "bit" | "bicte"
+
+const facultyMap: Record<FacultyKey, string> = {
+  bca: "Bachelor of Computer Applications",
+  csit: "Computer Science and Information Technology",
+  bit: "Bachelor of Information Technology",
+  bicte: "Bachelor in Information Communication Technology Education",
+}
+
+const label = facultyMap[faculty as FacultyKey]
+---
+
+<Layout
+  title={`${label} Notes - BOSC`}
+  description={`Find comprehensive notes for ${label} courses provided by BOSC.`}
+  image="https://bosc.org.np/cover.jpg"
+  url={`https://bosc.org.np/notes/${faculty}`}
+>
+  <main class="space-y-20">
+    <Container>
+      <div class="flex flex-col md:flex-row">
+        <NavbarNotes />
+        <div class="w-full px-4">
+          <h1 class="text-2xl font-bold mb-4 text-purple-700">{label} Notes</h1>
+          <p class="text-gray-600 mb-8">
+            Select a semester to access notes, roadmaps, and study materials.
+          </p>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            {
+              Array.from({ length: 8 }).map((_, i) => {
+                const sem = (i + 1).toString()
+                return (
+                  <a
+                    href={`/notes/${faculty}/${sem}`}
+                    class="block border border-gray-200 bg-white rounded-xl p-4 hover:shadow-md transition-shadow"
+                  >
+                    <h2 class="text-center text-lg font-semibold text-purple-600">
+                      Semester {sem}
+                    </h2>
+                  </a>
+                )
+              })
+            }
+          </div>
+        </div>
+      </div>
+    </Container>
+  </main>
+</Layout>

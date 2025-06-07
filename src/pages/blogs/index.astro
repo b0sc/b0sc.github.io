@@ -1,16 +1,16 @@
 ---
-import Layout from "../layouts/Layout.astro"
-import Container from "../components/Container.astro"
-import eventsData from "../components/Data/events.json"
+import Layout from "../../layouts/Layout.astro"
+import Container from "../../components/Container.astro"
+import eventsData from "../../components/Data/events.json"
 import type { CollectionEntry } from "astro:content"
 import { getCollection } from "astro:content"
-import ArticleCard from "../components/Cards/ArticleCard.astro"
-import EventCard from "../components/Cards/EventCard.astro"
-import MemberCard from "../components/Cards/MemberCard.astro"
-import teamData from "../components/Data/team.json"
-import oData from "../components/Data/opportunities.json"
-import Timeline from "../components/Timeline.astro"
-import OpportunityCard from "../components/Cards/OpportunityCard.astro"
+import ArticleCard from "../../components/Cards/ArticleCard.astro"
+import EventCard from "../../components/Cards/EventCard.astro"
+import MemberCard from "../../components/Cards/MemberCard.astro"
+import teamData from "../../components/Data/team.json"
+import oData from "../../components/Data/opportunities.json"
+import Timeline from "../../components/Timeline.astro"
+import OpportunityCard from "../../components/Cards/OpportunityCard.astro"
 
 const articles: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
   (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
@@ -56,18 +56,25 @@ const articles: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
                 Opportunities
               </button>
               <button
-                id="members-tab"
-                class="whitespace-nowrap px-4 py-2 text-left rounded-md transition-colors hover:bg-gray-100 tab-button"
-                data-tab="members"
-              >
-                Members
-              </button>
-              <button
                 id="alumni-tab"
                 class="whitespace-nowrap px-4 py-2 text-left rounded-md transition-colors hover:bg-gray-100 tab-button"
                 data-tab="alumni"
               >
                 Alumni
+              </button>
+              <button
+                id="executives-tab"
+                class="whitespace-nowrap px-4 py-2 text-left rounded-md transition-colors hover:bg-gray-100 tab-button"
+                data-tab="executives"
+              >
+                Executives
+              </button>
+              <button
+                id="members-tab"
+                class="whitespace-nowrap px-4 py-2 text-left rounded-md transition-colors hover:bg-gray-100 tab-button"
+                data-tab="members"
+              >
+                Members
               </button>
               <button
                 id="history-tab"
@@ -128,6 +135,36 @@ const articles: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
               class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 mt-12"
             >
               <MemberCard members={teamData.members} />
+              <h2 class="col-span-4 text-center text-gray-500 mt-8">
+                If you are a new BOSC member and want to be featured here,
+                please create a pull request on our <a
+                  class="text-lime-900 hover:text-zinc-900"
+                  href="https://github.com/b0sc/b0sc.github.io/"
+                >
+                  GitHub Repo
+                </a> with appropriate changes in the code.
+              </h2>
+            </div>
+          </div>
+          <div id="executives-content" class="content-section">
+            <h2
+              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 text-center"
+            >
+              Executives
+            </h2>
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 mt-12"
+            >
+              <MemberCard members={teamData.executives} />
+              <h2 class="col-span-4 text-center text-gray-500 mt-8">
+                If you are a new BOSC Executive and want to be featured here,
+                please create a pull request on our <a
+                  class="text-lime-900 hover:text-zinc-900"
+                  href="https://github.com/b0sc/b0sc.github.io/"
+                >
+                  GitHub Repo
+                </a> with appropriate changes in the code.
+              </h2>
             </div>
           </div>
           <div id="alumni-content" class="content-section">
@@ -140,6 +177,16 @@ const articles: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
               class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 mt-12"
             >
               <MemberCard members={teamData.alumni} />
+
+              <h2 class="col-span-4 text-center text-gray-500 mt-8">
+                If you are an alumni and want to be featured here, please create
+                a pull request on our <a
+                  class="text-lime-900 hover:text-zinc-900"
+                  href="https://github.com/b0sc/b0sc.github.io/"
+                >
+                  GitHub Repo
+                </a> with appropriate changes in the code.
+              </h2>
             </div>
           </div>
           <div id="history-content" class="content-section">

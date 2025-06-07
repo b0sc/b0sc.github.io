@@ -6,7 +6,6 @@ import { formatDate } from "../../utils/utils"
 import "../../styles/bloglayout.css"
 import "../../styles/global.css"
 import type { CollectionEntry } from "astro:content"
-import type { MarkdownLayoutProps } from "astro"
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection("blog")

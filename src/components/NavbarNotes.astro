@@ -1,0 +1,81 @@
+---
+const pathname = Astro.url.pathname // e.g. /notes/bca/3
+const segments = pathname.split("/").filter(Boolean) // ['notes', 'bca', '3']
+const active = segments[1] || "home" // 'bca'
+const semester = segments[2] || null // '3' or null
+
+const faculties = [
+  { name: "CSIT", key: "csit" },
+  { name: "BIT", key: "bit" },
+  { name: "BCA", key: "bca" },
+  { name: "BICTE", key: "bicte" },
+]
+
+// Compute "back" URL and title
+let backHref = "/notes"
+let backTitle = "Notes"
+
+if (semester) {
+  // If we're in a semester page (/notes/faculty/semester), go back to faculty
+  backHref = `/notes/${active}`
+  backTitle = `Back to ${faculties.find((f) => f.key === active)?.name || "Faculty"}`
+} else if (active && active !== "home") {
+  // If we're in a faculty page (/notes/faculty), go back to notes
+  backHref = "/notes"
+  backTitle = "Back to Notes"
+}
+---
+
+<div class="md:w-48 bg-white shadow-lg md:min-h-screen">
+  <div class="md:sticky md:top-0 pt-4 pr-2">
+    <div
+      class="flex flex-col space-y-2 overflow-y-auto md:overflow-x-visible pb-2 md:pb-0"
+    >
+      <!-- Back -->
+      <a
+        class={`whitespace-nowrap px-4 py-2 text-left rounded-md transition-colors ${
+          active === "home" ? "hidden" : "hover:bg-gray-100"
+        }`}
+        href={backHref}
+      >
+        ⬅️ {backTitle}
+      </a>
+
+      <!-- Faculties and Semesters -->
+      {
+        faculties.map((faculty) => (
+          <details class="group" open={active === faculty.key}>
+            <summary
+              class={`cursor-pointer px-4 py-2 rounded-md select-none transition-colors ${
+                active === faculty.key
+                  ? "bg-purple-300 font-semibold"
+                  : "hover:bg-gray-100"
+              }`}
+            >
+              {faculty.name}
+            </summary>
+            <ul class="pl-4 py-2 space-y-1">
+              {[...Array(8)].map((_, i) => {
+                const sem = (i + 1).toString()
+                return (
+                  <li>
+                    <a
+                      href={`/notes/${faculty.key}/${sem}`}
+                      class={`block px-3 py-1 rounded-md transition-colors text-sm ${
+                        active === faculty.key && semester === sem
+                          ? "bg-purple-500 text-white font-medium"
+                          : "hover:bg-gray-100"
+                      }`}
+                    >
+                      Semester {sem}
+                    </a>
+                  </li>
+                )
+              })}
+            </ul>
+          </details>
+        ))
+      }
+    </div>
+  </div>
+</div>

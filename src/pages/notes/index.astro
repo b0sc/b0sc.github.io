@@ -1,0 +1,65 @@
+---
+import Container from "../../components/Container.astro"
+import NavbarNotes from "../../components/NavbarNotes.astro"
+import Layout from "../../layouts/Layout.astro"
+
+const faculties = [
+  {
+    key: "csit",
+    name: "CSIT",
+    description: "Comprehensive CSIT semester-wise notes and resources.",
+  },
+  {
+    key: "bit",
+    name: "BIT",
+    description: "Bachelor of Information Technology resources from BOSC.",
+  },
+  {
+    key: "bca",
+    name: "BCA",
+    description: "BCA notes and guides curated semester-wise.",
+  },
+  {
+    key: "bicte",
+    name: "BICTE",
+    description: "Education-focused IT materials for BICTE.",
+  },
+]
+---
+
+<Layout
+  title="IT Notes and Roadmap"
+  description="BOSC's Official Website. Read IT Notes and Blogs. Get Jobs, BCA. Join BIT and Mentorship Programs. Created by Open Source Enthusiasts from Nepal."
+  image="https://bosc.org.np/team.jpg"
+  url="https://bosc.org.np/notes"
+>
+  <main class="space-y-20">
+    <Container>
+      <div class="flex flex-col md:flex-row">
+        <NavbarNotes />
+        <div class="w-full px-4">
+          <h1 class="text-2xl font-bold mb-6">📚 Explore IT Notes</h1>
+          <p class="text-gray-600 mb-8 max-w-2xl">
+            BOSC provides organized, semester-wise notes and study materials
+            across major IT faculties in Nepal. Choose your faculty to begin.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+            {
+              faculties.map((faculty) => (
+                <a
+                  href={`/notes/${faculty.key}`}
+                  class="block border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow bg-white"
+                >
+                  <h2 class="text-xl font-semibold text-purple-700 mb-2">
+                    {faculty.name}
+                  </h2>
+                  <p class="text-gray-600 text-sm">{faculty.description}</p>
+                </a>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </Container>
+  </main>
+</Layout>
