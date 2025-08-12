@@ -2,45 +2,45 @@
   "executives": [
     {
       "title": "President",
-      "name": "Achyut Koirala",
-      "description": "2+ Years of Experience in Backend Development. Proficient in Go and Node.js. Open Source Contributor and API Penetration Tester.",
-      "profile": "/team/tenure-2025/achyut-president.jpeg",
-      "link": "https://achyutkoirala.com.np"
+       "name": "Nirajan Subedi",
+      "description": "Tech Enthusiast. Skilled in Machine Learning and AI. Passionate Educator and Team Leader. Hackathon Innovator. Proficient in Git, Python, and Project Management.",
+      "profile": "/team/tenure-2025/Nirajan.png",
+      "link": "https://www.linkedin.com/in/nirajan-subedi-141ba4281/"
     },
     {
       "title": "Vice-President",
-      "name": "Shriram Lamichhane",
-      "description": "2+ Years of Experience as Android Developer. Proficient in Java and Kotlin. Open Source Enthusiast. Cyber Security Enthusiast and Freelancer.",
-      "profile": "/team/tenure-2025/shriram-vp.jpg",
-      "link": "https://www.youtube.com/thesrzone"
+      "name": "Siddanta Sodari",
+      "description": "Hi, I'm Siddanta — a passionate and curious individual with a drive to learn, grow, and make a meaningful impact. I enjoy exploring new ideas and turning them into practical solutions.",
+      "profile": "/team/tenure-2025/siddanta.jpg",
+      "link": "https://www.linkedin.com/in/siddanta-sodari-08596a335/"
     },
     {
       "title": "Secretary",
-      "name": "L.F. Pemi Magar",
-      "description": "2+ years of experience in Graphics Designing, UI/UX and content creation. Proficient in Photoshop, Canva, Figma, keyword research and on-page optimization",
-      "profile": "/team/tenure-2025/lf-gh.png",
-      "link": "https://lfmgr.github.io/Portfolio/"
+      "name": "Prabin Kunwar",
+      "description": "A tech enthusiast passionate about innovation, system optimization, and merging cultural heritage with modern solutions.",
+      "profile": "/team/tenure-2025/Prabinkunwar.jpg",
+      "link": "https://www.linkedin.com/in/prabin-kunwar-88250b33b/"
     },
     {
-      "title": "Joint-Secretary",
+      "title": "Vice-Secretary",
+      "name": "Srishan Chaudhary",
+      "description": "1+ Year of Experience in Cyber Security. Frontend Developer. Actively Practice Cyber Security. Skilled in Leadership and Management.",
+      "profile": "/team/tenure-2025/srisan.png",
+      "link": "https://www.linkedin.com/in/srisanchaudhary/"
+    },
+    {
+      "title": "Treasurer",
       "name": "Jasmine Bhagat",
       "description": "1+ Year of Experience in Cyber Security. Frontend Developer. Actively Practice Cyber Security. Skilled in Leadership and Management.",
       "profile": "/team/tenure-2025/jasmine-js.png",
       "link": "https://www.facebook.com/jasmine.bhagat.733"
     },
     {
-      "title": "Treasurer",
-      "name": "Roshani Sharma",
-      "description": "1+ year of Experience in digital marketing and content creation. Proficient in social media management and community building",
-      "profile": "/team/tenure-2025/roshani-treasurer.png",
-      "link": "https://www.linkedin.com/in/roshani-sharma-634217282/"
-    },
-    {
       "title": "Web Engineer",
-      "name": "Bijesh Ghimire",
-      "description": "Fullstack Developer. Proficient in React and Express. Open Source Enthusiast. Skilled in Bash Scripting, Automation and CI/CD and Linux Administration and Network Hardening.",
-      "profile": "/team/prof.png",
-      "link": "https://github.com/BIIJESH"
+      "name": "Saroj Adhikari",
+      "description": "I am a passionate software developer skilled in frontend technologies and JavaScript. With a strong work ethic and a love for innovation, I thrive on solving complex problems and creating impactful digital solutions.",
+      "profile": "/team/tenure-2025/saroj.jpeg",
+      "link": "https://www.linkedin.com/in/saroj-adhikari-53466a323/"
     },
     {
       "title": "Graphics Handler",
@@ -50,33 +50,20 @@
       "link": "https://www.facebook.com/yogesh.sunar.507"
     },
     {
-      "title": "Social Media Handler",
-      "name": "Yasika Shrestha",
+      "title": "Graphics Handler",
+      "name": "Sushma Adhikari",
       "description": "2+ years of experience in content creation and Social Media Handling. Proficient in keyword research and on-page optimization",
-      "profile": "/team/tenure-2025/yasika-cm.jpg",
-      "link": "https://www.facebook.com/yasika.shrestha.96"
+      "profile": "/team/tenure-2025/sushma.jpg",
+      "link": "https://www.linkedin.com/in/sushma-adhikari-848a21347/"
     },
     {
-      "title": "Social Media Handler",
-      "name": "Bimal Rana Magar",
+      "title": "Community Manager",
+      "name": "Sujan Giri",
       "description": "1+ years of experience in content creation and Social Media Handling. Proficient in keyword research and on-page optimization",
-      "profile": "/team/tenure-2025/bimal-cm.png",
-      "link": "https://www.facebook.com/bimal.ranamagar.161"
-    },
-    {
-      "title": "Outreach Manager",
-      "name": "Sandhya Bhattarai",
-      "description": "Frontend Developer. Proficient in React and Vue. Open Source Enthusiast. A strong communicator with leadership experience and skilled in teamwork ",
-      "profile": "/team/tenure-2025/sandhya-om.jpg",
-      "link": "/www.linkedin.com/in/sandhya-bhattarai"
-    },
-    {
-      "title": "Executive",
-      "name": "Smarika Bhatta",
-      "description": "Frontend Developer. Proficient in React and Vue. Open Source Enthusiast. Skilled in Leadership and Management.",
-      "profile": "/team/tenure-2025/smarika-secretary.jpg",
-      "link": "https://www.facebook.com/smarika.bhatta.925"
+      "profile": "/team/tenure-2025/sujangiri.jpeg",
+      "link": "https://www.linkedin.com/in/sujan-g-4764522ab/"
     }
+    
   ],
   "members": [
     {
