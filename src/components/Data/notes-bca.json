@@ -1,0 +1,481 @@
+{
+  "facultyInfo": {
+    "salientFeatures": [
+      "Tribhuvan University has launched Bachelor of Computer Application (BCA) program from the academic year 2074/75.",
+      "Semester-system under the faculties of Humanities and Social Sciences.",
+      "Objective: produce high quality computer application users and developers.",
+      "Study period: eight semesters (four academic years).",
+      "Academic year begins in September and February each year.",
+      "The medium of instruction and examination is English."
+    ],
+    "eligibility": [
+      "Passed in 2079 B.S.: Minimum D grade in each subject of grade 11 and 12 with a CGPA 1.8 or more, Minimum score of second division marks in 10+2, PCL, or equivalent in any discipline.",
+      "Students who have passed grade 11 and are waiting for grade 12 results can also apply (must submit all required documents at admission).",
+      "Passed before 2079 B.S.: Minimum D grade in each subject of grade 11 and 12 with a CGPA 2.0 or more, Minimum score of second division marks in 10+2, PCL, or equivalent in any discipline."
+    ],
+    "jobProspects": [
+      "System analysts",
+      "System managers",
+      "Project managers",
+      "Database administrators",
+      "System designers",
+      "Programmers in IT Companies and other industries",
+      "Eligible for further studies such as MCA, MIT, MBA, etc."
+    ],
+    "curricularStructure": "See semesters below for full breakdown."
+  },
+  "semesters": [
+    {
+      "semester": 1,
+      "courses": [
+        {
+          "code": "CACS101",
+          "name": "Computer Fundamentals & Applications",
+          "credits": 4,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CACO102",
+          "name": "Society and Technology",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CAEN103",
+          "name": "English I",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CAMT104",
+          "name": "Mathematics I",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CACS105",
+          "name": "Digital Logic",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ]
+    },
+    {
+      "semester": 2,
+      "courses": [
+        {
+          "code": "CACS151",
+          "name": "C Programming",
+          "credits": 4,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CAAC152",
+          "name": "Financial Accounting",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CAEN153",
+          "name": "English II",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CAMT154",
+          "name": "Mathematics II",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CACS155",
+          "name": "Microprocessor and Computer Architecture",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ]
+    },
+    {
+      "semester": 3,
+      "courses": [
+        {
+          "code": "CACS201",
+          "name": "Data Structures and Algorithms",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CAST202",
+          "name": "Probability and Statistics",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CACS203",
+          "name": "System Analysis and Design",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CACS204",
+          "name": "OOP in Java",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CACS205",
+          "name": "Web Technology",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ]
+    },
+    {
+      "semester": 4,
+      "courses": [
+        {
+          "code": "CACS251",
+          "name": "Operating System",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CACS252",
+          "name": "Numerical Methods",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CACS253",
+          "name": "Software Engineering",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CACS254",
+          "name": "Scripting Language",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CACS255",
+          "name": "Database Management System",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CAPJ256",
+          "name": "Project I",
+          "credits": 2,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ]
+    },
+    {
+      "semester": 5,
+      "courses": [
+        {
+          "code": "CACS301",
+          "name": "MIS and E-Business",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CACS302",
+          "name": "DotNet Technology",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CACS303",
+          "name": "Computer Networking",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CAMG304",
+          "name": "Introduction to Management",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CACS305",
+          "name": "Computer Graphics and Animation",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ]
+    },
+    {
+      "semester": 6,
+      "courses": [
+        {
+          "code": "CACS351",
+          "name": "Mobile Programming",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CACS352",
+          "name": "Distributed System",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CAEC353",
+          "name": "Applied Economics",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CACS354",
+          "name": "Advanced Java Programming",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CACS355",
+          "name": "Network Programming",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CAPJ356",
+          "name": "Project II",
+          "credits": 2,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ]
+    },
+    {
+      "semester": 7,
+      "courses": [
+        {
+          "code": "CACS401",
+          "name": "Cyber Law and Professional Ethics",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CACS402",
+          "name": "Cloud Computing",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CAIN403",
+          "name": "Internship",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ],
+      "electiveCourses": [
+        {
+          "code": "CACS404",
+          "name": "Image Processing",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CACS405",
+          "name": "Database Administration",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CACS406",
+          "name": "Network Administration",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CACS408",
+          "name": "Advanced Dot Net Technology",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CACS409",
+          "name": "E-Governance",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CACS410",
+          "name": "Artificial Intelligence",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ]
+    },
+    {
+      "semester": 8,
+      "courses": [
+        {
+          "code": "CAOR451",
+          "name": "Operations Research",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CAPJ452",
+          "name": "Project III",
+          "credits": 6,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ],
+      "electiveCourses": [
+        {
+          "code": "CACS453",
+          "name": "Database Programming",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CACS454",
+          "name": "Geographical Information System",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CACS455",
+          "name": "Data Analysis and Visualization",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CACS456",
+          "name": "Machine Learning",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CACS457",
+          "name": "Multimedia System",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CACS458",
+          "name": "Knowledge Engineering",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CACS459",
+          "name": "Information Security",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CACS460",
+          "name": "Internet of Things",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ]
+    }
+  ]
+}

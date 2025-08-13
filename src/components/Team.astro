@@ -30,6 +30,28 @@ import MemberCard from "./Cards/MemberCard.astro"
       </a>
     </div>
   </div>
+  <div class="relative flex flex-col items-center md:flex-row pt-6">
+    <Topic
+      title="Immediate Past"
+      description="Immediate past Leaders of BOSC who have contributed to the growth and success of the community."
+    />
+  </div>
+  <div class="flex-row items-center py-5" id="immediate-past">
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4"
+    >
+      <MemberCard members={teamData["immediate-past"]} />
+    </div>
+    <div class="w-full justify-center md:justify-end items-center inline-flex">
+      <a
+        class="px-9 py-5 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex"
+        rel="noopener noreferrer"
+        href="/blogs#alumni"
+      >
+        <h2 class="text-center text-xl font-normal leading-7">All Alumni</h2>
+      </a>
+    </div>
+  </div>
 
   <!-- <div class="w-full justify-center md:justify-end items-center inline-flex">
     <button

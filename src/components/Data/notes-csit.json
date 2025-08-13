@@ -1,0 +1,623 @@
+{
+  "facultyInfo": {
+    "salientFeatures": [
+      "In addition to conventional lectures, a great deal of practical and project works.",
+      "Develops the underlying principles of both Computer Science and Information Technology and shows how these principles can be applied to solve real world problems.",
+      "Builds up the skills that are essential for both computer professionals and researchers including IT managers, Systems Analysts, Network Administrator, Computer Programmers, Database Administrator, Web Developers, etc.",
+      "Semester based program affiliated to Tribhuvan University."
+    ],
+    "eligibility": [
+      "Should have successfully completed a twelve year of schooling in the science stream or equivalent from any university, board or institution recognized by TU.",
+      "Should have successfully passed the entrance examination conducted by TU securing at least 35% marks.",
+      "Should have secured a minimum of second division in their +2 or equivalent OR should have secured at least C in all subjects in Grade 11 and Grade 12 by taking Physics and Mathematics of 100 marks.",
+      "Passed A level in Science (have studied Physics and Mathematics of 100 marks) and passed at least in D Grade.",
+      "Passed 3 Years Diploma in Engineering program from CTEVT taking both Physics and Mathematics.",
+      "Both Biology and Mathematics group of students of +2 level are eligible to apply for the course."
+    ],
+    "admissionCriteria": [
+      "A student eligible to study the B.Sc. CSIT course should collect and submit the admission form from any of the B.Sc. CSIT colleges. The admission form generally opens during Shrawan / Bhadra every year.",
+      "Tribhuvan University, Institute of Science and Technology, Dean office conducts the entrance examination.",
+      "The Entrance Examination will be of 100 Full Marks including the subjects of Intermediate/10+2 level or equivalent incorporating English, Mathematics, Physics and Chemistry subjects and the pass marks is 35.",
+      "All the Questions of Entrance Examination will be Objective Type (MCQs).",
+      "The Examination Time Duration will be of 2 hours.",
+      "Students do not need to fill up the TU Admission Form in more than one college. Form filled from one college will be valid for all colleges/campuses.",
+      "Students of Grade 12 Supplementary Exam can also fill up the TU Admission Form but such students should present the Academic Transcript of Passing 10+2/Intermediate level before publication of entrance result, otherwise the entrance examination result of such students will not be published."
+    ],
+    "jobProspects": [
+      "Software Developer",
+      "Web Developer",
+      "Network Administrator",
+      "Database Administrator",
+      "IT Manager/Officer",
+      "Cryptographer",
+      "Ergonomics Program Designer",
+      "System Analyst",
+      "Project Manager",
+      "Document Specialist",
+      "Information System Auditor",
+      "Artificial Intelligence Specialist",
+      "Technical Writer",
+      "Information System Manager",
+      "Database Operator"
+    ],
+    "curricularStructure": "Students enrolled in the four year B.Sc. CSIT program are required to complete 126 credit hours of computer science and allied courses. The curriculum includes core computer science, electives, service courses, foundation and allied courses, and market-demanded IT applications."
+  },
+  "semesters": [
+    {
+      "semester": 1,
+      "courses": [
+        {
+          "code": "CSC109",
+          "name": "Introduction to Information Technology",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC110",
+          "name": "C Programming",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC111",
+          "name": "Digital Logic",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "MTH112",
+          "name": "Mathematics I",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "PHY113",
+          "name": "Physics",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ]
+    },
+    {
+      "semester": 2,
+      "courses": [
+        {
+          "code": "CSC160",
+          "name": "Discrete Structure",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC161",
+          "name": "Object Oriented Programming",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC162",
+          "name": "Microprocessor",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "MTH163",
+          "name": "Mathematics II",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "STA164",
+          "name": "Statistics I",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ]
+    },
+    {
+      "semester": 3,
+      "courses": [
+        {
+          "code": "CSC206",
+          "name": "Data Structure and Algorithms",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC207",
+          "name": "Numerical Method",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC208",
+          "name": "Computer Architecture",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC209",
+          "name": "Computer Graphics",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "STA210",
+          "name": "Statistics II",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ]
+    },
+    {
+      "semester": 4,
+      "courses": [
+        {
+          "code": "CSC257",
+          "name": "Theory of Computation",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC258",
+          "name": "Computer Networks",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC259",
+          "name": "Operating Systems",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC260",
+          "name": "Database Management System",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC261",
+          "name": "Artificial Intelligence",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ]
+    },
+    {
+      "semester": 5,
+      "courses": [
+        {
+          "code": "CSC314",
+          "name": "Design and Analysis of Algorithms",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC315",
+          "name": "System Analysis and Design",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC316",
+          "name": "Cryptography",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC317",
+          "name": "Simulation and Modeling",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC318",
+          "name": "Web Technology",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ],
+      "electiveCourses": [
+        {
+          "code": "CSC319",
+          "name": "Multimedia Computing",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC320",
+          "name": "Wireless Networking",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC321",
+          "name": "Image Processing",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC322",
+          "name": "Knowledge Management",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC323",
+          "name": "Society and Ethics in Information Technology",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC324",
+          "name": "Microprocessor Based Design",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ]
+    },
+    {
+      "semester": 6,
+      "courses": [
+        {
+          "code": "CSC364",
+          "name": "Software Engineering",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC365",
+          "name": "Complier Design and Construction",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC366",
+          "name": "E-Governance",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC367",
+          "name": "NET Centric Computing",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC368",
+          "name": "Technical Writing",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ],
+      "electiveCourses": [
+        {
+          "code": "CSC369",
+          "name": "Applied Logic",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC370",
+          "name": "E-commerce",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC371",
+          "name": "Automation and Robotics",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC372",
+          "name": "Neural Networks",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC373",
+          "name": "Computer Hardware Design",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC374",
+          "name": "Cognitive Science",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ]
+    },
+    {
+      "semester": 7,
+      "courses": [
+        {
+          "code": "CSC409",
+          "name": "Advanced Java Programming",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC410",
+          "name": "Data Warehousing and Data Mining",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "MGT411",
+          "name": "Principles of Management",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC412",
+          "name": "Project Work",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ],
+      "electiveCourses": [
+        {
+          "code": "CSC413",
+          "name": "Information Retrieval",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC414",
+          "name": "Database Administration",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC415",
+          "name": "Software Project Management",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC416",
+          "name": "Network Security",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC417",
+          "name": "Digital System Design",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "MGT418",
+          "name": "International Marketing",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ]
+    },
+    {
+      "semester": 8,
+      "courses": [
+        {
+          "code": "CSC461",
+          "name": "Advanced Database",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC462",
+          "name": "Internship",
+          "credits": 6,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ],
+      "electiveCourses": [
+        {
+          "code": "CSC463",
+          "name": "Advanced Networking with IPV6",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC464",
+          "name": "Distributed Networking",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC465",
+          "name": "Game Technology",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC466",
+          "name": "Distributed and Object Oriented Database",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC467",
+          "name": "Introduction to Cloud Computing",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC468",
+          "name": "Geographical Information System",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC469",
+          "name": "Decision Support System and Expert System",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC470",
+          "name": "Mobile Application Development",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC471",
+          "name": "Real Time Systems",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC472",
+          "name": "Network and System Administration",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "CSC473",
+          "name": "Embedded Systems Programming",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "code": "MGT474",
+          "name": "International Business Management",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ]
+    }
+  ]
+}

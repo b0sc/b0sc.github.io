@@ -1,0 +1,432 @@
+{
+  "facultyInfo": {
+    "salientFeatures": [
+      "The BIT program is of eight semesters (four academic years) with a separate semester exam after each semester.",
+      "Working days: 90 days/semester.",
+      "Class hours: theory+lab courses = 6 hrs/week, theory-only = 5 hrs/week.",
+      "Internal/external evaluation split; project/internship evaluated by several evaluators.",
+      "Grading: Distinction (>=80%), First (>=70%), Second (>=55%), Pass (>=40%).",
+      "Attendance: 80% required.",
+      "Final exams: conducted by IOST, TU.",
+      "Eligibility: see below."
+    ],
+    "courseDuration": "Eight semesters (four academic years)",
+    "hoursOfInstruction": "90 working days/semester; theory+lab: 6 hrs/week; theory-only: 5 hrs/week.",
+    "evaluation": "Theory: 20% internal, 80% external. Theory+lab: 20% internal, 20% lab, 60% external. Project/internship by multiple evaluators.",
+    "grading": "Distinction: 80%+, First: 70%+, Second: 55%+, Pass: 40%+ (8 semester average)",
+    "attendance": "80% in each course required.",
+    "finalExam": "Conducted by Institute of Science and Technology, Tribhuvan University.",
+    "eligibility": [
+      "Passed Proficiency Certificate Level or Equivalent with English and Mathematics/Computer (100 marks each), at least second division.",
+      "Passed grade 12 (any stream), must have studied English and Mathematics/Computer (100 marks), at least C grade, GPA >= 1.6, CGPA >= 1.8.",
+      "Passed A level (English and Mathematics/Computer, 100 marks), D grade.",
+      "Passed Three Years Diploma in second division from CTEVT (English and Mathematics/Computer, 100 each)."
+    ],
+    "curricularStructure": "120 credits, evenly distributed over 8 semesters (4 years). Internship in final semester, 6 credits."
+  },
+  "semesters": [
+    {
+      "semester": 1,
+      "courses": [
+        {
+          "name": "Sociology",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Basic Mathematics",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Digital Logic",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "C Programming",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Introduction to Information Technology",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ]
+    },
+    {
+      "semester": 2,
+      "courses": [
+        {
+          "name": "Economics",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Business Statistics",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Object-Oriented Programming",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Discrete Structure",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Microprocessor and Computer Architecture",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ]
+    },
+    {
+      "semester": 3,
+      "courses": [
+        {
+          "name": "Principles of Management",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Operating System",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Numerical Methods",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Database Management System",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Data Structure and Algorithm",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ]
+    },
+    {
+      "semester": 4,
+      "courses": [
+        {
+          "name": "Operations Research",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Network and Data Communications",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "System Analysis and Design",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Artificial Intelligence",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Web Technology- I",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ]
+    },
+    {
+      "semester": 5,
+      "courses": [
+        {
+          "name": "Technical Writing",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Computer Graphics",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Information Security",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Software Engineering",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Web Technology- II",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ]
+    },
+    {
+      "semester": 6,
+      "courses": [
+        {
+          "name": "Net-Centric Computing",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Database Administration",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Management Information System",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Research Methodology",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ],
+      "electiveCourses": [
+        {
+          "name": "Geographical Information System",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Multimedia Computing",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Wireless Networking",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Society and Ethics in IT",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Psychology",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ]
+    },
+    {
+      "semester": 7,
+      "courses": [
+        {
+          "name": "Advanced Java Programming",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Software Project Management",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "e-Commerce",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Project Work",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ],
+      "electiveCourses": [
+        {
+          "name": "DSS and Expert System",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Mobile Application Development",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Simulation and Modeling",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Cloud Computing",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Marketing",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ]
+    },
+    {
+      "semester": 8,
+      "courses": [
+        {
+          "name": "Network System Administration",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "e-Governance",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Internship",
+          "credits": 6,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ],
+      "electiveCourses": [
+        {
+          "name": "Data Warehousing and Data Mining",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Knowledge Management",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Image Processing",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Network Security",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        },
+        {
+          "name": "Introduction to Telecommunications",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "",
+          "syllabusLink": ""
+        }
+      ]
+    }
+  ]
+}
