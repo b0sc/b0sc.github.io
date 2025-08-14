@@ -24,6 +24,9 @@ if (semester) {
   backHref = "/notes"
   backTitle = "Back to Notes"
 }
+
+// URL for the Google Form
+const googleFormUrl = "https://forms.gle/duyocPr81Sy6nqfa8"
 ---
 
 <div class="md:w-48 bg-white shadow-lg md:min-h-screen">
@@ -31,7 +34,6 @@ if (semester) {
     <div
       class="flex flex-col space-y-2 overflow-y-auto md:overflow-x-visible pb-2 md:pb-0"
     >
-      <!-- Back -->
       <a
         class={`whitespace-nowrap px-4 py-2 text-left rounded-md transition-colors ${
           active === "home" ? "hidden" : "hover:bg-gray-100"
@@ -41,7 +43,6 @@ if (semester) {
         ⬅️ {backTitle}
       </a>
 
-      <!-- Faculties and Semesters -->
       {
         faculties.map((faculty) => (
           <details class="group" open={active === faculty.key}>
@@ -77,5 +78,14 @@ if (semester) {
         ))
       }
     </div>
+
+    <a
+      href={googleFormUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-flex justify-center gap-2.5 rounded-xl px-3 py-2 m-1 text-center text-sm font-normal leading-7 text-white bg-zinc-900 border hover:bg-zinc-100 hover:text-black"
+    >
+      Upload Resources
+    </a>
   </div>
 </div>
