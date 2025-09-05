@@ -1,0 +1,24 @@
+---
+import Container from "./Container.astro"
+import freeSoftwareData from "./Data/free-software.json"
+---
+
+<Container>
+  <div class="relative flex flex-col md:flex-row items-start gap-10">
+    <div class="w-full max-w-[75vw] m-auto md:w-6/12 lg:w-4/12 md:m-0 ">
+      <img
+        src="/freeSoftware/freeSoftware.png"
+        alt="Free Software"
+        class="w-full rounded-2xl shadow-md"
+      />
+    </div>
+    <div class="md:w-8/12">
+      <h2 class="text-3xl font-bold">{freeSoftwareData["questions"].what}</h2>
+      <p class="mt-4 text-gray-700">{freeSoftwareData.defination}</p>
+      <h2 class="text-3xl font-bold mt-6">{freeSoftwareData["questions"].why}</h2>
+      <ul class="mt-4 list-disc pl-4 text-gray-700" >
+        {freeSoftwareData["features"].map((feature) => <li>{feature}</li>)
+      </ul>
+    </div>
+  </div>
+</Container>
