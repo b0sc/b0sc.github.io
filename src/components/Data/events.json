@@ -1,5 +1,87 @@
 [
   {
+    "id": 34,
+    "type": "Event",
+    "featured": false,
+    "name_1": "Software Freedom Day 2025:",
+    "name_2": "Celebration",
+    "desc": "🌐 Get ready to celebrate innovation and the power of open-source technology at our upcoming Software Freedom Day event! 🚀 It's that time of the year again where you get free gifts, swags, and invaluable guidance from exceptional mentors and speakers in the FOSS industry. Join us to explore the endless possibilities of free and open-source software, share knowledge, and empower communities to embrace digital freedom.",
+    "year": 2025,
+    "date": "2025-09-20",
+    "time": "08:00 PM",
+    "venue": "Discord, BOSC",
+   "organizer": ["BOSC"],
+    "partners": ["LibreOffice", "AiDA hackathon", "CSITAN-Chitwan","Birendra IT-Club","<Code>ForChange"],
+    "mentors": [],
+    "guests": [
+      {
+        "name": "Ashim Dahal",
+        "image": "/default_mentor.jpg",
+        "designation": "Cyber Security Enthusiast",
+        "tag": "SFD Speaker 2024",
+        "connect": "https://www.facebook.com/alwaysonlin"
+      },
+      {
+        "name": "Sailesh Singh",
+        "image": "/default_mentor.jpg",
+        "designation": "System Network Administrator",
+        "tag": "SFD Speaker 2024",
+        "connect": "https://www.facebook.com/saileshsingh36"
+      },
+      {
+        "name": "Bimal Dhital",
+        "image": "/default_mentor.jpg",
+        "designation": "Network Engineer & Linux Administrator",
+        "tag": "SFD Speaker 2024",
+        "connect": "https://www.facebook.com/shiyaruku"
+      },
+      {
+        "name": "Angat Sitaula",
+        "image": "/default_mentor.jpg",
+        "designation": "ML Engineer",
+        "tag": "SFD Speaker 2024",
+        "connect": "https://www.facebook.com/angat.angat.31"
+      },
+      {
+        "name": "Suraj Bhattrai",
+        "image": "/default_mentor.jpg",
+        "designation": "Community Liaison",
+        "tag": "SFD Speaker 2024",
+        "connect": "https://www.facebook.com/ImMrBhattarai"
+      },
+      {
+        "name": "Ashutosh Devkota",
+        "image": "/default_mentor.jpg",
+        "designation": "cybersecurity Researcher",
+        "tag": "SFD Speaker 2024",
+        "connect": "https://www.facebook.com/aashutoshx24"
+      }
+
+    ],
+    "cover_photo": "/events/34/cover.jpg",
+    "background": "bg-lime-500",
+    "links": {
+      "blog": "/blogs/34",
+      "social": "https://www.facebook.com/birendraopensourceclub",
+      "registration": "https://docs.google.com/forms/d/e/1FAIpQLSfLVYZgMwcn-8_4A0n59IKVxmImxZVoZ_iALWMIIROqQfeR3A/viewform"
+    },
+    "images": [],
+    "stats": {
+      "participants": 50,
+      "time": "5 hrs",
+      "certificate": false,
+      "prize": true,
+      "entry_fee": 0,
+      "points": [
+        "🧑🏻‍💻 50+ audience",
+        "🗿  8+ Sessions (Activities, Games and Open Mic)",
+        "🌏  4+ College's and Faculties Participation",
+        "🎁  10+ Swags and Gifts Distributed",
+        "🎗  Juniors, Seniors and Graduates"
+      ]
+    }
+  },
+  {
     "id": 33,
     "type": "Event",
     "featured": false,
