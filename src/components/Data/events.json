@@ -1,11 +1,57 @@
 [
   {
-    "id": 34,
+    "id": 37,
+    "type": "Event",
+    "featured": false,
+    "name_1": "Guide to Hacktober: ",
+    "name_2": "2025",
+    "desc": "Welcome Sourcerers! 🧙‍ Join us to the celebration of Hacktoberfest 2025 and begin your open-source journey. 🚀 Join our guided session to explore the world of open-source contribution, learn from experienced mentors, and contribute to projects. From your first pull request to meaningful collaboration — we’ll help you go from zero to hero in open source!✨",
+    "year": 2025,
+    "date": "2024-10-11",
+    "time": "5:00 PM",
+    "venue": "Virtual - Discord",
+    "organizer": ["BOSC"],
+    "partners": ["Hacktoberfest"],
+    "mentors": [],
+    "guests": [
+      {
+        "name": "Achyut Koirala",
+        "image": "/default_mentor.jpg",
+        "designation": "C00, Cyber Alert Nepal",
+        "tag": "Hacktoberfest Speaker",
+        "connect": "https://www.facebook.com/axyut"
+      },
+      {
+        "name": "Shri Ram Lamichhane",
+        "image": "/default_mentor.jpg",
+        "designation": "The SR Zone",
+        "tag": "Hacktoberfest Speaker",
+        "connect": "https://www.facebook.com/axyut"
+      }
+    ],
+    "cover_photo": "/events/37/cover.jpg",
+    "background": "bg-zinc-100",
+    "links": {
+      "blog": "/blogs/37",
+      "social": "https://www.facebook.com/share/p/17WNVjoRGZ/",
+      "registration": "https://forms.gle/BjwUiajvnJxkcAMW6"
+    },
+    "images": ["/events/37/pic1.jpg", "/events/37/pic2.jpg"],
+    "stats": {
+      "participants": 30,
+      "time": "3 hrs",
+      "certificate": false,
+      "prize": false,
+      "entry_fee": 0
+    }
+  },
+  {
+    "id": 36,
     "type": "Event",
     "featured": true,
     "name_1": "Software Freedom Day 2025:",
-    "name_2": "Celebration",
-    "desc": "🌐 Get ready to celebrate innovation and the power of open-source technology at our upcoming Software Freedom Day event! 🚀 It's that time of the year again where you get free gifts, swags, and invaluable guidance from exceptional mentors and speakers in the FOSS industry. Join us to explore the endless possibilities of free and open-source software, share knowledge, and empower communities to embrace digital freedom.",
+    "name_2": "Celebrate Freedom",
+    "desc": "🚀 Software Freedom Day 2025 is here! Dive into the world of open-source — where innovation meets community. 💻✨ Join us for inspiring talks, hands-on sessions, cool swags, and stories that spark the freedom to create, share, and collaborate. Let’s celebrate tech without limits! 🌍🔥",
     "year": 2025,
     "date": "2025-09-20",
     "time": "08:00 PM",
@@ -58,14 +104,14 @@
       }
 
     ],
-    "cover_photo": "/events/34/cover.jpg",
+    "cover_photo": "/events/36/cover.jpg",
     "background": "bg-lime-500",
     "links": {
-      "blog": "/blogs/34",
+      "blog": "/blogs/36",
       "social": "https://www.facebook.com/birendraopensourceclub",
       "registration": "https://docs.google.com/forms/d/e/1FAIpQLSfLVYZgMwcn-8_4A0n59IKVxmImxZVoZ_iALWMIIROqQfeR3A/viewform"
     },
-    "images": ["/events/34/sfd1.png","/events/34/sfd2.png","/events/34/sfd3.png","/events/34/sfd4.png"],
+    "images": ["/events/36/sfd1.png","/events/36/sfd2.png","/events/36/sfd3.png","/events/36/sfd4.png"],
     "stats": {
       "participants": 50,
       "time": "5 hrs",
@@ -79,6 +125,85 @@
         "🎁  10+ Swags and Gifts Distributed",
         "🎗  Juniors, Seniors and Graduates"
       ]
+    }
+  },
+   {
+    "id": 35,
+    "type": "Event",
+    "featured": false,
+    "name_1": "Code for Change:- ",
+    "name_2": "Workshop for Startup Enthusiasts!",
+    "desc": "Code for Change Chitwan presents a workshop on the Startup Landscape of Nepal: Opportunities, Challenges & Growth Paths. Gain insights from Mr. Biplab Karki, CEO & Founder of Hyperce.",
+    "year": 2025,
+    "date": "2025-08-17",
+    "time": "8:30 PM",
+    "venue": "Online - Google Meet",
+    "organizer": ["<Code>ForChange"],
+    "partners": ["BOSC"],
+    "mentors": [
+      {
+        "name": "Biplab Karki",
+        "image": "/default_mentor.jpg",
+        "designation": "CEO & Founder at Hyperce",
+        "tag": "Startup Mentor",
+        "connect": "https://linkedin.com/in/beeplove"
+      }
+    ],
+    "guests": [],
+    "cover_photo": "/events/35/cover.jpg",
+    "background": "bg-zinc-100",
+    "links": {
+      "blog": "/blogs/35",
+      "social": "https://www.facebook.com/share/p/1FbMu2p96G/",
+      "registration": "https://docs.google.com/forms/d/e/1FAIpQLSfvCLL-xT5pZHndQpG5Ack6TQ88WuywmgtMbvc8gM_iP4s_PQ/viewform"
+    },
+    "images": [],
+    "stats": {
+      "participants": 30,
+      "time": "4 hours",
+      "certificate": false,
+      "prize": false,
+      "entry_fee": 0
+    }
+  },
+   {
+    "id": 34,
+    "type": "Event",
+    "featured": false,
+    "name_1": "Annual General Meeting:",
+    "name_2": "AGM 2025",
+  "desc": "A new chapter new tenure! 🎉 Join us as we continue to grow, innovate, and strengthen our community together. Bring your ideas, energy, and vision to shape the future of the club.🗿",
+    "year": 2025,
+    "date": "2025-08-03",
+    "time": "07:00 AM",
+    "venue": "RMC Hall - BMC, 10 Bigha",
+    "organizer": ["BOSC"],
+    "partners": [],
+    "mentors": [
+    ],
+    "guests": [
+      {
+        "name": "Tika Ram Rijal",
+        "image": "/default_mentor.jpg",
+        "designation": "Vice Campus Chief, Birendra Multiple Campus",
+        "tag": "Professor",
+        "connect": "https://www.facebook.com/tikaramrijal70"
+      }
+    ],
+    "cover_photo": "/events/34/cover.jpg",
+    "background": "bg-zinc-100",
+    "links": {
+      "blog": "/blogs/34",
+      "social": "https://www.facebook.com/share/p/1ZvSQxuMt5/",
+      "registration": ""
+    },
+    "images": ["/events/34/agm1.jpg","/events/34/agm2.jpg"],
+    "stats": {
+      "participants": 30,
+      "time": "3 hrs",
+      "certificate": false,
+      "prize": false,
+      "entry_fee": 0
     }
   },
   {
