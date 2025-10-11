@@ -1,6 +1,6 @@
 # Official Website of Birendra Open Source Club
 
-Made possible with the contributions of the BOSC community. 🚀
+Made possible with the contributions of the BOSC community. Minor Change🚀
 
 ## 🧞 Commands
 
