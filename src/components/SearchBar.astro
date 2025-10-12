@@ -1,0 +1,39 @@
+---
+import Search from "astro-pagefind/components/Search";
+---
+<!-- for this to work in dev mode build your site once -->
+<Search id="search" className="pagefind-ui" uiOptions={{ showImages: false }} />
+
+<style is:inline>
+:root{
+    --pagefind-ui-scale: 0.70; /* overall scale of the search bar */
+}
+#search{
+    max-width: 300px;
+    flex: 1 1 auto; /* Allow it to grow and shrink */
+    min-width: 0; /* Important for flex shrinking */
+}
+#search .pagefind-ui{
+    width: 100%;
+}
+#search .pagefind-ui__search-input{
+    width: 100%;
+    min-width: 30px;
+    
+}
+#search .pagefind-ui__drawer {
+  position: absolute;
+  padding: 0.5rem;
+  top: 100%;
+  max-width: 40rem;
+  min-width: 15rem;
+  width: 100%;
+  right: 0;
+  background-color: white;
+  z-index: 60; /* above other content (nav has 50) */
+  border-radius: 0.5rem;
+  height: 20rem;
+  overflow-y: scroll;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}   
+</style>
