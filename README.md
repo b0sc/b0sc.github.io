@@ -30,6 +30,9 @@ You can also run this command for installing the extension. Open up the terminal
 
 `ext install astro-build.astro-vscode`
 
+**Heads up for dev mode:** The search bar won’t magically work until you build the site first. Don’t worry `npm postinstall` takes care of an initial build right after installing. But if you add new content, you’ll need to run `npm run build` again so it gets indexed.
+Want the geeky details? Check out [astro-pagefind](https://github.com/shishkin/astro-pagefind)
+
 ## Issues
 
 If you do not find the issue you are looking for, please create a new [issue](https://github.com/b0sc/b0sc.github.io/issues/new?assignees=&labels=&projects=&template=custom.md&title=) after reviewing our [website](https://b0sc.github.io/).
