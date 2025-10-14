@@ -1,8 +1,7 @@
 ---
-// src/pages/blogs/history.astro
 import Layout from "../../layouts/Layout.astro";
 import Container from "../../components/Container.astro";
-import BlogNav from "../../components/BlogNav.astro";
+import ExploreNav from "../../components/ExploreNav.astro";
 import Timeline from "../../components/Timeline.astro";
 
 export const prerender = true;
@@ -12,15 +11,15 @@ export const prerender = true;
   title="BOSC - History & Timeline"
   description="Explore the history and key milestones of the Birendra Open Source Club."
 >
-  <main>
+  <main class="pt-7 pb-16">
     <Container>
       <div class="flex flex-col md:flex-row">
-        <BlogNav />
+        <ExploreNav />
 
         <div class="flex-1 p-4">
           <div id="history-content">
             <h2
-              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 text-center"
+              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-[var(--text-color)] text-center"
             >
               History | Timeline
             </h2>

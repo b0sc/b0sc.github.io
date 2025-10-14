@@ -1,45 +1,44 @@
 ---
 export async function getStaticPaths() {
-  const faculties = ["bca", "bit", "csit", "bicte"]
-  const paths = []
+  const faculties = ["bca", "bit", "csit", "bicte"];
+  const paths = [];
   for (const faculty of faculties) {
     for (let semester = 1; semester <= 8; semester++) {
-      paths.push({ params: { faculty, semester: semester.toString() } })
+      paths.push({ params: { faculty, semester: semester.toString() } });
     }
   }
-  return paths
+  return paths;
 }
-import Container from "../../../components/Container.astro"
-import Layout from "../../../layouts/Layout.astro"
-import NavbarNotes from "../../../components/NavbarNotes.astro"
-const { faculty, semester } = Astro.params
+import Container from "../../../components/Container.astro";
+import Layout from "../../../layouts/Layout.astro";
+import NavbarNotes from "../../../components/NavbarNotes.astro";
+const { faculty, semester } = Astro.params;
 
 const facultyMap: Record<string, string> = {
   bca: "BCA",
   bit: "BIT",
   csit: "CSIT",
   bicte: "BICTE",
-}
+};
 const facultyName =
-  faculty && facultyMap[faculty] ? facultyMap[faculty] : "Unknown Faculty"
+  faculty && facultyMap[faculty] ? facultyMap[faculty] : "Unknown Faculty";
 
-// Dynamic import of faculty JSON
-let facultyData
+let facultyData;
 try {
-  facultyData = await import(`../../../components/Data/notes-${faculty}.json`)
+  facultyData = await import(`../../../components/Data/notes-${faculty}.json`);
 } catch (e) {
-  facultyData = null
+  facultyData = null;
 }
-const semesters = facultyData?.default?.semesters || []
-const info = facultyData?.default?.facultyInfo
+const semesters = facultyData?.default?.semesters || [];
+const info = facultyData?.default?.facultyInfo;
 type SemesterType = {
-  semester: string | number
-  courses?: any[]
-  electiveCourses?: any[]
-}
+  semester: string | number;
+  courses?: any[];
+  electiveCourses?: any[];
+};
 const semesterData = semesters.find(
   (s: SemesterType) => String(s.semester) === String(semester)
-)
+);
 ---
 
 <Layout
@@ -48,18 +47,18 @@ const semesterData = semesters.find(
   image="https://bosc.org.np/cover.jpg"
   url={`https://bosc.org.np/notes/${faculty}/${semester}`}
 >
-  <main class="space-y-12">
+  <main class="pt-7 pb-16">
     <Container>
       <div class="flex flex-col md:flex-row">
         <NavbarNotes currentFaculty={faculty} currentSemester={semester} />
         <div class="m-6 flex-1">
-          <h1 class="text-2xl font-bold mb-4">
+          <h1 class="text-2xl font-bold mb-4 text-[var(--text-color)]">
             {facultyName} - Semester {semester}
           </h1>
           {
             info?.curricularStructure && (
               <section class="mb-6">
-                <div class="bg-purple-50 rounded-lg p-4 text-gray-700 shadow">
+                <div class="bg-purple-100 dark:bg-purple-900/50 rounded-lg p-4 text-purple-900 dark:text-purple-200 shadow">
                   <strong>Curricular Info:</strong> {info.curricularStructure}
                 </div>
               </section>
@@ -68,95 +67,60 @@ const semesterData = semesters.find(
           {
             semesterData ? (
               <div>
-                <table class="min-w-full border mt-4 rounded-lg overflow-hidden shadow">
-                  <thead class="bg-purple-100">
+                <table class="min-w-full border border-[var(--card-border)] mt-4 rounded-lg overflow-hidden shadow">
+                  <thead class="bg-purple-100 dark:bg-purple-900/50 text-purple-900 dark:text-purple-200">
                     <tr>
-                      {/* <th class="border px-4 py-2">Code</th> */}
-                      <th class="border px-4 py-2">Subject</th>
-                      {/* <th class="border px-4 py-2">Credits</th> */}
-                      <th class="border px-4 py-2">Notes</th>
-                      <th class="border px-4 py-2">Past Qs</th>
-                      <th class="border px-4 py-2">Syllabus</th>
+                      <th class="border border-[var(--card-border)] px-4 py-2">Subject</th>
+                      <th class="border border-[var(--card-border)] px-4 py-2">Notes</th>
+                      <th class="border border-[var(--card-border)] px-4 py-2">Past Qs</th>
+                      <th class="border border-[var(--card-border)] px-4 py-2">Syllabus</th>
                     </tr>
                   </thead>
                   <tbody>
                     {Array.isArray(semesterData.courses) &&
                       semesterData.courses.map((subject: any) => (
-                        <tr class="even:bg-purple-50">
-                          {/* <td class="border px-2 py-2">
-                            {subject.code || "-"}
-                          </td> */}
-                          <td class="border px-2 py-2">{subject.name}</td>
-                          {/* <td class="border px-2 py-2 text-center">
-                            {subject.credits}
-                          </td> */}
-                          <td class="border px-2 py-2 text-center">
+                        <tr class="even:bg-purple-100/50 dark:even:bg-purple-900/20">
+                          <td class="border border-[var(--card-border)] px-2 py-2">{subject.name}</td>
+                          <td class="border border-[var(--card-border)] px-2 py-2 text-center">
                             {subject.notesLink ? (
                               <a
                                 href={subject.notesLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                class="text-purple-700 hover:underline flex items-center gap-1"
+                                class="text-purple-700 dark:text-purple-400 hover:underline flex items-center justify-center gap-1"
                               >
-                                Notes{" "}
-                                <svg
-                                  class="w-4 h-4 inline"
-                                  fill="none"
-                                  stroke="currentColor"
-                                  stroke-width="2"
-                                  viewBox="0 0 24 24"
-                                >
-                                  <path d="M14 3h7v7m0 0L10 21l-7-7" />
-                                </svg>
+                                Notes <svg class="w-4 h-4 inline" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 3h7v7m0 0L10 21l-7-7" /></svg>
                               </a>
                             ) : (
-                              <span class="text-gray-400">Notes</span>
+                              <span class="text-gray-400 dark:text-gray-600">Notes</span>
                             )}
                           </td>
-                          <td class="border px-2 py-2 text-center">
+                          <td class="border border-[var(--card-border)] px-2 py-2 text-center">
                             {subject.pastQuestionsLink ? (
                               <a
                                 href={subject.pastQuestionsLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                class="text-purple-700 hover:underline flex items-center gap-1"
+                                class="text-purple-700 dark:text-purple-400 hover:underline flex items-center justify-center gap-1"
                               >
-                                Past Qs{" "}
-                                <svg
-                                  class="w-4 h-4 inline"
-                                  fill="none"
-                                  stroke="currentColor"
-                                  stroke-width="2"
-                                  viewBox="0 0 24 24"
-                                >
-                                  <path d="M14 3h7v7m0 0L10 21l-7-7" />
-                                </svg>
+                                Past Qs <svg class="w-4 h-4 inline" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 3h7v7m0 0L10 21l-7-7" /></svg>
                               </a>
                             ) : (
-                              <span class="text-gray-400">Past Qs</span>
+                              <span class="text-gray-400 dark:text-gray-600">Past Qs</span>
                             )}
                           </td>
-                          <td class="border px-2 py-2 text-center">
+                          <td class="border border-[var(--card-border)] px-2 py-2 text-center">
                             {subject.syllabusLink ? (
                               <a
                                 href={subject.syllabusLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                class="text-purple-700 hover:underline flex items-center gap-1"
+                                class="text-purple-700 dark:text-purple-400 hover:underline flex items-center justify-center gap-1"
                               >
-                                Syllabus{" "}
-                                <svg
-                                  class="w-4 h-4 inline"
-                                  fill="none"
-                                  stroke="currentColor"
-                                  stroke-width="2"
-                                  viewBox="0 0 24 24"
-                                >
-                                  <path d="M14 3h7v7m0 0L10 21l-7-7" />
-                                </svg>
+                                Syllabus <svg class="w-4 h-4 inline" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 3h7v7m0 0L10 21l-7-7" /></svg>
                               </a>
                             ) : (
-                              <span class="text-gray-400">Syllabus</span>
+                              <span class="text-gray-400 dark:text-gray-600">Syllabus</span>
                             )}
                           </td>
                         </tr>
@@ -165,96 +129,40 @@ const semesterData = semesters.find(
                 </table>
                 {Array.isArray(semesterData.electiveCourses) && (
                   <div class="mt-8">
-                    <h2 class="text-lg font-semibold mb-2">Electives</h2>
-                    <table class="min-w-full border rounded-lg overflow-hidden shadow">
-                      <thead class="bg-purple-100">
+                    <h2 class="text-lg font-semibold mb-2 text-[var(--text-color)]">Electives</h2>
+                    <table class="min-w-full border border-[var(--card-border)] rounded-lg overflow-hidden shadow">
+                      <thead class="bg-purple-100 dark:bg-purple-900/50 text-purple-900 dark:text-purple-200">
                         <tr>
-                          {/* <th class="border px-4 py-2">Code</th> */}
-                          <th class="border px-4 py-2">Elective Subject</th>
-                          {/* <th class="border px-4 py-2">Credits</th> */}
-                          <th class="border px-4 py-2">Notes</th>
-                          <th class="border px-4 py-2">Past Qs</th>
-                          <th class="border px-4 py-2">Syllabus</th>
+                          <th class="border border-[var(--card-border)] px-4 py-2">Elective Subject</th>
+                          <th class="border border-[var(--card-border)] px-4 py-2">Notes</th>
+                          <th class="border border-[var(--card-border)] px-4 py-2">Past Qs</th>
+                          <th class="border border-[var(--card-border)] px-4 py-2">Syllabus</th>
                         </tr>
                       </thead>
                       <tbody>
                         {semesterData.electiveCourses.map((elective: any) => (
-                          <tr class="even:bg-purple-50">
-                            {/* <td class="border px-2 py-2">
-                              {elective.code || "-"}
-                            </td> */}
-                            <td class="border px-2 py-2">{elective.name}</td>
-                            {/* <td class="border px-2 py-2 text-center">
-                              {elective.credits}
-                            </td> */}
-                            <td class="border px-2 py-2 text-center">
+                          <tr class="even:bg-purple-100/50 dark:even:bg-purple-900/20">
+                            <td class="border border-[var(--card-border)] px-2 py-2">{elective.name}</td>
+                            <td class="border border-[var(--card-border)] px-2 py-2 text-center">
                               {elective.notesLink ? (
-                                <a
-                                  href={elective.notesLink}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  class="text-purple-700 hover:underline flex items-center gap-1"
-                                >
-                                  Notes{" "}
-                                  <svg
-                                    class="w-4 h-4 inline"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    viewBox="0 0 24 24"
-                                  >
-                                    <path d="M14 3h7v7m0 0L10 21l-7-7" />
-                                  </svg>
+                                <a href={elective.notesLink} target="_blank" rel="noopener noreferrer" class="text-purple-700 dark:text-purple-400 hover:underline flex items-center justify-center gap-1">
+                                  Notes <svg class="w-4 h-4 inline" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 3h7v7m0 0L10 21l-7-7" /></svg>
                                 </a>
-                              ) : (
-                                <span class="text-gray-400">Notes</span>
-                              )}
+                              ) : ( <span class="text-gray-400 dark:text-gray-600">Notes</span> )}
                             </td>
-                            <td class="border px-2 py-2 text-center">
+                            <td class="border border-[var(--card-border)] px-2 py-2 text-center">
                               {elective.pastQuestionsLink ? (
-                                <a
-                                  href={elective.pastQuestionsLink}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  class="text-purple-700 hover:underline flex items-center gap-1"
-                                >
-                                  Past Qs{" "}
-                                  <svg
-                                    class="w-4 h-4 inline"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    viewBox="0 0 24 24"
-                                  >
-                                    <path d="M14 3h7v7m0 0L10 21l-7-7" />
-                                  </svg>
+                                <a href={elective.pastQuestionsLink} target="_blank" rel="noopener noreferrer" class="text-purple-700 dark:text-purple-400 hover:underline flex items-center justify-center gap-1">
+                                  Past Qs <svg class="w-4 h-4 inline" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 3h7v7m0 0L10 21l-7-7" /></svg>
                                 </a>
-                              ) : (
-                                <span class="text-gray-400">Past Qs</span>
-                              )}
+                              ) : ( <span class="text-gray-400 dark:text-gray-600">Past Qs</span> )}
                             </td>
-                            <td class="border px-2 py-2 text-center">
+                            <td class="border border-[var(--card-border)] px-2 py-2 text-center">
                               {elective.syllabusLink ? (
-                                <a
-                                  href={elective.syllabusLink}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  class="text-purple-700 hover:underline flex items-center gap-1"
-                                >
-                                  Syllabus{" "}
-                                  <svg
-                                    class="w-4 h-4 inline"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    viewBox="0 0 24 24"
-                                  >
-                                    <path d="M14 3h7v7m0 0L10 21l-7-7" />
-                                  </svg>
+                                <a href={elective.syllabusLink} target="_blank" rel="noopener noreferrer" class="text-purple-700 dark:text-purple-400 hover:underline flex items-center justify-center gap-1">
+                                  Syllabus <svg class="w-4 h-4 inline" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 3h7v7m0 0L10 21l-7-7" /></svg>
                                 </a>
-                              ) : (
-                                <span class="text-gray-400">Syllabus</span>
-                              )}
+                              ) : ( <span class="text-gray-400 dark:text-gray-600">Syllabus</span> )}
                             </td>
                           </tr>
                         ))}
@@ -264,9 +172,8 @@ const semesterData = semesters.find(
                 )}
               </div>
             ) : (
-              <p class="text-gray-600">
-                No course data available for Semester {semester} of{" "}
-                {facultyName}.
+              <p class="text-[var(--text-muted)]">
+                No course data available for Semester {semester} of {facultyName}.
               </p>
             )
           }

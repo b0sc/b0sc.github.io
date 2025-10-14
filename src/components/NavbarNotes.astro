@@ -1,89 +1,83 @@
 ---
-const pathname = Astro.url.pathname // e.g. /notes/bca/3
-const segments = pathname.split("/").filter(Boolean) // ['notes', 'bca', '3']
-const active = segments[1] || "home" // 'bca'
-const semester = segments[2] || null // '3' or null
+const pathname = Astro.url.pathname;
+const segments = pathname.split("/").filter(Boolean);
+const active = segments[1] || "home";
+const semester = segments[2] || null;
 
 const faculties = [
   { name: "CSIT", key: "csit" },
   { name: "BIT", key: "bit" },
   { name: "BCA", key: "bca" },
   { name: "BICTE", key: "bicte" },
-]
+];
 
-// Compute "back" URL and title
-let backHref = "/notes"
-let backTitle = "Notes"
+let backHref = "/notes";
+let backTitle = "Notes";
 
 if (semester) {
-  // If we're in a semester page (/notes/faculty/semester), go back to faculty
-  backHref = `/notes/${active}`
-  backTitle = `Back to ${faculties.find((f) => f.key === active)?.name || "Faculty"}`
+  backHref = `/notes/${active}`;
+  backTitle = `Back to ${faculties.find((f) => f.key === active)?.name || "Faculty"}`;
 } else if (active && active !== "home") {
-  // If we're in a faculty page (/notes/faculty), go back to notes
-  backHref = "/notes"
-  backTitle = "Back to Notes"
+  backHref = "/notes";
+  backTitle = "Back to Notes";
 }
 
-// URL for the Google Form
-const googleFormUrl = "https://forms.gle/duyocPr81Sy6nqfa8"
+const googleFormUrl = "https://forms.gle/duyocPr81Sy6nqfa8";
 ---
 
-<div class="md:w-48 bg-white shadow-lg md:min-h-screen">
-  <div class="md:sticky md:top-0 pt-4 pr-2">
-    <div
-      class="flex flex-col space-y-2 overflow-y-auto md:overflow-x-visible pb-2 md:pb-0"
-    >
+{/* UPDATED: Replaced `bg-white shadow-lg` with theme-aware background and border */}
+<div class="md:w-48 bg-card md:min-h-screen border-r border-card-border">
+  <div class="md:sticky md:top-20 pt-4 pr-2"> {/* Adjusted top to account for navbar */}
+    <div class="flex flex-col space-y-2 overflow-y-auto md:overflow-x-visible pb-2 md:pb-0">
       <a
-        class={`whitespace-nowrap px-4 py-2 text-left rounded-md transition-colors ${
-          active === "home" ? "hidden" : "hover:bg-gray-100"
+        class={`whitespace-nowrap px-4 py-2 text-left rounded-md transition-colors text-text ${
+          active === "home" ? "hidden" : "hover:bg-hover"
         }`}
         href={backHref}
       >
         ⬅️ {backTitle}
       </a>
 
-      {
-        faculties.map((faculty) => (
-          <details class="group" open={active === faculty.key}>
-            <summary
-              class={`cursor-pointer px-4 py-2 rounded-md select-none transition-colors ${
-                active === faculty.key
-                  ? "bg-purple-300 font-semibold"
-                  : "hover:bg-gray-100"
-              }`}
-            >
-              {faculty.name}
-            </summary>
-            <ul class="pl-4 py-2 space-y-1">
-              {[...Array(8)].map((_, i) => {
-                const sem = (i + 1).toString()
-                return (
-                  <li>
-                    <a
-                      href={`/notes/${faculty.key}/${sem}`}
-                      class={`block px-3 py-1 rounded-md transition-colors text-sm ${
-                        active === faculty.key && semester === sem
-                          ? "bg-purple-500 text-white font-medium"
-                          : "hover:bg-gray-100"
-                      }`}
-                    >
-                      Semester {sem}
-                    </a>
-                  </li>
-                )
-              })}
-            </ul>
-          </details>
-        ))
-      }
+      {faculties.map((faculty) => (
+        <details class="group" open={active === faculty.key}>
+          <summary
+            class={`cursor-pointer px-4 py-2 rounded-md select-none transition-colors text-text ${
+              active === faculty.key
+                ? "bg-purple-300 dark:bg-purple-800 dark:text-purple-100 font-semibold"
+                : "hover:bg-hover"
+            }`}
+          >
+            {faculty.name}
+          </summary>
+          <ul class="pl-4 py-2 space-y-1">
+            {[...Array(8)].map((_, i) => {
+              const sem = (i + 1).toString();
+              return (
+                <li>
+                  <a
+                    href={`/notes/${faculty.key}/${sem}`}
+                    class={`block px-3 py-1 rounded-md transition-colors text-sm ${
+                      active === faculty.key && semester === sem
+                        ? "bg-purple-500 dark:bg-purple-600 text-white font-medium"
+                        : "text-text-muted hover:text-text hover:bg-hover"
+                    }`}
+                  >
+                    Semester {sem}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </details>
+      ))}
     </div>
 
+    {/* UPDATED: Replaced hardcoded button colors with theme variables */}
     <a
       href={googleFormUrl}
       target="_blank"
       rel="noopener noreferrer"
-      class="inline-flex justify-center gap-2.5 rounded-xl px-3 py-2 m-1 text-center text-sm font-normal leading-7 text-white bg-zinc-900 border hover:bg-zinc-100 hover:text-black"
+     class="px-9 py-5 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex"
     >
       Upload Resources
     </a>

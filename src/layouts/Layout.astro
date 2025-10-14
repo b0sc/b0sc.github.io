@@ -1,16 +1,16 @@
----
-import "../styles/global.css"
-import Navbar from "../components/Navbar.astro"
-import Footer from "../components/Footer.astro"
-import { ViewTransitions } from "astro:transitions"
+--- 
+import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import { ViewTransitions } from "astro:transitions";
 interface Props {
-  title: string
-  description: string
-  image: string
-  url: string
+  title: string;
+  description: string;
+  image: string;
+  url: string;
 }
 
-const { title, description, image, url } = Astro.props
+const { title, description, image, url } = Astro.props;
 ---
 
 <!doctype html>
@@ -30,19 +30,113 @@ const { title, description, image, url } = Astro.props
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <ViewTransitions /><link
+    <ViewTransitions />
+    <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
     />
+
+    <!-- Set initial theme as early as possible to avoid flicker -->
+    <script is:inline>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+        } catch (e) {
+          var stored = null;
+        }
+        if (stored === "dark") {
+          document.documentElement.setAttribute("data-theme", "dark");
+        } else if (stored === "light") {
+          document.documentElement.removeAttribute("data-theme");
+        } else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+          document.documentElement.removeAttribute("data-theme");
+        }
+      })();
+    </script>
   </head>
-  <body class="bg-white font-SpaceGrotesk">
+
+  <body class="bg-[var(--bg-color)] text-[var(--text-color)] font-SpaceGrotesk">
     <Navbar />
     <slot />
     <Footer />
+
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/toastify-js"
-      is:inline></script>
+      is:inline
+    ></script>
+
+    <!-- Robust theme toggle: delegated + sync on astro:page-load -->
+    <script is:inline>
+      (function () {
+        // helper to set/remove data-theme on <html>
+        function applyTheme(theme) {
+          if (theme === "dark") {
+            document.documentElement.setAttribute("data-theme", "dark");
+          } else {
+            document.documentElement.removeAttribute("data-theme");
+          }
+        }
+
+        // read current theme (localStorage preferred, fallback to prefers-color-scheme)
+        function readTheme() {
+          try {
+            var t = localStorage.getItem("theme");
+            if (t) return t;
+          } catch (e) {}
+          if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) return "dark";
+          return "light";
+        }
+
+        // toggle theme and persist
+        function toggleTheme() {
+          var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+          var newTheme = isDark ? "light" : "dark";
+          applyTheme(newTheme);
+          try { localStorage.setItem("theme", newTheme); } catch (e) {}
+          // notify any listeners (useful if other components need to update visuals)
+          window.dispatchEvent(new CustomEvent("theme-changed", { detail: { theme: newTheme } }));
+        }
+
+        // Sync visual state of the toggle button (if present)
+        function syncToggleVisual() {
+          var btn = document.getElementById("theme-toggle");
+          if (!btn) return;
+          var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+          // Keep it simple: update aria-pressed and a data attribute so your component CSS/JS can react
+          btn.setAttribute("aria-pressed", String(isDark));
+          btn.dataset.theme = isDark ? "dark" : "light";
+        }
+
+        // Initialize theme state (on initial load)
+        applyTheme(readTheme());
+        // Keep visual state in sync on load
+        document.addEventListener("DOMContentLoaded", syncToggleVisual);
+
+        // Use event delegation so this listener stays live across client-side navigations
+        document.addEventListener("click", function (e) {
+          // If the clicked element or any parent has id="theme-toggle", handle it
+          var tgt = e.target && e.target.closest && e.target.closest("#theme-toggle");
+          if (!tgt) return;
+          e.preventDefault();
+          toggleTheme();
+          syncToggleVisual();
+        });
+
+        // Re-sync the visual state whenever Astro finishes a client-side page transition
+        document.addEventListener("astro:page-load", function () {
+          // Re-apply stored theme (defensive) and sync visual of toggle that may have been re-rendered
+          applyTheme(readTheme());
+          // next tick to allow DOM replace to finish
+          setTimeout(syncToggleVisual, 0);
+        });
+
+        // Also ensure other parts of the UI can respond to theme changes
+        window.addEventListener("theme-changed", syncToggleVisual);
+      })();
+    </script>
   </body>
 </html>

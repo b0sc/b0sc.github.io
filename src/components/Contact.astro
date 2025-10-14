@@ -1,21 +1,20 @@
 ---
-import Container from "./Container.astro"
-import ArticleIcon from "./Icons/ArticleIcon.astro"
-import Topic from "./Topic.astro"
+import Container from "./Container.astro";
+import ArticleIcon from "./Icons/ArticleIcon.astro";
+import Topic from "./Topic.astro";
 
-const isProd = import.meta.env.PROD
-const isDev = import.meta.env.DEV
+const isProd = import.meta.env.PROD;
+const isDev = import.meta.env.DEV;
 
-let user_url = "http://localhost:8787/user"
+let user_url = "http://localhost:8787/user";
 if (isProd) {
-  user_url = "https://api.bosc.org.np/user"
+  user_url = "https://api.bosc.org.np/user";
 } else if (isDev) {
-  user_url = "http://localhost:8787/user"
+  user_url = "http://localhost:8787/user";
 } else {
-  user_url = "https://api.bosc.org.np/user"
+  user_url = "https://api.bosc.org.np/user";
 }
 ---
-
 <Container>
   <div class="relative flex flex-col items-center md:flex-row" id="contact">
     <Topic
@@ -24,240 +23,277 @@ if (isProd) {
     />
   </div>
 
-  <div
-    class="relative flex flex-col items-center md:flex-row my-6 bg-zinc-100 rounded-[45px]"
-  >
+  <div class="relative flex flex-col items-center md:flex-row my-6 bg-[var(--card-bg)] border border-[var(--card-border)] rounded-[45px]">
     <div class="row items-center py-12 px-4 md:px-20 md:w-8/12 md:py-10">
-      <form class="space-y-4 md:w-full" id="cn-form">
+      <form class="space-y-4 md:w-full" id="cn-form" novalidate>
         <div>
           <span
-            class="bg-lime-500 text-black text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded"
+            class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium"
+            style="background:var(--accent-color); color:var(--primary-btn-text)"
           >
             <ArticleIcon />
-            <strong>NEWSLETTER - Launched 💬</strong>
+            <strong class="ml-2">NEWSLETTER - Launched 💬</strong>
           </span>
           <br />
-          <strong>Subscribe </strong> to get updates of our <strong>
-            future events</strong
-          > and workshops.
+          <strong class="text-[var(--text-color)]">Subscribe</strong>
+          <span class="text-[var(--text-muted)]"> to get updates of our <strong>future events</strong> and workshops.</span>
         </div>
+
         <div>
-          <label for="name" class="block mb-2 text-base font-medium text-black"
-            >Name</label
-          >
+          <label for="name" class="block mb-2 text-base font-medium text-[var(--text-color)]">Name</label>
           <input
             type="text"
             id="cn-name"
             name="name"
-            class="shadow-sm bg-white border text-black text-base rounded-lg focus:ring-black focus:border-black block w-full p-2.5"
+            class="shadow-sm bg-[var(--card-bg)] border border-[var(--card-border)] text-[var(--text-color)] text-base rounded-lg focus:ring-0 block w-full p-2.5"
             placeholder="John Doe"
             required
           />
         </div>
+
         <div>
-          <label for="email" class="block mb-2 text-base font-medium text-black"
-            >Email</label
-          >
-          <div
-            class="relative flex flex-col items-center justify-between md:flex-row bg-zinc-100 rounded-[45px]"
-          >
+          <label for="email" class="block mb-2 text-base font-medium text-[var(--text-color)]">Email</label>
+          <div class="relative flex flex-col items-center justify-between md:flex-row bg-[var(--card-bg)] rounded-[45px]">
             <input
               type="email"
               id="cn-email"
               name="email"
-              class="block p-3 w-full text-base text-black bg-white rounded-lg border shadow-sm focus:ring-black focus:border-black"
+              class="block p-3 w-full text-base text-[var(--text-color)] bg-[var(--card-bg)] rounded-lg border border-[var(--card-border)] shadow-sm"
               placeholder="john.doe@gmail.com"
               required
             />
             <button
               id="cn-subs-btn"
               type="submit"
-              class="px-4 py-3 m-2 text-white bg-zinc-900 rounded-[14px] justify-center gap-2.5 inline-flex hover:bg-zinc-100 hover:text-black border"
+              form="cn-form"
+              class="px-4 py-3 m-2 text-[var(--primary-btn-text)] bg-[var(--primary-btn-bg)] rounded-[14px] inline-flex justify-center items-center hover:opacity-95 border border-[var(--card-border)]"
             >
-              <span class="text-center text-xl font-normal leading-7">
-                Subscribe
-              </span>
+              <span class="text-center text-xl font-normal leading-7">Subscribe</span>
             </button>
           </div>
         </div>
+
         <div class="sm:col-span-2">
-          <label
-            for="message"
-            class="block mb-2 text-base font-medium text-black dark:text-gray-400"
-            >Message</label
-          >
+          <label for="message" class="block mb-2 text-base font-medium text-[var(--text-color)]">Message</label>
           <textarea
             id="cn-msg"
             name="message"
             rows="6"
-            class="block p-2.5 w-full text-base text-black bg-white rounded-lg shadow-sm border focus:ring-black focus:border-black"
+            class="block p-2.5 w-full text-base text-[var(--text-color)] bg-[var(--card-bg)] rounded-lg shadow-sm border border-[var(--card-border)]"
             placeholder="I really like what BOSC is doing! Keep it up."
           ></textarea>
         </div>
+
         <button
           id="cn-msg-btn"
           type="submit"
-          class="w-full text-white py-5 bg-zinc-900 rounded-[14px] justify-center gap-2.5 inline-flex hover:text-black hover:bg-zinc-100 border"
+          form="cn-form"
+          class="w-full text-[var(--primary-btn-text)] py-5 bg-[var(--primary-btn-bg)] rounded-[14px] inline-flex justify-center items-center hover:opacity-95 border border-[var(--card-border)]"
         >
-          <div class="text-center text-xl font-normal leading-7">
-            Send Message
-          </div>
+          <div class="text-center text-xl font-normal leading-7">Send Message</div>
         </button>
-        <input
-          id="cn-next"
-          type="hidden"
-          name="_next"
-          value="https://bosc.org.np"
-        />
+
+        <!-- hidden form fields for compatibility with whichever backend you use -->
+        <input id="cn-next" type="hidden" name="_next" value="https://bosc.org.np" />
         <input id="cn-template" type="hidden" name="_template" value="box" />
         <input id="cn-captcha" type="hidden" name="_captcha" value="true" />
       </form>
+
+      <!-- span used to make user_url available to client script without bundling server code -->
       <span id="hey111" data-msg={user_url}></span>
-      <script>
-        import {
-          NotifySuccess,
-          NotifyError,
-          NotifyMessage,
-        } from "../utils/notify"
 
-        function handleSubscribe(data: FormData, subscriptionOnly: boolean) {
-          // Remove fields except name and email
-          data.delete("message")
-          data.delete("_next")
-          data.delete("_template")
-          data.delete("_captcha")
-          data.append("username", data.get("name") || "")
-          data.delete("name")
-
-          const object = Object.fromEntries(data)
-          const json = JSON.stringify(object)
-          // console.log(json)
-
-          let toast: NotifyMessage
-          if (subscriptionOnly) {
-            toast = new NotifyMessage("Subscribing...", -1)
-            toast.show()
+      <script is:inline>
+        (function () {
+          // Lightweight notify fallbacks: if your project exposes window.NotifySuccess / NotifyError / NotifyMessage
+          // they will be used; otherwise fall back to simple implementations.
+          function NotifySuccess(msg) {
+            if (window.NotifySuccess) return window.NotifySuccess(msg);
+            try { /* small non-blocking toast replacement */ console.info("SUCCESS:", msg); } catch (e) {}
+            // fallback UI
+            // You may want to replace this with a nicer in-page toast
+            alert(msg);
           }
-          let user_url_test = document.getElementById(
-            "hey111"
-          ) as HTMLSpanElement
-          let user_url = user_url_test.dataset.msg as string
-          fetch(user_url, {
-            method: "POST",
-            body: json,
-            headers: {
-              "Content-Type": "application/json",
-            },
-            // referrerPolicy: "same-origin",
-            // mode: "cors",
-          })
-            .then((response) => {
-              console.log("Subscription status:", response.statusText)
+          function NotifyError(msg) {
+            if (window.NotifyError) return window.NotifyError(msg);
+            try { console.warn("ERROR:", msg); } catch (e) {}
+            alert(msg);
+          }
+          function NotifyMessage(message, timeout = 3000) {
+            // If project exposes a constructor for persistent messages, use it.
+            if (window.NotifyMessage) {
+              try { return new window.NotifyMessage(message, timeout); } catch (e) {}
+            }
+            // fallback "message" object with show/hide
+            let shown = false;
+            return {
+              show: function () {
+                if (shown) return;
+                shown = true;
+                // you can replace with a custom DOM toast
+                console.info("MSG:", message);
+              },
+              hide: function () {
+                shown = false;
+              },
+            };
+          }
+
+          // helper: read user_url from DOM dataset defensively
+          function getUserUrl() {
+            try {
+              const el = document.getElementById("hey111");
+              return el ? el.dataset.msg : null;
+            } catch (e) {
+              return null;
+            }
+          }
+
+          // handle subscription POST (only name + email)
+          async function handleSubscribe(formData, subscriptionOnly) {
+            // copy to avoid mutating original
+            const fd = new FormData();
+            fd.append("username", formData.get("name") || "");
+            fd.append("email", formData.get("email") || "");
+
+            const object = Object.fromEntries(fd);
+            const json = JSON.stringify(object);
+
+            let toast;
+            if (subscriptionOnly) {
+              toast = NotifyMessage("Subscribing...", -1);
+              toast.show && toast.show();
+            }
+
+            const userUrl = getUserUrl() || "/user";
+            try {
+              const resp = await fetch(userUrl, {
+                method: "POST",
+                body: json,
+                headers: {
+                  "Content-Type": "application/json",
+                },
+              });
+
+              console.log("Subscription status:", resp.status, resp.statusText);
               if (subscriptionOnly) {
-                if (response.status === 200) {
-                  toast.hide()
-                  NotifySuccess("Successfully subscribed! 🎉")
+                if (resp.status === 200) {
+                  toast && toast.hide && toast.hide();
+                  NotifySuccess("Successfully subscribed! 🎉");
+                } else {
+                  toast && toast.hide && toast.hide();
+                  NotifyError("Subscription returned non-200 response.");
                 }
-                // if (response.redirected) {
-                //   window.location.href = response.url
-                // }
               }
-            })
-            .catch((error) => {
-              if (toast) {
-                toast.hide()
-              }
+            } catch (error) {
+              console.error("Error during subscription:", error);
+              toast && toast.hide && toast.hide();
               if (error.name === "TypeError") {
-                // if the error is due to CORS
-                NotifySuccess(
-                  "Partially Subscribed. We will get back to you soon."
-                )
+                // often CORS/fetch issues
+                NotifySuccess("Partially Subscribed. We will get back to you soon.");
               } else {
-                NotifyError("Unable to subscribe. Still Under Development.")
+                NotifyError("Unable to subscribe. Still Under Development.");
               }
-              console.error("Error during subscription:", error)
-            })
-        }
-
-        function handleMessage(data: string) {
-          // formsubmit is free thus is very slow and unreliable reponse is given regarding cors -- [idk] submissions per month
-          // https://web3forms.com/ and https://formspark.io/ are better alternatives with -- 250 submissions per month
-          const msg = new NotifyMessage(
-            "Sending... Feel free to browse the website.",
-            -1
-          )
-          msg.show()
-          fetch("https://formsubmit.co/ajax/8c368e944b0e888ffcb863838e3fbc00", {
-            method: "POST",
-            body: data,
-            // mode: "cors",
-            headers: {
-              "Content-Type": "application/json",
-              // Accept: "application/json",
-            },
-            // referrerPolicy: "origin-when-cross-origin",
-          })
-            .then((response) => {
-              if (response.ok) {
-                return response.json()
-              } else {
-                console.log("Failed to send message. response:", response)
-              }
-            })
-            .then((data) => {
-              console.log("Message Success Response:", data)
-              if (data.success) {
-                msg.hide()
-                NotifySuccess("Message sent successfully!")
-              }
-            })
-            .catch((error) => {
-              msg.hide()
-              if (
-                error.message === "Failed to fetch" &&
-                error.name === "TypeError"
-              ) {
-                // if the error is due to CORS
-                NotifySuccess(
-                  "Message partially sent. We will get back to you soon."
-                )
-              } else {
-                NotifyError("Failed to send message. Still Under Development.")
-              }
-            })
-        }
-
-        document.getElementById("cn-form")?.addEventListener("submit", (e) => {
-          e.preventDefault()
-          const form = document.getElementById("cn-form") as HTMLFormElement
-          const formData = new FormData(form)
-          const obj = Object.fromEntries(formData)
-          const json = JSON.stringify(obj)
-          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-          const subscriptionOnly = obj.message === ""
-          if (
-            obj.name === "" ||
-            obj.email === "" ||
-            !emailRegex.test(obj.email?.toString())
-          ) {
-            NotifyError("Common! Fill the form correctly.")
-            return
-          }
-          handleSubscribe(formData, subscriptionOnly)
-          if (!subscriptionOnly) {
-            handleMessage(json)
+            }
           }
 
-          // reset state
-          form.reset()
-          const currentUrl = window.location.href
-          const baseUrl = currentUrl.split("?")[0]
-          window.history.replaceState({}, "", baseUrl)
-        })
+          // handle sending full message via third-party endpoint
+          async function handleMessage(jsonString) {
+            const msg = NotifyMessage("Sending... Feel free to browse the website.", -1);
+            msg.show && msg.show();
+
+            try {
+              const resp = await fetch("https://formsubmit.co/ajax/8c368e944b0e888ffcb863838e3fbc00", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: jsonString,
+              });
+
+              if (!resp.ok) {
+                console.warn("Failed to send message. response:", resp);
+                msg.hide && msg.hide();
+                NotifyError("Failed to send message. Still Under Development.");
+                return;
+              }
+
+              const data = await resp.json();
+              console.log("Message Success Response:", data);
+              if (data && data.success) {
+                msg.hide && msg.hide();
+                NotifySuccess("Message sent successfully!");
+              } else {
+                msg.hide && msg.hide();
+                NotifySuccess("Message partially sent. We will get back to you soon.");
+              }
+            } catch (error) {
+              msg.hide && msg.hide();
+              console.error("Message send error:", error);
+              if (error.name === "TypeError") {
+                NotifySuccess("Message partially sent. We will get back to you soon.");
+              } else {
+                NotifyError("Failed to send message. Still Under Development.");
+              }
+            }
+          }
+
+          // Delegated submit handler — works even after Astro client-side navigation
+          document.addEventListener("submit", function (e) {
+            const form = e.target;
+            if (!form || form.id !== "cn-form") return;
+
+            e.preventDefault();
+
+            const formData = new FormData(form);
+            const obj = Object.fromEntries(formData);
+            const jsonString = JSON.stringify(obj);
+
+            // basic validation
+            const email = obj.email ? String(obj.email).trim() : "";
+            const name = obj.name ? String(obj.name).trim() : "";
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const subscriptionOnly = !obj.message || String(obj.message).trim() === "";
+
+            if (!name || !email || !emailRegex.test(email)) {
+              NotifyError("Come on — fill the form correctly.");
+              return;
+            }
+
+            // run subscribe
+            handleSubscribe(formData, subscriptionOnly);
+
+            // if message present, also send message to formsubmit
+            if (!subscriptionOnly) {
+              handleMessage(jsonString);
+            }
+
+            // reset form safely
+            try {
+              form.reset();
+            } catch (err) {}
+
+            // remove query params if any (keeps url clean)
+            try {
+              const currentUrl = window.location.href;
+              const baseUrl = currentUrl.split("?")[0];
+              window.history.replaceState({}, "", baseUrl);
+            } catch (err) {}
+          });
+
+          // sync visual state of form (if you want to adapt to theme, this is a hook)
+          function syncFormTheme() {
+            // e.g. set placeholders colors or other small JS-driven style tweaks if required
+            // currently using CSS variables, so nothing required here — this hook is provided if needed
+          }
+
+          document.addEventListener("DOMContentLoaded", syncFormTheme);
+          document.addEventListener("astro:page-load", function () {
+            setTimeout(syncFormTheme, 0);
+          });
+        })();
       </script>
     </div>
+
     <div class="hidden md:grid md:justify-items-end md:w-4/12 md:py-2">
-      <img src="./clients/contact.svg" alt="c" width="80%" />
+      <img src="./clients/contact.svg" alt="contact illustration" width="80%" />
     </div>
   </div>
 </Container>

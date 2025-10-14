@@ -1,19 +1,19 @@
 ---
-import ArticleIcon from "../../components/Icons/ArticleIcon.astro"
-import VideoIcon from "../../components/Icons/VideoIcon.astro"
-import EventsData from "../../components/Data/events.json"
-import BoscIcon from "../Icons/BoscIcon.astro"
+import ArticleIcon from "../../components/Icons/ArticleIcon.astro";
+import VideoIcon from "../../components/Icons/VideoIcon.astro";
+import EventsData from "../../components/Data/events.json";
+import BoscIcon from "../Icons/BoscIcon.astro";
 
 interface Props {
-  eventsData: typeof EventsData
+  eventsData: typeof EventsData;
 }
-const { eventsData } = Astro.props as Props
+const { eventsData } = Astro.props as Props;
 ---
 
 {
   eventsData.map((event) => (
-    <article class="p-6 bg-white rounded-3xl border border-gray-200 shadow-card">
-      <div class="flex justify-between items-center mb-5 text-gray-500">
+    <article class="p-6 bg-[var(--card-bg)] rounded-3xl border border-[var(--card-border)] shadow-card">
+      <div class="flex justify-between items-center mb-5 text-[var(--text-muted)]">
         <span class="bg-lime-500 text-black text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
           {event.type === "Article" ? <ArticleIcon /> : <VideoIcon />}
           {event.type}
@@ -32,12 +32,12 @@ const { eventsData } = Astro.props as Props
           {event.date}
         </span>
       </div>
-      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-[var(--text-color)]">
         {event.name_1}
         {event.name_2}
       </h2>
 
-      <a href={`/blogs/${event.id}`}>
+      <a href={`/explore/${event.id}`}>
         <div class="flex flex-col sm:flex-row justify-between items-center">
           <div class="w-full flex justify-center items-center space-x-4 sm:m-4">
             <img
@@ -48,7 +48,7 @@ const { eventsData } = Astro.props as Props
           </div>
           <div class="w-full flex flex-col items-center space-x-0 sm:space-x-4">
             <p
-              class="mb-5 font-light text-gray-500 text-center sm:text-left"
+              class="mb-5 font-light text-[var(--text-muted)] text-center sm:text-left"
               style="white-space: pre-line"
             >
               {event.desc.length > 100
@@ -60,8 +60,8 @@ const { eventsData } = Astro.props as Props
       </a>
       <div class="w-full justify-center items-center align-center inline-flex">
         <a
-          href={`/blogs/${event.id}`}
-          class="inline-flex items-center font-medium text-black hover:text-lime-500 "
+          href={`/explore/${event.id}`}
+          class="inline-flex items-center font-medium text-[var(--text-color)] hover:text-lime-500 "
         >
           Read more
           <svg
@@ -74,7 +74,7 @@ const { eventsData } = Astro.props as Props
               fill-rule="evenodd"
               d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
               clip-rule="evenodd"
-            />
+            ></path>
           </svg>
         </a>
       </div>

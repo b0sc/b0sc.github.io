@@ -1,41 +1,50 @@
 ---
 interface Props {
   members: {
-    title: string
-    description: string
-    name: string
-    link: string
-    profile: string
-  }[]
+    title: string;
+    description: string;
+    name: string;
+    link: string;
+    profile: string;
+  }[];
 }
 
-const { members } = Astro.props as Props
+const { members } = Astro.props as Props;
 ---
 
 {
   members.map(({ title, description, name, link, profile }) => (
-    <div class=" px-[25px] py-8 bg-white rounded-[40px] shadow-card border border-zinc-900 flex-col justify-start items-start xs:gap-1 md:gap-2.5 inline-flex text-black">
+    <div class="px-[25px] py-8 bg-[var(--card-bg)] rounded-[40px] shadow-card border border-[var(--card-border)] flex-col justify-start items-start xs:gap-1 md:gap-2.5 inline-flex text-[var(--text-color)]">
       <div class="flex-col justify-start items-start gap-7 flex w-full">
         <div class="self-stretch justify-start items-start inline-flex">
           <div class="grow shrink basis-0 justify-start items-center gap-5 flex">
-            <div class=" w-fit max-w-[65px] min-w-[50px] aspect-square overflow-clip left-0 top-0 relative">
-              <img src={profile} alt={name} class="rounded-full w-full object-cover h-full " />
+            <div class="w-fit max-w-[65px] min-w-[50px] aspect-square overflow-clip left-0 top-0 relative">
+              <img
+                src={profile}
+                alt={name}
+                class="rounded-full w-full object-cover h-full "
+              />
             </div>
             <div class="flex-col justify-end items-start inline-flex">
-              <div class="lg:text-sm md:text-sm/3 font-normal">{title}</div>
+              <div class="lg:text-sm md:text-sm/3 font-normal text-[var(--text-muted)]">{title}</div>
               <div class="text-sm font-medium">{name}</div>
             </div>
           </div>
-          <a class="top-0 right-0 aspect-square md:h-[28px] sm:h-[20px] h-[34px]" href={link}>
+          <a class="top-0 right-0 aspect-square md:h-[28px] sm:h-[20px] h-[34px] social-link-icon" href={link}>
             <img src="/team/lng.svg" class="w-full h-full" alt="vector" />
           </a>
         </div>
-        <hr class="w-full border border-black" />
+        <hr class="w-full border border-[var(--card-border)]" />
 
         <div class="overflow-y-auto h-[100px] scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
-          <p class="text-sm md:text-md xl:text-md">{description}</p>
+          <p class="text-sm md:text-md xl:text-md text-[var(--text-muted)]">{description}</p>
         </div>
       </div>
     </div>
   ))
 }
+<style>
+  [data-theme='dark'] .social-link-icon {
+    filter: invert(1);
+  }
+</style>

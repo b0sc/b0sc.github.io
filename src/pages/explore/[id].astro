@@ -1,74 +1,16 @@
 ---
-import Container from "../../components/Container.astro"
-import Layout from "../../layouts/Layout.astro"
-import eventsData from "../../components/Data/events.json"
-import { formatDate } from "../../utils/utils"
-import { getCollection } from "astro:content"
-import type { CollectionEntry } from "astro:content"
-
-// export async function getStaticPaths() {
-//   const blogEntries = await getCollection("blog")
-//   return blogEntries.map((entry: any) => ({
-//     params: { slug: entry.slug },
-//     props: { entry },
-//   }))
-// }
-
-// const { entry } = Astro.props as { entry: CollectionEntry<"blog"> }
-
-// const { Content } = await entry.render()
+import Container from "../../components/Container.astro";
+import Layout from "../../layouts/Layout.astro";
+import eventsData from "../../components/Data/events.json";
+import { formatDate } from "../../utils/utils";
 
 export async function getStaticPaths() {
-  // const eventsBlogs = await getCollection("events_blog")
-  return eventsData.map(
-    ({
-      id,
-      type,
-      featured,
-      name_1,
-      name_2,
-      desc,
-      year,
-      date,
-      time,
-      venue,
-      organizer,
-      partners,
-      mentors,
-      guests,
-      cover_photo,
-      background,
-      links,
-      images,
-      stats,
-    }) => {
-      return {
-        params: { id },
-        props: {
-          id,
-          type,
-          featured,
-          name_1,
-          name_2,
-          desc,
-          year,
-          date,
-          time,
-          venue,
-          organizer,
-          partners,
-          mentors,
-          guests,
-          cover_photo,
-          background,
-          links,
-          images,
-          stats,
-        },
-      }
-    }
-  )
+  return eventsData.map((event) => ({
+    params: { id: event.id },
+    props: event,
+  }));
 }
+
 const {
   id,
   type,
@@ -89,23 +31,24 @@ const {
   links,
   images,
   stats,
-} = Astro.props
-export const prerender = true
+} = Astro.props;
+
+export const prerender = true;
 ---
 
 <Layout
   title={name_1}
   description={desc}
   image={cover_photo}
-  url={"https://bosc.org.np/blogs/" + id}
+  url={`https://bosc.org.np/explore/events/${id}`}
 >
-  <main class="space-y-20 mb-20 pt-12">
+  <main class="pt-7 pb-16">
     <Container>
-      <section class="bg-white">
-        <div class="font-light text-gray-500 sm:text-lg">
+      <section class="bg-[var(--bg-color)]">
+        <div class="font-light text-[var(--text-muted)] sm:text-lg">
           <a
-            href="/blogs/events"
-            class="inline-flex items-center font-medium text-black hover:text-lime-500 my-4"
+            href="/explore/events"
+            class="inline-flex items-center font-medium text-[var(--text-color)] hover:text-lime-500 my-4"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -140,22 +83,22 @@ export const prerender = true
             </div>
           </div>
           <div
-            class="font-normal text-gray-500 flex-col justify-start items-start flex"
+            class="font-normal text-[var(--text-muted)] flex-col justify-start items-start flex"
           >
             <span class="mb-2 text-xl flex w-full justify-start">
-              <span class="font-medium"
+              <span class="font-medium text-[var(--text-color)]"
                 >{"📌 " + formatDate(new Date(date))}</span
               >
             </span>
             <span
-              class="mb-4 text-5xl tracking-tight font-extrabold text-gray-900"
+              class="mb-4 text-5xl tracking-tight font-extrabold text-[var(--text-color)]"
             >
               {name_1}
               {" "}
               {name_2}
               <br />
             </span>
-            <p class="font-light text-gray-500 sm:text-lg mb-4">
+            <p class="font-light text-[var(--text-muted)] sm:text-lg mb-4">
               {
                 (stats.prize || stats.certificate || stats.entry_fee === 0) && (
                   <span>
@@ -178,8 +121,7 @@ export const prerender = true
                 )
               }
             </p>
-            {/* <!-- Organizer --> */}
-            <span class="mb-2 text-2xl font-medium">
+            <span class="mb-2 text-2xl font-medium text-[var(--text-color)]">
               Organized by {" "}
               {
                 organizer.map((name, i) => (
@@ -199,17 +141,15 @@ export const prerender = true
               }
             </span>
 
-            {/* <!-- Time --> */}
-            <span class="mb-2 text-2xl">
+            <span class="mb-2 text-2xl text-[var(--text-color)]">
               <span class="font-medium">{venue}</span>
               <span class="font-medium">
                 {time === "00:00 AM" || time === "" ? stats.time : time}
               </span>
             </span>
-            <!-- Partners -->
             {
               partners.length > 0 && (
-                <span class="mb-2 text-2xl">
+                <span class="mb-2 text-2xl text-[var(--text-color)]">
                   Partnered with:{" "}
                   {partners.map((name, i) => (
                     <span class="bg-lime-500 text-black text-xl font-medium inline-flex items-center px-2.5 py-0.5 rounded">
@@ -220,10 +160,9 @@ export const prerender = true
                 </span>
               )
             }
-            {/* <!-- Entry Fee --> */}
             {
               stats.entry_fee !== 0 && (
-                <span class="mb-2 text-2xl">
+                <span class="mb-2 text-2xl text-[var(--text-color)]">
                   Entry Fee: <span class="font-medium">{stats.entry_fee}</span>
                 </span>
               )
@@ -233,26 +172,26 @@ export const prerender = true
               class="justify-start items-center gap-[15px] inline-flex"
               id="share"
             >
-              <div class="text-2xl font-normal leading-7">Share</div>
+              <div class="text-2xl font-normal leading-7 text-[var(--text-color)]">Share</div>
               <div class="w-[41px] h-[41px] relative">
-                <img class="w-[41px] h-[41px]" src="/share.png" />
+                <img class="w-[41px] h-[41px] share-icon" src="/share.png" />
               </div>
             </button>
           </div>
         </div>
         <div
-          class="font-normal text-gray-500 flex-col justify-center items-center text-center flex w-full"
+          class="font-normal text-[var(--text-muted)] flex-col justify-center items-center text-center flex w-full"
         >
           <p class="m-4 text-xl">{desc}</p>
         </div>
         <div
           class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6"
         >
-          <div class="">
+          <div class="text-[var(--text-muted)]">
             {
               mentors && mentors.length > 0 && (
-                <div class="">
-                  Mentors
+                <div class="mb-8">
+                  <h3 class="text-xl font-semibold text-[var(--text-color)] mb-4">Mentors</h3>
                   {mentors.map((mentor) => (
                     <div class="flex items-center space-x-4 mb-2">
                       <div>
@@ -283,8 +222,8 @@ export const prerender = true
             }
             {
               guests && guests.length > 0 && (
-                <div class="">
-                  Guests{" "}
+                <div class="mb-8">
+                  <h3 class="text-xl font-semibold text-[var(--text-color)] mb-4">Guests</h3>
                   {guests.map((guest) => (
                     <div class="flex items-center space-x-4 mb-2">
                       <div>
@@ -315,7 +254,7 @@ export const prerender = true
             }
 
             <div class="flex flex-col mb-4 mt-4">
-              Additional Details
+              <h3 class="text-xl font-semibold text-[var(--text-color)] mb-2">Additional Details</h3>
               <span class="text-m font-medium"
                 >Participants: {stats.participants}</span
               >
@@ -326,7 +265,7 @@ export const prerender = true
                 ? links.social
                 : links.registration}
               target="_blank"
-              class="px-5 py-1.5 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-xl justify-center items-center inline-flex"
+              class="px-5 py-1.5 bg-[var(--primary-btn-bg)] hover:bg-[var(--primary-btn-hover-bg)] text-[var(--primary-btn-text)] hover:text-[var(--primary-btn-hover-text)] border border-[var(--primary-btn-bg)] rounded-xl justify-center items-center inline-flex transition-colors duration-300"
             >
               <div class="text-xl font-normal leading-7">Participate</div>
             </a>
@@ -347,10 +286,18 @@ export const prerender = true
 </Layout>
 
 <script>
-  import { NotifySuccess } from "../../utils/notify"
-  const shareBtn = document.getElementById("share") as HTMLButtonElement
-  shareBtn.addEventListener("click", () => {
-    navigator.clipboard.writeText(window.location.href)
-    NotifySuccess("Link copied to clipboard")
-  })
+  import { NotifySuccess } from "../../utils/notify";
+  const shareBtn = document.getElementById("share") as HTMLButtonElement;
+  if (shareBtn) {
+    shareBtn.addEventListener("click", () => {
+      navigator.clipboard.writeText(window.location.href);
+      NotifySuccess("Link copied to clipboard");
+    });
+  }
 </script>
+
+<style>
+  [data-theme='dark'] .share-icon {
+    filter: invert(1);
+  }
+</style>

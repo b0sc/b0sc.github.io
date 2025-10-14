@@ -1,7 +1,7 @@
 ---
-import Container from "../components/Container.astro"
-import Layout from "../layouts/Layout.astro"
-import Team from "../components/Team.astro"
+import Container from "../components/Container.astro";
+import Layout from "../layouts/Layout.astro";
+import Team from "../components/Team.astro";
 ---
 
 <Layout
@@ -10,7 +10,7 @@ import Team from "../components/Team.astro"
   image="https://bosc.org.np/team.jpg"
   url="https://bosc.org.np/about"
 >
-  <main class="space-y-20">
+  <main class="space-y-20 pt-7 pb-16">
     <Container>
       <div
         class="relative flex flex-col-reverse items-center md:flex-row"
@@ -18,11 +18,11 @@ import Team from "../components/Team.astro"
       >
         <div class="row items-center py-5 md:w-6/12 md:pb-20 md:pt-10">
           <div class="text-left space-y-3">
-            <h1 class="text-5xl font-medium leading-none md:text-6xl">
+            <h1 class="text-5xl font-medium leading-none md:text-6xl text-[var(--text-color)]">
               BOSC" Birendra
               <br /> Open Source Club <br />
             </h1>
-            <p class="mt-6 mb-8 text-2xl font-normal leading-7 sm:mb-12">
+            <p class="mt-6 mb-8 text-2xl font-normal leading-7 sm:mb-12 text-[var(--text-muted)]">
               10+ Executives, 20+ Members <br /> 50+ Alumni, 100+ Contributors &
               1000+ Followers
               <br />
@@ -31,7 +31,7 @@ import Team from "../components/Team.astro"
           </div>
           <div class="text-left space-y-3">
             <a
-              class="px-9 py-5 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex"
+              class="px-9 py-5 bg-[var(--primary-btn-bg)] hover:bg-[var(--primary-btn-hover-bg)] text-[var(--primary-btn-text)] hover:text-[var(--primary-btn-hover-text)] border border-[var(--primary-btn-bg)] rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex transition-colors duration-300"
               rel="noopener noreferrer"
               target="_blank"
               href="https://forms.gle/cyisykxr6RwpXCrm7"
@@ -39,18 +39,18 @@ import Team from "../components/Team.astro"
               <h2 class="text-center text-xl font-normal leading-7">Join Us</h2>
             </a>
             <a
-              class="px-9 py-5 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex"
+              class="px-9 py-5 bg-[var(--primary-btn-bg)] hover:bg-[var(--primary-btn-hover-bg)] text-[var(--primary-btn-text)] hover:text-[var(--primary-btn-hover-text)] border border-[var(--primary-btn-bg)] rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex transition-colors duration-300"
               rel="noopener noreferrer"
-              href="/#contact"
+              href="/contact"
             >
               <h2 class="text-center text-xl font-normal leading-7">
                 Contact Us
               </h2>
             </a>
             <a
-              class="px-9 py-5 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex"
+              class="px-9 py-5 bg-[var(--primary-btn-bg)] hover:bg-[var(--primary-btn-hover-bg)] text-[var(--primary-btn-text)] hover:text-[var(--primary-btn-hover-text)] border border-[var(--primary-btn-bg)] rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex transition-colors duration-300"
               rel="noopener noreferrer"
-              href="/blogs/#history"
+              href="/explore/history"
             >
               <h2 class="text-center text-xl font-normal leading-7">
                 History of BOSC
@@ -58,59 +58,49 @@ import Team from "../components/Team.astro"
             </a>
           </div>
 
-          <div class="text-left space-y-3">
-            <!-- <a
-              class="px-9 py-5 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex"
-              rel="noopener noreferrer"
-              href="/blogs/code-of-conduct"
-            >
-              <h2 class="text-center text-xl font-normal leading-7">
-                Code of Conduct
-              </h2>
-            </a> -->
-
+          <div class="text-left space-y-3 mt-3">
             <a
-              class="px-9 py-5 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex"
+              class="px-9 py-5 bg-[var(--primary-btn-bg)] hover:bg-[var(--primary-btn-hover-bg)] text-[var(--primary-btn-text)] hover:text-[var(--primary-btn-hover-text)] border border-[var(--primary-btn-bg)] rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex transition-colors duration-300"
               rel="noopener noreferrer"
-              href="/blogs/partnerships"
+              href="/explore/partnerships"
             >
               <h2 class="text-center text-xl font-normal leading-7">
                 Our Partners
               </h2>
             </a>
             <a
-              class="px-9 py-5 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex"
+              class="px-9 py-5 bg-[var(--primary-btn-bg)] hover:bg-[var(--primary-btn-hover-bg)] text-[var(--primary-btn-text)] hover:text-[var(--primary-btn-hover-text)] border border-[var(--primary-btn-bg)] rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex transition-colors duration-300"
               rel="noopener noreferrer"
-              href="/blogs/constitution"
+              href="/explore/constitution"
             >
               <h2 class="text-center text-xl font-normal leading-7">
                 BOSC-Constitution
               </h2>
             </a>
           </div>
-          <div class="text-left space-y-3">
+          <div class="text-left space-y-3 mt-3">
             <a
-              class="px-9 py-5 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex"
+              class="px-9 py-5 bg-[var(--primary-btn-bg)] hover:bg-[var(--primary-btn-hover-bg)] text-[var(--primary-btn-text)] hover:text-[var(--primary-btn-hover-text)] border border-[var(--primary-btn-bg)] rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex transition-colors duration-300"
               rel="noopener noreferrer"
-              href="/blogs/#members"
+              href="/explore/members"
             >
               <h2 class="text-center text-xl font-normal leading-7">
                 All Members
               </h2>
             </a>
             <a
-              class="px-9 py-5 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex"
+              class="px-9 py-5 bg-[var(--primary-btn-bg)] hover:bg-[var(--primary-btn-hover-bg)] text-[var(--primary-btn-text)] hover:text-[var(--primary-btn-hover-text)] border border-[var(--primary-btn-bg)] rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex transition-colors duration-300"
               rel="noopener noreferrer"
-              href="/blogs/#events"
+              href="/explore/events"
             >
               <h2 class="text-center text-xl font-normal leading-7">
                 All Events
               </h2>
             </a>
             <a
-              class="px-9 py-5 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex"
+              class="px-9 py-5 bg-[var(--primary-btn-bg)] hover:bg-[var(--primary-btn-hover-bg)] text-[var(--primary-btn-text)] hover:text-[var(--primary-btn-hover-text)] border border-[var(--primary-btn-bg)] rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex transition-colors duration-300"
               rel="noopener noreferrer"
-              href="/blogs/#alumni"
+              href="/explore/alumni"
             >
               <h2 class="text-center text-xl font-normal leading-7">
                 Our Alumni

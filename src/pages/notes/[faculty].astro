@@ -1,31 +1,30 @@
 ---
 export async function getStaticPaths() {
-  const faculties = ["bca", "bit", "csit", "bicte"]
-  return faculties.map((faculty) => ({ params: { faculty } }))
+  const faculties = ["bca", "bit", "csit", "bicte"];
+  return faculties.map((faculty) => ({ params: { faculty } }));
 }
 
-import Container from "../../components/Container.astro"
-import Layout from "../../layouts/Layout.astro"
-import NavbarNotes from "../../components/NavbarNotes.astro"
-const { faculty } = Astro.params
+import Container from "../../components/Container.astro";
+import Layout from "../../layouts/Layout.astro";
+import NavbarNotes from "../../components/NavbarNotes.astro";
+const { faculty } = Astro.params;
 
 const facultyMap: Record<string, string> = {
   bca: "BCA",
   bit: "BIT",
   csit: "CSIT",
   bicte: "BICTE",
-}
+};
 const facultyName =
-  faculty && facultyMap[faculty] ? facultyMap[faculty] : "Unknown Faculty"
+  faculty && facultyMap[faculty] ? facultyMap[faculty] : "Unknown Faculty";
 
-// Dynamic import of faculty JSON
-let facultyData
+let facultyData;
 try {
-  facultyData = await import(`../../components/Data/notes-${faculty}.json`)
+  facultyData = await import(`../../components/Data/notes-${faculty}.json`);
 } catch (e) {
-  facultyData = null
+  facultyData = null;
 }
-const info = facultyData?.default?.facultyInfo
+const info = facultyData?.default?.facultyInfo;
 ---
 
 <Layout
@@ -34,19 +33,19 @@ const info = facultyData?.default?.facultyInfo
   image="https://bosc.org.np/cover.jpg"
   url={`https://bosc.org.np/notes/${faculty}`}
 >
-  <main class="space-y-20">
+  <main class="pt-7 pb-16">
     <Container>
       <div class="flex flex-col md:flex-row">
         <NavbarNotes currentFaculty={faculty} />
         <div class="w-full px-4">
-          <h1 class="text-3xl font-bold mb-6">{facultyName}</h1>
+          <h1 class="text-3xl font-bold mb-6 text-[var(--text-color)]">{facultyName}</h1>
           {
             info && (
               <div class="space-y-6">
                 {Array.isArray(info.salientFeatures) && (
-                  <section class="bg-white rounded-lg shadow p-5">
-                    <h2 class="text-xl font-semibold mb-2">Salient Features</h2>
-                    <ul class="list-disc ml-6 text-gray-700">
+                  <section class="bg-[var(--card-bg)] border border-[var(--card-border)] rounded-lg shadow p-5">
+                    <h2 class="text-xl font-semibold mb-2 text-[var(--text-color)]">Salient Features</h2>
+                    <ul class="list-disc ml-6 text-[var(--text-muted)]">
                       {info.salientFeatures.map((item: string) => (
                         <li>{item}</li>
                       ))}
@@ -54,9 +53,9 @@ const info = facultyData?.default?.facultyInfo
                   </section>
                 )}
                 {Array.isArray(info.objectives) && (
-                  <section class="bg-white rounded-lg shadow p-5">
-                    <h2 class="text-xl font-semibold mb-2">Objectives</h2>
-                    <ul class="list-disc ml-6 text-gray-700">
+                  <section class="bg-[var(--card-bg)] border border-[var(--card-border)] rounded-lg shadow p-5">
+                    <h2 class="text-xl font-semibold mb-2 text-[var(--text-color)]">Objectives</h2>
+                    <ul class="list-disc ml-6 text-[var(--text-muted)]">
                       {info.objectives.map((item: string) => (
                         <li>{item}</li>
                       ))}
@@ -64,9 +63,9 @@ const info = facultyData?.default?.facultyInfo
                   </section>
                 )}
                 {Array.isArray(info.eligibility) && (
-                  <section class="bg-white rounded-lg shadow p-5">
-                    <h2 class="text-xl font-semibold mb-2">Eligibility</h2>
-                    <ul class="list-disc ml-6 text-gray-700">
+                  <section class="bg-[var(--card-bg)] border border-[var(--card-border)] rounded-lg shadow p-5">
+                    <h2 class="text-xl font-semibold mb-2 text-[var(--text-color)]">Eligibility</h2>
+                    <ul class="list-disc ml-6 text-[var(--text-muted)]">
                       {info.eligibility.map((item: string) => (
                         <li>{item}</li>
                       ))}
@@ -74,9 +73,9 @@ const info = facultyData?.default?.facultyInfo
                   </section>
                 )}
                 {Array.isArray(info.jobProspects) && (
-                  <section class="bg-white rounded-lg shadow p-5">
-                    <h2 class="text-xl font-semibold mb-2">Job Prospects</h2>
-                    <ul class="list-disc ml-6 text-gray-700">
+                  <section class="bg-[var(--card-bg)] border border-[var(--card-border)] rounded-lg shadow p-5">
+                    <h2 class="text-xl font-semibold mb-2 text-[var(--text-color)]">Job Prospects</h2>
+                    <ul class="list-disc ml-6 text-[var(--text-muted)]">
                       {info.jobProspects.map((item: string) => (
                         <li>{item}</li>
                       ))}
@@ -84,33 +83,20 @@ const info = facultyData?.default?.facultyInfo
                   </section>
                 )}
                 {info.curricularStructure && (
-                  <section class="bg-white rounded-lg shadow p-5">
-                    <h2 class="text-xl font-semibold mb-2">
+                  <section class="bg-[var(--card-bg)] border border-[var(--card-border)] rounded-lg shadow p-5">
+                    <h2 class="text-xl font-semibold mb-2 text-[var(--text-color)]">
                       Curricular Structure
                     </h2>
-                    <p class="text-gray-700">{info.curricularStructure}</p>
+                    <p class="text-[var(--text-muted)]">{info.curricularStructure}</p>
                   </section>
                 )}
-                {/* 
-                  "courseDuration": "Eight semesters (four academic years)",
-    "hoursOfInstruction": "90 working days/semester; theory+lab: 6 hrs/week; theory-only: 5 hrs/week.",
-    "evaluation": "Theory: 20% internal, 80% external. Theory+lab: 20% internal, 20% lab, 60% external. Project/internship by multiple evaluators.",
-    "grading": "Distinction: 80%+, First: 70%+, Second: 55%+, Pass: 40%+ (8 semester average)",
-    "attendance": "80% in each course required.",
-    "finalExam": "Conducted by Institute of Science and Technology, Tribhuvan University.",
-                */}
-
-                <section class="bg-white rounded-lg shadow p-5">
-                  <h2 class="text-xl font-semibold mb-2">
+                <section class="bg-[var(--card-bg)] border border-[var(--card-border)] rounded-lg shadow p-5">
+                  <h2 class="text-xl font-semibold mb-2 text-[var(--text-color)]">
                     Additional Information
                   </h2>
-                  <ul class="list-disc ml-6 text-gray-700">
-                    {info.courseDuration && (
-                      <li>Course Duration: {info.courseDuration}</li>
-                    )}
-                    {info.hoursOfInstruction && (
-                      <li>Hours of Instruction: {info.hoursOfInstruction}</li>
-                    )}
+                  <ul class="list-disc ml-6 text-[var(--text-muted)]">
+                    {info.courseDuration && <li>Course Duration: {info.courseDuration}</li>}
+                    {info.hoursOfInstruction && <li>Hours of Instruction: {info.hoursOfInstruction}</li>}
                     {info.evaluation && <li>Evaluation: {info.evaluation}</li>}
                     {info.grading && <li>Grading: {info.grading}</li>}
                     {info.attendance && <li>Attendance: {info.attendance}</li>}
