@@ -1,4 +1,37 @@
 [
+{
+    "id": 38,
+    "type": "Event",
+    "featured": false,
+    "name_1": "Celebrating: ",
+    "name_2": "Hacktoberfest 2025",
+    "desc": "Developers, it’s that time again! ⚡ Hacktoberfest 2025 is here, and BOSC Club is opening the gates for fresh ideas, bold code, and real collaboration 💻 Join the wave — contribute, connect, and leave your mark on open source 🌍",
+    "year": 2025,
+    "date": "2025-10-15",
+    "time": "06:00 AM",
+    "venue": "Virtual - github.com/b0sc",
+    "organizer": ["BOSC"],
+    "partners": ["Hacktoberfest"],
+    "mentors": [],
+    "guests": [],
+    "cover_photo": "/events/38/cover.jpg",
+    "background": "bg-zinc-100",
+    "links": {
+      "blog": "/blogs/38",
+      "social": "https://www.facebook.com/share/p/1BTh1wHYSB/",
+      "registration": "https://github.com/b0sc"
+    },
+    "images": ["/events/38/pic1.jpg"],
+    "stats": {
+      "participants": 20,
+      "time": "15 days",
+      "certificate": false,
+      "prize": true,
+      "entry_fee": 0,
+      "points": [
+      ]
+    }
+  },
   {
     "id": 37,
     "type": "Event",
@@ -7,7 +40,7 @@
     "name_2": "2025",
     "desc": "Welcome Sourcerers! 🧙‍ Join us to the celebration of Hacktoberfest 2025 and begin your open-source journey. 🚀 Join our guided session to explore the world of open-source contribution, learn from experienced mentors, and contribute to projects. From your first pull request to meaningful collaboration — we’ll help you go from zero to hero in open source!✨",
     "year": 2025,
-    "date": "2024-10-11",
+    "date": "2025-10-11",
     "time": "5:00 PM",
     "venue": "Virtual - Discord",
     "organizer": ["BOSC"],
@@ -36,7 +69,7 @@
       "social": "https://www.facebook.com/share/p/17WNVjoRGZ/",
       "registration": "https://forms.gle/BjwUiajvnJxkcAMW6"
     },
-    "images": ["/events/37/pic1.jpg", "/events/37/pic2.jpg"],
+    "images": ["/events/37/pic1.jpg", "/events/37/pic2.jpg", "events/37/pic3.jpg","/events/37/pic4.jpg"],
     "stats": {
       "participants": 30,
       "time": "3 hrs",
