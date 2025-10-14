@@ -1,0 +1,36 @@
+---
+// src/pages/blogs/opportunities.astro
+import Layout from "../../layouts/Layout.astro";
+import Container from "../../components/Container.astro";
+import BlogNav from "../../components/BlogNav.astro";
+import oData from "../../components/Data/opportunities.json";
+import OpportunityCard from "../../components/Cards/OpportunityCard.astro";
+
+export const prerender = true;
+---
+
+<Layout
+  title="BOSC - IT Opportunities"
+  description="Find national and international IT jobs, internships, and opportunities curated by BOSC."
+>
+  <main>
+    <Container>
+      <div class="flex flex-col md:flex-row">
+        <BlogNav />
+
+        <div class="flex-1 p-4">
+          <div id="opportunities-content">
+            <h2
+              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 text-center"
+            >
+              Opportunities in IT - International, National
+            </h2>
+            <div class="grid gap-8 lg:grid-cols-2 mt-12">
+              <OpportunityCard opportunities={oData} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </main>
+</Layout>

@@ -7,7 +7,7 @@
     "name_2": "2025",
     "desc": "Welcome Sourcerers! 🧙‍ Join us to the celebration of Hacktoberfest 2025 and begin your open-source journey. 🚀 Join our guided session to explore the world of open-source contribution, learn from experienced mentors, and contribute to projects. From your first pull request to meaningful collaboration — we’ll help you go from zero to hero in open source!✨",
     "year": 2025,
-    "date": "2024-10-11",
+    "date": "2025-10-11",
     "time": "5:00 PM",
     "venue": "Virtual - Discord",
     "organizer": ["BOSC"],
@@ -16,14 +16,14 @@
     "guests": [
       {
         "name": "Achyut Koirala",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/achyut.jpeg",
         "designation": "C00, Cyber Alert Nepal",
         "tag": "Hacktoberfest Speaker",
         "connect": "https://www.facebook.com/axyut"
       },
       {
         "name": "Shri Ram Lamichhane",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/shriram.jpg",
         "designation": "The SR Zone",
         "tag": "Hacktoberfest Speaker",
         "connect": "https://www.facebook.com/shriramlc"
@@ -62,42 +62,42 @@
     "guests": [
       {
         "name": "Ashim Dahal",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/ashim.jpg",
         "designation": "Cyber Security Enthusiast",
         "tag": "SFD Speaker 2024",
         "connect": "https://www.facebook.com/alwaysonlin"
       },
       {
         "name": "Sailesh Singh",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/sailesh.jpg",
         "designation": "System Network Administrator",
         "tag": "SFD Speaker 2024",
         "connect": "https://www.facebook.com/saileshsingh36"
       },
       {
         "name": "Bimal Dhital",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/bimal.jpg",
         "designation": "Network Engineer & Linux Administrator",
         "tag": "SFD Speaker 2024",
         "connect": "https://www.facebook.com/shiyaruku"
       },
       {
         "name": "Angat Sitaula",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/angat.jpg",
         "designation": "ML Engineer",
         "tag": "SFD Speaker 2024",
         "connect": "https://www.facebook.com/angat.angat.31"
       },
       {
         "name": "Suraj Bhattrai",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/suraj.jpg",
         "designation": "Community Liaison",
         "tag": "SFD Speaker 2024",
         "connect": "https://www.facebook.com/ImMrBhattarai"
       },
       {
         "name": "Ashutosh Devkota",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/ashutosh.png",
         "designation": "cybersecurity Researcher",
         "tag": "SFD Speaker 2024",
         "connect": "https://www.facebook.com/aashutoshx24"
@@ -143,7 +143,7 @@
     "mentors": [
       {
         "name": "Biplab Karki",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/biplab.jpeg",
         "designation": "CEO & Founder at Hyperce",
         "tag": "Startup Mentor",
         "connect": "https://linkedin.com/in/beeplove"
@@ -184,7 +184,7 @@
     "guests": [
       {
         "name": "Tika Ram Rijal",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/tikaram.jpg",
         "designation": "Vice Campus Chief, Birendra Multiple Campus",
         "tag": "Professor",
         "connect": "https://www.facebook.com/tikaramrijal70"
@@ -222,7 +222,7 @@
     "mentors": [
       {
         "name": "Achyut Koirala",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/achyut.jpeg",
         "designation": "Backend Developer, Freelancer",
         "tag": "COO, Cyber Alert Nepal",
         "connect": "https://www.linkedin.com/in/axyut"
@@ -261,7 +261,7 @@
     "mentors": [
       {
         "name": "Bijesh Ghimire",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/bijesh.jpeg",
         "designation": "Backend Developer, Freelancer",
         "tag": "Linux Tinkerer, Uses Arch BTW",
         "connect": "https://www.linkedin.com/in/bijeshghimire"
@@ -305,21 +305,21 @@
     "guests": [
       {
         "name": "Ashbin Wosti",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/ashbin.jpg",
         "designation": "Software Engineer at Bitcoin Nepal",
         "tag": "Tinkerer, Elixir, Phoenix Framework",
         "connect": "https://www.linkedin.com/in/washbin"
       },
       {
         "name": "Prabhat Amgain",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/prabhat.jpg",
         "designation": "Software Engineer, Freelancer",
         "tag": "Open Source enthusiast",
         "connect": "https://www.linkedin.com/in/prabhat-amgain-5093001b2"
       },
       {
         "name": "Basanta Sharma Gyawali",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/basanta.png",
         "designation": "Network Addict | Software Programmer",
         "tag": "PHP | Laravel | Unity | MySQL | Vue ",
         "connect": "https://www.linkedin.com/in/smartbasanta"
@@ -357,14 +357,14 @@
     "mentors": [
       {
         "name": "Kailash Khatri",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/kailash.jpg",
         "designation": "Senior Graphics Designer | Paradise Infotech",
         "tag": "Graphics Mentor",
         "connect": "https://www.facebook.com/kailash.khatri.52687"
       },
       {
         "name": "Rupesh Thapaliya",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/rupesh.jpg",
         "designation": "Senior Graphics Designer | Paradise Infotech",
         "tag": "Graphics Mentor",
         "connect": "https://www.facebook.com/joker.rups"
@@ -407,7 +407,7 @@
     "mentors": [
       {
         "name": "Banshaj Poudel",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/banshaj.jpg",
         "designation": "GitHub Campus Expert🚩 | Huawei Seeds for the Future 2022",
         "tag": "Open Mic Speaker",
         "connect": "https://www.linkedin.com/in/banshaj/"
@@ -452,21 +452,21 @@
     "guests": [
       {
         "name": "Achyut Koirala",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/achyut.jpeg",
         "designation": "Chief Operating Officer at DigitalForensic UK",
         "tag": "President at BOSC",
         "connect": "https://www.facebook.com/axyut"
       },
       {
         "name": "LF Pemi Magar",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/lf-gh.png",
         "designation": "Graphics Designer, Freelancer",
         "tag": "Secretary at BOSC",
         "connect": "https://www.facebook.com/lf.pemi.magar"
       },
       {
         "name": "Sandhya Bhattarai",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/sandhya-om.jpg",
         "designation": "Frontend Developer Freelancer",
         "tag": "Outreach Manager at BOSC",
         "connect": "https://www.facebook.com/axyut"
@@ -574,7 +574,7 @@
     "guests": [
       {
         "name": "Ashbin Wosti",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/ashbin.jpg",
         "designation": "Software Engineer at Bitcoin Nepal",
         "tag": "Hacktoberfest Speaker",
         "connect": "https://www.facebook.com/ashbin.wosti.1"
@@ -613,28 +613,28 @@
     "guests": [
       {
         "name": "Megha Raj Kandel",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/megha.jpg",
         "designation": "Cyber Security Enthusiast",
         "tag": "SFD Speaker 2024",
         "connect": "https://www.facebook.com/MeghaRajtech"
       },
       {
         "name": "Sudikshya Ojha",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/sudikshya.jpg",
         "designation": "Open Source Enthusiast",
         "tag": "SFD Speaker 2024",
         "connect": "https://www.facebook.com/sudikshya.321"
       },
       {
         "name": "Bimal Dhital",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/bimal.jpg",
         "designation": "Network Engineer & Linux Administrator",
         "tag": "SFD Speaker 2024",
         "connect": "https://www.facebook.com/shiyaruku"
       },
       {
         "name": "Dipesh Sapkota",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/dipesh.jpg",
         "designation": "AI Enthusiast",
         "tag": "SFD Speaker 2024",
         "connect": "https://www.facebook.com/profile.php?id=61562080087964"
@@ -684,7 +684,7 @@
     "guests": [
       {
         "name": "Daya Ram Paudyal",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/dayaram.jpg",
         "designation": "Campus Chief, Birendra Multiple Campus",
         "tag": "Professor",
         "connect": "https://www.facebook.com/dayaram.paudyal"
@@ -722,7 +722,7 @@
     "mentors": [
       {
         "name": "Asim Tara Pathak",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/asimtara.jpg",
         "designation": "Threat Analyst at Sophos",
         "tag": "CEH, PCAP, MOS",
         "connect": "https://www.facebook.com/asim.atp"
@@ -766,21 +766,21 @@
     "guests": [
       {
         "name": "Bigyan Tamang",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/bigyan.jpg",
         "designation": "Network Engineer",
         "tag": "General Member at BOSC",
         "connect": "https://www.facebook.com/bigyantamang.bigyantamang.94"
       },
       {
         "name": "Achyut Koirala",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/achyut.jpeg",
         "designation": "Backend Developer, Freelancer at Upwork",
         "tag": "Community Manager at BOSC",
         "connect": "https://www.facebook.com/axyut"
       },
       {
         "name": "Shri Ram Lamichhane",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/shriram.jpg",
         "designation": "Android Developer, Freelancer",
         "tag": "General Member at BOSC",
         "connect": "https://www.facebook.com/profile.php?id=100041710193260"
@@ -823,7 +823,7 @@
     "mentors": [
       {
         "name": "Kushal Pathak",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/kushal.jpg",
         "designation": "Frontend Developer",
         "tag": "President at BOSC 2023/2024",
         "connect": "https://www.facebook.com/kushalpathak.100"
@@ -865,21 +865,21 @@
     "mentors": [
       {
         "name": "Bigyan Tamang",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/bigyan.jpg",
         "designation": "Network Engineer",
         "tag": "General Member at BOSC",
         "connect": "https://www.facebook.com/bigyantamang.bigyantamang.94"
       },
       {
         "name": "Achyut Koirala",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/achyut.jpeg",
         "designation": "Backend Developer, Freelancer at Upwork",
         "tag": "Community Manager at BOSC",
         "connect": "https://www.facebook.com/axyut"
       },
       {
         "name": "LF Pemi Magar",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/lf-gh.png",
         "designation": "Graphics Designer, Freelancer",
         "tag": "General Member at BOSC",
         "connect": "https://www.facebook.com/lf.pemi.magar"
@@ -926,14 +926,14 @@
     "mentors": [
       {
         "name": "Shristi Shrestha",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/shristi.png",
         "designation": "OSM Guru",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/aswina.shrestha.5"
       },
       {
         "name": "Pragya Pant",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/pragya.png",
         "designation": "OSM Guru",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/pragya.pant.5"
@@ -1003,21 +1003,21 @@
     "mentors": [
       {
         "name": "Saroj Dhakal",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/sarojdkl.jpg",
         "designation": "Wiki Contributor at Wikimedia",
         "tag": "Expert",
         "connect": "https://www.facebook.com/saroj.dhakal.9"
       },
       {
         "name": "Suraj Bhattarai",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/suraj.jpg",
         "designation": "Liasion at LibreOffice Nepal Community",
         "tag": "Mentor",
         "connect": "https://www.facebook.com/saroj.dhakal.9"
       },
       {
         "name": "Aadarsha Dhakal",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/aadharsha.jpg",
         "designation": "Co-ordniator at KUOSC",
         "tag": "Mentor",
         "connect": "https://www.facebook.com/aadarsha.dhakal.9"
@@ -1056,7 +1056,7 @@
     "mentors": [
       {
         "name": "Sushant Rimal",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/sushant.jpg",
         "designation": "Founder, Leader at Dev </> Community Nepal",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/thedevcnepal"
@@ -1065,21 +1065,21 @@
     "guests": [
       {
         "name": "Rajiv Aryal",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/rajiv.jpg",
         "designation": "Web Developer at Mangobyte Digital",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/romeo.rajiv.52"
       },
       {
         "name": "Ashbin Wosti",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/ashbin.jpg",
         "designation": "Software Engineer at Bitcoin Nepal",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/ashbin.wosti.1"
       },
       {
         "name": "Pravin Gupta",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/pravin.jpg",
         "designation": "Content Creator at Gupta Tutorial",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/prabin.gupta.92"
@@ -1121,14 +1121,14 @@
     "mentors": [
       {
         "name": "Bibek Chalise",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/bibek.jpg",
         "designation": "Freelancer, Professor at Lumbini ICT Campus",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/IamBbek"
       },
       {
         "name": "Akash Poudel",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/akash.jpg",
         "designation": "Ex-SDE Intern at CDAC",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/833P.L0G1C"
@@ -1187,21 +1187,21 @@
     "mentors": [
       {
         "name": "Arun Kumar Pariyar",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/arun.jpg",
         "designation": "Debian Developer, Debian Project",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/geekyaaron"
       },
       {
         "name": "Susil Subedi",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/susil.jpg",
         "designation": "CEO at Astranix",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/Sushilsubedi32"
       },
       {
         "name": "Aswina Shrestha",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/aswina.jpg",
         "designation": "OSM Guru",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/aswina.shrestha.5"
@@ -1210,7 +1210,7 @@
     "guests": [
       {
         "name": "Daya Ram Paudyal",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/dayaram.jpg",
         "designation": "Campus Chief, Birendra Multiple Campus",
         "tag": "Professor",
         "connect": "https://www.facebook.com/dayaram.paudyal"
@@ -1265,17 +1265,17 @@
     "mentors": [
       {
         "name": "Ashbin Wosti",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/ashbin.jpg",
         "designation": "Software Engineer at Bitcoin Nepal",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/ashbin.wosti.1"
       },
       {
         "name": "Sushma Ghimire",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/sushma.jpg",
         "designation": "Geospatial Analyst at Kathmandu Living Labs",
         "tag": "Open Source Enthusiast",
-        "connect": "https://www.facebook.com/aswina.shrestha.5"
+        "connect": "https://www.facebook.com/sushmaaghimire"
       }
     ],
     "guests": [],
@@ -1318,14 +1318,14 @@
     "mentors": [
       {
         "name": "Gaurav Parajuli",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/gaurav.jpeg",
         "designation": "OSM Guru",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/gaurav.parajuli.5"
       },
       {
         "name": "Can Unen",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/canunen.jpg",
         "designation": "OSM Guru",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/can.unen"
@@ -1399,21 +1399,21 @@
     "mentors": [
       {
         "name": "Arun Kumar Pariyar",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/arun.jpg",
         "designation": "Debian Developer, Debian Project",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/geekyaaron"
       },
       {
         "name": "Nisha Pariyar",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/nisha.jpg",
         "designation": "Co-Founder, UbuntuDDE Project",
         "tag": "Open Source Enthusiast",
         "connect": "https://facebook.com/nisha.pariyar"
       },
       {
         "name": "Ananta Mishra",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/ananta.jpg",
         "designation": "Package Maintainer, UbuntuDDE Project",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/ananta.mishraa"
@@ -1453,21 +1453,21 @@
     "guests": [
       {
         "name": "Ashbin Wosti",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/ashbin.jpg",
         "designation": "Software Engineer at Bitcoin Nepal",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/ashbin.wosti.1"
       },
       {
         "name": "Sijan Neupane",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/sijan.jpeg",
         "designation": "Software Engineer at Great Bear Technologies",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.linkedin.com/in/sijanneupane"
       },
       {
         "name": "Prabhat Amgain",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/prabhat.jpg",
         "designation": "Software Engineer",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/prabhat.amgain"
@@ -1542,14 +1542,14 @@
     "mentors": [
       {
         "name": "Basanta Sharma",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/basanta.png",
         "designation": "Network Engineer",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/smart.basanta.5"
       },
       {
         "name": "Ashbin Wosti",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/ashbin.jpg",
         "designation": "Software Engineer at Bitcoin Nepal",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/ashbin.wosti.1"
@@ -1589,21 +1589,21 @@
     "guests": [
       {
         "name": "Dil Shahi",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/dilshahi.jpg",
         "designation": "CEO at Kasturi Sanjaal Pvt. Ltd.",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/dshahi468"
       },
       {
         "name": "Kshitij Dhakal",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/kshitij.jpg",
         "designation": "Android Developer",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/kshitij.dhakal.3"
       },
       {
         "name": "Sijan Neupane",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/sijan.jpeg",
         "designation": "Software Engineer at Great Bear Technologies",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.linkedin.com/in/sijanneupane"
@@ -1672,7 +1672,7 @@
     "mentors": [
       {
         "name": "Saroj Dahal",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/sarojdhl.jpg",
         "designation": "Web and Desktop App Developer",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/saroj.dahal.9"
@@ -1711,7 +1711,7 @@
     "mentors": [
       {
         "name": "Captain Nick Lucifer",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/captain.png",
         "designation": "Bug Bounty Hunter",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/nick.lucifer.7"
@@ -1720,21 +1720,21 @@
     "guests": [
       {
         "name": "Bishal Shrestha",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/bishal.png",
         "designation": "Bug Bounty Hunter",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/bishal.shrestha.9"
       },
       {
         "name": "Binit Ghimire",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/binit.png",
         "designation": "Bug Bounty Hunter",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/binit.ghimire.7"
       },
       {
         "name": "Saughat Pokhrel",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/saugat.png",
         "designation": "Bug Bounty Hunter",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/saughat.pokhrel.7"
@@ -1772,7 +1772,7 @@
     "mentors": [
       {
         "name": "Ananta Mishra",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/ananta.jpg",
         "designation": "Frontend Developer",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/ananta.mishra.9"

@@ -1,259 +1,39 @@
 ---
-import Layout from "../../layouts/Layout.astro"
-import Container from "../../components/Container.astro"
-import eventsData from "../../components/Data/events.json"
-import type { CollectionEntry } from "astro:content"
-import { getCollection } from "astro:content"
-import ArticleCard from "../../components/Cards/ArticleCard.astro"
-import EventCard from "../../components/Cards/EventCard.astro"
-import MemberCard from "../../components/Cards/MemberCard.astro"
-import teamData from "../../components/Data/team.json"
-import oData from "../../components/Data/opportunities.json"
-import Timeline from "../../components/Timeline.astro"
-import OpportunityCard from "../../components/Cards/OpportunityCard.astro"
+// src/pages/blogs/index.astro
+import Layout from "../../layouts/Layout.astro";
+import Container from "../../components/Container.astro";
+import BlogNav from "../../components/BlogNav.astro"; // <-- Import the nav
+import type { CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
+import ArticleCard from "../../components/Cards/ArticleCard.astro";
 
 const articles: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
   (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
     b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-)
+);
 ---
-
 <Layout
   title="BOSC - Blog"
-  description="BOSC's Official Website. Read IT Notes and Blogs. Get Jobs, Opportunities. Join Events and Mentorship Programs. Created by Open Source Enthusiasts from Nepal."
+  description="BOSC's Official Website. Read IT Notes and Blogs..."
   image="https://bosc.org.np/team.jpg"
   url="https://bosc.org.np/blogs"
 >
   <main>
     <Container>
       <div class="flex flex-col md:flex-row">
-        <!-- Tabs - Horizontal on mobile, Vertical on desktop -->
-        <div class="md:w-48 bg-white shadow-lg md:min-h-screen">
-          <div class="md:sticky md:top-0 pt-4 pr-2">
-            <!-- Tab Container - Horizontal scrolling on mobile -->
-            <div
-              class="flex md:flex-col space-x-4 md:space-x-0 md:space-y-2 overflow-x-auto md:overflow-x-visible pb-2 md:pb-0"
-            >
-              <button
-                id="articles-tab"
-                class="whitespace-nowrap px-4 py-2 text-left rounded-md transition-colors hover:bg-gray-100 tab-button"
-                data-tab="articles"
-              >
-                Articles
-              </button>
-              <button
-                id="events-tab"
-                class="whitespace-nowrap px-4 py-2 text-left rounded-md transition-colors hover:bg-gray-100 tab-button"
-                data-tab="events"
-              >
-                Events
-              </button>
-              <button
-                id="opportunities-tab"
-                class="whitespace-nowrap px-4 py-2 text-left rounded-md transition-colors hover:bg-gray-100 tab-button"
-                data-tab="opportunities"
-              >
-                Opportunities
-              </button>
-              <button
-                id="alumni-tab"
-                class="whitespace-nowrap px-4 py-2 text-left rounded-md transition-colors hover:bg-gray-100 tab-button"
-                data-tab="alumni"
-              >
-                Alumni
-              </button>
-              <button
-                id="executives-tab"
-                class="whitespace-nowrap px-4 py-2 text-left rounded-md transition-colors hover:bg-gray-100 tab-button"
-                data-tab="executives"
-              >
-                Executives
-              </button>
-              <button
-                id="members-tab"
-                class="whitespace-nowrap px-4 py-2 text-left rounded-md transition-colors hover:bg-gray-100 tab-button"
-                data-tab="members"
-              >
-                Members
-              </button>
-              <button
-                id="history-tab"
-                class="whitespace-nowrap px-4 py-2 text-left rounded-md transition-colors hover:bg-gray-100 tab-button"
-                data-tab="history"
-              >
-                History
-              </button>
-            </div>
-          </div>
-        </div>
+        
+        <BlogNav />
 
-        <!-- Content Area -->
         <div class="flex-1 p-4">
-          <div id="articles-content" class="content-section">
-            <h2
-              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 text-center"
-            >
-              Articles
-            </h2>
-            <div class="grid gap-8 lg:grid-cols-2 mt-12">
-              <ArticleCard articles={articles} />
-            </div>
-          </div>
-
-          <div id="events-content" class="content-section">
-            <h2
-              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 text-center"
-            >
-              Events
-            </h2>
-            <p class="mb-4 font-light text-gray-500 sm:text-xl text-center">
-              Since 2021, BOSC has sucessfully conducted
-              <strong> {eventsData.length}</strong> events and workshops.
-            </p>
-            <div class="grid gap-8 lg:grid-cols-2 mt-12">
-              <EventCard eventsData={eventsData} />
-            </div>
-          </div>
-          <div id="opportunities-content" class="content-section">
-            <h2
-              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 text-center"
-            >
-              Opportunities in IT - International, National
-            </h2>
-            <div class="grid gap-8 lg:grid-cols-2 mt-12">
-              <OpportunityCard opportunities={oData} />
-            </div>
-          </div>
-
-          <div id="members-content" class="content-section">
-            <h2
-              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 text-center"
-            >
-              Members
-            </h2>
-            <div
-              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-12"
-            >
-            <MemberCard members={teamData.members} />
-          </div>
-              <h2 class="col-span-4 text-center text-gray-500 mt-8">
-                If you are a new BOSC member and want to be featured here,
-                please create a pull request on our <a
-                  class="text-lime-900 hover:text-zinc-900"
-                  href="https://github.com/b0sc/b0sc.github.io/"
-                >
-                  GitHub Repo
-                </a> with appropriate changes in the code.
-              </h2>
-          </div>
-          <div id="executives-content" class="content-section">
-            <h2
-              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 text-center"
-            >
-              Executives
-            </h2>
-            <div
-              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-12"
-            >
-              <MemberCard members={teamData.executives} />
-            </div>
-              <h2 class="col-span-4 text-center text-gray-500 mt-8">
-                If you are a new BOSC Executive and want to be featured here,
-                please create a pull request on our <a
-                  class="text-lime-900 hover:text-zinc-900"
-                  href="https://github.com/b0sc/b0sc.github.io/"
-                >
-                  GitHub Repo
-                </a> with appropriate changes in the code.
-              </h2>
-          </div>
-          <div id="alumni-content" class="content-section">
-            <h2
-              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 text-center"
-            >
-              Alumni
-            </h2>
-            <div
-              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-12"
-            >
-              <MemberCard members={teamData.alumni} />
-            </div>
-
-              <h2 class="col-span-4 text-center text-gray-500 mt-8">
-                If you are an alumni and want to be featured here, please create
-                a pull request on our <a
-                  class="text-lime-900 hover:text-zinc-900"
-                  href="https://github.com/b0sc/b0sc.github.io/"
-                >
-                  GitHub Repo
-                </a> with appropriate changes in the code.
-              </h2>
-          </div>
-          <div id="history-content" class="content-section">
-            <h2
-              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 text-center"
-            >
-              History | Timeline
-            </h2>
-            <Timeline />
+          <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 text-center">
+            Articles
+          </h2>
+          <div class="grid gap-8 lg:grid-cols-2 mt-12">
+            <ArticleCard articles={articles} />
           </div>
         </div>
+
       </div>
     </Container>
   </main>
 </Layout>
-
-<style>
-  .tab-button.active {
-    @apply bg-zinc-900 text-white;
-  }
-</style>
-
-<script>
-  function initializeTabs() {
-    function updateActiveTab(tabId: string) {
-      // Update tab buttons
-      document.querySelectorAll(".tab-button").forEach((button) => {
-        button.classList.remove("active")
-        if (button.getAttribute("data-tab") === tabId) {
-          button.classList.add("active")
-        }
-      })
-
-      // Update content visibility
-      document.querySelectorAll(".content-section").forEach((section) => {
-        section.classList.add("hidden")
-      })
-      document.getElementById(`${tabId}-content`)?.classList.remove("hidden")
-    }
-
-    // Handle hash changes
-    function handleHash() {
-      const hash = window.location.hash.slice(1) || "articles"
-      updateActiveTab(hash)
-    }
-
-    // Add click event listeners to tabs
-    document.querySelectorAll(".tab-button").forEach((button) => {
-      button.addEventListener("click", (e) => {
-        const tab = (e.currentTarget as HTMLElement).getAttribute("data-tab")
-        if (tab) {
-          window.location.hash = tab
-          updateActiveTab(tab)
-        }
-      })
-    })
-
-    // Handle hash changes
-    window.addEventListener("hashchange", handleHash)
-
-    // Handle initial load
-    handleHash()
-  }
-
-  // Run on initial page load
-  initializeTabs()
-
-  // Re-run when navigating between pages (Astro View Transitions)
-  document.addEventListener("astro:page-load", initializeTabs)
-</script>

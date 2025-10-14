@@ -1,0 +1,33 @@
+---
+// src/pages/blogs/history.astro
+import Layout from "../../layouts/Layout.astro";
+import Container from "../../components/Container.astro";
+import BlogNav from "../../components/BlogNav.astro";
+import Timeline from "../../components/Timeline.astro";
+
+export const prerender = true;
+---
+
+<Layout
+  title="BOSC - History & Timeline"
+  description="Explore the history and key milestones of the Birendra Open Source Club."
+>
+  <main>
+    <Container>
+      <div class="flex flex-col md:flex-row">
+        <BlogNav />
+
+        <div class="flex-1 p-4">
+          <div id="history-content">
+            <h2
+              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 text-center"
+            >
+              History | Timeline
+            </h2>
+            <Timeline />
+          </div>
+        </div>
+      </div>
+    </Container>
+  </main>
+</Layout>

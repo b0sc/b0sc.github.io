@@ -1,0 +1,47 @@
+---
+// src/pages/blogs/members.astro
+import Layout from "../../layouts/Layout.astro";
+import Container from "../../components/Container.astro";
+import BlogNav from "../../components/BlogNav.astro";
+import teamData from "../../components/Data/team.json";
+import MemberCard from "../../components/Cards/MemberCard.astro";
+
+export const prerender = true;
+---
+
+<Layout
+  title="BOSC - Members"
+  description="Meet the dedicated members of the Birendra Open Source Club community."
+>
+  <main>
+    <Container>
+      <div class="flex flex-col md:flex-row">
+        <BlogNav />
+
+        <div class="flex-1 p-4">
+          <div id="members-content">
+            <h2
+              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 text-center"
+            >
+              Members
+            </h2>
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-12"
+            >
+              <MemberCard members={teamData.members} />
+            </div>
+            <h2 class="col-span-4 text-center text-gray-500 mt-8">
+              If you are a new BOSC member and want to be featured here, please
+              create a pull request on our <a
+                class="text-lime-900 hover:text-zinc-900"
+                href="https://github.com/b0sc/b0sc.github.io/"
+              >
+                GitHub Repo
+              </a> with appropriate changes in the code.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </main>
+</Layout>

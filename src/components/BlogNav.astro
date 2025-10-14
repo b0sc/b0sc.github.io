@@ -1,0 +1,47 @@
+---
+// src/components/BlogNav.astro
+const { pathname } = Astro.url
+
+// Helper function to check if a link is active
+const isActive = (href: string) => {
+    if (href === "/blogs" || href === "/blogs/") {
+        return pathname === "/blogs" || pathname === "/blogs/";
+    }
+    return pathname.startsWith(href);
+}
+
+const navLinks = [
+    { href: "/blogs", label: "Articles" },
+    { href: "/blogs/events", label: "Events" },
+    { href: "/blogs/opportunities", label: "Opportunities" },
+    { href: "/blogs/alumni", label: "Alumni" },
+    { href: "/blogs/executives", label: "Executives" },
+    { href: "/blogs/members", label: "Members" },
+    { href: "/blogs/history", label: "History" },
+]
+---
+<style>
+  a.active {
+    @apply bg-zinc-900 text-white;
+  }
+</style>
+
+<div class="md:w-48 bg-white shadow-lg md:min-h-screen">
+  <div class="md:sticky md:top-0 pt-4 pr-2">
+    <div
+      class="flex md:flex-col space-x-4 md:space-x-0 md:space-y-2 overflow-x-auto md:overflow-x-visible pb-2 md:pb-0"
+    >
+      {navLinks.map(link => (
+        <a
+          href={link.href}
+          class:list={[
+            "whitespace-nowrap px-4 py-2 text-left rounded-md transition-colors hover:bg-gray-100",
+            { "active": isActive(link.href) }
+          ]}
+        >
+          {link.label}
+        </a>
+      ))}
+    </div>
+  </div>
+</div>
