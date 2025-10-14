@@ -1,39 +1,68 @@
 ---
 import Search from "astro-pagefind/components/Search";
 ---
-<!-- for this to work in dev mode build your site once -->
 <Search id="search" className="pagefind-ui" uiOptions={{ showImages: false }} />
 
 <style is:inline>
-:root{
-    --pagefind-ui-scale: 0.70; /* overall scale of the search bar */
-}
-#search{
+  /* --- 1. SET GLOBAL PAGEFIND STYLES --- */
+  :root {
+    --pagefind-ui-scale: 0.70;
+    --pagefind-ui-font: inherit; /* Use the site's font */
+    
+    /* Map Pagefind variables to your theme variables for LIGHT MODE */
+    --pagefind-ui-background: var(--card-bg);
+    --pagefind-ui-text: var(--text-color);
+    --pagefind-ui-border: var(--card-border);
+    --pagefind-ui-primary: var(--text-color); /* Color for highlights/results */
+    --pagefind-ui-tag-background: var(--hover-bg);
+
+    /* Custom shadow variable for light theme */
+    --search-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  }
+
+  /* Map Pagefind variables for DARK MODE */
+  [data-theme='dark'] {
+    --pagefind-ui-background: var(--card-bg);
+    --pagefind-ui-text: var(--text-color);
+    --pagefind-ui-border: var(--card-border);
+    --pagefind-ui-primary: var(--text-color);
+    --pagefind-ui-tag-background: var(--hover-bg);
+
+    /* Custom shadow variable for dark theme */
+    --search-shadow: 0px 8px 24px rgba(244, 244, 245, 0.1); /* Subtle white glow */
+  }
+
+  /* --- 2. STYLE THE COMPONENT LAYOUT --- */
+  #search {
     max-width: 300px;
-    flex: 1 1 auto; /* Allow it to grow and shrink */
-    min-width: 0; /* Important for flex shrinking */
-}
-#search .pagefind-ui{
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+  #search .pagefind-ui {
     width: 100%;
-}
-#search .pagefind-ui__search-input{
+  }
+  #search .pagefind-ui__search-input {
     width: 100%;
     min-width: 30px;
-    
-}
-#search .pagefind-ui__drawer {
-  position: absolute;
-  padding: 0.5rem;
-  top: 100%;
-  max-width: 40rem;
-  min-width: 15rem;
-  width: 100%;
-  right: 0;
-  background-color: white;
-  z-index: 60; /* above other content (nav has 50) */
-  border-radius: 0.5rem;
-  height: 20rem;
-  overflow-y: scroll;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-}   
+    border-radius: 0.75rem; /* A bit more rounded */
+  }
+
+  /* --- 3. STYLE THE DROPDOWN/DRAWER --- */
+  #search .pagefind-ui__drawer {
+    position: absolute;
+    padding: 0.5rem;
+    top: 100%;
+    max-width: 40rem;
+    min-width: 15rem;
+    width: 100%;
+    right: 0;
+    z-index: 60;
+    border-radius: 0.5rem;
+    height: 20rem;
+    overflow-y: scroll;
+    /* Use the theme-aware shadow variable */
+    box-shadow: var(--search-shadow);
+    /* Use the theme-aware background color */
+    background-color: var(--pagefind-ui-background);
+  }
 </style>

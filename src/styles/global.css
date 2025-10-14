@@ -3,6 +3,38 @@
 @tailwind utilities;
 
 @layer base {
+  /* 1. DEFINE COLOR VARIABLES FOR BOTH THEMES */
+  :root {
+    --bg-color: #ffffff;             /* white */
+    --text-color: #18181b;           /* zinc-900 */
+    --text-muted: #71717a;          /* zinc-500 */
+    --card-bg: #ffffff;             /* white */
+    --card-border: #e4e4e7;          /* zinc-200 */
+    --nav-bg: rgba(255, 255, 255, 0.8);
+    --hover-bg: #f4f4f5;            /* zinc-100 */
+    --section-bg: #f9fafb;          /* gray-50 */
+    --primary-btn-bg: #18181b;      /* zinc-900 */
+    --primary-btn-text: #ffffff;    /* white */
+    --primary-btn-hover-bg: #ffffff; /* white */
+    --primary-btn-hover-text: #18181b; /* zinc-900 */
+  }
+
+  [data-theme='dark'] {
+    --bg-color: #09090b;             /* zinc-950 */
+    --text-color: #f4f4f5;           /* zinc-100 */
+    --text-muted: #a1a1aa;          /* zinc-400 */
+    --card-bg: #18181b;             /* zinc-900 */
+    --card-border: #27272a;          /* zinc-800 */
+    --nav-bg: rgba(9, 9, 11, 0.8);
+    --hover-bg: #27272a;            /* zinc-800 */
+    --section-bg: #18181b;          /* zinc-900 */
+    --primary-btn-bg: #f4f4f5;      /* zinc-100 */
+    --primary-btn-text: #18181b;    /* zinc-900 */
+    --primary-btn-hover-bg: #27272a; /* zinc-800 */
+    --primary-btn-hover-text: #f4f4f5; /* zinc-100 */
+  }
+
+  /* Your existing font outlines */
   .font-outline {
     -webkit-text-stroke: 2.5px black;
     background-color: transparent;
@@ -12,20 +44,19 @@
     -webkit-text-stroke: 1.2px black;
     background-color: transparent;
   }
-
 }
 
-/* custom scrollbar */
+/* 2. UPDATE SCROLLBAR TO USE VARIABLES */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: var(--bg-color);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #000000;
+  background: var(--text-muted);
 }
 
 ::-webkit-scrollbar-thumb:hover {

@@ -7,7 +7,7 @@
     "name_2": "2025",
     "desc": "Welcome Sourcerers! 🧙‍ Join us to the celebration of Hacktoberfest 2025 and begin your open-source journey. 🚀 Join our guided session to explore the world of open-source contribution, learn from experienced mentors, and contribute to projects. From your first pull request to meaningful collaboration — we’ll help you go from zero to hero in open source!✨",
     "year": 2025,
-    "date": "2024-10-11",
+    "date": "2025-10-11",
     "time": "5:00 PM",
     "venue": "Virtual - Discord",
     "organizer": ["BOSC"],
@@ -16,14 +16,14 @@
     "guests": [
       {
         "name": "Achyut Koirala",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/achyut.jpeg",
         "designation": "C00, Cyber Alert Nepal",
         "tag": "Hacktoberfest Speaker",
         "connect": "https://www.facebook.com/axyut"
       },
       {
         "name": "Shri Ram Lamichhane",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/shriram.jpg",
         "designation": "The SR Zone",
         "tag": "Hacktoberfest Speaker",
         "connect": "https://www.facebook.com/shriramlc"
@@ -32,7 +32,7 @@
     "cover_photo": "/events/37/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/37",
+      "blog": "/explore/37",
       "social": "https://www.facebook.com/share/p/17WNVjoRGZ/",
       "registration": "https://forms.gle/BjwUiajvnJxkcAMW6"
     },
@@ -62,42 +62,42 @@
     "guests": [
       {
         "name": "Ashim Dahal",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/ashim.jpg",
         "designation": "Cyber Security Enthusiast",
         "tag": "SFD Speaker 2024",
         "connect": "https://www.facebook.com/alwaysonlin"
       },
       {
         "name": "Sailesh Singh",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/sailesh.jpg",
         "designation": "System Network Administrator",
         "tag": "SFD Speaker 2024",
         "connect": "https://www.facebook.com/saileshsingh36"
       },
       {
         "name": "Bimal Dhital",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/bimal.jpg",
         "designation": "Network Engineer & Linux Administrator",
         "tag": "SFD Speaker 2024",
         "connect": "https://www.facebook.com/shiyaruku"
       },
       {
         "name": "Angat Sitaula",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/angat.jpg",
         "designation": "ML Engineer",
         "tag": "SFD Speaker 2024",
         "connect": "https://www.facebook.com/angat.angat.31"
       },
       {
         "name": "Suraj Bhattrai",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/suraj.jpg",
         "designation": "Community Liaison",
         "tag": "SFD Speaker 2024",
         "connect": "https://www.facebook.com/ImMrBhattarai"
       },
       {
         "name": "Ashutosh Devkota",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/ashutosh.png",
         "designation": "cybersecurity Researcher",
         "tag": "SFD Speaker 2024",
         "connect": "https://www.facebook.com/aashutoshx24"
@@ -107,7 +107,7 @@
     "cover_photo": "/events/36/cover.jpg",
     "background": "bg-lime-500",
     "links": {
-      "blog": "/blogs/36",
+      "blog": "/explore/36",
       "social": "https://www.facebook.com/birendraopensourceclub",
       "registration": "https://docs.google.com/forms/d/e/1FAIpQLSfLVYZgMwcn-8_4A0n59IKVxmImxZVoZ_iALWMIIROqQfeR3A/viewform"
     },
@@ -143,7 +143,7 @@
     "mentors": [
       {
         "name": "Biplab Karki",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/biplab.jpeg",
         "designation": "CEO & Founder at Hyperce",
         "tag": "Startup Mentor",
         "connect": "https://linkedin.com/in/beeplove"
@@ -153,7 +153,7 @@
     "cover_photo": "/events/35/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/35",
+      "blog": "/explore/35",
       "social": "https://www.facebook.com/share/p/1FbMu2p96G/",
       "registration": "https://docs.google.com/forms/d/e/1FAIpQLSfvCLL-xT5pZHndQpG5Ack6TQ88WuywmgtMbvc8gM_iP4s_PQ/viewform"
     },
@@ -184,7 +184,7 @@
     "guests": [
       {
         "name": "Tika Ram Rijal",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/tikaram.jpg",
         "designation": "Vice Campus Chief, Birendra Multiple Campus",
         "tag": "Professor",
         "connect": "https://www.facebook.com/tikaramrijal70"
@@ -193,7 +193,7 @@
     "cover_photo": "/events/34/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/34",
+      "blog": "/explore/34",
       "social": "https://www.facebook.com/share/p/1ZvSQxuMt5/",
       "registration": ""
     },
@@ -222,7 +222,7 @@
     "mentors": [
       {
         "name": "Achyut Koirala",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/achyut.jpeg",
         "designation": "Backend Developer, Freelancer",
         "tag": "COO, Cyber Alert Nepal",
         "connect": "https://www.linkedin.com/in/axyut"
@@ -232,7 +232,7 @@
     "cover_photo": "/events/33/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/33",
+      "blog": "/explore/33",
       "social": "https://www.facebook.com/birendraopensourceclub",
       "registration": "https://forms.gle/TfffWeEBixrhzkWS7"
     },
@@ -261,7 +261,7 @@
     "mentors": [
       {
         "name": "Bijesh Ghimire",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/bijesh.jpeg",
         "designation": "Backend Developer, Freelancer",
         "tag": "Linux Tinkerer, Uses Arch BTW",
         "connect": "https://www.linkedin.com/in/bijeshghimire"
@@ -271,7 +271,7 @@
     "cover_photo": "/events/32/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/32",
+      "blog": "/explore/32",
       "social": "https://www.facebook.com/birendraopensourceclub",
       "registration": ""
     },
@@ -305,21 +305,21 @@
     "guests": [
       {
         "name": "Ashbin Wosti",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/ashbin.jpg",
         "designation": "Software Engineer at Bitcoin Nepal",
         "tag": "Tinkerer, Elixir, Phoenix Framework",
         "connect": "https://www.linkedin.com/in/washbin"
       },
       {
         "name": "Prabhat Amgain",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/prabhat.jpg",
         "designation": "Software Engineer, Freelancer",
         "tag": "Open Source enthusiast",
         "connect": "https://www.linkedin.com/in/prabhat-amgain-5093001b2"
       },
       {
         "name": "Basanta Sharma Gyawali",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/basanta.png",
         "designation": "Network Addict | Software Programmer",
         "tag": "PHP | Laravel | Unity | MySQL | Vue ",
         "connect": "https://www.linkedin.com/in/smartbasanta"
@@ -328,7 +328,7 @@
     "cover_photo": "/events/31/cover.JPG",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/31",
+      "blog": "/explore/31",
       "social": "https://www.facebook.com/birendraopensourceclub",
       "registration": ""
     },
@@ -357,14 +357,14 @@
     "mentors": [
       {
         "name": "Kailash Khatri",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/kailash.jpg",
         "designation": "Senior Graphics Designer | Paradise Infotech",
         "tag": "Graphics Mentor",
         "connect": "https://www.facebook.com/kailash.khatri.52687"
       },
       {
         "name": "Rupesh Thapaliya",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/rupesh.jpg",
         "designation": "Senior Graphics Designer | Paradise Infotech",
         "tag": "Graphics Mentor",
         "connect": "https://www.facebook.com/joker.rups"
@@ -374,7 +374,7 @@
     "cover_photo": "/events/30/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/30",
+      "blog": "/explore/30",
       "social": "https://www.facebook.com/share/p/15Qkca3pyF/",
       "registration": "https://docs.google.com/forms/d/e/1FAIpQLScVIwyWJ1TGmo0UbbAdHQ-6R0zZn8brmqBcs3KhGy8MVCe8TQ/viewform"
     },
@@ -407,7 +407,7 @@
     "mentors": [
       {
         "name": "Banshaj Poudel",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/banshaj.jpg",
         "designation": "GitHub Campus Expert🚩 | Huawei Seeds for the Future 2022",
         "tag": "Open Mic Speaker",
         "connect": "https://www.linkedin.com/in/banshaj/"
@@ -417,7 +417,7 @@
     "cover_photo": "/events/29/cover.png",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/29",
+      "blog": "/explore/29",
       "social": "https://www.facebook.com/birendraopensourceclub",
       "registration": "https://docs.google.com/forms/d/e/1FAIpQLSfAOzpzRovUwRroqmnT3NgOznK-6718bCXivnFKbwwbG1vKnA/viewform"
     },
@@ -452,21 +452,21 @@
     "guests": [
       {
         "name": "Achyut Koirala",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/achyut.jpeg",
         "designation": "Chief Operating Officer at DigitalForensic UK",
         "tag": "President at BOSC",
         "connect": "https://www.facebook.com/axyut"
       },
       {
         "name": "LF Pemi Magar",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/lf-gh.png",
         "designation": "Graphics Designer, Freelancer",
         "tag": "Secretary at BOSC",
         "connect": "https://www.facebook.com/lf.pemi.magar"
       },
       {
         "name": "Sandhya Bhattarai",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/sandhya-om.jpg",
         "designation": "Frontend Developer Freelancer",
         "tag": "Outreach Manager at BOSC",
         "connect": "https://www.facebook.com/axyut"
@@ -475,7 +475,7 @@
     "cover_photo": "",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/28",
+      "blog": "/explore/28",
       "social": "https://www.facebook.com/birendraopensourceclub",
       "registration": ""
     },
@@ -506,7 +506,7 @@
     "cover_photo": "/events/27/cover.png",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/27",
+      "blog": "/explore/27",
       "social": "https://www.facebook.com/birendraopensourceclub",
       "registration": "https://docs.google.com/forms/d/e/1FAIpQLScBEBy9pD3Zo2dta8jceMdlYgqNzQG9SIEh-7j38oR2Rzrl_A/viewform"
     },
@@ -537,7 +537,7 @@
     "cover_photo": "/events/26/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/26",
+      "blog": "/explore/26",
       "social": "https://www.facebook.com/share/p/1W1nMPSLWz/",
       "registration": "https://github.com/b0sc"
     },
@@ -574,7 +574,7 @@
     "guests": [
       {
         "name": "Ashbin Wosti",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/ashbin.jpg",
         "designation": "Software Engineer at Bitcoin Nepal",
         "tag": "Hacktoberfest Speaker",
         "connect": "https://www.facebook.com/ashbin.wosti.1"
@@ -583,7 +583,7 @@
     "cover_photo": "/events/25/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/25",
+      "blog": "/explore/25",
       "social": "https://www.facebook.com/share/p/12AXrPMrQCX/",
       "registration": "https://forms.gle/xEe39aBUHHUqUvVe8"
     },
@@ -613,28 +613,28 @@
     "guests": [
       {
         "name": "Megha Raj Kandel",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/megha.jpg",
         "designation": "Cyber Security Enthusiast",
         "tag": "SFD Speaker 2024",
         "connect": "https://www.facebook.com/MeghaRajtech"
       },
       {
         "name": "Sudikshya Ojha",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/sudikshya.jpg",
         "designation": "Open Source Enthusiast",
         "tag": "SFD Speaker 2024",
         "connect": "https://www.facebook.com/sudikshya.321"
       },
       {
         "name": "Bimal Dhital",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/bimal.jpg",
         "designation": "Network Engineer & Linux Administrator",
         "tag": "SFD Speaker 2024",
         "connect": "https://www.facebook.com/shiyaruku"
       },
       {
         "name": "Dipesh Sapkota",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/dipesh.jpg",
         "designation": "AI Enthusiast",
         "tag": "SFD Speaker 2024",
         "connect": "https://www.facebook.com/profile.php?id=61562080087964"
@@ -643,7 +643,7 @@
     "cover_photo": "/events/24/cover.jpg",
     "background": "bg-lime-500",
     "links": {
-      "blog": "/blogs/24",
+      "blog": "/explore/24",
       "social": "https://www.facebook.com/share/p/15ZX52HQYi/",
       "registration": "https://forms.gle/mxUZfyFA61jN2mjW8"
     },
@@ -684,7 +684,7 @@
     "guests": [
       {
         "name": "Daya Ram Paudyal",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/dayaram.jpg",
         "designation": "Campus Chief, Birendra Multiple Campus",
         "tag": "Professor",
         "connect": "https://www.facebook.com/dayaram.paudyal"
@@ -693,7 +693,7 @@
     "cover_photo": "/events/23/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/23",
+      "blog": "/explore/23",
       "social": "https://www.facebook.com/share/p/17p9AnqeE5/",
       "registration": ""
     },
@@ -722,7 +722,7 @@
     "mentors": [
       {
         "name": "Asim Tara Pathak",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/asimtara.jpg",
         "designation": "Threat Analyst at Sophos",
         "tag": "CEH, PCAP, MOS",
         "connect": "https://www.facebook.com/asim.atp"
@@ -732,7 +732,7 @@
     "cover_photo": "/events/22/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/22",
+      "blog": "/explore/22",
       "social": "https://www.facebook.com/share/p/15c2sh91eQ/",
       "registration": "https://tinyurl.com/MitreOsintWorkshop2024"
     },
@@ -766,21 +766,21 @@
     "guests": [
       {
         "name": "Bigyan Tamang",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/bigyan.jpg",
         "designation": "Network Engineer",
         "tag": "General Member at BOSC",
         "connect": "https://www.facebook.com/bigyantamang.bigyantamang.94"
       },
       {
         "name": "Achyut Koirala",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/achyut.jpeg",
         "designation": "Backend Developer, Freelancer at Upwork",
         "tag": "Community Manager at BOSC",
         "connect": "https://www.facebook.com/axyut"
       },
       {
         "name": "Shri Ram Lamichhane",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/shriram.jpg",
         "designation": "Android Developer, Freelancer",
         "tag": "General Member at BOSC",
         "connect": "https://www.facebook.com/profile.php?id=100041710193260"
@@ -789,7 +789,7 @@
     "cover_photo": "/events/21/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/21",
+      "blog": "/explore/21",
       "social": "https://www.facebook.com/share/p/1B79GLZL5T/",
       "registration": "https://forms.gle/cyisykxr6RwpXCrm7"
     },
@@ -823,7 +823,7 @@
     "mentors": [
       {
         "name": "Kushal Pathak",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/kushal.jpg",
         "designation": "Frontend Developer",
         "tag": "President at BOSC 2023/2024",
         "connect": "https://www.facebook.com/kushalpathak.100"
@@ -833,7 +833,7 @@
     "cover_photo": "/events/20/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/20",
+      "blog": "/explore/20",
       "social": "https://www.facebook.com/share/p/1DTTomE7Vm/",
       "registration": "https://forms.gle/Hg2mWX5AdbYdB2tH7"
     },
@@ -865,21 +865,21 @@
     "mentors": [
       {
         "name": "Bigyan Tamang",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/bigyan.jpg",
         "designation": "Network Engineer",
         "tag": "General Member at BOSC",
         "connect": "https://www.facebook.com/bigyantamang.bigyantamang.94"
       },
       {
         "name": "Achyut Koirala",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/achyut.jpeg",
         "designation": "Backend Developer, Freelancer at Upwork",
         "tag": "Community Manager at BOSC",
         "connect": "https://www.facebook.com/axyut"
       },
       {
         "name": "LF Pemi Magar",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/lf-gh.png",
         "designation": "Graphics Designer, Freelancer",
         "tag": "General Member at BOSC",
         "connect": "https://www.facebook.com/lf.pemi.magar"
@@ -889,7 +889,7 @@
     "cover_photo": "/events/19/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/19",
+      "blog": "/explore/19",
       "social": "https://www.facebook.com/share/p/1BYNgRxqC2/",
       "registration": " https://forms.gle/xMzkozgfRGzMvNPW8"
     },
@@ -926,14 +926,14 @@
     "mentors": [
       {
         "name": "Shristi Shrestha",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/shristi.png",
         "designation": "OSM Guru",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/aswina.shrestha.5"
       },
       {
         "name": "Pragya Pant",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/pragya.png",
         "designation": "OSM Guru",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/pragya.pant.5"
@@ -943,7 +943,7 @@
     "cover_photo": "/events/18/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/18",
+      "blog": "/explore/18",
       "social": "https://www.facebook.com/share/p/17ki415CGn/",
       "registration": "https://bit.ly/40ntqfm"
     },
@@ -974,7 +974,7 @@
     "cover_photo": "/events/17/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/17",
+      "blog": "/explore/17",
       "social": "https://www.facebook.com/share/p/1YTBKzFZLw/",
       "registration": "https://forms.gle/LaJhcuSeFapVW7ea6"
     },
@@ -1003,21 +1003,21 @@
     "mentors": [
       {
         "name": "Saroj Dhakal",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/sarojdkl.jpg",
         "designation": "Wiki Contributor at Wikimedia",
         "tag": "Expert",
         "connect": "https://www.facebook.com/saroj.dhakal.9"
       },
       {
         "name": "Suraj Bhattarai",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/suraj.jpg",
         "designation": "Liasion at LibreOffice Nepal Community",
         "tag": "Mentor",
         "connect": "https://www.facebook.com/saroj.dhakal.9"
       },
       {
         "name": "Aadarsha Dhakal",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/aadharsha.jpg",
         "designation": "Co-ordniator at KUOSC",
         "tag": "Mentor",
         "connect": "https://www.facebook.com/aadarsha.dhakal.9"
@@ -1027,7 +1027,7 @@
     "cover_photo": "/events/16/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/16",
+      "blog": "/explore/16",
       "social": "https://www.facebook.com/share/p/14zNrKiuty/",
       "registration": "https://forms.gle/XDYyAMTy2JbpEYRe7"
     },
@@ -1056,7 +1056,7 @@
     "mentors": [
       {
         "name": "Sushant Rimal",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/sushant.jpg",
         "designation": "Founder, Leader at Dev </> Community Nepal",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/thedevcnepal"
@@ -1065,21 +1065,21 @@
     "guests": [
       {
         "name": "Rajiv Aryal",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/rajiv.jpg",
         "designation": "Web Developer at Mangobyte Digital",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/romeo.rajiv.52"
       },
       {
         "name": "Ashbin Wosti",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/ashbin.jpg",
         "designation": "Software Engineer at Bitcoin Nepal",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/ashbin.wosti.1"
       },
       {
         "name": "Pravin Gupta",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/pravin.jpg",
         "designation": "Content Creator at Gupta Tutorial",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/prabin.gupta.92"
@@ -1088,7 +1088,7 @@
     "cover_photo": "/events/15/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/15",
+      "blog": "/explore/15",
       "social": "https://www.facebook.com/share/p/18ee2mUkgm/",
       "registration": ""
     },
@@ -1121,14 +1121,14 @@
     "mentors": [
       {
         "name": "Bibek Chalise",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/bibek.jpg",
         "designation": "Freelancer, Professor at Lumbini ICT Campus",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/IamBbek"
       },
       {
         "name": "Akash Poudel",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/akash.jpg",
         "designation": "Ex-SDE Intern at CDAC",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/833P.L0G1C"
@@ -1138,7 +1138,7 @@
     "cover_photo": "/events/14/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/14",
+      "blog": "/explore/14",
       "social": "https://www.facebook.com/share/p/15571V8j8M/",
       "registration": "https://docs.google.com/forms/d/1z3jqx-jPfxZ2YfaMlSDOgCzceKD4OoCkRs2VYYB-Wdo/viewform"
     },
@@ -1187,21 +1187,21 @@
     "mentors": [
       {
         "name": "Arun Kumar Pariyar",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/arun.jpg",
         "designation": "Debian Developer, Debian Project",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/geekyaaron"
       },
       {
         "name": "Susil Subedi",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/susil.jpg",
         "designation": "CEO at Astranix",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/Sushilsubedi32"
       },
       {
         "name": "Aswina Shrestha",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/aswina.jpg",
         "designation": "OSM Guru",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/aswina.shrestha.5"
@@ -1210,7 +1210,7 @@
     "guests": [
       {
         "name": "Daya Ram Paudyal",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/dayaram.jpg",
         "designation": "Campus Chief, Birendra Multiple Campus",
         "tag": "Professor",
         "connect": "https://www.facebook.com/dayaram.paudyal"
@@ -1219,7 +1219,7 @@
     "cover_photo": "/events/13/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/13",
+      "blog": "/explore/13",
       "social": "https://www.facebook.com/share/p/15UcVngCDm/",
       "registration": "https://forms.gle/escUhZsRrhfU2jF76"
     },
@@ -1265,24 +1265,24 @@
     "mentors": [
       {
         "name": "Ashbin Wosti",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/ashbin.jpg",
         "designation": "Software Engineer at Bitcoin Nepal",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/ashbin.wosti.1"
       },
       {
         "name": "Sushma Ghimire",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/sushma.jpg",
         "designation": "Geospatial Analyst at Kathmandu Living Labs",
         "tag": "Open Source Enthusiast",
-        "connect": "https://www.facebook.com/aswina.shrestha.5"
+        "connect": "https://www.facebook.com/sushmaaghimire"
       }
     ],
     "guests": [],
     "cover_photo": "/events/12/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/12",
+      "blog": "/explore/12",
       "social": "https://www.facebook.com/share/p/1FCtV8T5QY/",
       "registration": " https://meet.google.com/uco-snto-pmb"
     },
@@ -1318,14 +1318,14 @@
     "mentors": [
       {
         "name": "Gaurav Parajuli",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/gaurav.jpeg",
         "designation": "OSM Guru",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/gaurav.parajuli.5"
       },
       {
         "name": "Can Unen",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/canunen.jpg",
         "designation": "OSM Guru",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/can.unen"
@@ -1335,7 +1335,7 @@
     "cover_photo": "/events/11/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/11",
+      "blog": "/explore/11",
       "social": "https://www.facebook.com/share/p/15YqoDYGUE/",
       "registration": "https://bit.ly/3H7aQj0"
     },
@@ -1370,7 +1370,7 @@
     "cover_photo": "/events/10/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/10",
+      "blog": "/explore/10",
       "social": "https://www.facebook.com/share/p/1B71VQ7rP8/",
       "registration": "https://forms.gle/bQE4GZnmSGfCnYd39"
     },
@@ -1399,21 +1399,21 @@
     "mentors": [
       {
         "name": "Arun Kumar Pariyar",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/arun.jpg",
         "designation": "Debian Developer, Debian Project",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/geekyaaron"
       },
       {
         "name": "Nisha Pariyar",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/nisha.jpg",
         "designation": "Co-Founder, UbuntuDDE Project",
         "tag": "Open Source Enthusiast",
         "connect": "https://facebook.com/nisha.pariyar"
       },
       {
         "name": "Ananta Mishra",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/ananta.jpg",
         "designation": "Package Maintainer, UbuntuDDE Project",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/ananta.mishraa"
@@ -1423,7 +1423,7 @@
     "cover_photo": "/events/9/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/9",
+      "blog": "/explore/9",
       "social": "https://www.facebook.com/share/p/15V8Bq3FkL/",
       "registration": "https://forms.gle/hTW7V97gfMguQUfb9"
     },
@@ -1453,21 +1453,21 @@
     "guests": [
       {
         "name": "Ashbin Wosti",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/ashbin.jpg",
         "designation": "Software Engineer at Bitcoin Nepal",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/ashbin.wosti.1"
       },
       {
         "name": "Sijan Neupane",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/sijan.jpeg",
         "designation": "Software Engineer at Great Bear Technologies",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.linkedin.com/in/sijanneupane"
       },
       {
         "name": "Prabhat Amgain",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/prabhat.jpg",
         "designation": "Software Engineer",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/prabhat.amgain"
@@ -1476,7 +1476,7 @@
     "cover_photo": "/events/8/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/8",
+      "blog": "/explore/8",
       "social": "https://www.facebook.com/share/p/1CZEaRqEq2/",
       "registration": "https://forms.gle/5fc2MvoMdf2rH8K87"
     },
@@ -1513,7 +1513,7 @@
     "cover_photo": "/events/7/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/7",
+      "blog": "/explore/7",
       "social": "https://www.facebook.com/share/p/1Ay3ZQ1eoa/",
       "registration": "https://docs.google.com/forms/d/e/1FAIpQLScg4jjNbIr4hB9D6FDQOz8zrc8LQy0D1Atbw_yZs-EEu7xhhA/viewform"
     },
@@ -1542,14 +1542,14 @@
     "mentors": [
       {
         "name": "Basanta Sharma",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/basanta.png",
         "designation": "Network Engineer",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/smart.basanta.5"
       },
       {
         "name": "Ashbin Wosti",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/ashbin.jpg",
         "designation": "Software Engineer at Bitcoin Nepal",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/ashbin.wosti.1"
@@ -1559,7 +1559,7 @@
     "cover_photo": "/events/6/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/6",
+      "blog": "/explore/6",
       "social": "https://www.facebook.com/share/p/17yeXFSzKF/",
       "registration": "https://docs.google.com/forms/d/e/1FAIpQLSc_6PS8RtjTGlE9a89xrErRJYkNP1fQIkriikXm5VPF9QlcSA/viewform"
     },
@@ -1589,21 +1589,21 @@
     "guests": [
       {
         "name": "Dil Shahi",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/dilshahi.jpg",
         "designation": "CEO at Kasturi Sanjaal Pvt. Ltd.",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/dshahi468"
       },
       {
         "name": "Kshitij Dhakal",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/kshitij.jpg",
         "designation": "Android Developer",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/kshitij.dhakal.3"
       },
       {
         "name": "Sijan Neupane",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/sijan.jpeg",
         "designation": "Software Engineer at Great Bear Technologies",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.linkedin.com/in/sijanneupane"
@@ -1612,7 +1612,7 @@
     "cover_photo": "/events/5/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/5",
+      "blog": "/explore/5",
       "social": "https://www.facebook.com/share/p/1ALLRXaisi/",
       "registration": "https://forms.gle/xjuMqbtRXeiUDYJg8"
     },
@@ -1643,7 +1643,7 @@
     "cover_photo": "/events/4/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/4",
+      "blog": "/explore/4",
       "social": "https://www.facebook.com/share/p/12B5nmpB4Sy/",
       "registration": "https://docs.google.com/forms/d/e/1FAIpQLSf_vqWGxIO_6Rp8ZLOKmCRLK8N8Q5utsnGqA7lGuWjSdMD9hA/viewform?fbclid=IwY2xjawGWxchleHRuA2FlbQIxMAABHW1JczuEZraXNTaALBu_8YoEsi15TMdm-MLm2LNRsuwZYsIcWXRJnb68Sg_aem_kVnIiZ0q7In8_aM-FEIOqw"
     },
@@ -1672,7 +1672,7 @@
     "mentors": [
       {
         "name": "Saroj Dahal",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/sarojdhl.jpg",
         "designation": "Web and Desktop App Developer",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/saroj.dahal.9"
@@ -1682,7 +1682,7 @@
     "cover_photo": "/events/3/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/3",
+      "blog": "/explore/3",
       "social": "https://www.facebook.com/share/p/12B5nmpB4Sy/",
       "registration": "https://docs.google.com/forms/d/e/1FAIpQLSf_vqWGxIO_6Rp8ZLOKmCRLK8N8Q5utsnGqA7lGuWjSdMD9hA/viewform?fbclid=IwY2xjawGWxchleHRuA2FlbQIxMAABHW1JczuEZraXNTaALBu_8YoEsi15TMdm-MLm2LNRsuwZYsIcWXRJnb68Sg_aem_kVnIiZ0q7In8_aM-FEIOqw"
     },
@@ -1711,7 +1711,7 @@
     "mentors": [
       {
         "name": "Captain Nick Lucifer",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/captain.png",
         "designation": "Bug Bounty Hunter",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/nick.lucifer.7"
@@ -1720,21 +1720,21 @@
     "guests": [
       {
         "name": "Bishal Shrestha",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/bishal.png",
         "designation": "Bug Bounty Hunter",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/bishal.shrestha.9"
       },
       {
         "name": "Binit Ghimire",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/binit.png",
         "designation": "Bug Bounty Hunter",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/binit.ghimire.7"
       },
       {
         "name": "Saughat Pokhrel",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/saugat.png",
         "designation": "Bug Bounty Hunter",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/saughat.pokhrel.7"
@@ -1743,7 +1743,7 @@
     "cover_photo": "/events/2/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/2",
+      "blog": "/explore/2",
       "social": "https://www.facebook.com/share/p/12H8XDzChaR/",
       "registration": "https://forms.gle/i1RrUoX6gYXEjTgo7"
     },
@@ -1772,7 +1772,7 @@
     "mentors": [
       {
         "name": "Ananta Mishra",
-        "image": "/default_mentor.jpg",
+        "image": "/mentors/ananta.jpg",
         "designation": "Frontend Developer",
         "tag": "Open Source Enthusiast",
         "connect": "https://www.facebook.com/ananta.mishra.9"
@@ -1782,7 +1782,7 @@
     "cover_photo": "/events/1/cover.jpg",
     "background": "bg-zinc-100",
     "links": {
-      "blog": "/blogs/1",
+      "blog": "/explore/1",
       "social": "https://www.facebook.com/share/p/12H8XDzChaR/",
       "registration": "https://forms.gle/i1RrUoX6gYXEjTgo7"
     },

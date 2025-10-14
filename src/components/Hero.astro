@@ -50,78 +50,67 @@ replace clients logo with organizations we collaborated with: HOT, OSM, other cl
 for more details contact content creator 
 -->
   <div class="flex-row items-center">
-    <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6">
-      <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-        <img
-          src="/clients/hacktoberfest.svg"
-          class="h-12 w-auto mx-auto"
-          loading="lazy"
-          alt="client logo"
-          width=""
-          height=""
-        />
-      </div>
-      <div class="p-4 flex grayscale transition duration-200 hover:grayscale-0">
-        <img
-          src="/clients/dff_full_logo_blue_white.png"
-          class="h-8 w-auto m-auto"
-          loading="lazy"
-          alt="client logo"
-          width=""
-          height=""
-        />
-      </div>
-      <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-        <img
-          src="/clients/bmc.png"
-          class="h-12 w-auto mx-auto"
-          loading="lazy"
-          alt="client logo"
-          width=""
-          height=""
-        />
-      </div>
-      <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-        <img
-          src="/clients/hot.svg"
-          class="h-12 w-auto mx-auto"
-          loading="lazy"
-          alt="client logo"
-          width=""
-          height=""
-        />
-      </div>
-      <div class="p-4 flex grayscale transition duration-200 hover:grayscale-0">
-        <img
-          src="/clients/osm.svg"
-          class="h-9 w-auto m-auto"
-          loading="lazy"
-          alt="client logo"
-          width=""
-          height=""
-        />
-      </div>
+    <div class="flex-row items-center mt-6">
+      <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6">
+        <!-- NOTE: Add proper classes to indicate svg vs raster logos.
+             - svg logos -> class="client-logo svg-logo"
+             - raster logos (png) -> class="client-logo raster-logo"
+             This allows different dark-mode handling for each type.
+        -->
+        <div class="p-4 transition duration-200 hover:grayscale-0">
+          <img
+            src="/clients/hacktoberfest.svg"
+            class="h-12 w-auto mx-auto client-logo svg-logo"
+            loading="lazy"
+            alt="Hacktoberfest logo"
+          />
+        </div>
 
-      <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-        <img
-          src="/clients/libre_community.png"
-          class="h-12 w-auto mx-auto"
-          loading="lazy"
-          alt="client logo"
-          width=""
-          height=""
-        />
+        <div class="p-4 flex transition duration-200 hover:grayscale-0">
+          <img
+            src="/clients/dff_full_logo_blue_white.png"
+            class="h-8 w-auto m-auto client-logo raster-logo"
+            loading="lazy"
+            alt="Digital Freedom Foundation logo"
+          />
+        </div>
+
+        <div class="p-4 transition duration-200 hover:grayscale-0">
+          <img
+            src="/clients/bmc.png"
+            class="h-12 w-auto mx-auto client-logo raster-logo"
+            loading="lazy"
+            alt="Birendra Multiple Campus logo"
+          />
+        </div>
+
+        <div class="p-4 transition duration-200 hover:grayscale-0">
+          <img
+            src="/clients/hot.svg"
+            class="h-12 w-auto mx-auto client-logo svg-logo"
+            loading="lazy"
+            alt="HOT logo"
+          />
+        </div>
+
+        <div class="p-4 flex transition duration-200 hover:grayscale-0">
+          <img
+            src="/clients/osm.svg"
+            class="h-9 w-auto m-auto client-logo svg-logo"
+            loading="lazy"
+            alt="OSM logo"
+          />
+        </div>
+
+        <div class="p-4 transition duration-200 hover:grayscale-0">
+          <img
+            src="/clients/libre_community.png"
+            class="h-12 w-auto mx-auto client-logo raster-logo"
+            loading="lazy"
+            alt="Libre Community logo"
+          />
+        </div>
       </div>
-      <!-- <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-        <img
-          src="/logo-only.png"
-          class="h-12 w-auto mx-auto"
-          loading="lazy"
-          alt="client logo"
-          width=""
-          height=""
-        />
-      </div> -->
     </div>
   </div>
 </Container>

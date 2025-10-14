@@ -1,20 +1,20 @@
 ---
-import ArticleIcon from "../../components/Icons/ArticleIcon.astro"
-import VideoIcon from "../../components/Icons/VideoIcon.astro"
-import OpportunitiesData from "../../components/Data/opportunities.json"
-import BoscIcon from "../Icons/BoscIcon.astro"
+import ArticleIcon from "../../components/Icons/ArticleIcon.astro";
+import VideoIcon from "../../components/Icons/VideoIcon.astro";
+import OpportunitiesData from "../../components/Data/opportunities.json";
+import BoscIcon from "../Icons/BoscIcon.astro";
 
 interface Props {
-  opportunities: typeof OpportunitiesData
+  opportunities: typeof OpportunitiesData;
 }
 
-const { opportunities } = Astro.props as Props
+const { opportunities } = Astro.props as Props;
 ---
 
 {
   opportunities.map((op) => (
-    <article class="p-6 bg-white rounded-3xl border border-gray-200 shadow-card">
-      <div class="flex justify-between items-center mb-5 text-gray-500">
+    <article class="p-6 bg-[var(--card-bg)] rounded-3xl border border-[var(--card-border)] shadow-card">
+      <div class="flex justify-between items-center mb-5 text-[var(--text-muted)]">
         <span class="bg-lime-500 text-black text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
           {op.country === "International" ? <ArticleIcon /> : <VideoIcon />}
           {op.country}
@@ -33,11 +33,10 @@ const { opportunities } = Astro.props as Props
           {op.platform}
         </span>
       </div>
-      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-center">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-[var(--text-color)] text-center">
         {op.name}
       </h2>
 
-      {/* <a href={`/blogs/${op.id}`}> */}
       <div class="flex flex-col sm:flex-row justify-between items-center">
         <div class="w-full flex justify-center items-center space-x-4 sm:m-4">
           <img
@@ -48,18 +47,18 @@ const { opportunities } = Astro.props as Props
         </div>
         <div class="w-full flex flex-col items-center space-x-0 sm:space-x-4">
           <p
-            class="mb-5 font-light text-gray-500 text-center sm:text-left"
+            class="mb-5 font-light text-[var(--text-muted)] text-center sm:text-left"
             style="white-space: pre-line"
           >
             {op.desc.length > 150 ? `${op.desc.substring(0, 150)}...` : op.desc}{" "}
             <a
-              class="gap-[10px] flex sm:justify-start justify-center items-center"
+              class="gap-[10px] flex sm:justify-start justify-center items-center text-lime-500 hover:text-lime-600"
               href={op.quicklinks.registration}
               target="_blank"
             >
               <span class="font-medium">Visit</span>
               <img
-                class="w-[21px] h-[21px]"
+                class="w-[21px] h-[21px] share-icon"
                 src="/share.png"
                 alt="share icon"
               />
@@ -67,37 +66,15 @@ const { opportunities } = Astro.props as Props
           </p>
         </div>
       </div>
-      {/* </a> */}
 
-      <div class="font-normal text-gray-500 flex-col justify-start items-start flex">
-        {(op.stats.prize ||
-          op.stats.certificate ||
-          op.stats.fee === 0 ||
-          op.stats.stipend != 0) && (
-          <p class="flex font-light text-gray-500 sm:text-lg m-2 items-center w-full justify-around">
-            {/* <span> */}
-            {op.stats.prize && (
-              <span class="bg-zinc-800 text-lime-500 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
-                Prizes
-              </span>
-            )}
-            {op.stats.certificate && (
-              <span class="bg-zinc-800 text-lime-500 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
-                Certificate
-              </span>
-            )}
-            {op.stats.fee === 0 && (
-              <span class="bg-zinc-800 text-lime-500 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
-                Free
-              </span>
-            )}
-            {op.stats.stipend != 0 && (
-              <span class="bg-zinc-800 text-lime-500 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
-                Stipend
-              </span>
-            )}
-            {/* </span> */}
-          </p>
+      <div class="font-normal text-[var(--text-muted)] flex-col justify-start items-start flex">
+        {(op.stats.prize || op.stats.certificate || op.stats.fee === 0 || op.stats.stipend != 0) && (
+            <p class="flex flex-wrap gap-2 font-light sm:text-lg m-2 items-center w-full justify-around">
+              {op.stats.prize && (<span class="bg-zinc-800 text-lime-500 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">Prizes</span>)}
+              {op.stats.certificate && (<span class="bg-zinc-800 text-lime-500 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">Certificate</span>)}
+              {op.stats.fee === 0 && (<span class="bg-zinc-800 text-lime-500 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">Free</span>)}
+              {op.stats.stipend != 0 && (<span class="bg-zinc-800 text-lime-500 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">Stipend</span>)}
+            </p>
         )}
         {op.partners.length > 0 && (
           <span>
@@ -116,7 +93,7 @@ const { opportunities } = Astro.props as Props
             {op.mentors.map((mentor) => (
               <>
                 <a
-                  class="font-medium border-b border-dashed border-zinc-800"
+                  class="font-medium border-b border-dashed border-[var(--card-border)]"
                   href={mentor.connect}
                   target="_blank"
                 >
@@ -133,7 +110,7 @@ const { opportunities } = Astro.props as Props
             {op.guests.map((guest, i) => (
               <>
                 <a
-                  class="font-medium border-b border-dashed border-zinc-800"
+                  class="font-medium border-b border-dashed border-[var(--card-border)]"
                   href={guest.connect}
                   target="_blank"
                 >
@@ -175,3 +152,8 @@ const { opportunities } = Astro.props as Props
     </article>
   ))
 }
+<style>
+  [data-theme='dark'] .share-icon {
+    filter: invert(1);
+  }
+</style>

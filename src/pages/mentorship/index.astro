@@ -1,6 +1,6 @@
 ---
-import Container from "../../components/Container.astro"
-import Layout from "../../layouts/Layout.astro"
+import Container from "../../components/Container.astro";
+import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout
@@ -9,7 +9,7 @@ import Layout from "../../layouts/Layout.astro"
   image="https://bosc.org.np/team.jpg"
   url="https://bosc.org.np/mentorship"
 >
-  <main class="space-y-20">
+  <main class="pt-7 pb-16 space-y-20">
     <!-- Hero Section -->
     <section
       class="relative bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 text-white overflow-hidden"
@@ -17,8 +17,8 @@ import Layout from "../../layouts/Layout.astro"
       <div class="absolute inset-0 bg-black/20"></div>
       <div
         class="absolute inset-0 bg-[url('/team1.jpg')] bg-cover bg-center opacity-20"
-      >
-      </div>
+      ></div>
+
       <Container>
         <div class="relative py-24 text-center">
           <h1
@@ -29,12 +29,14 @@ import Layout from "../../layouts/Layout.astro"
           <p class="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
             Empowering the next generation of open-source leaders
           </p>
+
           <button
             class="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg mr-4"
-            onclick="window.location.href=`/#contact`"
+            onclick="window.location.href='/contact'"
           >
             Get Notified
           </button>
+
           <a
             class="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
             href="/mentorship/2025"
@@ -49,18 +51,18 @@ import Layout from "../../layouts/Layout.astro"
     <section>
       <Container>
         <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold text-gray-900 mb-6">
+          <h2 class="text-4xl font-bold text-[var(--text-color)] mb-6">
             Program Overview
           </h2>
           <div class="max-w-4xl mx-auto">
-            <p class="text-lg text-gray-600 mb-6">
+            <p class="text-lg text-[var(--text-muted)] mb-6">
               The BOSC Mentorship Program is our flagship initiative, designed
               to nurture and develop the next generation of open-source
               contributors and tech leaders. This comprehensive program runs
               annually during the winter season, providing intensive mentorship
               and hands-on learning opportunities.
             </p>
-            <p class="text-lg text-gray-600">
+            <p class="text-lg text-[var(--text-muted)]">
               With 4 months of meticulous planning and preparation followed by 3
               months of intensive execution, we ensure every participant
               receives world-class mentorship, industry-relevant skills, and
@@ -71,13 +73,13 @@ import Layout from "../../layouts/Layout.astro"
 
         <div class="grid md:grid-cols-4 gap-8">
           <div
-            class="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+            class="text-center p-6 bg-[var(--card-bg)] border border-[var(--card-border)] rounded-xl shadow-lg hover:shadow-xl transition-shadow"
           >
             <div
-              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4"
+              class="w-16 h-16 bg-blue-100 dark:bg-blue-900/50 rounded-full flex items-center justify-center mx-auto mb-4"
             >
               <svg
-                class="w-8 h-8 text-blue-600"
+                class="w-8 h-8 text-blue-600 dark:text-blue-400"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -86,23 +88,24 @@ import Layout from "../../layouts/Layout.astro"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
               </svg>
             </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+            <h3 class="text-xl font-semibold text-[var(--text-color)] mb-2">
               Flagship Program
             </h3>
-            <p class="text-gray-600">Our premier annual initiative</p>
+            <p class="text-[var(--text-muted)]">Our premier annual initiative</p>
           </div>
 
           <div
-            class="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+            class="text-center p-6 bg-[var(--card-bg)] border border-[var(--card-border)] rounded-xl shadow-lg hover:shadow-xl transition-shadow"
           >
             <div
-              class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4"
+              class="w-16 h-16 bg-purple-100 dark:bg-purple-900/50 rounded-full flex items-center justify-center mx-auto mb-4"
             >
               <svg
-                class="w-8 h-8 text-purple-600"
+                class="w-8 h-8 text-purple-600 dark:text-purple-400"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -111,23 +114,24 @@ import Layout from "../../layouts/Layout.astro"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
               </svg>
             </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+            <h3 class="text-xl font-semibold text-[var(--text-color)] mb-2">
               3 Months Duration
             </h3>
-            <p class="text-gray-600">Intensive learning period</p>
+            <p class="text-[var(--text-muted)]">Intensive learning period</p>
           </div>
 
           <div
-            class="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+            class="text-center p-6 bg-[var(--card-bg)] border border-[var(--card-border)] rounded-xl shadow-lg hover:shadow-xl transition-shadow"
           >
             <div
-              class="w-16 h-16 bg-zinc-100 rounded-full flex items-center justify-center mx-auto mb-4"
+              class="w-16 h-16 bg-zinc-100 dark:bg-zinc-800 rounded-full flex items-center justify-center mx-auto mb-4"
             >
               <svg
-                class="w-8 h-8 text-indigo-600"
+                class="w-8 h-8 text-indigo-600 dark:text-indigo-400"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -137,23 +141,23 @@ import Layout from "../../layouts/Layout.astro"
                   stroke-linejoin="round"
                   stroke-width="2"
                   d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"
-                ></path>
+                />
               </svg>
             </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+            <h3 class="text-xl font-semibold text-[var(--text-color)] mb-2">
               Winter Season
             </h3>
-            <p class="text-gray-600">Perfect timing for focused learning</p>
+            <p class="text-[var(--text-muted)]">Perfect timing for focused learning</p>
           </div>
 
           <div
-            class="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+            class="text-center p-6 bg-[var(--card-bg)] border border-[var(--card-border)] rounded-xl shadow-lg hover:shadow-xl transition-shadow"
           >
             <div
-              class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4"
+              class="w-16 h-16 bg-green-100 dark:bg-green-900/50 rounded-full flex items-center justify-center mx-auto mb-4"
             >
               <svg
-                class="w-8 h-8 text-green-600"
+                class="w-8 h-8 text-green-600 dark:text-green-400"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -163,26 +167,26 @@ import Layout from "../../layouts/Layout.astro"
                   stroke-linejoin="round"
                   stroke-width="2"
                   d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
-                ></path>
+                />
               </svg>
             </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+            <h3 class="text-xl font-semibold text-[var(--text-color)] mb-2">
               Opportunities
             </h3>
-            <p class="text-gray-600">Internships, Networks and connection</p>
+            <p class="text-[var(--text-muted)]">Internships, Networks and connection</p>
           </div>
         </div>
       </Container>
     </section>
 
     <!-- Timeline Section -->
-    <section class="bg-gray-50 py-20">
+    <section class="bg-[var(--section-bg)] py-20">
       <Container>
         <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold text-gray-900 mb-6">
+          <h2 class="text-4xl font-bold text-[var(--text-color)] mb-6">
             Program Timeline
           </h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p class="text-xl text-[var(--text-muted)] max-w-3xl mx-auto">
             Follow the journey from planning to graduation, a comprehensive
             roadmap of our mentorship program
           </p>
@@ -191,7 +195,7 @@ import Layout from "../../layouts/Layout.astro"
         <div class="max-w-4xl mx-auto">
           <!-- Planning Phase -->
           <div class="mb-16">
-            <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">
+            <h3 class="text-2xl font-bold text-[var(--text-color)] mb-8 text-center">
               Program Preparation
             </h3>
             <div class="space-y-8">
@@ -202,10 +206,10 @@ import Layout from "../../layouts/Layout.astro"
                   <span class="text-white font-bold">1</span>
                 </div>
                 <div class="flex-1">
-                  <h4 class="text-lg font-semibold text-gray-900 mb-2">
+                  <h4 class="text-lg font-semibold text-[var(--text-color)] mb-2">
                     Program Announcement (1st week)
                   </h4>
-                  <p class="text-gray-600">
+                  <p class="text-[var(--text-muted)]">
                     Official launch announcement and initial program details
                     shared with the community
                   </p>
@@ -219,10 +223,10 @@ import Layout from "../../layouts/Layout.astro"
                   <span class="text-white font-bold">2</span>
                 </div>
                 <div class="flex-1">
-                  <h4 class="text-lg font-semibold text-gray-900 mb-2">
+                  <h4 class="text-lg font-semibold text-[var(--text-color)] mb-2">
                     Executive Team Formation (2nd week)
                   </h4>
-                  <p class="text-gray-600">
+                  <p class="text-[var(--text-muted)]">
                     Strategic planning sessions and team assembly for program
                     execution
                   </p>
@@ -236,10 +240,10 @@ import Layout from "../../layouts/Layout.astro"
                   <span class="text-white font-bold">3</span>
                 </div>
                 <div class="flex-1">
-                  <h4 class="text-lg font-semibold text-gray-900 mb-2">
+                  <h4 class="text-lg font-semibold text-[var(--text-color)] mb-2">
                     Partnership Development (3rd week)
                   </h4>
-                  <p class="text-gray-600">
+                  <p class="text-[var(--text-muted)]">
                     Collaboration with MLSA, GCE, MLH, OSM, EU, and leading tech
                     companies
                   </p>
@@ -253,10 +257,10 @@ import Layout from "../../layouts/Layout.astro"
                   <span class="text-white font-bold">4</span>
                 </div>
                 <div class="flex-1">
-                  <h4 class="text-lg font-semibold text-gray-900 mb-2">
+                  <h4 class="text-lg font-semibold text-[var(--text-color)] mb-2">
                     Sponsorship & Resources (4th week)
                   </h4>
-                  <p class="text-gray-600">
+                  <p class="text-[var(--text-muted)]">
                     Securing funding, swag, and essential resources for program
                     participants
                   </p>
@@ -267,7 +271,7 @@ import Layout from "../../layouts/Layout.astro"
 
           <!-- Execution Phase -->
           <div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">
+            <h3 class="text-2xl font-bold text-[var(--text-color)] mb-8 text-center">
               KickOff
             </h3>
             <div class="space-y-8">
@@ -278,10 +282,10 @@ import Layout from "../../layouts/Layout.astro"
                   <span class="text-white font-bold">5</span>
                 </div>
                 <div class="flex-1">
-                  <h4 class="text-lg font-semibold text-gray-900 mb-2">
+                  <h4 class="text-lg font-semibold text-[var(--text-color)] mb-2">
                     Registration Opens
                   </h4>
-                  <p class="text-gray-600">
+                  <p class="text-[var(--text-muted)]">
                     Applications open when timeline is ready, funding secured,
                     and team formed
                   </p>
@@ -295,10 +299,10 @@ import Layout from "../../layouts/Layout.astro"
                   <span class="text-white font-bold">6</span>
                 </div>
                 <div class="flex-1">
-                  <h4 class="text-lg font-semibold text-gray-900 mb-2">
+                  <h4 class="text-lg font-semibold text-[var(--text-color)] mb-2">
                     Mentor Reveals & Course Structure
                   </h4>
-                  <p class="text-gray-600">
+                  <p class="text-[var(--text-muted)]">
                     Introduction of industry mentors and detailed curriculum
                     announcement
                   </p>
@@ -312,10 +316,10 @@ import Layout from "../../layouts/Layout.astro"
                   <span class="text-white font-bold">7</span>
                 </div>
                 <div class="flex-1">
-                  <h4 class="text-lg font-semibold text-gray-900 mb-2">
+                  <h4 class="text-lg font-semibold text-[var(--text-color)] mb-2">
                     Program Starts: 10-Week Learning Journey
                   </h4>
-                  <p class="text-gray-600">
+                  <p class="text-[var(--text-muted)]">
                     Intensive courses with mentorship support and certification
                     opportunities
                   </p>
@@ -329,10 +333,10 @@ import Layout from "../../layouts/Layout.astro"
                   <span class="text-white font-bold">8</span>
                 </div>
                 <div class="flex-1">
-                  <h4 class="text-lg font-semibold text-gray-900 mb-2">
+                  <h4 class="text-lg font-semibold text-[var(--text-color)] mb-2">
                     Career Guidance Week
                   </h4>
-                  <p class="text-gray-600">
+                  <p class="text-[var(--text-muted)]">
                     Week 11: Professional development and entrepreneurship
                     guidance
                   </p>
@@ -346,10 +350,10 @@ import Layout from "../../layouts/Layout.astro"
                   <span class="text-white font-bold">9</span>
                 </div>
                 <div class="flex-1">
-                  <h4 class="text-lg font-semibold text-gray-900 mb-2">
+                  <h4 class="text-lg font-semibold text-[var(--text-color)] mb-2">
                     InternshipFest
                   </h4>
-                  <p class="text-gray-600">
+                  <p class="text-[var(--text-muted)]">
                     Week 12: Direct connections with partner companies and
                     internship opportunities
                   </p>
@@ -363,10 +367,10 @@ import Layout from "../../layouts/Layout.astro"
                   <span class="text-white font-bold">🎓</span>
                 </div>
                 <div class="flex-1">
-                  <h4 class="text-lg font-semibold text-gray-900 mb-2">
+                  <h4 class="text-lg font-semibold text-[var(--text-color)] mb-2">
                     Graduation Celebration
                   </h4>
-                  <p class="text-gray-600">
+                  <p class="text-[var(--text-muted)]">
                     Grand finale with travel and accommodations covered, plus
                     internship opportunities
                   </p>
@@ -382,8 +386,8 @@ import Layout from "../../layouts/Layout.astro"
     <section class="py-20">
       <Container>
         <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold text-gray-900 mb-6">Topics Covered</h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h2 class="text-4xl font-bold text-[var(--text-color)] mb-6">Topics Covered</h2>
+          <p class="text-xl text-[var(--text-muted)] max-w-3xl mx-auto">
             5 comprehensive courses designed to build your technical skills with
             industry mentorship and certification support
           </p>
@@ -391,12 +395,12 @@ import Layout from "../../layouts/Layout.astro"
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div
-            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-blue-500"
+            class="bg-[var(--card-bg)] p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-blue-500 border-[var(--card-border)]"
           >
-            <h3 class="text-xl font-semibold text-gray-900 mb-3">
+            <h3 class="text-xl font-semibold text-[var(--text-color)] mb-3">
               Web Development Fundamentals
             </h3>
-            <p class="text-gray-600 mb-4">
+            <p class="text-[var(--text-muted)] mb-4">
               HTML, CSS, JavaScript basics with modern frameworks
             </p>
             <div class="flex items-center text-sm text-green-600">
@@ -404,19 +408,20 @@ import Layout from "../../layouts/Layout.astro"
                 <path
                   fill-rule="evenodd"
                   d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"></path>
+                  clip-rule="evenodd"
+                />
               </svg>
               Certifications from FreeCodeCamp
             </div>
           </div>
 
           <div
-            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-purple-500"
+            class="bg-[var(--card-bg)] p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-purple-500 border-[var(--card-border)]"
           >
-            <h3 class="text-xl font-semibold text-gray-900 mb-3">
+            <h3 class="text-xl font-semibold text-[var(--text-color)] mb-3">
               Backend Development and APIs
             </h3>
-            <p class="text-gray-600 mb-4">
+            <p class="text-[var(--text-muted)] mb-4">
               From basics to intermediate concepts with real-world projects
             </p>
             <div class="flex items-center text-sm text-green-600">
@@ -424,19 +429,20 @@ import Layout from "../../layouts/Layout.astro"
                 <path
                   fill-rule="evenodd"
                   d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"></path>
+                  clip-rule="evenodd"
+                />
               </svg>
               Certifications from FreeCodeCamp
             </div>
           </div>
 
           <div
-            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-green-500"
+            class="bg-[var(--card-bg)] p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-green-500 border-[var(--card-border)]"
           >
-            <h3 class="text-xl font-semibold text-gray-900 mb-3">
+            <h3 class="text-xl font-semibold text-[var(--text-color)] mb-3">
               Guidance to CS50x
             </h3>
-            <p class="text-gray-600 mb-4">
+            <p class="text-[var(--text-muted)] mb-4">
               Essential computer science concepts for technical interviews
             </p>
             <div class="flex items-center text-sm text-green-600">
@@ -444,19 +450,20 @@ import Layout from "../../layouts/Layout.astro"
                 <path
                   fill-rule="evenodd"
                   d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"></path>
+                  clip-rule="evenodd"
+                />
               </svg>
               Certification from CS50 Harvard
             </div>
           </div>
 
           <div
-            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-indigo-500"
+            class="bg-[var(--card-bg)] p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-indigo-500 border-[var(--card-border)]"
           >
-            <h3 class="text-xl font-semibold text-gray-900 mb-3">
+            <h3 class="text-xl font-semibold text-[var(--text-color)] mb-3">
               Open Source Contribution
             </h3>
-            <p class="text-gray-600 mb-4">
+            <p class="text-[var(--text-muted)] mb-4">
               Learn to contribute to open source projects effectively
             </p>
             <div class="flex items-center text-sm text-green-600">
@@ -464,19 +471,20 @@ import Layout from "../../layouts/Layout.astro"
                 <path
                   fill-rule="evenodd"
                   d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"></path>
+                  clip-rule="evenodd"
+                />
               </svg>
               BOSC Certification
             </div>
           </div>
 
           <div
-            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-red-500"
+            class="bg-[var(--card-bg)] p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-red-500 border-[var(--card-border)]"
           >
-            <h3 class="text-xl font-semibold text-gray-900 mb-3">
+            <h3 class="text-xl font-semibold text-[var(--text-color)] mb-3">
               Machine Learning Basics
             </h3>
-            <p class="text-gray-600 mb-4">
+            <p class="text-[var(--text-muted)] mb-4">
               Introduction to ML concepts and practical applications
             </p>
             <div class="flex items-center text-sm text-green-600">
@@ -484,19 +492,20 @@ import Layout from "../../layouts/Layout.astro"
                 <path
                   fill-rule="evenodd"
                   d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"></path>
+                  clip-rule="evenodd"
+                />
               </svg>
               BOSC Certification
             </div>
           </div>
 
           <div
-            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-yellow-500"
+            class="bg-[var(--card-bg)] p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-yellow-500 border-[var(--card-border)]"
           >
-            <h3 class="text-xl font-semibold text-gray-900 mb-3">
+            <h3 class="text-xl font-semibold text-[var(--text-color)] mb-3">
               Cloud Computing
             </h3>
-            <p class="text-gray-600 mb-4">
+            <p class="text-[var(--text-muted)] mb-4">
               AWS, Azure, and GCP fundamentals with hands-on labs
             </p>
             <div class="flex items-center text-sm text-green-600">
@@ -504,7 +513,8 @@ import Layout from "../../layouts/Layout.astro"
                 <path
                   fill-rule="evenodd"
                   d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"></path>
+                  clip-rule="evenodd"
+                />
               </svg>
               AWS Certification Prep
             </div>
@@ -512,7 +522,7 @@ import Layout from "../../layouts/Layout.astro"
         </div>
 
         <div class="text-center mt-12">
-          <p class="text-lg text-gray-600 mb-4">
+          <p class="text-lg text-[var(--text-muted)] mb-4">
             All courses include personalized mentorship support and career
             guidance
           </p>
@@ -532,9 +542,7 @@ import Layout from "../../layouts/Layout.astro"
     </section>
 
     <!-- InternshipFest Section -->
-    <section
-      class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20"
-    >
+    <section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
       <Container>
         <div class="text-center mb-16">
           <h2 class="text-4xl font-bold mb-6">InternshipFest</h2>
@@ -557,7 +565,8 @@ import Layout from "../../layouts/Layout.astro"
                     <path
                       fill-rule="evenodd"
                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"></path>
+                      clip-rule="evenodd"
+                    />
                   </svg>
                 </div>
                 <div>
@@ -577,7 +586,8 @@ import Layout from "../../layouts/Layout.astro"
                     <path
                       fill-rule="evenodd"
                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"></path>
+                      clip-rule="evenodd"
+                    />
                   </svg>
                 </div>
                 <div>
@@ -597,7 +607,8 @@ import Layout from "../../layouts/Layout.astro"
                     <path
                       fill-rule="evenodd"
                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"></path>
+                      clip-rule="evenodd"
+                    />
                   </svg>
                 </div>
                 <div>
@@ -646,10 +657,10 @@ import Layout from "../../layouts/Layout.astro"
     </section>
 
     <!-- Testimonials Section -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-20 bg-[var(--section-bg)]">
       <Container>
         <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold text-gray-900 mb-6">Success Stories</h2>
+          <h2 class="text-4xl font-bold text-[var(--text-color)] mb-6">Success Stories</h2>
           <div
             class="bg-yellow-100 border-l-4 border-yellow-400 p-6 rounded-lg max-w-2xl mx-auto"
           >
@@ -662,7 +673,8 @@ import Layout from "../../layouts/Layout.astro"
                 <path
                   fill-rule="evenodd"
                   d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                  clip-rule="evenodd"></path>
+                  clip-rule="evenodd"
+                />
               </svg>
               <div>
                 <h3 class="font-semibold text-yellow-800 mb-1">Coming Soon!</h3>
@@ -681,20 +693,20 @@ import Layout from "../../layouts/Layout.astro"
     <section class="py-20">
       <Container>
         <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold text-gray-900 mb-6">
+          <h2 class="text-4xl font-bold text-[var(--text-color)] mb-6">
             Frequently Asked Questions
           </h2>
-          <p class="text-xl text-gray-600">
+          <p class="text-xl text-[var(--text-muted)]">
             Everything you need to know about the BOSC Mentorship Program
           </p>
         </div>
 
         <div class="max-w-4xl mx-auto space-y-6">
-          <div class="bg-white rounded-xl shadow-lg p-6">
-            <h3 class="text-xl font-semibold text-gray-900 mb-3">
+          <div class="bg-[var(--card-bg)] rounded-xl shadow-lg p-6 border border-[var(--card-border)]">
+            <h3 class="text-xl font-semibold text-[var(--text-color)] mb-3">
               What is expected of a mentee?
             </h3>
-            <p class="text-gray-600">
+            <p class="text-[var(--text-muted)]">
               Mentees are expected to actively participate in weekly sessions,
               complete assignments, engage with the community, and maintain
               consistent progress throughout the 3-month program. Dedication and
@@ -702,11 +714,11 @@ import Layout from "../../layouts/Layout.astro"
             </p>
           </div>
 
-          <div class="bg-white rounded-xl shadow-lg p-6">
-            <h3 class="text-xl font-semibold text-gray-900 mb-3">
+          <div class="bg-[var(--card-bg)] rounded-xl shadow-lg p-6 border border-[var(--card-border)]">
+            <h3 class="text-xl font-semibold text-[var(--text-color)] mb-3">
               Can I join if I'm from a different college?
             </h3>
-            <p class="text-gray-600">
+            <p class="text-[var(--text-muted)]">
               Absolutely! We welcome students from all educational institutions
               across Nepal. The program is designed to bring together diverse
               talent from various colleges and universities, thus it is virtual
@@ -714,11 +726,11 @@ import Layout from "../../layouts/Layout.astro"
             </p>
           </div>
 
-          <div class="bg-white rounded-xl shadow-lg p-6">
-            <h3 class="text-xl font-semibold text-gray-900 mb-3">
+          <div class="bg-[var(--card-bg)] rounded-xl shadow-lg p-6 border border-[var(--card-border)]">
+            <h3 class="text-xl font-semibold text-[var(--text-color)] mb-3">
               What happens after graduation?
             </h3>
-            <p class="text-gray-600">
+            <p class="text-[var(--text-muted)]">
               All graduated mentees are eligible to receive internship
               opportunities with our partner companies. We also provide
               continued career support and maintain an alumni network for
@@ -726,11 +738,11 @@ import Layout from "../../layouts/Layout.astro"
             </p>
           </div>
 
-          <div class="bg-white rounded-xl shadow-lg p-6">
-            <h3 class="text-xl font-semibold text-gray-900 mb-3">
+          <div class="bg-[var(--card-bg)] rounded-xl shadow-lg p-6 border border-[var(--card-border)]">
+            <h3 class="text-xl font-semibold text-[var(--text-color)] mb-3">
               How are mentors selected?
             </h3>
-            <p class="text-gray-600">
+            <p class="text-[var(--text-muted)]">
               Our mentors are experienced professionals from leading tech
               companies, successful entrepreneurs, and recognized experts in
               their fields. They undergo a rigorous selection process to ensure
@@ -738,15 +750,15 @@ import Layout from "../../layouts/Layout.astro"
             </p>
           </div>
 
-          <div class="bg-white rounded-xl shadow-lg p-6">
-            <h3 class="text-xl font-semibold text-gray-900 mb-3">
+          <div class="bg-[var(--card-bg)] rounded-xl shadow-lg p-6 border border-[var(--card-border)]">
+            <h3 class="text-xl font-semibold text-[var(--text-color)] mb-3">
               Will I get a Certification?
             </h3>
-            <p class="text-gray-600">
+            <p class="text-[var(--text-muted)]">
               Yes you'll get a online Certification from BOSC, can be viewed at <a
                 href="https://bosc.org.np/mentorship/cert/johndoe-2025"
                 target="_blank"
-                class="text-zinc-900 hover:text-lime-900"
+                class="text-[var(--text-color)] hover:underline"
                 >https://bosc.org.np/mentorship/cert/johndoe-2025</a
               >, and can be downloaded and shared to your social media accounts.
             </p>
@@ -756,9 +768,7 @@ import Layout from "../../layouts/Layout.astro"
     </section>
 
     <!-- Call-to-Action Section -->
-    <section
-      class="bg-gradient-to-r from-gray-900 to-blue-900 py-20 text-white"
-    >
+    <section class="bg-gradient-to-r from-gray-900 to-blue-900 py-20 text-white">
       <Container>
         <div class="text-center">
           <h2 class="text-4xl font-bold mb-6">
@@ -770,49 +780,52 @@ import Layout from "../../layouts/Layout.astro"
             mentorship program.
           </p>
 
-          <div
-            class="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto"
-          >
+          <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
             <button
               class="flex-1 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-2 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
-              onclick="window.location.href=`/#contact`"
+              onclick="window.location.href='/contact'"
             >
               Join Interest List
             </button>
-            <button
-              class="flex-1 bg-transparent border-2 border-white hover:bg-white hover:text-zinc-900 px-8 py-2 rounded-full text-lg font-semibold transition-all duration-300"
+
+            <a
+              href="mailto:mail@bosc.org.np"
+              class="flex-1 bg-transparent border-2 border-white hover:bg-white hover:text-zinc-900 px-8 py-2 rounded-full text-lg font-semibold transition-all duration-300 text-center"
             >
               Become a Mentor
-            </button>
+            </a>
           </div>
 
-          <div
-            class="mt-12 flex justify-center space-x-8 text-sm text-gray-400"
-          >
+          <div class="mt-12 flex justify-center space-x-8 text-sm text-gray-400">
             <div class="flex items-center">
               <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <path
                   fill-rule="evenodd"
                   d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clip-rule="evenodd"></path>
+                  clip-rule="evenodd"
+                />
               </svg>
               100% Free Program
             </div>
+
             <div class="flex items-center">
               <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <path
                   fill-rule="evenodd"
                   d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clip-rule="evenodd"></path>
+                  clip-rule="evenodd"
+                />
               </svg>
               Internships on Completion
             </div>
+
             <div class="flex items-center">
               <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <path
                   fill-rule="evenodd"
                   d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clip-rule="evenodd"></path>
+                  clip-rule="evenodd"
+                />
               </svg>
               Industry Standard Mentorship
             </div>
@@ -822,27 +835,21 @@ import Layout from "../../layouts/Layout.astro"
     </section>
 
     <!-- Sticky Bottom CTA (Hidden on mobile to avoid clutter) -->
-    <!-- <div
-      class="hidden lg:block fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg z-50"
-    >
+    <!--
+    <div class="hidden lg:block fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg z-50">
       <Container>
         <div class="flex items-center justify-between py-4">
           <div>
-            <h3 class="font-semibold text-gray-900">
-              BOSC Mentorship Program 2025
-            </h3>
-            <p class="text-sm text-gray-600">
-              Applications opening soon - Join the interest list!
-            </p>
+            <h3 class="font-semibold text-gray-900">BOSC Mentorship Program 2025</h3>
+            <p class="text-sm text-gray-600">Applications opening soon - Join the interest list!</p>
           </div>
-          <button
-            class="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 py-2 rounded-full font-semibold transition-all duration-300 transform hover:scale-105"
-          >
+          <button class="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 py-2 rounded-full font-semibold transition-all duration-300 transform hover:scale-105">
             Get Notified
           </button>
         </div>
       </Container>
-    </div> -->
+    </div>
+    -->
   </main>
 </Layout>
 

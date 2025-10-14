@@ -1,0 +1,85 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Container from "../../components/Container.astro";
+import ExploreNav from "../../components/ExploreNav.astro";
+
+export const prerender = true;
+
+const partners = [
+  { src: "/clients/hacktoberfest.svg", alt: "Hacktoberfest Logo", style: "h-12" },
+  { src: "/clients/dff_full_logo_blue_white.png", alt: "Digital Freedom Foundation Logo", style: "h-8" },
+  { src: "/clients/bmc.png", alt: "Birendra Multiple Campus Logo", style: "h-12" },
+  { src: "/clients/hot.svg", alt: "Humanitarian OpenStreetMap Team Logo", style: "h-12" },
+  { src: "/clients/osm.svg", alt: "OpenStreetMap Logo", style: "h-9" },
+  { src: "/clients/libre_community.png", alt: "Libre Community Logo", style: "h-12" },
+];
+---
+
+<Layout
+  title="BOSC - Partnerships"
+  description="Collaborate with the Birendra Open Source Club. We partner with organizations that share our passion for open source, education, and community building."
+  url="https://bosc.org.np/explore/partnership"
+>
+  <main class="pt-7 pb-16">
+    <Container>
+      <div class="flex flex-col md:flex-row">
+        <ExploreNav />
+
+        <div class="flex-1 p-4 md:p-8">
+          <section class="text-center">
+            <h1 class="text-4xl lg:text-5xl font-extrabold text-[var(--text-color)] mb-4">
+              Our Partners & Collaborators
+            </h1>
+            <p class="max-w-3xl mx-auto text-lg text-[var(--text-muted)]">
+              Collaboration is at the heart of the open-source movement. We are proud to partner with organizations that share our vision of fostering technology education, promoting FOSS, and building a vibrant tech community in Nepal.
+            </p>
+          </section>
+
+          <section class="mt-12 mb-16">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-8 items-center">
+              {partners.map(partner => (
+                <div class="p-4 flex justify-center items-center h-24">
+                  <img
+                    src={partner.src}
+                    class:list={[
+                      "partner-logo w-auto mx-auto grayscale hover:grayscale-0 transform hover:scale-110 transition-all duration-300 ease-in-out",
+                      partner.style
+                    ]}
+                    loading="lazy"
+                    alt={partner.alt}
+                  />
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section class="bg-[var(--section-bg)] rounded-lg p-8 text-center">
+            <h2 class="text-3xl font-bold text-[var(--text-color)] mb-4">
+              Want to Partner With Us?
+            </h2>
+            <p class="max-w-2xl mx-auto text-[var(--text-muted)] mb-6">
+              We are always looking for new opportunities to collaborate on events, workshops, and projects. If your organization believes in the power of open source and community, we would love to hear from you.
+            </p>
+            <a
+              href="mailto:president@bosc.org.np"
+              class="inline-block bg-[var(--primary-btn-bg)] text-[var(--primary-btn-text)] font-bold py-3 px-6 rounded-lg hover:bg-[var(--primary-btn-hover-bg)] hover:text-[var(--primary-btn-hover-text)] border border-[var(--primary-btn-bg)] transition-colors duration-300"
+            >
+              Become a Partner
+            </a>
+          </section>
+        </div>
+      </div>
+    </Container>
+  </main>
+</Layout>
+
+<style>
+  [data-theme='dark'] .partner-logo {
+    /* Inverts the color of the logo, making black logos white in dark mode */
+    filter: invert(1) grayscale(1);
+  }
+
+  [data-theme='dark'] .partner-logo:hover {
+    filter: invert(1) grayscale(0);
+  }
+</style>
