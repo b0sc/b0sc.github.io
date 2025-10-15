@@ -2,7 +2,11 @@
 
 ## Context
 
-<!--- If it fixes an open issue, please link to the issue here. -->
+<!---
+ If it fixes an open issue, please link to the issue here.
+ Example: Closes #issueNumber (for feature request)
+          Fixes #issueNumber (for bugfix request)
+ -->
 
 ## Checklist before requesting a review
 
@@ -13,5 +17,6 @@
 - [ ] I have made corresponding changes to the documentation
 - [ ] I have only one commit (if not, squash them into one commit)
 - [ ] This PR is not a duplicate
+- [ ] This PR is linked to a related issue
 
  <!-- Put `closes #XXXX` in your comment to auto-close the issue that your PR fixes (if such). -->
