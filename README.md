@@ -35,7 +35,7 @@ Want the geeky details? Check out [astro-pagefind](https://github.com/shishkin/a
 
 ## Issues
 
-If you do not find the issue you are looking for, please create a new [issue](https://github.com/b0sc/b0sc.github.io/issues/new?assignees=&labels=&projects=&template=custom.md&title=) after reviewing our [website](https://b0sc.github.io/).
+If you do not find the issue you are looking for, please create a new [issue](https://github.com/b0sc/b0sc.github.io/issues/new?assignees=&labels=&projects=&template=custom.md&title=) after reviewing our [website](https://bosc.org.np/).
 
 ## 📄 License
 
