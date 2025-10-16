@@ -23,7 +23,7 @@ const { articles } = Astro.props as Props
           id={"article-read-time"}
           class="bg-lime-500 text-black text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded"
         >
-          {getReadTime(Number(article.body.split(" ").length))}
+          {article.body ? getReadTime(article.body.split(" ").length) : "0 min read"}
         </span>
       </div>
       <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
