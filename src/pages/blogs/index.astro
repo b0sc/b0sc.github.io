@@ -131,20 +131,21 @@ const articles: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
             >
               Members
             </h2>
+             <!-- make resposible for all devices by using gird -->
             <div
-              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-12"
+              class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-12"
             >
-            <MemberCard members={teamData.members} />
-          </div>
-              <h2 class="col-span-4 text-center text-gray-500 mt-8">
-                If you are a new BOSC member and want to be featured here,
-                please create a pull request on our <a
-                  class="text-lime-900 hover:text-zinc-900"
-                  href="https://github.com/b0sc/b0sc.github.io/"
-                >
-                  GitHub Repo
-                </a> with appropriate changes in the code.
-              </h2>
+              <MemberCard members={teamData.members} />
+            </div>
+            <h2 class="col-span-4 text-center text-gray-500 mt-8">
+              If you are a new BOSC member and want to be featured here, please
+              create a pull request on our <a
+                class="text-lime-900 hover:text-zinc-900"
+                href="https://github.com/b0sc/b0sc.github.io/"
+              >
+                GitHub Repo
+              </a> with appropriate changes in the code.
+            </h2>
           </div>
           <div id="executives-content" class="content-section">
             <h2
@@ -152,42 +153,45 @@ const articles: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
             >
               Executives
             </h2>
+             <!-- make resposible for all devices by using gird -->
             <div
-              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-12"
+              class="grid grid-cols-1  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-12"
             >
               <MemberCard members={teamData.executives} />
             </div>
-              <h2 class="col-span-4 text-center text-gray-500 mt-8">
-                If you are a new BOSC Executive and want to be featured here,
-                please create a pull request on our <a
-                  class="text-lime-900 hover:text-zinc-900"
-                  href="https://github.com/b0sc/b0sc.github.io/"
-                >
-                  GitHub Repo
-                </a> with appropriate changes in the code.
-              </h2>
+            <h2 class="col-span-4 text-center text-gray-500 mt-8">
+              If you are a new BOSC Executive and want to be featured here,
+              please create a pull request on our <a
+                class="text-lime-900 hover:text-zinc-900"
+                href="https://github.com/b0sc/b0sc.github.io/"
+              >
+                GitHub Repo
+              </a> with appropriate changes in the code.
+            </h2>
           </div>
+
           <div id="alumni-content" class="content-section">
             <h2
               class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 text-center"
             >
               Alumni
             </h2>
+            <!-- make resposible for all devices by using gird -->
             <div
-              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-12"
+              class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-12"  
             >
               <MemberCard members={teamData.alumni} />
             </div>
 
-              <h2 class="col-span-4 text-center text-gray-500 mt-8">
-                If you are an alumni and want to be featured here, please create
-                a pull request on our <a
-                  class="text-lime-900 hover:text-zinc-900"
-                  href="https://github.com/b0sc/b0sc.github.io/"
-                >
-                  GitHub Repo
-                </a> with appropriate changes in the code.
-              </h2>
+            <h2 class="col-span-4 text-center text-gray-500 mt-8">
+              If you are an alumni and want to be featured here, please create a
+              pull request on our <a
+                class="text-lime-900 hover:text-zinc-900"
+                href="https://github.com/b0sc/b0sc.github.io/"
+              >
+                GitHub Repo
+              </a> with appropriate changes in the code.
+            </h2>
           </div>
           <div id="history-content" class="content-section">
             <h2
