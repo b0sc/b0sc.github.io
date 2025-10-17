@@ -1,0 +1,91 @@
+---
+const { pathname } = Astro.url;
+const isActive = (href: string) => pathname.startsWith(href);
+
+const navLinks = [
+  { href: "/explore/articles", label: "Articles" },
+  { href: "/explore/events", label: "Events" },
+  { href: "/explore/opportunities", label: "Opportunities" },
+  { href: "/explore/alumni", label: "Alumni" },
+  { href: "/explore/executives", label: "Executives" },
+  { href: "/explore/members", label: "Members" },
+  { href: "/explore/history", label: "History" },
+
+];
+---
+<style>
+  /* Component-scoped styles using your theme variables */
+  :global(.explore-nav) {
+    background: var(--nav-bg);
+    color: var(--text-color);
+    border-right: 1px solid var(--card-border);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+  }
+
+  :global(.explore-nav a) {
+    color: var(--text-color);
+    transition: background-color .15s ease, color .15s ease;
+  }
+
+  :global(.explore-nav a:hover) {
+    background: var(--hover-bg);
+  }
+
+  /* ACTIVE state: black background and white text */
+  :global(.explore-nav a.active) {
+    background: #000; /* black */
+    color: #fff !important; /* white text */
+  }
+
+  /* scrollbar adjustments scoped to this component */
+  :global(.explore-nav ::-webkit-scrollbar) {
+    height: 8px;
+    width: 8px;
+  }
+  :global(.explore-nav ::-webkit-scrollbar-track) {
+    background: transparent;
+  }
+  :global(.explore-nav ::-webkit-scrollbar-thumb) {
+    background: var(--text-muted);
+  }
+</style>
+
+<div class="explore-nav md:w-48 shadow-lg md:min-h-screen" role="navigation" aria-label="Explore navigation">
+  <div class="md:sticky md:top-0 pt-4 pr-2">
+    <div class="flex md:flex-col space-x-4 md:space-x-0 md:space-y-2 overflow-x-auto md:overflow-x-visible pb-2 md:pb-0 px-2">
+      <div class="flex md:flex-col space-x-4 md:space-x-0 md:space-y-2 overflow-x-auto md:overflow-x-visible pb-2 md:pb-0 w-full">
+        {navLinks.map((link) => (
+          <a
+            href={link.href}
+            class={`whitespace-nowrap px-4 py-2 text-left rounded-md ${isActive(link.href) ? "active" : ""}`}
+            aria-current={isActive(link.href) ? "page" : undefined}
+          >
+            {link.label}
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Small client-side script to give instant visual feedback when a link is clicked -->
+<script type="module">
+  // Run only in the browser
+  if (typeof window !== 'undefined') {
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.querySelector('.explore-nav');
+      if (!container) return;
+
+      const links = Array.from(container.querySelectorAll('a'));
+      links.forEach(link => {
+        link.addEventListener('click', (e) => {
+          // Remove .active from all links and add to the clicked one for immediate feedback
+          links.forEach(l => l.classList.remove('active'));
+          e.currentTarget.classList.add('active');
+          // don't prevent navigation — this only provides instant visual feedback
+        });
+      });
+    });
+  }
+</script>
