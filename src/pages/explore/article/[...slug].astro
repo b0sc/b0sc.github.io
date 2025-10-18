@@ -1,40 +1,40 @@
 ---
-import Layout from "../../layouts/Layout.astro"
-import Container from "../../components/Container.astro"
-import { getCollection } from "astro:content"
-import { formatDate } from "../../utils/utils"
-import "../../styles/bloglayout.css"
-import "../../styles/global.css"
-import type { CollectionEntry } from "astro:content"
+import Layout from "../../../layouts/Layout.astro";
+import Container from "../../../components/Container.astro";
+import { getCollection } from "astro:content";
+import { formatDate } from "../../../utils/utils";
+import "../../../styles/bloglayout.css";
+import "../../../styles/global.css";
+import type { CollectionEntry } from "astro:content";
 
 export async function getStaticPaths() {
-  const blogEntries = await getCollection("blog")
+  const blogEntries = await getCollection("blog");
   return blogEntries.map((entry: any) => ({
     params: { slug: entry.slug },
     props: { entry },
-  }))
+  }));
 }
 
-const { entry } = Astro.props as { entry: CollectionEntry<"blog"> }
-const { Content } = await entry.render()
+const { entry } = Astro.props as { entry: CollectionEntry<"blog"> };
+const { Content } = await entry.render();
 ---
 
 <Layout
   title={entry.data.title}
   description={entry.data.summary}
   image={entry.data.coverImage}
-  url={"https://bosc.org.np/blogs/" + entry.slug}
+  url={"https://bosc.org.np/explore/article/" + entry.slug}
 >
-  <main class="space-y-60 mb-60 pt-30">
+  <main class="pt-7 pb-16">
     <Container>
-      <section class="bg-white">
+      <section class="bg-[var(--bg-color)]">
         <div
           class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-1 lg:py-16 lg:px-6"
         >
-          <div class="font-light text-gray-500 sm:text-lg">
+          <div class="font-light text-[var(--text-muted)] sm:text-lg">
             <a
               href="/explore/articles"
-              class="inline-flex items-center font-medium text-black hover:text-lime-500 my-4"
+              class="inline-flex items-center font-medium text-[var(--text-color)] hover:text-lime-500 my-4"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -58,11 +58,11 @@ const { Content } = await entry.render()
             >
               <div class="text-center">
                 <h2
-                  class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900"
+                  class="mb-4 text-4xl tracking-tight font-extrabold text-[var(--text-color)]"
                 >
                   {entry.data.title}
                 </h2>
-                <h3 class="text-lg mb-2">
+                <h3 class="text-lg mb-2 text-[var(--text-muted)]">
                   Written by {entry.data.author} on {
                     formatDate(entry.data.pubDate)
                   }
@@ -79,41 +79,41 @@ const { Content } = await entry.render()
     </Container>
   </main>
   <script>
-    let copyButtonLabel = "Copy Code"
-    let codeBlocks = Array.from(document.querySelectorAll("pre"))
+    let copyButtonLabel = "Copy Code";
+    let codeBlocks = Array.from(document.querySelectorAll("pre"));
 
     for (let codeBlock of codeBlocks) {
-      let wrapper = document.createElement("div")
-      wrapper.style.position = "relative"
+      let wrapper = document.createElement("div");
+      wrapper.style.position = "relative";
 
-      let copyButton = document.createElement("button")
-      copyButton.className = "copy-code"
-      copyButton.innerHTML = copyButtonLabel
+      let copyButton = document.createElement("button");
+      copyButton.className = "copy-code";
+      copyButton.innerHTML = copyButtonLabel;
 
-      const parentNode = codeBlock.parentNode
+      const parentNode = codeBlock.parentNode;
       if (parentNode) {
-        codeBlock.setAttribute("tabindex", "0")
-        codeBlock.appendChild(copyButton)
-        parentNode.insertBefore(wrapper, codeBlock)
-        wrapper.appendChild(codeBlock)
+        codeBlock.setAttribute("tabindex", "0");
+        codeBlock.appendChild(copyButton);
+        parentNode.insertBefore(wrapper, codeBlock);
+        wrapper.appendChild(codeBlock);
 
         copyButton.addEventListener("click", async () => {
-          await copyCode(codeBlock, copyButton)
-        })
+          await copyCode(codeBlock, copyButton);
+        });
       }
     }
 
     async function copyCode(block: HTMLElement, button: HTMLButtonElement) {
-      let code = block.querySelector("code")
+      let code = block.querySelector("code");
       if (code) {
-        let text = code.innerText
-        await navigator.clipboard.writeText(text)
+        let text = code.innerText;
+        await navigator.clipboard.writeText(text);
 
-        button.innerText = "Code Copied"
+        button.innerText = "Code Copied";
 
         setTimeout(() => {
-          button.innerText = copyButtonLabel
-        }, 700)
+          button.innerText = copyButtonLabel;
+        }, 700);
       }
     }
   </script>

@@ -5,7 +5,7 @@
     "name2": "with TV Setup Box",
     "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "/services/ag.svg",
-    "link": "/blogs/servers-with-setup-box",
+    "link": "/explore/article/servers-with-setup-box",
     "image": "/services/03.svg"
   },
   {
@@ -14,7 +14,7 @@
     "name2": "Complete BOSC pipeline",
     "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
     "arrow": "/services/aw.svg",
-    "link": "/blogs/bosc-pipeline",
+    "link": "/explore/article/bosc-pipeline",
     "image": "/services/01.svg"
   },
   {
@@ -23,7 +23,7 @@
     "name2": "Experience",
     "background": "h-[310px] p-12 bg-lime-500 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "/services/ag.svg",
-    "link": "/blogs/github-fieldday-experience-2024",
+    "link": "/explore/article/github-fieldday-experience-2024",
     "image": "/services/02.svg"
   },
 
@@ -33,7 +33,7 @@
     "name2": "GitHub Contribution",
     "background": "h-[310px] p-12 bg-lime-500 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "/services/ag.svg",
-    "link": "/blogs/first-contributions",
+    "link": "/explore/article/first-contributions",
     "image": "/services/05.svg"
   }
 ]
