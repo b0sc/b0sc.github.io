@@ -83,6 +83,22 @@ const articles: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
               >
                 History
               </button>
+
+              <!-- New Tabs Constitution and Partnership -->
+              <button
+                id="constitution-tab"
+                class="whitespace-nowrap px-4 py-2 text-left rounded-md transition-colors hover:bg-gray-100 tab-button"
+                data-tab="constitution"
+              >
+                Constitution
+              </button>
+              <button
+                id="partnership-tab"
+                class="whitespace-nowrap px-4 py-2 text-left rounded-md transition-colors hover:bg-gray-100 tab-button"
+                data-tab="partnership"
+              >
+                Partnership
+              </button>
             </div>
           </div>
         </div>
@@ -114,6 +130,7 @@ const articles: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
               <EventCard eventsData={eventsData} />
             </div>
           </div>
+
           <div id="opportunities-content" class="content-section">
             <h2
               class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 text-center"
@@ -131,7 +148,6 @@ const articles: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
             >
               Members
             </h2>
-             <!-- make resposible for all devices by using gird -->
             <div
               class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-12"
             >
@@ -139,34 +155,38 @@ const articles: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
             </div>
             <h2 class="col-span-4 text-center text-gray-500 mt-8">
               If you are a new BOSC member and want to be featured here, please
-              create a pull request on our <a
+              create a pull request on our
+              <a
                 class="text-lime-900 hover:text-zinc-900"
                 href="https://github.com/b0sc/b0sc.github.io/"
               >
                 GitHub Repo
-              </a> with appropriate changes in the code.
+              </a>
+              with appropriate changes in the code.
             </h2>
           </div>
+
           <div id="executives-content" class="content-section">
             <h2
               class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 text-center"
             >
               Executives
             </h2>
-             <!-- make resposible for all devices by using gird -->
             <div
-              class="grid grid-cols-1  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-12"
+              class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-12"
             >
               <MemberCard members={teamData.executives} />
             </div>
             <h2 class="col-span-4 text-center text-gray-500 mt-8">
               If you are a new BOSC Executive and want to be featured here,
-              please create a pull request on our <a
+              please create a pull request on our
+              <a
                 class="text-lime-900 hover:text-zinc-900"
                 href="https://github.com/b0sc/b0sc.github.io/"
               >
                 GitHub Repo
-              </a> with appropriate changes in the code.
+              </a>
+              with appropriate changes in the code.
             </h2>
           </div>
 
@@ -176,23 +196,24 @@ const articles: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
             >
               Alumni
             </h2>
-            <!-- make resposible for all devices by using gird -->
             <div
-              class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-12"  
+              class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-12"
             >
               <MemberCard members={teamData.alumni} />
             </div>
-
             <h2 class="col-span-4 text-center text-gray-500 mt-8">
               If you are an alumni and want to be featured here, please create a
-              pull request on our <a
+              pull request on our
+              <a
                 class="text-lime-900 hover:text-zinc-900"
                 href="https://github.com/b0sc/b0sc.github.io/"
               >
                 GitHub Repo
-              </a> with appropriate changes in the code.
+              </a>
+              with appropriate changes in the code.
             </h2>
           </div>
+
           <div id="history-content" class="content-section">
             <h2
               class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 text-center"
@@ -200,6 +221,34 @@ const articles: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
               History | Timeline
             </h2>
             <Timeline />
+          </div>
+
+          <!-- New Constitution Section -->
+          <div id="constitution-content" class="content-section">
+            <h2
+              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 text-center"
+            >
+              Constitution
+            </h2>
+            <p
+              class="text-center text-gray-500 text-xl font-medium mt-12 border border-dashed border-gray-300 rounded-lg p-8 inline-block w-full"
+            >
+              🚧 Coming Soon 🚧
+            </p>
+          </div>
+
+          <!-- New Partnership Section -->
+          <div id="partnership-content" class="content-section">
+            <h2
+              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 text-center"
+            >
+              Partnership
+            </h2>
+            <p
+              class="text-center text-gray-500 text-xl font-medium mt-12 border border-dashed border-gray-300 rounded-lg p-8 inline-block w-full"
+            >
+              🚧 Coming Soon 🚧
+            </p>
           </div>
         </div>
       </div>
@@ -215,8 +264,7 @@ const articles: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
 
 <script>
   function initializeTabs() {
-    function updateActiveTab(tabId: string) {
-      // Update tab buttons
+    function updateActiveTab(tabId) {
       document.querySelectorAll(".tab-button").forEach((button) => {
         button.classList.remove("active")
         if (button.getAttribute("data-tab") === tabId) {
@@ -224,23 +272,20 @@ const articles: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
         }
       })
 
-      // Update content visibility
       document.querySelectorAll(".content-section").forEach((section) => {
         section.classList.add("hidden")
       })
       document.getElementById(`${tabId}-content`)?.classList.remove("hidden")
     }
 
-    // Handle hash changes
     function handleHash() {
       const hash = window.location.hash.slice(1) || "articles"
       updateActiveTab(hash)
     }
 
-    // Add click event listeners to tabs
     document.querySelectorAll(".tab-button").forEach((button) => {
       button.addEventListener("click", (e) => {
-        const tab = (e.currentTarget as HTMLElement).getAttribute("data-tab")
+        const tab = e.currentTarget.getAttribute("data-tab")
         if (tab) {
           window.location.hash = tab
           updateActiveTab(tab)
@@ -248,16 +293,10 @@ const articles: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
       })
     })
 
-    // Handle hash changes
     window.addEventListener("hashchange", handleHash)
-
-    // Handle initial load
     handleHash()
   }
 
-  // Run on initial page load
   initializeTabs()
-
-  // Re-run when navigating between pages (Astro View Transitions)
   document.addEventListener("astro:page-load", initializeTabs)
 </script>
