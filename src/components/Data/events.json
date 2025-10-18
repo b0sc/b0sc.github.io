@@ -1,4 +1,37 @@
-[
+[   
+  {
+    "id": 38,
+    "type": "Event",
+    "featured": false,
+    "name_1": "Celebrating: ",
+    "name_2": "Hacktoberfest 2025",
+    "desc": "Developers, it’s that time again! ⚡ Hacktoberfest 2025 is here, and BOSC Club is opening the gates for fresh ideas, bold code, and real collaboration 💻 Join the wave — contribute, connect, and leave your mark on open source 🌍",
+    "year": 2025,
+    "date": "2025-10-15",
+    "time": "06:00 AM",
+    "venue": "Virtual - github.com/b0sc",
+    "organizer": ["BOSC"],
+    "partners": ["Hacktoberfest"],
+    "mentors": [],
+    "guests": [],
+    "cover_photo": "/events/38/cover.jpg",
+    "background": "bg-zinc-100",
+    "links": {
+      "blog": "/blogs/38",
+      "social": "https://www.facebook.com/share/p/1BTh1wHYSB/",
+      "registration": "https://github.com/b0sc"
+    },
+    "images": ["/events/38/pic1.jpg"],
+    "stats": {
+      "participants": 20,
+      "time": "15 days",
+      "certificate": false,
+      "prize": true,
+      "entry_fee": 0,
+      "points": [
+      ]
+    }
+  },
   {
     "id": 37,
     "type": "Event",
