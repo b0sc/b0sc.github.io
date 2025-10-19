@@ -1,0 +1,382 @@
+---
+// src/pages/explore/constitution.astro
+import Layout from "../../layouts/Layout.astro";
+import Container from "../../components/Container.astro";
+import ExploreNav from "../../components/ExploreNav.astro";
+
+export const prerender = true;
+
+const roles = [
+  'President',
+  'Vice President',
+  'Secretary',
+  'Joint Secretary',
+  'Graphics Handler',
+  'Treasurer',
+  'Community Manager',
+  'Outreach Manager'
+];
+
+const lastUpdated = 'October 14, 2025';
+---
+
+<Layout
+  title="BOSC - Constitution"
+  description="The official constitution of the Birendra Open Source Club (BOSC), outlining name, purpose, membership, governance, and operational procedures."
+  url="https://bosc.org.np/explore/constitution"
+>
+  <main class="bg-gradient-to-b from-slate-50 via-white to-slate-50">
+    <Container>
+      <div class="flex flex-col lg:flex-row gap-8">
+        <aside class="lg:w-72 flex-shrink-0">
+          <div class="sticky top-20">
+            <ExploreNav />
+          </div>
+        </aside>
+
+        <div class="flex-1">
+          <article class="max-w-4xl">
+            <!-- Hero Section -->
+            <header class="mb-12 pb-8 border-b-2 border-gradient">
+              <div class="space-y-4">
+                <div class="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold">
+                  Official Document
+                </div>
+                <h1 class="text-4xl lg:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-700">
+                  Constitution of the Birendra Open Source Club
+                </h1>
+                <p class="text-lg text-slate-600 font-light">
+                  Foundational framework governing the Birendra Open Source Club (BOSC).
+                </p>
+              </div>
+            </header>
+
+            <!-- Article I -->
+            <section class="mb-10 scroll-mt-20" id="article-i">
+              <div class="flex items-start gap-4">
+                <div class="flex-shrink-0 w-12 h-12 article-number" style="--grad-from:#3b82f6; --grad-to:#4f46e5;">
+                  <span class="text-white font-bold text-lg">I</span>
+                </div>
+                <div class="flex-1">
+                  <h2 class="text-2xl font-bold text-slate-900 mb-3">Article I: Name</h2>
+                  <p class="text-base text-slate-700 leading-relaxed">
+                    The official name of this organization shall be the <strong>Birendra Open Source Club (BOSC)</strong>.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Article II -->
+            <section class="mb-10 scroll-mt-20" id="article-ii">
+              <div class="flex items-start gap-4">
+                <div class="flex-shrink-0 w-12 h-12 article-number" style="--grad-from:#3b82f6; --grad-to:#4f46e5;">
+                  <span class="text-white font-bold text-lg">II</span>
+                </div>
+                <div class="flex-1">
+                  <h2 class="text-2xl font-bold text-slate-900 mb-3">Article II: Purpose</h2>
+                  <p class="text-base text-slate-700 leading-relaxed">
+                    The purpose of the Birendra Open Source Club is to promote the values of free and open-source software (FOSS), raise awareness through events and workshops, organize IT workshops for student welfare, initiate and maintain open source projects, and encourage students to contribute to external open source projects.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Article III -->
+            <section class="mb-10 scroll-mt-20" id="article-iii">
+              <div class="flex items-start gap-4">
+                <div class="flex-shrink-0 w-12 h-12 article-number" style="--grad-from:#3b82f6; --grad-to:#4f46e5;">
+                  <span class="text-white font-bold text-lg">III</span>
+                </div>
+                <div class="flex-1">
+                  <h2 class="text-2xl font-bold text-slate-900 mb-4">Article III: Membership</h2>
+
+                  <div class="space-y-6">
+                    <div class="bg-slate-50 p-6 rounded-xl border-l-4 border-purple-500">
+                      <h3 class="text-lg font-semibold text-slate-900 mb-2">Eligibility</h3>
+                      <p class="text-slate-700 leading-relaxed">
+                        Membership is open to all students of Birendra Campus who have an interest in open source software and technology.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h3 class="text-lg font-semibold text-slate-900 mb-3">Categories of Membership</h3>
+                      <ul class="grid gap-4">
+                        <li class="bg-gradient-to-r from-purple-50 to-blue-50 p-5 rounded-lg border border-purple-200">
+                          <p class="font-semibold text-slate-900 mb-1">General Members</p>
+                          <p class="text-slate-700">Students who attend at least two meetings or events per semester.</p>
+                        </li>
+                        <li class="bg-gradient-to-r from-indigo-50 to-blue-50 p-5 rounded-lg border border-indigo-200">
+                          <p class="font-semibold text-slate-900 mb-1">Committee Members</p>
+                          <p class="text-slate-700">Elected members who hold specific positions within the club.</p>
+                        </li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Article IV -->
+            <section class="mb-10 scroll-mt-20" id="article-iv">
+              <div class="flex items-start gap-4">
+                <div class="flex-shrink-0 w-12 h-12 article-number" style="--grad-from:#3b82f6; --grad-to:#4f46e5;">
+                  <span class="text-white font-bold text-lg">IV</span>
+                </div>
+                <div class="flex-1">
+                  <h2 class="text-2xl font-bold text-slate-900 mb-4">Article IV: Committee Structure</h2>
+
+                  <div class="space-y-6">
+                    <div>
+                      <h3 class="text-lg font-semibold text-slate-900 mb-3">Officers</h3>
+                      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        {roles.map(role => (
+                          <div class="flex items-center gap-3 p-3 bg-slate-100 rounded-lg hover:bg-slate-200 transition-colors">
+                            <div class="w-2 h-2 bg-orange-500 rounded-full" aria-hidden></div>
+                            <span class="text-slate-800 font-medium">{role}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div class="bg-blue-50 p-6 rounded-xl border-2 border-blue-200 space-y-3">
+                      <h3 class="text-lg font-semibold text-slate-900">Duties</h3>
+                      <ul class="text-sm space-y-2 list-disc list-inside text-slate-700">
+                        <li><strong>President:</strong> Oversees club activities, represents the club publicly, and presides over meetings.</li>
+                        <li><strong>Vice President:</strong> Assists the President and performs their duties in the President's absence.</li>
+                        <li><strong>Secretary:</strong> Maintains meeting minutes and official records.</li>
+                        <li><strong>Joint Secretary:</strong> Assists the Secretary and assumes duties in their absence.</li>
+                        <li><strong>Graphics Handler:</strong> Designs promotional materials and maintains the club's visual identity.</li>
+                        <li><strong>Treasurer:</strong> Manages finances, prepares budgets, and produces financial reports.</li>
+                        <li><strong>Community Manager:</strong> Engages with members and manages community channels and social media.</li>
+                        <li><strong>Outreach Manager:</strong> Coordinates events and partnerships with other organizations.</li>
+                      </ul>
+                    </div>
+
+                    <div class="bg-amber-50 p-4 rounded-lg border-l-4 border-amber-500">
+                      <p class="text-sm"><strong>Emergency Vacancies:</strong> In the event of an emergency vacancy, the President and Vice President may appoint temporary officers until the next official election or tenure change.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Article V -->
+            <section class="mb-10 scroll-mt-20" id="article-v">
+              <div class="flex items-start gap-4">
+                <div class="flex-shrink-0 w-12 h-12 article-number" style="--grad-from:#3b82f6; --grad-to:#4f46e5;">
+                  <span class="text-white font-bold text-lg">V</span>
+                </div>
+                <div class="flex-1">
+                  <h2 class="text-2xl font-bold text-slate-900 mb-3">Article V: Elections</h2>
+
+                  <div class="space-y-3 text-slate-700">
+                    <div class="flex gap-4 p-4 bg-red-50 rounded-lg">
+                      <div class="text-2xl font-bold text-red-600">📅</div>
+                      <div>
+                        <p class="font-semibold text-slate-900">Election Timeframe</p>
+                        <p class="text-sm">Elections shall be held annually during August or September.</p>
+                      </div>
+                    </div>
+
+                    <div class="flex gap-4 p-4 bg-red-50 rounded-lg">
+                      <div class="text-2xl font-bold text-red-600">📝</div>
+                      <div>
+                        <p class="font-semibold text-slate-900">Nomination Process</p>
+                        <p class="text-sm">Nominations for officers will open at least one month prior to elections.</p>
+                      </div>
+                    </div>
+
+                    <div class="flex gap-4 p-4 bg-red-50 rounded-lg">
+                      <div class="text-2xl font-bold text-red-600">⚖️</div>
+                      <div>
+                        <p class="font-semibold text-slate-900">Selection</p>
+                        <p class="text-sm">Nominees shall be elected according to the membership evaluation criteria (Article IX).</p>
+                      </div>
+                    </div>
+
+                    <div class="flex gap-4 p-4 bg-red-50 rounded-lg">
+                      <div class="text-2xl font-bold text-red-600">⏱️</div>
+                      <div>
+                        <p class="font-semibold text-slate-900">Term of Service</p>
+                        <p class="text-sm">All officers shall serve for a term of one year unless otherwise specified by the committee.</p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Article VI -->
+            <section class="mb-10 scroll-mt-20" id="article-vi">
+              <div class="flex items-start gap-4">
+                <div class="flex-shrink-0 w-12 h-12 article-number" style="--grad-from:#3b82f6; --grad-to:#4f46e5;">
+                  <span class="text-white font-bold text-lg">VI</span>
+                </div>
+                <div class="flex-1">
+                  <h2 class="text-2xl font-bold text-slate-900 mb-3">Article VI: Meetings</h2>
+
+                  <div class="space-y-3">
+                    <div class="p-4 bg-cyan-50 rounded-lg border-l-4 border-cyan-500">
+                      <p class="font-semibold text-slate-900 mb-1">Regular Meetings</p>
+                      <p class="text-sm text-slate-700">The club shall hold regular meetings at least biweekly.</p>
+                    </div>
+
+                    <div class="p-4 bg-cyan-50 rounded-lg border-l-4 border-cyan-500">
+                      <p class="font-semibold text-slate-900 mb-1">Special Meetings</p>
+                      <p class="text-sm text-slate-700">Special meetings may be called by the President or by any three committee members.</p>
+                    </div>
+
+                    <div class="p-4 bg-cyan-50 rounded-lg border-l-4 border-cyan-500">
+                      <p class="font-semibold text-slate-900 mb-1">Quorum</p>
+                      <p class="text-sm text-slate-700">A quorum for official decision-making shall consist of a majority of committee members.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Article VII -->
+            <section class="mb-10 scroll-mt-20" id="article-vii">
+              <div class="flex items-start gap-4">
+                <div class="flex-shrink-0 w-12 h-12 article-number" style="--grad-from:#3b82f6; --grad-to:#4f46e5;">
+                  <span class="text-white font-bold text-lg">VII</span>
+                </div>
+                <div class="flex-1">
+                  <h2 class="text-2xl font-bold text-slate-900 mb-3">Article VII: Code of Conduct</h2>
+
+                  <ul class="list-disc list-inside space-y-2 text-slate-700 text-sm">
+                    <li><strong>Respect:</strong> All members must treat one another with respect and courtesy.</li>
+                    <li><strong>Inclusivity:</strong> The club does not tolerate discrimination on the basis of race, gender, sexual orientation, disability, religion, or any other characteristic.</li>
+                    <li><strong>Integrity:</strong> Members are expected to act honestly and ethically in all club activities.</li>
+                    <li><strong>Responsibility:</strong> Members should attend meetings regularly and fulfill their assigned responsibilities.</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <!-- Article VIII -->
+            <section class="mb-10 scroll-mt-20" id="article-viii">
+              <div class="flex items-start gap-4">
+                <div class="flex-shrink-0 w-12 h-12 article-number" style="--grad-from:#3b82f6; --grad-to:#4f46e5;">
+                  <span class="text-white font-bold text-lg">VIII</span>
+                </div>
+                <div class="flex-1">
+                  <h2 class="text-2xl font-bold text-slate-900 mb-3">Article VIII: Policies</h2>
+
+                  <div class="space-y-3 text-slate-700 text-sm">
+                    <p><strong>Financial Policy:</strong> All club funds shall be deposited in the club's bank account. Expenditures above a predetermined threshold (e.g., $50) should be approved by the committee.</p>
+                    <p><strong>Event Policy:</strong> All events must be approved by the committee and align with the club's mission.</p>
+                    <p><strong>Communication Policy:</strong> Official club communications should be reviewed by the President or Secretary before dissemination.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Article IX -->
+            <section class="mb-10 scroll-mt-20" id="article-ix">
+              <div class="flex items-start gap-4">
+                <div class="flex-shrink-0 w-12 h-12 article-number" style="--grad-from:#3b82f6; --grad-to:#4f46e5;">
+                  <span class="text-white font-bold text-lg">IX</span>
+                </div>
+                <div class="flex-1">
+                  <h2 class="text-2xl font-bold text-slate-900 mb-3">Article IX: Membership Evaluation</h2>
+
+                  <div class="space-y-3 text-slate-700 text-sm">
+                    <p><strong>Score/Rating System:</strong> Members' participation scores will be accumulated over time based on attendance, contributions, and overall involvement.</p>
+                    <p><strong>Evaluation Criteria:</strong></p>
+                    <ul class="list-disc list-inside ml-4">
+                      <li>Attendance at meetings and events.</li>
+                      <li>Participation in club projects and activities.</li>
+                      <li>Contribution to open source projects initiated or supported by the club.</li>
+                      <li>Adherence to the Code of Conduct (Article VII).</li>
+                    </ul>
+                    <p class="mt-2"><strong>Promotion/Demotion/Removal:</strong> Based on evaluation scores, members may be promoted, demoted, or removed from positions with the approval of the President and Vice President and according to the club's bylaws.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Article X -->
+            <section class="mb-10 scroll-mt-20" id="article-x">
+              <div class="flex items-start gap-4">
+                <div class="flex-shrink-0 w-12 h-12 article-number" style="--grad-from:#3b82f6; --grad-to:#4f46e5;">
+                  <span class="text-white font-bold text-lg">X</span>
+                </div>
+                <div class="flex-1">
+                  <h2 class="text-2xl font-bold text-slate-900 mb-3">Article X: Tenure Change Mechanism</h2>
+
+                  <div class="space-y-3 text-slate-700 text-sm">
+                    <p><strong>Definition of Tenure:</strong> A tenure is the period beginning on Inauguration Day, when officers take their oath and officially begin their service, and ending at the next scheduled election.</p>
+                    <p><strong>Resignation of Officers:</strong> At the end of each tenure, officers' terms expire; all positions become open for the next election unless otherwise provided for by the committee.</p>
+                    <p><strong>Acting President and Vice President:</strong> At tenure end the President and Vice President may continue to act with authority only as needed to ensure an orderly transition and to decide the mechanism for forming the next committee, within the bounds of the constitution and club bylaws.</p>
+                    <p><strong>Term Limits:</strong> The President and Vice President may serve a maximum of two consecutive tenures. After serving two consecutive tenures they must step down for at least one tenure before being eligible again.</p>
+                    <p><strong>Formation of New Executive Committee:</strong> The committee formation process (nominations, elections, or appointments) shall be conducted according to the rules established prior to the election and consistent with this constitution.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Article XI & XII -->
+            <section class="mb-12 scroll-mt-20" id="article-xi-xii">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div class="flex items-start gap-4">
+                  <div class="flex-shrink-0 w-12 h-12 article-number" style="--grad-from:#3b82f6; --grad-to:#4f46e5;">
+                  <span class="text-white font-bold text-lg">XI</span>
+                </div>
+                  <div class="flex-1">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-3">Article XI: Amendments</h2>
+                    <div class="space-y-2 text-sm text-slate-700">
+                      <p><strong>Proposal:</strong> Any member may propose an amendment to this constitution.</p>
+                      <p><strong>Approval:</strong> Amendments must be approved by a two-thirds majority vote of committee members present and voting, unless otherwise specified by club bylaws.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div class="flex-shrink-0 w-12 h-12 article-number" style="--grad-from:#3b82f6; --grad-to:#4f46e5;">
+                  <span class="text-white font-bold text-lg">XII</span>
+                </div>
+                  <div class="flex-1">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-3">Article XII: Dissolution</h2>
+                    <div class="space-y-2 text-sm text-slate-700">
+                      <p><strong>Procedure:</strong> The club may be dissolved by a three-fourths majority vote of committee members.</p>
+                      <p><strong>Disposition of Assets:</strong> Upon dissolution, remaining assets shall be donated to a non-profit organization whose mission aligns with the club's objectives.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="mt-16 pt-8 border-t-2 border-slate-200 text-center">
+              <p class="text-sm text-slate-600">Last Updated: {lastUpdated} | Birendra Open Source Club Constitution</p>
+            </footer>
+
+          </article>
+        </div>
+      </div>
+    </Container>
+  </main>
+</Layout>
+
+<style>
+  .border-gradient {
+    border-image: linear-gradient(90deg, #3b82f6, #4f46e5) 1;
+  }
+
+  /* consistent gradient number badge used across articles */
+  .article-number {
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: white;
+    background-image: linear-gradient(135deg, var(--grad-from), var(--grad-to));
+  }
+</style>
