@@ -6,6 +6,7 @@ import { formatDate } from "../../utils/utils"
 import "../../styles/bloglayout.css"
 import "../../styles/global.css"
 import type { CollectionEntry } from "astro:content"
+import Disqus from "../../components/Disqus.astro"
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection("blog")
@@ -25,7 +26,7 @@ const { Content } = await entry.render()
   image={entry.data.coverImage}
   url={"https://bosc.org.np/blogs/" + entry.slug}
 >
-  <main class="space-y-60 mb-60 pt-30">
+  <main class="space-y-60 pt-30">
     <Container>
       <section class="bg-white">
         <div
@@ -77,6 +78,7 @@ const { Content } = await entry.render()
         </div>
       </section>
     </Container>
+    <div class="p-4 h-fit" > <Disqus /> </div>
   </main>
   <script>
     let copyButtonLabel = "Copy Code"
