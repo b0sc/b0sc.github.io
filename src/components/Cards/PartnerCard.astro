@@ -1,0 +1,31 @@
+---
+interface Props {
+  partner: {
+    src: string;
+    alt: string;
+    height: string;
+    class: string;
+    name: string;
+  };
+}
+
+const { partner } = Astro.props;
+---
+
+<div
+  class="p-4 bg-white rounded-[20px] shadow-card border border-zinc-900 flex flex-col items-center justify-center grayscale transition duration-200 hover:grayscale-0"
+  role="listitem"
+>
+  <img
+    src={partner.src}
+    class={partner.class}
+    loading="lazy"
+    alt={partner.alt}
+    width="auto"
+    height={partner.height}
+  />
+  <h3 class="mt-2 text-sm font-medium text-center">{partner.name}</h3>
+  <p class="mt-1 text-xs text-center text-gray-600">
+    Partnered with {partner.name} to support our initiatives.
+  </p>
+</div>
