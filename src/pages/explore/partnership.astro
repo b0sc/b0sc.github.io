@@ -1,0 +1,59 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Container from "../../components/Container.astro";
+import PartnerCard from "../../components/Cards/PartnerCard.astro";
+import partnerships from "../../components/Data/partnerships.json";
+import ExploreNav from "../../components/ExploreNav.astro";
+
+// Define TypeScript interface for partner data
+interface Partner {
+  src: string;
+  alt: string;
+  height: string;
+  class: string;
+}
+
+// Type the imported partnerships data
+const typedPartnerships: Partner[] = partnerships;
+---
+
+<Layout
+  title="BOSC - Partners"
+  description="BOSC's Official Website. Explore our partnerships and collaborations..."
+  image="https://bosc.org.np/team.jpg"
+  url="https://bosc.org.np/explore/partnerships"
+>
+
+
+    <main class="pt-7 pb-16">
+    <Container>
+      <div class="flex flex-col md:flex-row">
+        <ExploreNav />
+
+        <div class="flex-1 p-4">
+          <div id="opportunities-content">
+            <h2
+              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-[var(--text-color)] text-center"
+            >
+               Our Partners
+            </h2>
+            <div class="grid gap-8 lg:grid-cols-4 md:grid-cols-2 mt-12">
+             {typedPartnerships.map((partner: Partner) => (
+            <PartnerCard partner={partner} />
+          ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </main>
+</Layout>
+
+<style>
+  /* Responsive grid adjustments */
+  @media (max-width: 640px) {
+    .grid {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+</style>

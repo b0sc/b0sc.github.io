@@ -3,6 +3,7 @@ const navLinks = [
   { href: "/notes", label: "Notes" },
   { href: "/mentorship", label: "Mentorship" },
   { href: "/explore/articles", label: "Explore" },
+  { href: "/#contact", label: "Contact" },
 ]
 
 import Container from "./Container.astro"
@@ -53,6 +54,7 @@ import SearchBar from "./SearchBar.astro"
                 <li>
                   <a
                     href={link.href}
+                    
                     class="inline-block hover:border-gray-200 text-black hover:bg-zinc-200 rounded md:bg-transparent sm:px-1 py-2  lg:px-2"
                   >
                     {link.label}
@@ -89,6 +91,8 @@ import SearchBar from "./SearchBar.astro"
   </nav>
 </header>
 <script is:inline>
+
+  
   function initNavbar() {
     const navbar = document.getElementById("navbar-default")
 
@@ -109,7 +113,14 @@ import SearchBar from "./SearchBar.astro"
 
       navLinks.forEach((link) => {
         link.removeEventListener("click", closeNavbar)
+        link.removeEventListener("click", handleContactLink);
+
         link.addEventListener("click", closeNavbar)
+
+        // Add specific handler for #contact link
+        if (link.getAttribute("href") === "/#contact") {
+          link.addEventListener("click", handleContactLink);
+        }
       })
     } else {
       console.warn(
@@ -132,12 +143,51 @@ import SearchBar from "./SearchBar.astro"
     }
   }
 
-  // Ensure navbar is initialized properly
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initNavbar)
-  } else {
-    initNavbar() // DOM already loaded
+function handleContactLink(event) {
+    event.preventDefault(); // Prevent default anchor behavior
+
+    const currentPath = window.location.pathname;
+    const targetPath = "/"; // Assuming #contact is on the homepage
+    const contactSection = document.getElementById("contact");
+
+    if (currentPath === targetPath && contactSection) {
+      // If already on the homepage, scroll to #contact
+      contactSection.scrollIntoView({ behavior: "smooth" });
+      window.history.replaceState(null, "", targetPath); // Clean URL
+    } else {
+      // Navigate to homepage and scroll to #contact after page load
+      window.location.assign(targetPath);
+      // Use sessionStorage to signal scrolling after navigation
+      sessionStorage.setItem("scrollToContact", "true");
+    }
   }
 
-  document.addEventListener("astro:page-load", initNavbar)
+  // Check for scroll-to-contact signal on page load
+  function checkScrollToContact() {
+    if (sessionStorage.getItem("scrollToContact") === "true") {
+      const contactSection = document.getElementById("contact");
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: "smooth" });
+        window.history.replaceState(null, "", window.location.pathname); // Clean URL
+      }
+      sessionStorage.removeItem("scrollToContact"); // Clear signal
+    }
+  }
+
+// Ensure navbar is initialized and check for scroll-to-contact
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", () => {
+      initNavbar();
+      checkScrollToContact();
+    });
+  } else {
+    initNavbar();
+    checkScrollToContact();
+  }
+
+  document.addEventListener("astro:page-load", () => {
+    initNavbar();
+    checkScrollToContact();
+  });
+
 </script>

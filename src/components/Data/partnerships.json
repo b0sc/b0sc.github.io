@@ -1,0 +1,44 @@
+[
+  {
+    "src": "/clients/hacktoberfest.svg",
+    "alt": "Hacktoberfest logo",
+    "height": "48",
+    "class": "h-12 w-auto mx-auto",
+    "name": "Hacktoberfest"
+  },
+  {
+    "src": "/clients/dff_full_logo_blue_white.png",
+    "alt": "DFF logo",
+    "height": "32",
+    "class": "h-8 w-auto m-auto",
+    "name": "DFF"
+  },
+  {
+    "src": "/clients/bmc.png",
+    "alt": "BMC logo",
+    "height": "48",
+    "class": "h-12 w-auto mx-auto",
+    "name": "BMC"
+  },
+  {
+    "src": "/clients/hot.svg",
+    "alt": "HOT logo",
+    "height": "48",
+    "class": "h-12 w-auto mx-auto",
+    "name": "HOT"
+  },
+  {
+    "src": "/clients/osm.svg",
+    "alt": "OSM logo",
+    "height": "36",
+    "class": "h-9 w-auto m-auto",
+    "name": "OSM"
+  },
+  {
+    "src": "/clients/libre_community.png",
+    "alt": "Libre Community logo",
+    "height": "48",
+    "class": "h-12 w-auto mx-auto",
+    "name": "Libre Community"
+  }
+]
