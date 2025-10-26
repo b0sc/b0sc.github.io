@@ -1,0 +1,116 @@
+---
+interface Internship {
+  id: number
+  title: string
+  company: string
+  location: string
+  type: string
+  duration: string
+  stipend: number
+  description: string
+  requirements: string[]
+  applyLink: string
+  postedDate: string
+  expiryDate: string
+  logo: string
+  category: string
+}
+
+interface Props {
+  internship: Internship
+}
+
+const { internship } = Astro.props
+---
+
+<article class="p-6 bg-white rounded-3xl border border-gray-200 shadow-card hover:shadow-lg transition-all duration-300 flex flex-col h-full">
+  <!-- Header Section -->
+  <div class="flex justify-between items-center mb-4">
+    <div class="flex items-center gap-2">
+      <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">
+        {internship.type}
+      </span>
+      <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">
+        {internship.category}
+      </span>
+    </div>
+    <span class="text-xs text-gray-500">
+      <!-- Posted: {new Date(internship.postedDate).toLocaleDateString()} -->
+    </span>
+  </div>
+
+  <!-- Company & Title -->
+  <div class="flex items-center gap-3 mb-4">
+    <img 
+      class="w-12 h-12 rounded-lg object-cover border"
+      src={internship.logo || "/companies/default.png"} 
+      alt={`${internship.company} logo`}
+    />
+    <div>
+      <h2 class="lg:text-[1rem] text-sm font-bold text-gray-900">{internship.title}</h2>
+      <p class="text-gray-600 font-medium  text-sm">{internship.company}</p>
+    </div>
+  </div>
+
+  <!-- Location & Duration -->
+  <div class="flex items-center gap-4 lg:text-sm text-[11px] text-gray-600 mb-4">
+    <div class="flex items-center gap-1">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+      </svg>
+      {internship.location}
+    </div>
+    <div class="flex items-center gap-1 lg:text-sm text-[11px] text-gray-600">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+      </svg>
+      {internship.duration}
+    </div>
+  </div>
+
+  <!-- Description -->
+  <p class="text-gray-600 lg:text-sm text-[11px] mb-4 line-clamp-3 flex-grow">
+    {internship.description}
+  </p>
+
+  <!-- Requirements -->
+  <div class="mb-4">
+    <h3 class="text-sm font-semibold text-gray-900 mb-2">Requirements:</h3>
+    <div class="flex flex-wrap gap-2 lg:text-sm text-[11px]">
+      {internship.requirements.map((req) => (
+        <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">
+          {req}
+        </span>
+      ))}
+    </div>
+  </div>
+
+  <!-- Footer Section - This will always be at the bottom -->
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 pt-4 border-t border-gray-200 mt-auto">
+  <div class="flex flex-wrap items-center gap-2 sm:gap-4">
+    <span class="bg-purple-100 text-purple-800 text-xs sm:text-sm font-semibold px-2 sm:px-3 py-1 rounded whitespace-nowrap">
+      Rs. {internship.stipend.toLocaleString()}
+    </span>
+    <span class="text-xs sm:text-sm text-red-600 font-medium whitespace-nowrap">
+      Expires: {new Date(internship.expiryDate).toLocaleDateString()}
+    </span>
+  </div>
+  <a 
+    href={internship.applyLink}
+    target="_blank"
+    class="bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-lg text-sm font-medium transition-colors whitespace-nowrap w-full sm:w-auto text-center"
+  >
+    Apply Now
+  </a>
+</div>
+</article>
+
+<style>
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+</style>

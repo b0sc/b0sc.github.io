@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Frontend Developer Intern",
+    "company": "TechCorp Inc.",
+    "location": "Kathmandu, Nepal",
+    "type": "On-site",
+    "duration": "3 months",
+    "stipend": 15000,
+    "description": "We are looking for a passionate Frontend Developer intern to join our team. You will work with modern technologies like React, Next.js, and TypeScript.",
+    "requirements": ["React", "JavaScript", "HTML/CSS", "Git"],
+    "applyLink": "https://example.com/apply/1",
+    "postedDate": "2025-01-15",
+    "expiryDate": "2026-02-15",
+    "logo": "../../../public/clients/osm.svg",
+    "category": "Development"
+  },
+  {
+    "id": 2,
+    "title": "Backend Engineer Intern",
+    "company": "DataSystems Ltd.",
+    "location": "Remote",
+    "type": "Remote",
+    "duration": "6 months",
+    "stipend": 20000,
+    "description": "Join our backend team to work on scalable systems using Node.js, Python, and cloud technologies.",
+    "requirements": ["Node.js", "Python", "MongoDB", "AWS"],
+    "applyLink": "https://example.com/apply/2",
+    "postedDate": "2024-01-10",
+    "expiryDate": "2024-02-10",
+    "logo": "../../../public/clients/hacktoberfest.svg",
+    "category": "Development"
+  },
+  {
+    "id": 3,
+    "title": "UI/UX Design Intern",
+    "company": "DesignStudio",
+    "location": "Pokhara, Nepal",
+    "type": "Hybrid",
+    "duration": "4 months",
+    "stipend": 12000,
+    "description": "Create beautiful and functional user interfaces for our clients. Work with Figma, Adobe Creative Suite.",
+    "requirements": ["Figma", "UI/UX Principles", "Prototyping", "User Research"],
+    "applyLink": "https://example.com/apply/3",
+    "postedDate": "2024-01-20",
+    "expiryDate": "2024-02-20",
+    "logo": "../../../public/clients/bmc.png",
+    "category": "Design"
+  }
+]
