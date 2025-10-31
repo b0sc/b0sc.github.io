@@ -3,7 +3,7 @@ title: "Setting up Servers with TV Setup Box"
 pubDate: 2024-12-30
 author: "Bijesh Ghimire"
 # layout: ../../layouts/BlogLayout.astro
-authImage: "/default_mentor.jpg"
+authImage: "../../mentors/bijesh.jpeg"
 coverImage: "/blogs_assets/servers-with-setup-box/cover.png"
 slug: servers-with-setup-box
 summary: "Do you have a TV setup box lying around? Learn how to set up a server with it and host your own website or application or even a mail server."
