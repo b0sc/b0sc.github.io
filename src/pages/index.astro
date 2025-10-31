@@ -6,6 +6,7 @@ import TopEvents from "../components/TopEvent.astro"
 import Contact from "../components/Contact.astro"
 import Project from "../components/Project.astro"
 import FeaturedBlog from "../components/FeaturedBlog.astro"
+import Disqus from "../components/Disqus.astro"
 ---
 
 <Layout
@@ -21,5 +22,8 @@ import FeaturedBlog from "../components/FeaturedBlog.astro"
     <Project />
     <FeaturedBlog />
     <Contact />
+    <div class="p-4 h-fit">
+      <Disqus />
+    </div>
   </main>
 </Layout>
