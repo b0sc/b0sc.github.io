@@ -12,7 +12,7 @@
     "applyLink": "https://example.com/apply/1",
     "postedDate": "2025-01-15",
     "expiryDate": "2026-02-15",
-    "logo": "../../../public/clients/osm.svg",
+    "logo": "../../../clients/osm.svg",
     "category": "Development"
   },
   {
@@ -28,7 +28,7 @@
     "applyLink": "https://example.com/apply/2",
     "postedDate": "2024-01-10",
     "expiryDate": "2024-02-10",
-    "logo": "../../../public/clients/hacktoberfest.svg",
+    "logo": "../../../clients/hacktoberfest.svg",
     "category": "Development"
   },
   {
@@ -44,7 +44,7 @@
     "applyLink": "https://example.com/apply/3",
     "postedDate": "2024-01-20",
     "expiryDate": "2024-02-20",
-    "logo": "../../../public/clients/bmc.png",
+    "logo": "../../../clients/bmc.png",
     "category": "Design"
   }
 ]
