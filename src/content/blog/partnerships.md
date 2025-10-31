@@ -2,7 +2,7 @@
 title: "BOSC Partnerships"
 pubDate: 2021-10-30
 author: "Birendra Open Source Club"
-authImage: "/default_mentor.jpg"
+authImage: "/logo.png"
 coverImage: "/projects/college.png"
 slug: partnerships
 summary: "BOSC has partnered with various organizations to provide students with opportunities to learn and grow."
