@@ -2,7 +2,7 @@
   {
     "id": 38,
     "type": "Event",
-    "featured": false,
+    "featured": true,
     "name_1": "Celebrating: ",
     "name_2": "Hacktoberfest 2025",
     "desc": "Developers, it’s that time again! ⚡ Hacktoberfest 2025 is here, and BOSC Club is opening the gates for fresh ideas, bold code, and real collaboration 💻 Join the wave — contribute, connect, and leave your mark on open source 🌍",
@@ -21,7 +21,7 @@
       "social": "https://www.facebook.com/share/p/1BTh1wHYSB/",
       "registration": "https://github.com/b0sc"
     },
-    "images": ["/events/38/pic1.jpg"],
+    "images": ["/events/38/pic1.jpg", "/events/38/pic2.jpg"],
     "stats": {
       "participants": 20,
       "time": "15 days",
@@ -29,6 +29,11 @@
       "prize": true,
       "entry_fee": 0,
       "points": [
+        "🤝 29 Commits",
+        "</> 26 Merged Pull Requests",
+        "🍴 30 Forks",
+        "📒 18 Closed Issues",
+        "🌟 15 Stars"
       ]
     }
   },
@@ -69,7 +74,7 @@
       "social": "https://www.facebook.com/share/p/17WNVjoRGZ/",
       "registration": "https://forms.gle/BjwUiajvnJxkcAMW6"
     },
-    "images": ["/events/37/pic1.jpg", "/events/37/pic2.jpg"],
+    "images": ["/events/37/pic1.jpg", "/events/37/pic2.jpg", "/events/37/pic3.jpg","/events/37/pic4.jpg", "/events/37/pic5.jpg"],
     "stats": {
       "participants": 30,
       "time": "3 hrs",
@@ -555,7 +560,7 @@
   {
     "id": 26,
     "type": "Event",
-    "featured": true,
+    "featured": false,
     "name_1": "Hacktoberfest 2024:",
     "name_2": "Open Contributions",
     "desc": "Calling all developers and open– source enthusiasts!🚀BOSC Club is excited to kick off contributions for Hactoberfest 2024 💻 A 2 week long event. Let's collaborate, code, and grow the open–source community together 🌍",
