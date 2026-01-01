@@ -8,7 +8,7 @@ author: "Sandesh Gadal"
 
 # layout: ../../layouts/BlogLayout.astro
 
-authImage: "/public/blogs_assets/linux-commands/sandesh-gadal.png"
+authImage: "/blogs_assets/linux-commands/sandesh-gadal.png"
 
 coverImage: "/public/blogs_assets/linux-commands/basic-linux-coverimg.png"
 

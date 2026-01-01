@@ -8,8 +8,13 @@ const upcomingEImage =
   upcomingE.cover_photo === ""
     ? "/services/Illustration.svg"
     : upcomingE.cover_photo
+
+const today = new Date()
+today.setDate(today.getDate() + 1)
+const eventDate = new Date(upcomingE.date)
 ---
 
+{today > eventDate ? null :
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
   <div class="justify-center items-center gap-[275px] flex">
     <div
@@ -209,3 +214,4 @@ const upcomingEImage =
 
   document.addEventListener("astro:page-load", initShareButton)
 </script>
+}
