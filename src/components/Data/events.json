@@ -1,5 +1,41 @@
 [
   {
+    "id": 39,
+    "type": "Event",
+    "featured": true,
+    "name_1": "Call For Contributors: ",
+    "name_2": "OpenSource 101!",
+    "desc": "Ever thought about contributing to open source but felt confused or nervous? 👀 This is your sign! 🚀 OpenSource 101 by BOSC Club is a chill, beginner-friendly session where we talk code, explore cool projects, and learn how to make your very first open-source contribution 💻✨ Come hang out, learn together, meet awesome people, and kickstart your open-source journey the fun way 🌍🎉",
+    "year": 2026,
+    "date": "2026-01-06",
+    "time": "10:30 AM",
+    "venue": "Physical - BMC, Naubigha",
+    "organizer": ["BOSC"],
+    "partners": ["You🫵"],
+    "mentors": [],
+    "guests": [],
+    "cover_photo": "/events/39/cover.jpg",
+    "background": "bg-zinc-100",
+    "links": {
+      "blog": "/blogs/39",
+      "social": "https://www.facebook.com/birendraopensourceclub",
+      "registration": "https://www.facebook.com/birendraopensourceclub"
+    },
+    "images": [],
+    "stats": {
+      "participants": 30,
+      "time": "10:30 AM - 12:00 PM",
+      "certificate": false,
+      "prize": false,
+      "entry_fee": 0,
+      "points": [
+        "</> contribution session",
+        "🎊 Free Entry",
+        "🚀 start your opensource journey"
+      ]
+    }
+  },
+  {
     "id": 38,
     "type": "Event",
     "featured": true,
@@ -74,7 +110,13 @@
       "social": "https://www.facebook.com/share/p/17WNVjoRGZ/",
       "registration": "https://forms.gle/BjwUiajvnJxkcAMW6"
     },
-    "images": ["/events/37/pic1.jpg", "/events/37/pic2.jpg", "/events/37/pic3.jpg","/events/37/pic4.jpg", "/events/37/pic5.jpg"],
+    "images": [
+      "/events/37/pic1.jpg",
+      "/events/37/pic2.jpg",
+      "/events/37/pic3.jpg",
+      "/events/37/pic4.jpg",
+      "/events/37/pic5.jpg"
+    ],
     "stats": {
       "participants": 30,
       "time": "3 hrs",
@@ -94,8 +136,14 @@
     "date": "2025-09-20",
     "time": "08:00 PM",
     "venue": "Discord, BOSC",
-   "organizer": ["BOSC"],
-    "partners": ["LibreOffice", "AiDA hackathon", "CSITAN-Chitwan","Birendra IT-Club","<Code>ForChange"],
+    "organizer": ["BOSC"],
+    "partners": [
+      "LibreOffice",
+      "AiDA hackathon",
+      "CSITAN-Chitwan",
+      "Birendra IT-Club",
+      "<Code>ForChange"
+    ],
     "mentors": [],
     "guests": [
       {
@@ -140,7 +188,6 @@
         "tag": "SFD Speaker 2024",
         "connect": "https://www.facebook.com/aashutoshx24"
       }
-
     ],
     "cover_photo": "/events/36/cover.jpg",
     "background": "bg-lime-500",
@@ -149,7 +196,12 @@
       "social": "https://www.facebook.com/birendraopensourceclub",
       "registration": "https://docs.google.com/forms/d/e/1FAIpQLSfLVYZgMwcn-8_4A0n59IKVxmImxZVoZ_iALWMIIROqQfeR3A/viewform"
     },
-    "images": ["/events/36/sfd1.png","/events/36/sfd2.png","/events/36/sfd3.png","/events/36/sfd4.png"],
+    "images": [
+      "/events/36/sfd1.png",
+      "/events/36/sfd2.png",
+      "/events/36/sfd3.png",
+      "/events/36/sfd4.png"
+    ],
     "stats": {
       "participants": 50,
       "time": "5 hrs",
@@ -165,7 +217,7 @@
       ]
     }
   },
-   {
+  {
     "id": 35,
     "type": "Event",
     "featured": false,
@@ -204,21 +256,20 @@
       "entry_fee": 0
     }
   },
-   {
+  {
     "id": 34,
     "type": "Event",
     "featured": false,
     "name_1": "Annual General Meeting:",
     "name_2": "AGM 2025",
-  "desc": "A new chapter new tenure! 🎉 Join us as we continue to grow, innovate, and strengthen our community together. Bring your ideas, energy, and vision to shape the future of the club.🗿",
+    "desc": "A new chapter new tenure! 🎉 Join us as we continue to grow, innovate, and strengthen our community together. Bring your ideas, energy, and vision to shape the future of the club.🗿",
     "year": 2025,
     "date": "2025-08-03",
     "time": "07:00 AM",
     "venue": "RMC Hall - BMC, 10 Bigha",
     "organizer": ["BOSC"],
     "partners": [],
-    "mentors": [
-    ],
+    "mentors": [],
     "guests": [
       {
         "name": "Tika Ram Rijal",
@@ -235,7 +286,7 @@
       "social": "https://www.facebook.com/share/p/1ZvSQxuMt5/",
       "registration": ""
     },
-    "images": ["/events/34/agm1.jpg","/events/34/agm2.jpg"],
+    "images": ["/events/34/agm1.jpg", "/events/34/agm2.jpg"],
     "stats": {
       "participants": 30,
       "time": "3 hrs",
