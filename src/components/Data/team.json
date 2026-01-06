@@ -79,6 +79,13 @@
     }
   ],
   "members": [
+      {
+      "title": "General Member",
+      "name": "Sachin Rijal",
+      "description": "Emerging Backend devloper with keen interest in Tech.",
+      "profile": "/team/tenure-2027/general_member/sachin.jpg",
+      "link": "https://www.linkedin.com/in/sachin-rijal-a29058317/"
+    },
     {
       "title": "General Member",
       "name": "Aditya poudel",
