@@ -116,6 +116,13 @@
     },
     {
       "title": "General Member",
+      "name": "Suyana kandel",
+      "description": "Passionate in learning new technologies. Creative and ambitious individual",
+      "profile": "/team/tenure-2027/general_member/suyana_kandel.jpg",
+      "link": "https://github.com/Suyana62"
+    },
+    {
+      "title": "General Member",
       "name": "Rabin Poudel",
       "description": "Focused  system optimization, and hands-on problem-solving.Driven to explore technology deeply and create practical solutions with creativity and curiosity",
       "profile": "/team/tenure-2027/general_member/rabin_poudel.jpg",
@@ -132,7 +139,7 @@
       "title":"General Member",
       "name":"Prasamsha Baral",
       "description":"An aspiring developer exploring frontend development, JavaScript, and open source.",
-      "profile":"/public/team/tenure-2027/general_member/prasamsha.jpeg",
+      "profile":"/team/tenure-2027/general_member/prasamsha.jpeg",
       "link":"https://www.facebook.com/prasamshabrl/"
 
     }
