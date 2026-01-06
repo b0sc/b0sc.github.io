@@ -79,6 +79,13 @@
     }
   ],
   "members": [
+    { 
+      "title": "General Member",
+      "name": "Prasanna Bhattarai",
+      "description": "Sincerely learning the IT world",
+      "profile": "/team/tenure-2027/general_member/prasanna_bhattarai.png",
+      "link": "https://github.com/prasannabhattarai252-lab"
+    },
     {
       "title": "General Member",
       "name": "Aditya poudel",
