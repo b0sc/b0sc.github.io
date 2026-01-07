@@ -79,7 +79,7 @@
     }
   ],
   "members": [
-      {
+    {
       "title": "General Member",
       "name": "Sachin Rijal",
       "description": "Emerging Backend devloper with keen interest in Tech.",
@@ -109,6 +109,13 @@
     },
     {
       "title": "General Member",
+      "name": "Sudip Kandel",
+      "description": "Currently learning and trying to become a software developer, the future may take me anywhere.",
+      "profile": "/team/tenure-2027/general_member/sudipKandel.jpeg",
+      "link": "https://linkedin.com/in/sudip-kandel7"
+    },
+    {
+      "title": "General Member",
       "name": "Sudeep Sigdel",
       "description": "Python Developer. Creates optimal APIs.....sometimes ",
       "profile": "/team/tenure-2027/general_member/sudeep_sigdel.jpg",
@@ -128,7 +135,7 @@
       "profile": "/team/tenure-2027/general_member/rabin_poudel.jpg",
       "link": "https://github.com/rabin202"
     },
-      {
+    {
       "title": "General Member",
       "name": "Rajeev Kadariya",
       "description": "Passionate in learning new technologies. Creative and ambitious individual",
@@ -136,12 +143,11 @@
       "link": "https://www.linkedin.com/in/rajeev-kadariya"
     },
     {
-      "title":"General Member",
-      "name":"Prasamsha Baral",
-      "description":"An aspiring developer exploring frontend development, JavaScript, and open source.",
-      "profile":"/team/tenure-2027/general_member/prasamsha.jpeg",
-      "link":"https://www.facebook.com/prasamshabrl/"
-
+      "title": "General Member",
+      "name": "Prasamsha Baral",
+      "description": "An aspiring developer exploring frontend development, JavaScript, and open source.",
+      "profile": "/team/tenure-2027/general_member/prasamsha.jpeg",
+      "link": "https://www.facebook.com/prasamshabrl/"
     }
   ],
   "immediate-past": [
