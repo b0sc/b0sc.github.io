@@ -81,6 +81,13 @@
   "members": [
     {
       "title": "General Member",
+      "name": "Rojan Regmi",
+      "description": "Exploring tech, building cool stuff, and learning something new every day.",
+      "profile": "/team/tenure-2027/general_member/rojan.jpg",
+      "link": "https://www.linkedin.com/in/rojan-regmi/"
+    },
+    {
+      "title": "General Member",
       "name": "Sachin Rijal",
       "description": "Emerging Backend devloper with keen interest in Tech.",
       "profile": "/team/tenure-2027/general_member/sachin.jpg",
