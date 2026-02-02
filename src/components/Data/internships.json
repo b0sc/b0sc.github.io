@@ -19,8 +19,8 @@
     "applyLink": "https://w3developers.com.np/career",
     "postedDate": "2026-02-02",
     "expiryDate": "2026-02-15",
-    "logo": "../../../public/clients/internship/w3developers/logo.jpg",
-    "poster": "../../../public/clients/internship/w3developers/poster.jpeg",
+    "logo": "/clients/internship/w3developers/logo.jpg",
+    "poster": "/clients/internship/w3developers/poster.jpeg",
     "category": "Development"
   },
   {
@@ -43,8 +43,8 @@
     "applyLink": "https://w3developers.com.np/career",
     "postedDate": "2026-02-02",
     "expiryDate": "2026-02-15",
-    "logo": "../../../public/clients/internship/w3developers/logo.jpg",
-    "poster": "../../../public/clients/internship/w3developers/poster2.jpeg",
+    "logo": "/clients/internship/w3developers/logo.jpg",
+    "poster": "/clients/internship/w3developers/poster2.jpeg",
     "category": "Development"
   },
   {
@@ -64,8 +64,8 @@
     "applyLink": "https://w3developers.com.np/career",
     "postedDate": "2026-02-02",
     "expiryDate": "2026-02-15",
-    "logo": "../../../public/clients/internship/w3developers/logo.jpg",
-    "poster": "../../../public/clients/internship/w3developers/poster3.jpeg",
+    "logo": "/clients/internship/w3developers/logo.jpg",
+    "poster": "/clients/internship/w3developers/poster3.jpeg",
     "category": "Development"
   },
   {
@@ -81,8 +81,8 @@
     "applyLink": "https://w3developers.com.np/career",
     "postedDate": "2026-02-02",
     "expiryDate": "2026-02-15",
-    "logo": "../../../public/clients/internship/w3developers/logo.jpg",
-    "poster": "../../../public/clients/internship/w3developers/poster4.jpeg",
+    "logo": "/clients/internship/w3developers/logo.jpg",
+    "poster": "/clients/internship/w3developers/poster4.jpeg",
     "category": "Design"
   }
 ]
