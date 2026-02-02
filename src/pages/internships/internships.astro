@@ -1,6 +1,6 @@
 ---
-import InternshipCard from "../../components/Cards/InternshipCard.astro";
-import internshipsData from "../../components/Data/internships.json";
+import InternshipCard from "../../components/Cards/InternshipCard.astro"
+import internshipsData from "../../components/Data/internships.json"
 
 interface Internship {
   id: number
@@ -16,12 +16,13 @@ interface Internship {
   postedDate: string
   expiryDate: string
   logo: string
+  poster: string
   category: string
 }
 
 // Check if internship is expired
 function isExpired(expiryDate: string): boolean {
-  return new Date(expiryDate) < new Date();
+  return new Date(expiryDate) < new Date()
 }
 ---
 
@@ -31,8 +32,13 @@ function isExpired(expiryDate: string): boolean {
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
       <!-- Sort By -->
       <div>
-        <label class="block text-sm font-medium text-gray-700 mb-2">Sort By</label>
-        <select id="sortSelect" class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+        <label class="block text-sm font-medium text-gray-700 mb-2"
+          >Sort By</label
+        >
+        <select
+          id="sortSelect"
+          class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+        >
           <option value="newest">Newest First</option>
           <option value="stipend">Highest Stipend</option>
           <option value="expiry">Expiring Soon</option>
@@ -41,19 +47,30 @@ function isExpired(expiryDate: string): boolean {
 
       <!-- Location Filter -->
       <div>
-        <label class="block text-sm font-medium text-gray-700 mb-2">Location</label>
-        <select id="locationSelect" class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+        <label class="block text-sm font-medium text-gray-700 mb-2"
+          >Location</label
+        >
+        <select
+          id="locationSelect"
+          class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+        >
           <option value="all">All Locations</option>
           <option value="kathmandu">Kathmandu</option>
           <option value="pokhara">Pokhara</option>
+          <option value="chitwan">Chitwan</option>
           <option value="remote">Remote</option>
         </select>
       </div>
 
       <!-- Category Filter -->
       <div>
-        <label class="block text-sm font-medium text-gray-700 mb-2">Category</label>
-        <select id="categorySelect" class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+        <label class="block text-sm font-medium text-gray-700 mb-2"
+          >Category</label
+        >
+        <select
+          id="categorySelect"
+          class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+        >
           <option value="all">All Categories</option>
           <option value="Development">Development</option>
           <option value="Design">Design</option>
@@ -64,12 +81,21 @@ function isExpired(expiryDate: string): boolean {
 
     <!-- Clear Filters Button -->
     <div class="mt-4 flex justify-end">
-      <button 
+      <button
         id="clearFilters"
         class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-6 py-2 rounded-lg font-medium transition-colors flex items-center gap-2"
       >
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        <svg
+          class="w-4 h-4"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"></path>
         </svg>
         Clear All Filters
       </button>
@@ -79,189 +105,223 @@ function isExpired(expiryDate: string): boolean {
   <!-- Results Count -->
   <div class="mb-6">
     <p class="text-gray-600">
-      Showing <span id="resultCount" class="font-semibold">0</span> internship<span id="plural">s</span>
+      Showing <span id="resultCount" class="font-semibold">0</span> internship<span
+        id="plural">s</span
+      >
     </p>
   </div>
 
   <!-- Internships Grid -->
-  <div id="internshipsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    {internshipsData.map((internship) => (
-      <div data-internship={JSON.stringify(internship)} data-expired={isExpired(internship.expiryDate)}>
-        <InternshipCard internship={internship} />
-      </div>
-    ))}
+  <div
+    id="internshipsGrid"
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+  >
+    {
+      internshipsData.map((internship) => (
+        <div
+          data-internship={JSON.stringify(internship)}
+          data-expired={isExpired(internship.expiryDate)}
+        >
+          <InternshipCard internship={internship} />
+        </div>
+      ))
+    }
   </div>
 
   <!-- No Results Message -->
   <div id="noResults" class="text-center py-12 hidden">
     <div class="text-gray-400 mb-4">
-      <svg class="w-24 h-24 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+      <svg
+        class="w-24 h-24 mx-auto"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1"
+          d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+        ></path>
       </svg>
     </div>
-    <h3 class="text-xl font-semibold text-gray-900 mb-2">No internships found</h3>
-    <p class="text-gray-600">Try adjusting your filters to find more opportunities.</p>
+    <h3 class="text-xl font-semibold text-gray-900 mb-2">
+      No internships found
+    </h3>
+    <p class="text-gray-600">
+      Try adjusting your filters to find more opportunities.
+    </p>
   </div>
 </div>
 
 <script define:vars={{ internshipsData }}>
   // Store all internships
-  let allInternships = internshipsData;
+  let allInternships = internshipsData
 
   // Get DOM elements
-  const sortSelect = document.getElementById('sortSelect');
-  const locationSelect = document.getElementById('locationSelect');
-  const categorySelect = document.getElementById('categorySelect');
-  const clearFiltersBtn = document.getElementById('clearFilters');
-  const grid = document.getElementById('internshipsGrid');
-  const resultCount = document.getElementById('resultCount');
-  const plural = document.getElementById('plural');
-  const noResults = document.getElementById('noResults');
+  const sortSelect = document.getElementById("sortSelect")
+  const locationSelect = document.getElementById("locationSelect")
+  const categorySelect = document.getElementById("categorySelect")
+  const clearFiltersBtn = document.getElementById("clearFilters")
+  const grid = document.getElementById("internshipsGrid")
+  const resultCount = document.getElementById("resultCount")
+  const plural = document.getElementById("plural")
+  const noResults = document.getElementById("noResults")
 
   // Check if internship is expired
   function isExpired(expiryDate) {
-    return new Date(expiryDate) < new Date();
+    return new Date(expiryDate) < new Date()
   }
 
   // Add expired chips to cards
   function addExpiredChips() {
-    const allCards = grid.querySelectorAll('[data-internship]');
-    
-    allCards.forEach(card => {
-      const internshipData = JSON.parse(card.getAttribute('data-internship'));
-      const expired = isExpired(internshipData.expiryDate);
-      
+    const allCards = grid.querySelectorAll("[data-internship]")
+
+    allCards.forEach((card) => {
+      const internshipData = JSON.parse(card.getAttribute("data-internship"))
+      const expired = isExpired(internshipData.expiryDate)
+
       if (expired) {
         // Find the card content (InternshipCard component)
-        const cardElement = card.querySelector('[class*="bg-white"]') || card.firstElementChild;
-        
-        if (cardElement && !card.querySelector('.expired-chip')) {
+        const cardElement =
+          card.querySelector('[class*="bg-white"]') || card.firstElementChild
+
+        if (cardElement && !card.querySelector(".expired-chip")) {
           // Create expired chip
-          const expiredChip = document.createElement('div');
-          expiredChip.className = 'expired-chip absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-xs font-semibold shadow-lg z-10';
-          expiredChip.textContent = 'EXPIRED';
-          
+          const expiredChip = document.createElement("div")
+          expiredChip.className =
+            "expired-chip absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-xs font-semibold shadow-lg z-10"
+          expiredChip.textContent = "EXPIRED"
+
           // Make card relative if not already
-          if (cardElement.style.position !== 'relative') {
-            cardElement.style.position = 'relative';
+          if (cardElement.style.position !== "relative") {
+            cardElement.style.position = "relative"
           }
-          
-          cardElement.appendChild(expiredChip);
-          
+
+          cardElement.appendChild(expiredChip)
+
           // Add opacity to expired cards
-          cardElement.style.opacity = '0.7';
+          cardElement.style.opacity = "0.7"
         }
       }
-    });
+    })
   }
 
   // Filter and sort function
   function filterAndSort() {
-    const sortBy = sortSelect.value;
-    const location = locationSelect.value;
-    const category = categorySelect.value;
+    const sortBy = sortSelect.value
+    const location = locationSelect.value
+    const category = categorySelect.value
 
     // Apply filters
-    let filtered = allInternships.filter(internship => {
-      const locationMatch = location === "all" || 
-                           internship.location.toLowerCase().includes(location.toLowerCase());
-      const categoryMatch = category === "all" || internship.category === category;
-      return locationMatch && categoryMatch;
-    });
+    let filtered = allInternships.filter((internship) => {
+      const locationMatch =
+        location === "all" ||
+        internship.location.toLowerCase().includes(location.toLowerCase())
+      const categoryMatch =
+        category === "all" || internship.category === category
+      return locationMatch && categoryMatch
+    })
 
     // Apply sorting
     filtered.sort((a, b) => {
       if (sortBy === "newest") {
-        return new Date(b.postedDate).getTime() - new Date(a.postedDate).getTime();
+        return (
+          new Date(b.postedDate).getTime() - new Date(a.postedDate).getTime()
+        )
       } else if (sortBy === "stipend") {
-        return b.stipend - a.stipend;
+        return b.stipend - a.stipend
       } else if (sortBy === "expiry") {
-        return new Date(a.expiryDate).getTime() - new Date(b.expiryDate).getTime();
+        return (
+          new Date(a.expiryDate).getTime() - new Date(b.expiryDate).getTime()
+        )
       }
-      return 0;
-    });
+      return 0
+    })
 
     // Update UI
-    updateGrid(filtered);
+    updateGrid(filtered)
   }
 
   // Update grid display
   function updateGrid(internships) {
-    const allCards = grid.querySelectorAll('[data-internship]');
-    
+    const allCards = grid.querySelectorAll("[data-internship]")
+
     // Hide all cards first
-    allCards.forEach(card => {
-      card.style.display = 'none';
-    });
+    allCards.forEach((card) => {
+      card.style.display = "none"
+    })
 
     // Show and reorder filtered cards
     if (internships.length > 0) {
       internships.forEach((internship, index) => {
-        const card = Array.from(allCards).find(c => {
-          const data = JSON.parse(c.getAttribute('data-internship'));
-          return data.id === internship.id;
-        });
-        
+        const card = Array.from(allCards).find((c) => {
+          const data = JSON.parse(c.getAttribute("data-internship"))
+          return data.id === internship.id
+        })
+
         if (card) {
-          card.style.display = 'block';
-          card.style.order = index;
+          card.style.display = "block"
+          card.style.order = index
         }
-      });
-      
-      noResults.classList.add('hidden');
+      })
+
+      noResults.classList.add("hidden")
     } else {
-      noResults.classList.remove('hidden');
+      noResults.classList.remove("hidden")
     }
 
     // Update count
-    resultCount.textContent = internships.length;
-    plural.textContent = internships.length !== 1 ? 's' : '';
+    resultCount.textContent = internships.length
+    plural.textContent = internships.length !== 1 ? "s" : ""
   }
 
   // Clear all filters
   function clearAllFilters() {
-    sortSelect.value = 'newest';
-    locationSelect.value = 'all';
-    categorySelect.value = 'all';
-    filterAndSort();
+    sortSelect.value = "newest"
+    locationSelect.value = "all"
+    categorySelect.value = "all"
+    filterAndSort()
   }
 
   // Add event listeners
-  sortSelect.addEventListener('change', filterAndSort);
-  locationSelect.addEventListener('change', filterAndSort);
-  categorySelect.addEventListener('change', filterAndSort);
-  clearFiltersBtn.addEventListener('click', clearAllFilters);
+  sortSelect.addEventListener("change", filterAndSort)
+  locationSelect.addEventListener("change", filterAndSort)
+  categorySelect.addEventListener("change", filterAndSort)
+  clearFiltersBtn.addEventListener("click", clearAllFilters)
 
   // Initial render
-  filterAndSort();
-  
+  filterAndSort()
+
   // Add expired chips after initial render
   setTimeout(() => {
-    addExpiredChips();
-  }, 100);
+    addExpiredChips()
+  }, 100)
 </script>
 
 <style>
-.shadow-card {
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
-
-#internshipsGrid {
-  display: grid;
-}
-
-.expired-chip {
-  animation: fadeIn 0.3s ease-in;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.8);
+  .shadow-card {
+    box-shadow:
+      0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
-  to {
-    opacity: 1;
-    transform: scale(1);
+
+  #internshipsGrid {
+    display: grid;
   }
-}
+
+  .expired-chip {
+    animation: fadeIn 0.3s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 </style>
