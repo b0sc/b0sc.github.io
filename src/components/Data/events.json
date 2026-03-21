@@ -1,8 +1,55 @@
 [
   {
-    "id": 39,
+    "id": 40,
     "type": "Event",
     "featured": true,
+    "name_1": "Career Guidance & ",
+    "name_2": "Cyber Security Session",
+    "desc": "🚀 Happening LIVE this Tuesday at 11 AM in Chitwan — join Jiwan Bhattarai at Birendra Multiple Campus for an exciting Career Guidance & Cybersecurity session with real insights and live Q&A! 🎟 Free entry, limited seats — don't miss your chance to explore your IT future and level up your tech journey. 👨‍💻",
+    "year": 2026,
+    "date": "2026-03-24",
+    "time": "11:00 AM",
+    "venue": "Physical - BMC, Naubigha",
+    "organizer": ["BOSC"],
+    "partners": ["Jiwan Bhattarai"],
+    "mentors": [
+      {
+        "name": "Jiwan Bhattarai",
+        "image": "/mentors/jiwan.jpeg",
+        "designation": "CCIE | CEH | IT Mentor | Eduction Activist",
+        "tag": "Multivendor Network/Security Consultant",
+        "connect": "https://www.linkedin.com/in/jiwanbhattarai/"
+      }
+    ],
+    "guests": [],
+    "cover_photo": "/events/40/cover.jpg",
+    "background": "bg-zinc-100",
+    "links": {
+      "blog": "/blogs/40",
+      "social": "https://www.facebook.com/birendraopensourceclub",
+      "registration": "https://tinyurl.com/boscevent"
+    },
+    "images": [],
+    "stats": {
+      "participants": 30,
+      "time": "11:00 AM - 02:00 PM",
+      "certificate": false,
+      "prize": false,
+      "entry_fee": 0,
+      "points": [
+        "🚀 Clear IT career direction — live guidance",
+        "💬 Real answers in live Q&A",
+        "🔐 Cybersecurity basics, live & simple",
+        "🌍 Roadmap to global IT standards",
+        "🛠 Hands-on mindset, real-time tips",
+        "🤝 Community growth & impact — live"
+      ]
+    }
+  },
+  {
+    "id": 39,
+    "type": "Event",
+    "featured": false,
     "name_1": "Call For Contributors: ",
     "name_2": "OpenSource 101!",
     "desc": "Ever thought about contributing to open source but felt confused or nervous? 👀 This is your sign! 🚀 OpenSource 101 by BOSC Club is a chill, beginner-friendly session where we talk code, explore cool projects, and learn how to make your very first open-source contribution 💻✨ Come hang out, learn together, meet awesome people, and kickstart your open-source journey the fun way 🌍🎉",
@@ -21,7 +68,7 @@
       "social": "https://www.facebook.com/birendraopensourceclub",
       "registration": "https://www.facebook.com/birendraopensourceclub"
     },
-    "images": [],
+    "images": ["/events/39/pic1.jpg", "/events/39/pic2.jpg"],
     "stats": {
       "participants": 30,
       "time": "10:30 AM - 12:00 PM",
