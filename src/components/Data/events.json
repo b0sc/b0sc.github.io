@@ -29,10 +29,10 @@
       "social": "https://www.facebook.com/birendraopensourceclub",
       "registration": "https://tinyurl.com/boscevent"
     },
-    "images": [],
+    "images": ["/events/40/pic1.jpeg", "/events/40/pic2.jpeg","/events/40/pic3.jpeg"],
     "stats": {
       "participants": 30,
-      "time": "11:00 AM - 02:00 PM",
+      "time": "11:00 AM - 03:00 PM",
       "certificate": false,
       "prize": false,
       "entry_fee": 0,
