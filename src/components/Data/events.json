@@ -1,8 +1,62 @@
 [
   {
-    "id": 40,
+    "id": 41,
     "type": "Event",
     "featured": true,
+    "name_1": "Python Bootcamp ",
+    "name_2": "with FastAPI",
+    "desc": "Registration Open for the 7-Day Python Bootcamp with FastAPI! 🐍Learn Python, build APIs, and create real projects with hands-on sessions by Code for Change Chitwan & BOSC. 💻 Limited seats available — join now and level up your backend skills! 👨‍💻",
+    "year": 2026,
+    "date": "Physical: 2026/05/18 - 2026/05/25, Online: Remaining 5 days",
+    "time": " 11:00 AM - 01:00 PM, Online 08:00 pm - 10:00 pm",
+    "venue": "Physical - Saptagandaki Multiple Campus",
+    "organizer": ["CFC-Chitwan"],
+    "partners": ["BOSC"],
+    "mentors": [
+      {
+        "name": "Bipin Paudel",
+        "image": "/mentors/bipin.png",
+        "designation": "Python & FastAPI Mentor",
+        "tag": "Guiding and helping you throughout the bootcamp",
+        "connect": "https://www.facebook.com/paudelbipin19"
+      },
+      {
+        "name": "Sudeep Sigdel",
+        "image": "/mentors/sudeep.png",
+        "designation": "Backend Development Mentor",
+        "tag": "Helping you build modern backend skills",
+        "connect": "https://www.facebook.com/sudeepsigdel.11"
+      }
+    ],
+    "guests": [],
+    "cover_photo": "/events/41/cover.jpg",
+    "background": "bg-zinc-100",
+    "links": {
+      "blog": "/blogs/41",
+      "social": "https://www.facebook.com/birendraopensourceclub",
+      "registration": "https://forms.gle/jGUzHmLMjd6fxwBq8"
+    },
+    "images": [],
+    "stats": {
+      "participants": 30,
+      "time": "Physical 11:00 AM - 01:00 PM, Online 08:00 PM - 10:00 PM",
+      "certificate": true,
+      "prize": false,
+      "entry_fee": 150,
+      "points": [
+        "🐍 Interactive Python & FastAPI sessions",
+        "⚡ Hands-on API development",
+        "🛠️ Mini project building",
+        "📚 Beginner-friendly learning",
+        "🌐 Online + physical classes",
+        "🏆 Certificate of participation"
+      ]
+    }
+  },
+  {
+    "id": 40,
+    "type": "Event",
+    "featured": false,
     "name_1": "Career Guidance & ",
     "name_2": "Cyber Security Session",
     "desc": "🚀 Happening LIVE this Tuesday at 11 AM in Chitwan — join Jiwan Bhattarai at Birendra Multiple Campus for an exciting Career Guidance & Cybersecurity session with real insights and live Q&A! 🎟 Free entry, limited seats — don't miss your chance to explore your IT future and level up your tech journey. 👨‍💻",
@@ -29,7 +83,11 @@
       "social": "https://www.facebook.com/birendraopensourceclub",
       "registration": "https://tinyurl.com/boscevent"
     },
-    "images": ["/events/40/pic1.jpeg", "/events/40/pic2.jpeg","/events/40/pic3.jpeg"],
+    "images": [
+      "/events/40/pic1.jpeg",
+      "/events/40/pic2.jpeg",
+      "/events/40/pic3.jpeg"
+    ],
     "stats": {
       "participants": 30,
       "time": "11:00 AM - 03:00 PM",
