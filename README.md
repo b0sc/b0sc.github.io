@@ -102,6 +102,9 @@ The site is built with [Astro](https://astro.build) and [Tailwind CSS](https://t
 - **Blog article:** add `src/content/blog/<slug>.md` using kebab-case for the file name. The frontmatter fields (`title`, `pubDate`, `author`, `authImage`, `coverImage`, `slug`, `summary`, `type`) are validated by `src/content.config.ts`. Put images in `public/blogs_assets/<slug>/` and reference them with site-absolute paths such as `/blogs_assets/<slug>/cover.png`. Do not prefix paths with `/public`.
 - **Event:** add an entry to `src/data/events.json` and put its photos in `public/events/<id>/`.
 - **Member, executive or alumni:** edit `src/data/team.json`.
+- **Opportunity:** add an entry to `src/data/opportunities.json`. Link only to the official page, describe only what that page says, and set `lastVerified` to the date you checked it. `deadline` (optional, `YYYY-MM-DD`) floats the card to the top until that date passes.
+- **Notes:** each program has `src/data/notes-<program>.json` with its official `curriculum` link, `studySites` and per-course `pastQuestionsLink` / `notesLink`. Free courses and books are matched to courses by name through `src/data/learning-resources.json`, so add a topic and a `rules` pattern there instead of repeating links per course.
+- **Constitution and other club documents:** edit the Markdown in `src/content/documents/`.
 
 ### Styling
 
