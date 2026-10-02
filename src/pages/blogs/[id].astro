@@ -6,5 +6,5 @@ export function getStaticPaths() {
   return eventsData.map((event) => ({ params: { id: String(event.id) } }))
 }
 
-return Astro.redirect(`/explore/events/${Astro.params.id}`)
+return Astro.redirect(`/explore/events/${Astro.params.id}`, 301)
 ---
