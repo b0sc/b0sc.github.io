@@ -1,125 +1,150 @@
 ---
-export async function getStaticPaths() {
-  const faculties = ["bca", "bit", "csit", "bicte"]
-  return faculties.map((faculty) => ({ params: { faculty } }))
-}
-
 import Container from "../../components/Container.astro"
-import Layout from "../../layouts/Layout.astro"
 import NavbarNotes from "../../components/NavbarNotes.astro"
-const { faculty } = Astro.params
+import Layout from "../../layouts/Layout.astro"
+import { faculties, getFaculty } from "../../utils/notes"
 
-const facultyMap: Record<string, string> = {
-  bca: "BCA",
-  bit: "BIT",
-  csit: "CSIT",
-  bicte: "BICTE",
+export function getStaticPaths() {
+  return faculties.map((faculty) => ({ params: { faculty: faculty.key } }))
 }
-const facultyName =
-  faculty && facultyMap[faculty] ? facultyMap[faculty] : "Unknown Faculty"
 
-// Dynamic import of faculty JSON
-let facultyData
-try {
-  facultyData = await import(`../../data/notes-${faculty}.json`)
-} catch (e) {
-  facultyData = null
-}
-const info = facultyData?.default?.facultyInfo
+const { faculty, data } = getFaculty(Astro.params.faculty)
+const info = data.facultyInfo
+
+// Long-text sections shown as lists, in this order
+const listSections: [string, string][] = [
+  ["salientFeatures", "Salient features"],
+  ["objectives", "Objectives"],
+  ["eligibility", "Eligibility"],
+  ["admissionCriteria", "Admission criteria"],
+  ["jobProspects", "Career prospects"],
+]
+const facts: [string, string][] = [
+  ["curricularStructure", "Structure"],
+  ["courseDuration", "Duration"],
+  ["hoursOfInstruction", "Hours of instruction"],
+  ["evaluation", "Evaluation"],
+  ["grading", "Grading"],
+  ["attendance", "Attendance"],
+  ["finalExam", "Final exam"],
+]
 ---
 
 <Layout
-  title={`${facultyName} Information & Notes - BOSC`}
-  description={`All information, eligibility, objectives, and notes for ${facultyName} at BOSC.`}
-  image="/cover.png"
-  url={`https://bosc.org.np/notes/${faculty}`}
+  title={`BOSC - ${faculty.name} Notes`}
+  description={`${faculty.fullName}: official syllabus, semester-wise courses, past papers and free learning resources.`}
 >
-  <main class="space-y-20">
+  <main class="pt-7 pb-20">
     <Container>
-      <div class="flex flex-col md:flex-row">
+      <div class="flex flex-col md:flex-row gap-6">
         <NavbarNotes />
-        <div class="w-full px-4">
-          <h1 class="text-3xl font-bold mb-6">{facultyName}</h1>
-          {
-            info && (
-              <div class="space-y-6">
-                {Array.isArray(info.salientFeatures) && (
-                  <section class="bg-white rounded-lg shadow p-5">
-                    <h2 class="text-xl font-semibold mb-2">Salient Features</h2>
-                    <ul class="list-disc ml-6 text-gray-700">
-                      {info.salientFeatures.map((item: string) => (
-                        <li>{item}</li>
-                      ))}
-                    </ul>
-                  </section>
-                )}
-                {Array.isArray(info.objectives) && (
-                  <section class="bg-white rounded-lg shadow p-5">
-                    <h2 class="text-xl font-semibold mb-2">Objectives</h2>
-                    <ul class="list-disc ml-6 text-gray-700">
-                      {info.objectives.map((item: string) => (
-                        <li>{item}</li>
-                      ))}
-                    </ul>
-                  </section>
-                )}
-                {Array.isArray(info.eligibility) && (
-                  <section class="bg-white rounded-lg shadow p-5">
-                    <h2 class="text-xl font-semibold mb-2">Eligibility</h2>
-                    <ul class="list-disc ml-6 text-gray-700">
-                      {info.eligibility.map((item: string) => (
-                        <li>{item}</li>
-                      ))}
-                    </ul>
-                  </section>
-                )}
-                {Array.isArray(info.jobProspects) && (
-                  <section class="bg-white rounded-lg shadow p-5">
-                    <h2 class="text-xl font-semibold mb-2">Job Prospects</h2>
-                    <ul class="list-disc ml-6 text-gray-700">
-                      {info.jobProspects.map((item: string) => (
-                        <li>{item}</li>
-                      ))}
-                    </ul>
-                  </section>
-                )}
-                {info.curricularStructure && (
-                  <section class="bg-white rounded-lg shadow p-5">
-                    <h2 class="text-xl font-semibold mb-2">
-                      Curricular Structure
-                    </h2>
-                    <p class="text-gray-700">{info.curricularStructure}</p>
-                  </section>
-                )}
-                {/* 
-                  "courseDuration": "Eight semesters (four academic years)",
-    "hoursOfInstruction": "90 working days/semester; theory+lab: 6 hrs/week; theory-only: 5 hrs/week.",
-    "evaluation": "Theory: 20% internal, 80% external. Theory+lab: 20% internal, 20% lab, 60% external. Project/internship by multiple evaluators.",
-    "grading": "Distinction: 80%+, First: 70%+, Second: 55%+, Pass: 40%+ (8 semester average)",
-    "attendance": "80% in each course required.",
-    "finalExam": "Conducted by Institute of Science and Technology, Tribhuvan University.",
-                */}
+        <div class="flex-1 min-w-0 space-y-10">
+          <header>
+            <p class="text-sm text-gray-500">Notes / {faculty.name}</p>
+            <h1 class="text-4xl font-bold mt-1">
+              <span class="px-1.5 bg-lime-500 rounded-md">{faculty.name}</span>
+            </h1>
+            <p class="mt-3 text-xl">{faculty.fullName}</p>
+            {
+              faculty.note && (
+                <p class="mt-2 w-fit bg-zinc-100 text-sm font-medium px-2.5 py-0.5 rounded">
+                  {faculty.note}
+                </p>
+              )
+            }
+          </header>
 
-                <section class="bg-white rounded-lg shadow p-5">
-                  <h2 class="text-xl font-semibold mb-2">
-                    Additional Information
-                  </h2>
-                  <ul class="list-disc ml-6 text-gray-700">
-                    {info.courseDuration && (
-                      <li>Course Duration: {info.courseDuration}</li>
-                    )}
-                    {info.hoursOfInstruction && (
-                      <li>Hours of Instruction: {info.hoursOfInstruction}</li>
-                    )}
-                    {info.evaluation && <li>Evaluation: {info.evaluation}</li>}
-                    {info.grading && <li>Grading: {info.grading}</li>}
-                    {info.attendance && <li>Attendance: {info.attendance}</li>}
-                    {info.finalExam && <li>Final Exam: {info.finalExam}</li>}
-                  </ul>
-                </section>
-              </div>
-            )
-          }
+          <section>
+            <h2 class="text-2xl font-bold mb-4">Semesters</h2>
+            <div class="grid gap-4 grid-cols-2 sm:grid-cols-4">
+              {
+                data.semesters.map((sem) => (
+                  <a
+                    href={`/notes/${faculty.key}/${sem.semester}`}
+                    class="p-4 bg-white rounded-3xl border border-zinc-900 shadow-card hover:bg-lime-500 transition-colors"
+                  >
+                    <span class="block text-sm text-gray-500">Semester</span>
+                    <span class="block text-3xl font-bold">{sem.semester}</span>
+                    <span class="block text-sm mt-1">
+                      {sem.courses.length} courses
+                      {sem.electiveCourses?.length
+                        ? ` + ${sem.electiveCourses.length} electives`
+                        : ""}
+                    </span>
+                  </a>
+                ))
+              }
+            </div>
+          </section>
+
+          <section class="grid gap-6 lg:grid-cols-2">
+            <div class="p-6 bg-zinc-100 rounded-3xl">
+              <h2 class="text-xl font-bold mb-2">Official syllabus</h2>
+              <p class="text-gray-700 mb-4">
+                {data.curriculum.name}, published by {data.curriculum.issuer}.
+              </p>
+              <a
+                href={data.curriculum.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex px-6 py-3 bg-zinc-900 hover:bg-white text-white hover:text-black border border-zinc-900 rounded-2xl"
+              >
+                Open syllabus
+              </a>
+            </div>
+            <div class="p-6 bg-zinc-100 rounded-3xl">
+              <h2 class="text-xl font-bold mb-2">Study sites</h2>
+              <ul class="space-y-3">
+                {
+                  data.studySites.map((site) => (
+                    <li>
+                      <a
+                        href={site.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="font-bold underline decoration-lime-500 decoration-2 underline-offset-4"
+                      >
+                        {site.name}
+                      </a>
+                      <p class="text-sm text-gray-700">{site.desc}</p>
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-bold mb-4">About the program</h2>
+            <dl class="grid gap-4 sm:grid-cols-2 mb-6">
+              {
+                facts
+                  .filter(([key]) => typeof info[key] === "string")
+                  .map(([key, label]) => (
+                    <div class="p-5 bg-white rounded-3xl border border-gray-200">
+                      <dt class="text-sm text-gray-500">{label}</dt>
+                      <dd class="mt-1">{info[key]}</dd>
+                    </div>
+                  ))
+              }
+            </dl>
+            <div class="grid gap-6 lg:grid-cols-2">
+              {
+                listSections
+                  .filter(([key]) => Array.isArray(info[key]))
+                  .map(([key, label]) => (
+                    <div class="p-6 bg-white rounded-3xl border border-zinc-900 shadow-card">
+                      <h3 class="text-lg font-bold mb-3">{label}</h3>
+                      <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                        {(info[key] as string[]).map((item) => (
+                          <li>{item}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))
+              }
+            </div>
+          </section>
         </div>
       </div>
     </Container>

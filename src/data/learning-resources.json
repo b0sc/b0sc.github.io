@@ -1,0 +1,539 @@
+{
+  "topics": {
+    "c": [
+      {
+        "title": "CS50x: Introduction to Computer Science",
+        "provider": "Harvard",
+        "url": "https://cs50.harvard.edu/x/"
+      },
+      {
+        "title": "Beej's Guide to C Programming",
+        "provider": "Free book",
+        "url": "https://beej.us/guide/bgc/"
+      }
+    ],
+    "cpp": [
+      {
+        "title": "LearnCpp.com",
+        "provider": "Free tutorial",
+        "url": "https://www.learncpp.com/"
+      }
+    ],
+    "java": [
+      {
+        "title": "Java Programming MOOC",
+        "provider": "University of Helsinki",
+        "url": "https://java-programming.mooc.fi/"
+      },
+      {
+        "title": "Learn Java",
+        "provider": "dev.java (Oracle)",
+        "url": "https://dev.java/learn/"
+      }
+    ],
+    "python": [
+      {
+        "title": "The Python Tutorial",
+        "provider": "Python docs",
+        "url": "https://docs.python.org/3/tutorial/"
+      },
+      {
+        "title": "CS50's Introduction to Programming with Python",
+        "provider": "Harvard",
+        "url": "https://cs50.harvard.edu/python/"
+      }
+    ],
+    "csharp": [
+      {
+        "title": "C# documentation and tutorials",
+        "provider": "Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/dotnet/csharp/"
+      }
+    ],
+    "javascript": [
+      {
+        "title": "The Modern JavaScript Tutorial",
+        "provider": "javascript.info",
+        "url": "https://javascript.info/"
+      }
+    ],
+    "web": [
+      {
+        "title": "Learn web development",
+        "provider": "MDN",
+        "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development"
+      },
+      {
+        "title": "The Odin Project",
+        "provider": "Free curriculum",
+        "url": "https://www.theodinproject.com/"
+      }
+    ],
+    "hardware": [
+      {
+        "title": "Nand2Tetris: build a computer from first principles",
+        "provider": "Free course",
+        "url": "https://www.nand2tetris.org/"
+      }
+    ],
+    "dsa": [
+      {
+        "title": "6.006 Introduction to Algorithms",
+        "provider": "MIT OpenCourseWare",
+        "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/"
+      },
+      {
+        "title": "Open Data Structures",
+        "provider": "Free book",
+        "url": "https://opendatastructures.org/"
+      }
+    ],
+    "algorithms": [
+      {
+        "title": "6.046J Design and Analysis of Algorithms",
+        "provider": "MIT OpenCourseWare",
+        "url": "https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/"
+      }
+    ],
+    "discrete": [
+      {
+        "title": "6.042J Mathematics for Computer Science",
+        "provider": "MIT OpenCourseWare",
+        "url": "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/"
+      }
+    ],
+    "calculus": [
+      {
+        "title": "18.01 Single Variable Calculus",
+        "provider": "MIT OpenCourseWare",
+        "url": "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/"
+      },
+      {
+        "title": "Calculus",
+        "provider": "Khan Academy",
+        "url": "https://www.khanacademy.org/math/calculus-1"
+      }
+    ],
+    "linear-algebra": [
+      {
+        "title": "18.06SC Linear Algebra",
+        "provider": "MIT OpenCourseWare",
+        "url": "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/"
+      }
+    ],
+    "statistics": [
+      {
+        "title": "OpenIntro Statistics",
+        "provider": "Free textbook",
+        "url": "https://www.openintro.org/book/os/"
+      },
+      {
+        "title": "Statistics and probability",
+        "provider": "Khan Academy",
+        "url": "https://www.khanacademy.org/math/statistics-probability"
+      }
+    ],
+    "numerical": [
+      {
+        "title": "Holistic Numerical Methods",
+        "provider": "University of South Florida",
+        "url": "https://nm.mathforcollege.com/"
+      }
+    ],
+    "os": [
+      {
+        "title": "Operating Systems: Three Easy Pieces",
+        "provider": "Free textbook",
+        "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/"
+      }
+    ],
+    "database": [
+      {
+        "title": "CMU 15-445/645 Database Systems",
+        "provider": "Carnegie Mellon",
+        "url": "https://15445.courses.cs.cmu.edu/"
+      },
+      {
+        "title": "SQLBolt: interactive SQL lessons",
+        "provider": "Free tutorial",
+        "url": "https://sqlbolt.com/"
+      }
+    ],
+    "networks": [
+      {
+        "title": "Computer Networks: A Systems Approach",
+        "provider": "Free textbook",
+        "url": "https://book.systemsapproach.org/"
+      }
+    ],
+    "ai": [
+      {
+        "title": "CS50's Introduction to AI with Python",
+        "provider": "Harvard",
+        "url": "https://cs50.harvard.edu/ai/"
+      },
+      {
+        "title": "Elements of AI",
+        "provider": "University of Helsinki",
+        "url": "https://www.elementsofai.com/"
+      }
+    ],
+    "ml": [
+      {
+        "title": "Machine Learning Crash Course",
+        "provider": "Google",
+        "url": "https://developers.google.com/machine-learning/crash-course"
+      }
+    ],
+    "theory": [
+      {
+        "title": "18.404J Theory of Computation",
+        "provider": "MIT OpenCourseWare",
+        "url": "https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/"
+      }
+    ],
+    "compiler": [
+      {
+        "title": "Crafting Interpreters",
+        "provider": "Free book",
+        "url": "https://craftinginterpreters.com/"
+      }
+    ],
+    "software-engineering": [
+      {
+        "title": "Software Engineering at Google",
+        "provider": "Free book",
+        "url": "https://abseil.io/resources/swe-book"
+      }
+    ],
+    "crypto": [
+      {
+        "title": "A Graduate Course in Applied Cryptography",
+        "provider": "Boneh & Shoup (free book)",
+        "url": "https://toc.cryptobook.us/"
+      }
+    ],
+    "security": [
+      {
+        "title": "OWASP Top 10",
+        "provider": "OWASP",
+        "url": "https://owasp.org/www-project-top-ten/"
+      },
+      {
+        "title": "Computer Systems Security (6.858)",
+        "provider": "MIT OpenCourseWare",
+        "url": "https://ocw.mit.edu/courses/6-858-computer-systems-security-fall-2014/"
+      }
+    ],
+    "graphics": [
+      {
+        "title": "Computer Graphics from Scratch",
+        "provider": "Free book",
+        "url": "https://gabrielgambetta.com/computer-graphics-from-scratch/"
+      },
+      {
+        "title": "LearnOpenGL",
+        "provider": "Free tutorial",
+        "url": "https://learnopengl.com/"
+      }
+    ],
+    "cloud": [
+      {
+        "title": "AWS Educate",
+        "provider": "Amazon Web Services",
+        "url": "https://aws.amazon.com/education/awseducate/"
+      },
+      {
+        "title": "Azure Fundamentals: cloud concepts",
+        "provider": "Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/"
+      }
+    ],
+    "distributed": [
+      {
+        "title": "6.5840 Distributed Systems",
+        "provider": "MIT",
+        "url": "https://pdos.csail.mit.edu/6.824/"
+      }
+    ],
+    "mobile": [
+      {
+        "title": "Android Basics with Compose",
+        "provider": "Android Developers",
+        "url": "https://developer.android.com/courses/android-basics-compose/course"
+      }
+    ],
+    "linux": [
+      {
+        "title": "The Linux Command Line",
+        "provider": "Free book",
+        "url": "https://linuxcommand.org/tlcl.php"
+      }
+    ],
+    "technical-writing": [
+      {
+        "title": "Technical Writing courses",
+        "provider": "Google",
+        "url": "https://developers.google.com/tech-writing"
+      }
+    ],
+    "economics": [
+      {
+        "title": "Microeconomics",
+        "provider": "Khan Academy",
+        "url": "https://www.khanacademy.org/economics-finance-domain/microeconomics"
+      }
+    ],
+    "image-processing": [
+      {
+        "title": "OpenCV tutorials",
+        "provider": "OpenCV docs",
+        "url": "https://docs.opencv.org/4.x/d9/df8/tutorial_root.html"
+      }
+    ],
+    "gis": [
+      {
+        "title": "QGIS Training Manual",
+        "provider": "QGIS",
+        "url": "https://docs.qgis.org/latest/en/docs/training_manual/"
+      }
+    ],
+    "iot": [
+      {
+        "title": "Arduino documentation and tutorials",
+        "provider": "Arduino",
+        "url": "https://docs.arduino.cc/learn/"
+      }
+    ],
+    "seo": [
+      {
+        "title": "SEO Starter Guide",
+        "provider": "Google Search Central",
+        "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      }
+    ],
+    "dataviz": [
+      {
+        "title": "Fundamentals of Data Visualization",
+        "provider": "Free book",
+        "url": "https://clauswilke.com/dataviz/"
+      }
+    ],
+    "intro-cs": [
+      {
+        "title": "CS50x: Introduction to Computer Science",
+        "provider": "Harvard",
+        "url": "https://cs50.harvard.edu/x/"
+      }
+    ],
+    "physics": [
+      {
+        "title": "8.02 Physics II: Electricity and Magnetism",
+        "provider": "MIT OpenCourseWare",
+        "url": "https://ocw.mit.edu/courses/8-02-physics-ii-electricity-and-magnetism-spring-2019/"
+      },
+      {
+        "title": "Physics library",
+        "provider": "Khan Academy",
+        "url": "https://www.khanacademy.org/science/physics"
+      }
+    ],
+    "optimization": [
+      {
+        "title": "15.053 Optimization Methods in Management Science",
+        "provider": "MIT OpenCourseWare",
+        "url": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/"
+      }
+    ],
+    "ux": [
+      {
+        "title": "UX articles and research",
+        "provider": "Nielsen Norman Group",
+        "url": "https://www.nngroup.com/articles/"
+      },
+      {
+        "title": "Laws of UX",
+        "provider": "Free guide",
+        "url": "https://lawsofux.com/"
+      }
+    ]
+  },
+  "rules": [
+    {
+      "match": "C\\+\\+",
+      "topics": ["cpp"]
+    },
+    {
+      "match": "^(C Programming|Programming in C|Programming Concept with C)",
+      "topics": ["c"]
+    },
+    {
+      "match": "Object.?Oriented Programming$|^Object-Oriented Programming",
+      "topics": ["cpp"]
+    },
+    {
+      "match": "Java",
+      "topics": ["java"]
+    },
+    {
+      "match": "Python",
+      "topics": ["python"]
+    },
+    {
+      "match": "Dot ?Net|DotNet|Visual Programming",
+      "topics": ["csharp"]
+    },
+    {
+      "match": "Scripting",
+      "topics": ["javascript"]
+    },
+    {
+      "match": "Web Technology|Web Programming",
+      "topics": ["web"]
+    },
+    {
+      "match": "Digital Logic|Microprocessor|Computer Architecture|Hardware",
+      "topics": ["hardware"]
+    },
+    {
+      "match": "Data Structure",
+      "topics": ["dsa"]
+    },
+    {
+      "match": "Design and Analysis of Algorithms",
+      "topics": ["algorithms"]
+    },
+    {
+      "match": "Discrete",
+      "topics": ["discrete"]
+    },
+    {
+      "match": "^(Mathematics|Basic Mathematics)",
+      "topics": ["calculus", "linear-algebra"]
+    },
+    {
+      "match": "Statistic|Probability",
+      "topics": ["statistics"]
+    },
+    {
+      "match": "Numerical",
+      "topics": ["numerical"]
+    },
+    {
+      "match": "Operating System",
+      "topics": ["os"]
+    },
+    {
+      "match": "Database|Data Warehous|Data Mining",
+      "topics": ["database"]
+    },
+    {
+      "match": "Network|Data Communication|Wireless|IPV6",
+      "topics": ["networks"]
+    },
+    {
+      "match": "Artificial Intelligence|Neural Network|Expert System",
+      "topics": ["ai"]
+    },
+    {
+      "match": "Machine Learning|Data Mining|Big Data|Business Intelligence",
+      "topics": ["ml"]
+    },
+    {
+      "match": "Theory of Computation",
+      "topics": ["theory"]
+    },
+    {
+      "match": "Compiler|Complier",
+      "topics": ["compiler"]
+    },
+    {
+      "match": "Software Engineering|Software Project Management|Software Testing",
+      "topics": ["software-engineering"]
+    },
+    {
+      "match": "Cryptography",
+      "topics": ["crypto"]
+    },
+    {
+      "match": "Security|Ethical Hacking|Cyber",
+      "topics": ["security"]
+    },
+    {
+      "match": "Graphics",
+      "topics": ["graphics"]
+    },
+    {
+      "match": "Cloud",
+      "topics": ["cloud"]
+    },
+    {
+      "match": "Distributed",
+      "topics": ["distributed"]
+    },
+    {
+      "match": "Mobile",
+      "topics": ["mobile"]
+    },
+    {
+      "match": "Linux|System Administration|Network Administration|Network System Administration|Network and System Administration",
+      "topics": ["linux"]
+    },
+    {
+      "match": "Technical Writing",
+      "topics": ["technical-writing"]
+    },
+    {
+      "match": "Economics",
+      "topics": ["economics"]
+    },
+    {
+      "match": "Image Processing",
+      "topics": ["image-processing"]
+    },
+    {
+      "match": "Geographical Information System",
+      "topics": ["gis"]
+    },
+    {
+      "match": "Internet of Things",
+      "topics": ["iot"]
+    },
+    {
+      "match": "SEO",
+      "topics": ["seo"]
+    },
+    {
+      "match": "Visualization",
+      "topics": ["dataviz"]
+    },
+    {
+      "match": "Introduction to Information Technology|Computer Fundamentals",
+      "topics": ["intro-cs"]
+    },
+    {
+      "match": "^Physics$",
+      "topics": ["physics"]
+    },
+    {
+      "match": "Operations? Research",
+      "topics": ["optimization"]
+    },
+    {
+      "match": "UX|UI Design",
+      "topics": ["ux"]
+    },
+    {
+      "match": "NET Centric",
+      "topics": ["csharp", "web"]
+    },
+    {
+      "match": "Embedded|Real Time",
+      "topics": ["iot"]
+    },
+    {
+      "match": "Professional Communication",
+      "topics": ["technical-writing"]
+    }
+  ]
+}

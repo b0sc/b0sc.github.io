@@ -33,40 +33,35 @@
           "name": "Computer Fundamentals & Applications",
           "credits": 4,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/first-semester/computer-fundamental/"
         },
         {
           "code": "CACO102",
           "name": "Society and Technology",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "CAEN103",
           "name": "English I",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "CAMT104",
           "name": "Mathematics I",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/first-semester/math-I/"
         },
         {
           "code": "CACS105",
           "name": "Digital Logic",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/first-semester/digital-logics/"
         }
       ]
     },
@@ -78,40 +73,35 @@
           "name": "C Programming",
           "credits": 4,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/second-semester/c-programming/"
         },
         {
           "code": "CAAC152",
           "name": "Financial Accounting",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "CAEN153",
           "name": "English II",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/second-semester/english-II/"
         },
         {
           "code": "CAMT154",
           "name": "Mathematics II",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/second-semester/math-II/"
         },
         {
           "code": "CACS155",
           "name": "Microprocessor and Computer Architecture",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/second-semester/microprocessor/"
         }
       ]
     },
@@ -123,40 +113,35 @@
           "name": "Data Structures and Algorithms",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/third-semester/data-structures-and-algorithms/"
         },
         {
           "code": "CAST202",
           "name": "Probability and Statistics",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/third-semester/probability-and-statistics/"
         },
         {
           "code": "CACS203",
           "name": "System Analysis and Design",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/third-semester/system-analysis-and-design/"
         },
         {
           "code": "CACS204",
           "name": "OOP in Java",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/third-semester/oop-in-java/"
         },
         {
           "code": "CACS205",
           "name": "Web Technology",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/third-semester/web-technology/"
         }
       ]
     },
@@ -168,48 +153,42 @@
           "name": "Operating System",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/fourth-semester/operating-system/"
         },
         {
           "code": "CACS252",
           "name": "Numerical Methods",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/fourth-semester/numerical-method/"
         },
         {
           "code": "CACS253",
           "name": "Software Engineering",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/fourth-semester/software-engineering/"
         },
         {
           "code": "CACS254",
           "name": "Scripting Language",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/fourth-semester/scripting-language/"
         },
         {
           "code": "CACS255",
           "name": "Database Management System",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/fourth-semester/database-management-system/"
         },
         {
           "code": "CAPJ256",
           "name": "Project I",
           "credits": 2,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         }
       ]
     },
@@ -221,40 +200,35 @@
           "name": "MIS and E-Business",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/fifth-semester/MIS-and-Ebusiness/"
         },
         {
           "code": "CACS302",
           "name": "DotNet Technology",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/fifth-semester/dot-net-technology/"
         },
         {
           "code": "CACS303",
           "name": "Computer Networking",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/fifth-semester/computer-networking/"
         },
         {
           "code": "CAMG304",
           "name": "Introduction to Management",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/fifth-semester/introduction-to-management/"
         },
         {
           "code": "CACS305",
           "name": "Computer Graphics and Animation",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/fifth-semester/computer-graphics-and-animation/"
         }
       ]
     },
@@ -266,48 +240,42 @@
           "name": "Mobile Programming",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/sixth-semester/mobile-programming/"
         },
         {
           "code": "CACS352",
           "name": "Distributed System",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/sixth-semester/distributed-system/"
         },
         {
           "code": "CAEC353",
           "name": "Applied Economics",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/sixth-semester/applied-economics/"
         },
         {
           "code": "CACS354",
           "name": "Advanced Java Programming",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/sixth-semester/java-programming/"
         },
         {
           "code": "CACS355",
           "name": "Network Programming",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/sixth-semester/network-programming/"
         },
         {
           "code": "CAPJ356",
           "name": "Project II",
           "credits": 2,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         }
       ]
     },
@@ -319,24 +287,21 @@
           "name": "Cyber Law and Professional Ethics",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/seventh-semester/cyber-law-and-professional-ethics/"
         },
         {
           "code": "CACS402",
           "name": "Cloud Computing",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/seventh-semester/cloud-computing/"
         },
         {
           "code": "CAIN403",
           "name": "Internship",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         }
       ],
       "electiveCourses": [
@@ -345,48 +310,42 @@
           "name": "Image Processing",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/seventh-semester/image-processing/"
         },
         {
           "code": "CACS405",
           "name": "Database Administration",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/seventh-semester/database-administration/"
         },
         {
           "code": "CACS406",
           "name": "Network Administration",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/seventh-semester/network-administration/"
         },
         {
           "code": "CACS408",
           "name": "Advanced Dot Net Technology",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/seventh-semester/advance-dot-net-technology/"
         },
         {
           "code": "CACS409",
           "name": "E-Governance",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/seventh-semester/e-governance/"
         },
         {
           "code": "CACS410",
           "name": "Artificial Intelligence",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/seventh-semester/artifical-intelligence/"
         }
       ]
     },
@@ -398,16 +357,14 @@
           "name": "Operations Research",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/eighth-semester/operational-research/"
         },
         {
           "code": "CAPJ452",
           "name": "Project III",
           "credits": 6,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         }
       ],
       "electiveCourses": [
@@ -416,66 +373,70 @@
           "name": "Database Programming",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/eighth-semester/database-programming/"
         },
         {
           "code": "CACS454",
           "name": "Geographical Information System",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/eighth-semester/geographical-information-system/"
         },
         {
           "code": "CACS455",
           "name": "Data Analysis and Visualization",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "CACS456",
           "name": "Machine Learning",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/eighth-semester/machine-learning/"
         },
         {
           "code": "CACS457",
           "name": "Multimedia System",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "CACS458",
           "name": "Knowledge Engineering",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "CACS459",
           "name": "Information Security",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/eighth-semester/information-security/"
         },
         {
           "code": "CACS460",
           "name": "Internet of Things",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         }
       ]
+    }
+  ],
+  "curriculum": {
+    "name": "BCA curriculum (2081 batch and earlier)",
+    "issuer": "Faculty of Humanities and Social Sciences, TU",
+    "url": "https://fohss.tu.edu.np/downloads?category=352"
+  },
+  "studySites": [
+    {
+      "name": "TUpapers",
+      "desc": "Past papers, syllabus and solutions per subject",
+      "url": "https://www.tupapers.com/course/bca/"
     }
   ]
 }
