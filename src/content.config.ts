@@ -16,4 +16,15 @@ const blog = defineCollection({
   }),
 })
 
-export const collections = { blog }
+// Official club documents such as the constitution, rendered on their own
+// pages under /explore
+const documents = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/documents" }),
+  schema: z.object({
+    title: z.string(),
+    summary: z.string(),
+    lastUpdated: z.coerce.date(),
+  }),
+})
+
+export const collections = { blog, documents }

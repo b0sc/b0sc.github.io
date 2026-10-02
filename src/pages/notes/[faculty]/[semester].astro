@@ -1,275 +1,201 @@
 ---
-export async function getStaticPaths() {
-  const faculties = ["bca", "bit", "csit", "bicte"]
-  const paths = []
-  for (const faculty of faculties) {
-    for (let semester = 1; semester <= 8; semester++) {
-      paths.push({ params: { faculty, semester: semester.toString() } })
-    }
-  }
-  return paths
-}
 import Container from "../../../components/Container.astro"
-import Layout from "../../../layouts/Layout.astro"
 import NavbarNotes from "../../../components/NavbarNotes.astro"
-const { faculty, semester } = Astro.params
+import Layout from "../../../layouts/Layout.astro"
+import {
+  faculties,
+  getFaculty,
+  resourcesFor,
+  type Course,
+} from "../../../utils/notes"
 
-const facultyMap: Record<string, string> = {
-  bca: "BCA",
-  bit: "BIT",
-  csit: "CSIT",
-  bicte: "BICTE",
+export function getStaticPaths() {
+  return faculties.flatMap((faculty) =>
+    getFaculty(faculty.key).data.semesters.map((sem) => ({
+      params: { faculty: faculty.key, semester: String(sem.semester) },
+    }))
+  )
 }
-const facultyName =
-  faculty && facultyMap[faculty] ? facultyMap[faculty] : "Unknown Faculty"
 
-// Dynamic import of faculty JSON
-let facultyData
-try {
-  facultyData = await import(`../../../data/notes-${faculty}.json`)
-} catch (e) {
-  facultyData = null
-}
-const semesters = facultyData?.default?.semesters || []
-const info = facultyData?.default?.facultyInfo
-type SemesterType = {
-  semester: string | number
-  courses?: any[]
-  electiveCourses?: any[]
-}
-const semesterData = semesters.find(
-  (s: SemesterType) => String(s.semester) === String(semester)
-)
+const { faculty, data } = getFaculty(Astro.params.faculty)
+const number = Number(Astro.params.semester)
+const semester = data.semesters.find((s) => s.semester === number)!
+const groups: { title: string; courses: Course[] }[] = [
+  { title: "Courses", courses: semester.courses },
+  {
+    title: "Electives",
+    courses: semester.electiveCourses ?? [],
+  },
+].filter((group) => group.courses.length > 0)
 ---
 
 <Layout
-  title={`${facultyName} Semester ${semester} - Notes & Syllabus`}
-  description={`Find detailed notes, syllabus, and past questions for ${facultyName} Semester ${semester} at BOSC.`}
-  image="/cover.png"
-  url={`https://bosc.org.np/notes/${faculty}/${semester}`}
+  title={`BOSC - ${faculty.name} Semester ${number}`}
+  description={`${faculty.name} semester ${number}: courses, credits, past papers and free learning resources.`}
 >
-  <main class="space-y-12">
+  <main class="pt-7 pb-20">
     <Container>
-      <div class="flex flex-col md:flex-row">
-        <NavbarNotes currentSemester={semester} />
-        <div class="m-6 flex-1">
-          <h1 class="text-2xl font-bold mb-4">
-            {facultyName} - Semester {semester}
-          </h1>
+      <div class="flex flex-col md:flex-row gap-6">
+        <NavbarNotes />
+        <div class="flex-1 min-w-0 space-y-10">
+          <header class="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <p class="text-sm text-gray-500">
+                <a href="/notes" class="hover:underline">Notes</a> /
+                <a href={`/notes/${faculty.key}`} class="hover:underline"
+                  >{faculty.name}</a
+                >
+              </p>
+              <h1 class="text-4xl font-bold mt-1">
+                <span class="px-1.5 bg-lime-500 rounded-md"
+                  >Semester {number}</span
+                >
+              </h1>
+              <p class="mt-2 text-gray-700">
+                {faculty.fullName}
+                {faculty.note && ` · ${faculty.note}`}
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              <a
+                href={data.curriculum.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="px-5 py-2 bg-zinc-900 hover:bg-white text-white hover:text-black border border-zinc-900 rounded-2xl"
+              >
+                Official syllabus
+              </a>
+              {
+                semester.semesterLinks?.map((link) => (
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="px-5 py-2 bg-white hover:bg-black text-black hover:text-white border border-zinc-900 rounded-2xl"
+                  >
+                    {link.name}
+                  </a>
+                ))
+              }
+            </div>
+          </header>
+
           {
-            info?.curricularStructure && (
-              <section class="mb-6">
-                <div class="bg-purple-50 rounded-lg p-4 text-gray-700 shadow">
-                  <strong>Curricular Info:</strong> {info.curricularStructure}
-                </div>
-              </section>
-            )
-          }
-          {
-            semesterData ? (
-              <div>
-                <table class="min-w-full border mt-4 rounded-lg overflow-hidden shadow">
-                  <thead class="bg-purple-100">
-                    <tr>
-                      {/* <th class="border px-4 py-2">Code</th> */}
-                      <th class="border px-4 py-2">Subject</th>
-                      {/* <th class="border px-4 py-2">Credits</th> */}
-                      <th class="border px-4 py-2">Notes</th>
-                      <th class="border px-4 py-2">Past Qs</th>
-                      <th class="border px-4 py-2">Syllabus</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {Array.isArray(semesterData.courses) &&
-                      semesterData.courses.map((subject: any) => (
-                        <tr class="even:bg-purple-50">
-                          {/* <td class="border px-2 py-2">
-                            {subject.code || "-"}
-                          </td> */}
-                          <td class="border px-2 py-2">{subject.name}</td>
-                          {/* <td class="border px-2 py-2 text-center">
-                            {subject.credits}
-                          </td> */}
-                          <td class="border px-2 py-2 text-center">
-                            {subject.notesLink ? (
-                              <a
-                                href={subject.notesLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="text-purple-700 hover:underline flex items-center gap-1"
-                              >
-                                Notes{" "}
-                                <svg
-                                  class="w-4 h-4 inline"
-                                  fill="none"
-                                  stroke="currentColor"
-                                  stroke-width="2"
-                                  viewBox="0 0 24 24"
-                                >
-                                  <path d="M14 3h7v7m0 0L10 21l-7-7" />
-                                </svg>
-                              </a>
-                            ) : (
-                              <span class="text-gray-400">Notes</span>
-                            )}
-                          </td>
-                          <td class="border px-2 py-2 text-center">
-                            {subject.pastQuestionsLink ? (
-                              <a
-                                href={subject.pastQuestionsLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="text-purple-700 hover:underline flex items-center gap-1"
-                              >
-                                Past Qs{" "}
-                                <svg
-                                  class="w-4 h-4 inline"
-                                  fill="none"
-                                  stroke="currentColor"
-                                  stroke-width="2"
-                                  viewBox="0 0 24 24"
-                                >
-                                  <path d="M14 3h7v7m0 0L10 21l-7-7" />
-                                </svg>
-                              </a>
-                            ) : (
-                              <span class="text-gray-400">Past Qs</span>
-                            )}
-                          </td>
-                          <td class="border px-2 py-2 text-center">
-                            {subject.syllabusLink ? (
-                              <a
-                                href={subject.syllabusLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="text-purple-700 hover:underline flex items-center gap-1"
-                              >
-                                Syllabus{" "}
-                                <svg
-                                  class="w-4 h-4 inline"
-                                  fill="none"
-                                  stroke="currentColor"
-                                  stroke-width="2"
-                                  viewBox="0 0 24 24"
-                                >
-                                  <path d="M14 3h7v7m0 0L10 21l-7-7" />
-                                </svg>
-                              </a>
-                            ) : (
-                              <span class="text-gray-400">Syllabus</span>
-                            )}
-                          </td>
-                        </tr>
-                      ))}
-                  </tbody>
-                </table>
-                {Array.isArray(semesterData.electiveCourses) && (
-                  <div class="mt-8">
-                    <h2 class="text-lg font-semibold mb-2">Electives</h2>
-                    <table class="min-w-full border rounded-lg overflow-hidden shadow">
-                      <thead class="bg-purple-100">
-                        <tr>
-                          {/* <th class="border px-4 py-2">Code</th> */}
-                          <th class="border px-4 py-2">Elective Subject</th>
-                          {/* <th class="border px-4 py-2">Credits</th> */}
-                          <th class="border px-4 py-2">Notes</th>
-                          <th class="border px-4 py-2">Past Qs</th>
-                          <th class="border px-4 py-2">Syllabus</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {semesterData.electiveCourses.map((elective: any) => (
-                          <tr class="even:bg-purple-50">
-                            {/* <td class="border px-2 py-2">
-                              {elective.code || "-"}
-                            </td> */}
-                            <td class="border px-2 py-2">{elective.name}</td>
-                            {/* <td class="border px-2 py-2 text-center">
-                              {elective.credits}
-                            </td> */}
-                            <td class="border px-2 py-2 text-center">
-                              {elective.notesLink ? (
-                                <a
-                                  href={elective.notesLink}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  class="text-purple-700 hover:underline flex items-center gap-1"
-                                >
-                                  Notes{" "}
-                                  <svg
-                                    class="w-4 h-4 inline"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    viewBox="0 0 24 24"
-                                  >
-                                    <path d="M14 3h7v7m0 0L10 21l-7-7" />
-                                  </svg>
-                                </a>
-                              ) : (
-                                <span class="text-gray-400">Notes</span>
-                              )}
-                            </td>
-                            <td class="border px-2 py-2 text-center">
-                              {elective.pastQuestionsLink ? (
-                                <a
-                                  href={elective.pastQuestionsLink}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  class="text-purple-700 hover:underline flex items-center gap-1"
-                                >
-                                  Past Qs{" "}
-                                  <svg
-                                    class="w-4 h-4 inline"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    viewBox="0 0 24 24"
-                                  >
-                                    <path d="M14 3h7v7m0 0L10 21l-7-7" />
-                                  </svg>
-                                </a>
-                              ) : (
-                                <span class="text-gray-400">Past Qs</span>
-                              )}
-                            </td>
-                            <td class="border px-2 py-2 text-center">
-                              {elective.syllabusLink ? (
-                                <a
-                                  href={elective.syllabusLink}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  class="text-purple-700 hover:underline flex items-center gap-1"
-                                >
-                                  Syllabus{" "}
-                                  <svg
-                                    class="w-4 h-4 inline"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    viewBox="0 0 24 24"
-                                  >
-                                    <path d="M14 3h7v7m0 0L10 21l-7-7" />
-                                  </svg>
-                                </a>
-                              ) : (
-                                <span class="text-gray-400">Syllabus</span>
-                              )}
-                            </td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                )}
-              </div>
-            ) : (
-              <p class="text-gray-600">
-                No course data available for Semester {semester} of{" "}
-                {facultyName}.
+            semester.note && (
+              <p class="p-5 bg-zinc-100 rounded-3xl border-l-4 border-lime-500">
+                {semester.note}
               </p>
             )
           }
+
+          {
+            groups.map((group) => (
+              <section>
+                <h2 class="text-2xl font-bold mb-4">{group.title}</h2>
+                <ul class="grid gap-6 lg:grid-cols-2">
+                  {group.courses.map((course) => {
+                    const resources = resourcesFor(course.name)
+                    return (
+                      <li class="flex flex-col p-6 bg-white rounded-3xl border border-zinc-900 shadow-card">
+                        <div class="flex flex-wrap items-center gap-2 text-sm text-gray-500">
+                          {course.code && (
+                            <span class="font-mono bg-zinc-100 text-black px-2 py-0.5 rounded">
+                              {course.code}
+                            </span>
+                          )}
+                          <span>
+                            {course.credits === 1
+                              ? "1 credit"
+                              : `${course.credits} credits`}
+                          </span>
+                        </div>
+                        <h3 class="mt-2 text-xl font-bold">{course.name}</h3>
+
+                        {(course.pastQuestionsLink || course.notesLink) && (
+                          <div class="flex flex-wrap gap-2 mt-4">
+                            {course.notesLink && (
+                              <a
+                                href={course.notesLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="bg-lime-500 hover:bg-black hover:text-white text-sm font-medium px-3 py-1 rounded-full"
+                              >
+                                BOSC notes
+                              </a>
+                            )}
+                            {course.pastQuestionsLink && (
+                              <a
+                                href={course.pastQuestionsLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="bg-lime-500 hover:bg-black hover:text-white text-sm font-medium px-3 py-1 rounded-full"
+                              >
+                                Past papers &amp; syllabus
+                              </a>
+                            )}
+                          </div>
+                        )}
+
+                        {resources.length > 0 && (
+                          <div class="mt-4 pt-4 border-t border-gray-200">
+                            <p class="text-xs font-medium uppercase tracking-wide text-gray-500 mb-2">
+                              Free courses &amp; books
+                            </p>
+                            <ul class="space-y-1">
+                              {resources.map((resource) => (
+                                <li class="text-sm">
+                                  <a
+                                    href={resource.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="font-medium underline decoration-lime-500 decoration-2 underline-offset-4 hover:text-lime-700"
+                                  >
+                                    {resource.title}
+                                  </a>
+                                  <span class="text-gray-500">
+                                    {" "}
+                                    · {resource.provider}
+                                  </span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+                      </li>
+                    )
+                  })}
+                </ul>
+              </section>
+            ))
+          }
+
+          <nav
+            aria-label="Semesters"
+            class="flex justify-between gap-4 pt-6 border-t border-gray-200"
+          >
+            {
+              number > 1 ? (
+                <a
+                  href={`/notes/${faculty.key}/${number - 1}`}
+                  class="font-medium hover:underline"
+                >
+                  ← Semester {number - 1}
+                </a>
+              ) : (
+                <span />
+              )
+            }
+            {
+              number < data.semesters.length && (
+                <a
+                  href={`/notes/${faculty.key}/${number + 1}`}
+                  class="font-medium hover:underline"
+                >
+                  Semester {number + 1} →
+                </a>
+              )
+            }
+          </nav>
         </div>
       </div>
     </Container>

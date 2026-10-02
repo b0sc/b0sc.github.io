@@ -1,0 +1,519 @@
+{
+  "facultyInfo": {
+    "salientFeatures": [
+      "Tribhuvan University has launched Bachelor of Computer Application (BCA) program from the academic year 2074/75.",
+      "Semester-system under the faculties of Humanities and Social Sciences.",
+      "Objective: produce high quality computer application users and developers.",
+      "Study period: eight semesters (four academic years).",
+      "Academic year begins in September and February each year.",
+      "The medium of instruction and examination is English."
+    ],
+    "eligibility": [
+      "Passed in 2079 B.S.: Minimum D grade in each subject of grade 11 and 12 with a CGPA 1.8 or more, Minimum score of second division marks in 10+2, PCL, or equivalent in any discipline.",
+      "Students who have passed grade 11 and are waiting for grade 12 results can also apply (must submit all required documents at admission).",
+      "Passed before 2079 B.S.: Minimum D grade in each subject of grade 11 and 12 with a CGPA 2.0 or more, Minimum score of second division marks in 10+2, PCL, or equivalent in any discipline."
+    ],
+    "jobProspects": [
+      "System analysts",
+      "System managers",
+      "Project managers",
+      "Database administrators",
+      "System designers",
+      "Programmers in IT Companies and other industries",
+      "Eligible for further studies such as MCA, MIT, MBA, etc."
+    ],
+    "curricularStructure": "130 credit hours over eight semesters, with project work in semesters 4 to 7 and a mandatory internship in semester 8."
+  },
+  "curriculum": {
+    "name": "BCA Curriculum 2025 (2082 batch onwards)",
+    "issuer": "Faculty of Humanities and Social Sciences, TU",
+    "url": "https://portal.tu.edu.np/downloads/2025_11_27_15_22_42.pdf"
+  },
+  "studySites": [
+    {
+      "name": "TUpapers",
+      "desc": "Past papers, syllabus and solutions per subject",
+      "url": "https://www.tupapers.com/course/bca/"
+    }
+  ],
+  "semesters": [
+    {
+      "semester": 1,
+      "courses": [
+        {
+          "code": "BCA 101",
+          "name": "Computer Fundamentals and Applications",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "BCA 102",
+          "name": "Programming in C",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "BCA 103",
+          "name": "Digital Logic",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/first-semester/digital-logics/"
+        },
+        {
+          "code": "BCA 104",
+          "name": "Mathematics I",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/first-semester/math-I/"
+        },
+        {
+          "code": "BCA 105",
+          "name": "Professional Communication and Ethics",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "BCA 106",
+          "name": "Hardware Workshop",
+          "credits": 1,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        }
+      ]
+    },
+    {
+      "semester": 2,
+      "courses": [
+        {
+          "code": "BCA 151",
+          "name": "Discrete Structure",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "BCA 152",
+          "name": "Microprocessor and Computer Architecture",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/second-semester/microprocessor/"
+        },
+        {
+          "code": "BCA 153",
+          "name": "OOP in Java",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/third-semester/oop-in-java/"
+        },
+        {
+          "code": "BCA 154",
+          "name": "Mathematics II",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/second-semester/math-II/"
+        },
+        {
+          "code": "BCA 155",
+          "name": "UX/UI Design",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "BCA 156",
+          "name": "Principles of Management",
+          "credits": 1,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        }
+      ]
+    },
+    {
+      "semester": 3,
+      "courses": [
+        {
+          "code": "BCA 201",
+          "name": "Data Structure and Algorithms",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "BCA 202",
+          "name": "Database Management System",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/fourth-semester/database-management-system/"
+        },
+        {
+          "code": "BCA 203",
+          "name": "Web Technology I",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "BCA 204",
+          "name": "System Analysis and Design",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/third-semester/system-analysis-and-design/"
+        },
+        {
+          "code": "BCA 205",
+          "name": "Probability and Statistics",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/third-semester/probability-and-statistics/"
+        },
+        {
+          "code": "BCA 206",
+          "name": "Applied Economics",
+          "credits": 2,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/sixth-semester/applied-economics/"
+        }
+      ]
+    },
+    {
+      "semester": 4,
+      "courses": [
+        {
+          "code": "BCA 251",
+          "name": "Operating Systems",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "BCA 252",
+          "name": "Software Engineering",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/fourth-semester/software-engineering/"
+        },
+        {
+          "code": "BCA 253",
+          "name": "Numerical Methods",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/fourth-semester/numerical-method/"
+        },
+        {
+          "code": "BCA 254",
+          "name": "Python Programming",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "BCA 255",
+          "name": "Web Technology II",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "BCA 256",
+          "name": "Project I",
+          "credits": 2,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        }
+      ]
+    },
+    {
+      "semester": 5,
+      "courses": [
+        {
+          "code": "BCA 301",
+          "name": "Computer Network",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "BCA 302",
+          "name": "Artificial Intelligence",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/seventh-semester/artifical-intelligence/"
+        },
+        {
+          "code": "BCA 303",
+          "name": "Advanced Java Programming",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/sixth-semester/java-programming/"
+        },
+        {
+          "code": "BCA 304",
+          "name": "MIS and e-Business",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "BCA 305",
+          "name": "Society and Technology",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "BCA 306",
+          "name": "Project II",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        }
+      ]
+    },
+    {
+      "semester": 6,
+      "courses": [
+        {
+          "code": "BCA 351",
+          "name": "Computer Graphics and Animation",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/fifth-semester/computer-graphics-and-animation/"
+        },
+        {
+          "code": "BCA 352",
+          "name": "Mobile Programming",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/sixth-semester/mobile-programming/"
+        },
+        {
+          "code": "BCA 353",
+          "name": "Cryptography and Network Security",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "BCA 354",
+          "name": "Technical Writing",
+          "credits": 2,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "BCA 355",
+          "name": "Distributed System",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/sixth-semester/distributed-system/"
+        },
+        {
+          "code": "BCA 356",
+          "name": "Project III",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        }
+      ]
+    },
+    {
+      "semester": 7,
+      "courses": [
+        {
+          "code": "BCA 401",
+          "name": "Cyber Security and Ethical Hacking",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "BCA 402",
+          "name": "Software Project Management",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "BCA 403",
+          "name": "Financial Accounting",
+          "credits": 2,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "BCA 404",
+          "name": "Project IV",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "BCA 405",
+          "name": "Elective I",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "BCA 406",
+          "name": "Elective II",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        }
+      ],
+      "electiveCourses": [
+        {
+          "code": "BCA 404-I",
+          "name": "Machine Learning",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/eighth-semester/machine-learning/"
+        },
+        {
+          "code": "BCA 404-II",
+          "name": "E-Commerce",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "BCA 404-III",
+          "name": "Database Administration",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/seventh-semester/database-administration/"
+        },
+        {
+          "code": "BCA 404-IV",
+          "name": "Linux",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "BCA 405-I",
+          "name": "Dotnet Technology",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "BCA 405-II",
+          "name": "Business Intelligence",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "BCA 405-III",
+          "name": "Software Testing and Quality Assurance",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "BCA 405-IV",
+          "name": "Data Visualization",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        }
+      ]
+    },
+    {
+      "semester": 8,
+      "courses": [
+        {
+          "code": "BCA 451",
+          "name": "Cloud Computing",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/seventh-semester/cloud-computing/"
+        },
+        {
+          "code": "BCA 452",
+          "name": "Internship",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "BCA 453",
+          "name": "Elective III",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "BCA 454",
+          "name": "Elective IV",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        }
+      ],
+      "electiveCourses": [
+        {
+          "code": "BCA 453-I",
+          "name": "Network Administration",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/seventh-semester/network-administration/"
+        },
+        {
+          "code": "BCA 453-II",
+          "name": "E-Governance",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/seventh-semester/e-governance/"
+        },
+        {
+          "code": "BCA 453-III",
+          "name": "Database Programming",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/eighth-semester/database-programming/"
+        },
+        {
+          "code": "BCA 453-IV",
+          "name": "Geographical Information System",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/eighth-semester/geographical-information-system/"
+        },
+        {
+          "code": "BCA 454-I",
+          "name": "Digital Marketing and SEO",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "BCA 454-II",
+          "name": "Image Processing",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bca/seventh-semester/image-processing/"
+        },
+        {
+          "code": "BCA 454-III",
+          "name": "Internet of Things",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "BCA 454-IV",
+          "name": "Data Mining and Data Warehouse",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        }
+      ]
+    }
+  ]
+}

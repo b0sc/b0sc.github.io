@@ -47,44 +47,45 @@
       "semester": 1,
       "courses": [
         {
-          "code": "CSC109",
+          "code": "CSC114",
           "name": "Introduction to Information Technology",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/first-semester/introduction-to-IT/"
         },
         {
-          "code": "CSC110",
+          "code": "CSC115",
           "name": "C Programming",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/first-semester/c-programming/"
         },
         {
-          "code": "CSC111",
+          "code": "CSC116",
           "name": "Digital Logic",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/first-semester/digital-logic/"
         },
         {
-          "code": "MTH112",
+          "code": "MTH117",
           "name": "Mathematics I",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/first-semester/mathematics-I/"
         },
         {
-          "code": "PHY113",
+          "code": "PHY118",
           "name": "Physics",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/first-semester/physics/"
+        }
+      ],
+      "semesterLinks": [
+        {
+          "name": "Hamro CSIT",
+          "url": "https://hamrocsit.com/semester/first/"
         }
       ]
     },
@@ -92,44 +93,45 @@
       "semester": 2,
       "courses": [
         {
-          "code": "CSC160",
+          "code": "CSC165",
           "name": "Discrete Structure",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/second-semester/discrete-structure/"
         },
         {
-          "code": "CSC161",
+          "code": "CSC166",
           "name": "Object Oriented Programming",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/second-semester/object-oriented-programming/"
         },
         {
-          "code": "CSC162",
+          "code": "CSC167",
           "name": "Microprocessor",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/second-semester/microprocessor/"
         },
         {
-          "code": "MTH163",
+          "code": "MTH168",
           "name": "Mathematics II",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/second-semester/mathematics-II/"
         },
         {
-          "code": "STA164",
+          "code": "STA169",
           "name": "Statistics I",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/second-semester/statistics-I/"
+        }
+      ],
+      "semesterLinks": [
+        {
+          "name": "Hamro CSIT",
+          "url": "https://hamrocsit.com/semester/second/"
         }
       ]
     },
@@ -137,44 +139,45 @@
       "semester": 3,
       "courses": [
         {
-          "code": "CSC206",
+          "code": "CSC211",
           "name": "Data Structure and Algorithms",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/third-semester/data-structure-and-algorithms/"
         },
         {
-          "code": "CSC207",
+          "code": "CSC212",
           "name": "Numerical Method",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/third-semester/numerical-method/"
         },
         {
-          "code": "CSC208",
+          "code": "CSC213",
           "name": "Computer Architecture",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/third-semester/computer-architecture/"
         },
         {
-          "code": "CSC209",
+          "code": "CSC214",
           "name": "Computer Graphics",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/third-semester/computer-graphics/"
         },
         {
-          "code": "STA210",
+          "code": "STA215",
           "name": "Statistics II",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/third-semester/statistics-II/"
+        }
+      ],
+      "semesterLinks": [
+        {
+          "name": "Hamro CSIT",
+          "url": "https://hamrocsit.com/semester/third/"
         }
       ]
     },
@@ -182,44 +185,45 @@
       "semester": 4,
       "courses": [
         {
-          "code": "CSC257",
+          "code": "CSC262",
           "name": "Theory of Computation",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/fourth-semester/theory-of-computation/"
         },
         {
-          "code": "CSC258",
+          "code": "CSC263",
           "name": "Computer Networks",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/fourth-semester/computer-networks/"
         },
         {
-          "code": "CSC259",
+          "code": "CSC264",
           "name": "Operating Systems",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/fourth-semester/operating-systems/"
         },
         {
-          "code": "CSC260",
+          "code": "CSC265",
           "name": "Database Management System",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/fourth-semester/database-management-system/"
         },
         {
-          "code": "CSC261",
+          "code": "CSC266",
           "name": "Artificial Intelligence",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/fourth-semester/artificial-intelligence/"
+        }
+      ],
+      "semesterLinks": [
+        {
+          "name": "Hamro CSIT",
+          "url": "https://hamrocsit.com/semester/fourth/"
         }
       ]
     },
@@ -227,94 +231,89 @@
       "semester": 5,
       "courses": [
         {
-          "code": "CSC314",
+          "code": "CSC325",
           "name": "Design and Analysis of Algorithms",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/fifth-semester/system-analysis-and-design/"
         },
         {
-          "code": "CSC315",
+          "code": "CSC326",
           "name": "System Analysis and Design",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/fifth-semester/design-and-analysis-of-algorithms/"
         },
         {
-          "code": "CSC316",
+          "code": "CSC327",
           "name": "Cryptography",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/fifth-semester/cryptography/"
         },
         {
-          "code": "CSC317",
+          "code": "CSC328",
           "name": "Simulation and Modeling",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/fifth-semester/simulation-and-modeling/"
         },
         {
-          "code": "CSC318",
+          "code": "CSC329",
           "name": "Web Technology",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/fifth-semester/web-technology/"
+        }
+      ],
+      "semesterLinks": [
+        {
+          "name": "Hamro CSIT",
+          "url": "https://hamrocsit.com/semester/fifth/"
         }
       ],
       "electiveCourses": [
         {
-          "code": "CSC319",
+          "code": "CSC330",
           "name": "Multimedia Computing",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "code": "CSC320",
+          "code": "CSC331",
           "name": "Wireless Networking",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "code": "CSC321",
+          "code": "CSC332",
           "name": "Image Processing",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "code": "CSC322",
+          "code": "CSC333",
           "name": "Knowledge Management",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "code": "CSC323",
+          "code": "CSC334",
           "name": "Society and Ethics in Information Technology",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "code": "CSC324",
+          "code": "CSC335",
           "name": "Microprocessor Based Design",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         }
       ]
     },
@@ -322,94 +321,89 @@
       "semester": 6,
       "courses": [
         {
-          "code": "CSC364",
+          "code": "CSC375",
           "name": "Software Engineering",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/sixth-semester/software-engineering/"
         },
         {
-          "code": "CSC365",
-          "name": "Complier Design and Construction",
+          "code": "CSC376",
+          "name": "Compiler Design and Construction",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/sixth-semester/compiler-design-and-construction/"
         },
         {
-          "code": "CSC366",
+          "code": "CSC377",
           "name": "E-Governance",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/sixth-semester/e-governance/"
         },
         {
-          "code": "CSC367",
+          "code": "CSC378",
           "name": "NET Centric Computing",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/sixth-semester/net-centric-computing/"
         },
         {
-          "code": "CSC368",
+          "code": "CSC379",
           "name": "Technical Writing",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/sixth-semester/technical-writing/"
+        }
+      ],
+      "semesterLinks": [
+        {
+          "name": "Hamro CSIT",
+          "url": "https://hamrocsit.com/semester/sixth/"
         }
       ],
       "electiveCourses": [
         {
-          "code": "CSC369",
+          "code": "CSC380",
           "name": "Applied Logic",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "code": "CSC370",
+          "code": "CSC381",
           "name": "E-commerce",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "code": "CSC371",
+          "code": "CSC382",
           "name": "Automation and Robotics",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "code": "CSC372",
+          "code": "CSC383",
           "name": "Neural Networks",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "code": "CSC373",
+          "code": "CSC384",
           "name": "Computer Hardware Design",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "code": "CSC374",
+          "code": "CSC385",
           "name": "Cognitive Science",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         }
       ]
     },
@@ -417,86 +411,82 @@
       "semester": 7,
       "courses": [
         {
-          "code": "CSC409",
+          "code": "CSC419",
           "name": "Advanced Java Programming",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/seventh-semester/advanced-java-programming/"
         },
         {
-          "code": "CSC410",
+          "code": "CSC420",
           "name": "Data Warehousing and Data Mining",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/seventh-semester/data-warehousing-and-data-mining/"
         },
         {
-          "code": "MGT411",
+          "code": "MGT421",
           "name": "Principles of Management",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/seventh-semester/principles-of-management/"
         },
         {
-          "code": "CSC412",
+          "code": "CSC422",
           "name": "Project Work",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/csit/seventh-semester/project-work/"
+        }
+      ],
+      "semesterLinks": [
+        {
+          "name": "Hamro CSIT",
+          "url": "https://hamrocsit.com/semester/seventh/"
         }
       ],
       "electiveCourses": [
         {
-          "code": "CSC413",
+          "code": "CSC423",
           "name": "Information Retrieval",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "code": "CSC414",
+          "code": "CSC424",
           "name": "Database Administration",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "code": "CSC415",
+          "code": "CSC425",
           "name": "Software Project Management",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "code": "CSC416",
+          "code": "CSC426",
           "name": "Network Security",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "code": "CSC417",
+          "code": "CSC427",
           "name": "Digital System Design",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "code": "MGT418",
+          "code": "MGT428",
           "name": "International Marketing",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         }
       ]
     },
@@ -504,120 +494,129 @@
       "semester": 8,
       "courses": [
         {
-          "code": "CSC461",
+          "code": "CSC475",
           "name": "Advanced Database",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "code": "CSC462",
+          "code": "CSC476",
           "name": "Internship",
           "credits": 6,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
+        }
+      ],
+      "semesterLinks": [
+        {
+          "name": "Hamro CSIT",
+          "url": "https://hamrocsit.com/semester/eight/"
         }
       ],
       "electiveCourses": [
         {
-          "code": "CSC463",
+          "code": "CSC477",
           "name": "Advanced Networking with IPV6",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "code": "CSC464",
+          "code": "CSC478",
           "name": "Distributed Networking",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "code": "CSC465",
+          "code": "CSC479",
           "name": "Game Technology",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "code": "CSC466",
-          "name": "Distributed and Object Oriented Database",
+          "code": "CSC480",
+          "name": "Distributed and Object-Oriented Database",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "code": "CSC467",
+          "code": "CSC481",
           "name": "Introduction to Cloud Computing",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "code": "CSC468",
+          "code": "CSC482",
           "name": "Geographical Information System",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "code": "CSC469",
+          "code": "CSC483",
           "name": "Decision Support System and Expert System",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "code": "CSC470",
+          "code": "CSC484",
           "name": "Mobile Application Development",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "code": "CSC471",
+          "code": "CSC485",
           "name": "Real Time Systems",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "code": "CSC472",
+          "code": "CSC486",
           "name": "Network and System Administration",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "code": "CSC473",
+          "code": "CSC487",
           "name": "Embedded Systems Programming",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "code": "MGT474",
+          "code": "MGT488",
           "name": "International Business Management",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         }
       ]
+    }
+  ],
+  "curriculum": {
+    "name": "B.Sc. CSIT Course of Study 2079",
+    "issuer": "Institute of Science and Technology, TU",
+    "url": "https://www.tuiost.edu.np/storage/download/csit-corrected167.pdf"
+  },
+  "studySites": [
+    {
+      "name": "TUpapers",
+      "desc": "Past papers, syllabus and solutions per subject",
+      "url": "https://www.tupapers.com/course/csit/"
+    },
+    {
+      "name": "Hamro CSIT",
+      "desc": "Notes, syllabus and question bank by semester",
+      "url": "https://hamrocsit.com/"
     }
   ]
 }

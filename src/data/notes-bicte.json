@@ -17,7 +17,7 @@
     "eligibility": [
       "Students who have passed grade 12 or equivalent in the second division or secured C+ in aggregate (>2.01 GPA) are eligible to apply."
     ],
-    "curricularStructure": "138 credit hours, eight semesters, including core, major, minor, and practicum courses."
+    "curricularStructure": "132 credit hours over eight semesters: communication skills, professional education, ICT core, mathematics, life skills, electives, a capstone project and a teaching practicum."
   },
   "semesters": [
     {
@@ -28,48 +28,42 @@
           "name": "English Language I",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "Nep. Ed. 411",
           "name": "General Nepali I",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "Ed. 411",
           "name": "Fundamental of Education",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "Math Ed. 416",
           "name": "Mathematics I",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "ICT Ed. 415",
           "name": "Introduction to Information Technology",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "ICT Ed. 416",
           "name": "Programming Concept with C",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         }
       ]
     },
@@ -81,48 +75,42 @@
           "name": "English Language II",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "Nep. Ed. 421",
           "name": "General Nepali II",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "Ed. 422",
           "name": "Developmental Psychology",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "Math Ed. 426",
           "name": "Mathematics II",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "ICT Ed. 425",
           "name": "Digital Logics",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "ICT Ed. 426",
           "name": "Object Oriented Programming with C++",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         }
       ]
     },
@@ -134,48 +122,42 @@
           "name": "Learning Psychology",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "ICT Ed. 435",
           "name": "Data Structure and Algorithm",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "ICT Ed. 436",
           "name": "Computer Architecture and Organization",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "ICT Ed. 437",
           "name": "Web Technology",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "Math Ed. 436",
           "name": "Probability and Statistics",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "ICT Ed. 438",
           "name": "21st Century Life Skill",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         }
       ]
     },
@@ -187,48 +169,42 @@
           "name": "Fundamentals of Curriculum",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "ICT Ed. 445",
           "name": "Operating System",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "ICT Ed. 446",
           "name": "Database Management System",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "code": "Ed. 447",
+          "code": "ICT Ed. 447",
           "name": "System Analysis and Design",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "Math Ed. 446",
           "name": "Numerical Analysis",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "code": "Ed. 442",
-          "name": "Leadership and Management",
+          "code": "Ed. 444",
+          "name": "Educational Leadership in Digital Era",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         }
       ]
     },
@@ -240,40 +216,35 @@
           "name": "Assessment in Teaching and Learning",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "ICT Ed. 455",
           "name": "Java Programming Language",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "ICT Ed. 456",
           "name": "Data Communication and Networks",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "ICT Ed. 457",
           "name": "Software Engineering and Project Management",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "Math Ed. 456",
           "name": "Discrete Mathematics",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         }
       ]
     },
@@ -285,40 +256,35 @@
           "name": "Research Methods in Education",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "ICT Ed. 465",
           "name": "Visual Programming",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "ICT Ed. 466",
           "name": "Computer Graphics",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "code": "Ed. 467",
+          "code": "ICT Ed. 467",
           "name": "Digital Pedagogy",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "ICT Ed. 475",
           "name": "Network and Information Security",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         }
       ]
     },
@@ -327,27 +293,31 @@
       "courses": [
         {
           "code": "Ed. 472",
-          "name": "Research project",
+          "name": "Research Project",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "Ed. 476",
           "name": "Artificial Intelligence in Education",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "ICT Ed. 477",
           "name": "Teaching Methods for ICT",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "ICT Ed. 479",
+          "name": "Capstone Project",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
         }
       ],
       "electiveCourses": [
@@ -356,24 +326,14 @@
           "name": "Geographical Information System",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "ICT Ed. 479",
           "name": "Big Data Analysis",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
-        },
-        {
-          "code": "ICT Ed. 479",
-          "name": "Capstone Project",
-          "credits": 3,
-          "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         }
       ]
     },
@@ -385,24 +345,28 @@
           "name": "Classroom Pedagogy",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "ICT Ed. 481",
+          "name": "Teaching Practicum in ICT Education",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "ICT Ed. 484",
+          "name": "Artificial Intelligence in Education",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
         },
         {
           "code": "ICT Ed. 486",
-          "name": "System Administrator with Linux",
+          "name": "System Administration using Linux",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
-        },
-        {
-          "code": "ICT Ed. 487",
-          "name": "Python Programming",
-          "credits": 3,
-          "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         }
       ],
       "electiveCourses": [
@@ -411,26 +375,35 @@
           "name": "Cloud Computing",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
           "code": "ICT Ed. 489",
-          "name": "Multimedia Technology",
+          "name": "Big Data and Data Analysis",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
-        },
+          "pastQuestionsLink": ""
+        }
+      ],
+      "note": "The Faculty of Education revised semester 8 in 2025. The original 2078 curriculum had Python Programming, Multimedia Technology (elective) and Teaching Practicum here, with Artificial Intelligence in Education in semester 7. Check with your campus which version applies to your batch.",
+      "semesterLinks": [
         {
-          "code": "ICT Ed. 490",
-          "name": "Teaching Practicum in ICT",
-          "credits": 3,
-          "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "name": "Revised semester 8 syllabus",
+          "url": "https://portal.tu.edu.np/downloads/2025_05_05_12_33_28.pdf"
         }
       ]
+    }
+  ],
+  "curriculum": {
+    "name": "BICTE Curriculum (2078 batch onwards)",
+    "issuer": "Faculty of Education, TU",
+    "url": "https://portal.tu.edu.np/downloads/2025_03_26_13_04_41.pdf"
+  },
+  "studySites": [
+    {
+      "name": "Noted Insights",
+      "desc": "BICTE notes and syllabus by subject",
+      "url": "https://notedinsights.com/bicte/"
     }
   ]
 }

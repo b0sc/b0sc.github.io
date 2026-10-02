@@ -29,39 +29,39 @@
       "semester": 1,
       "courses": [
         {
-          "name": "Sociology",
-          "credits": 3,
-          "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
-        },
-        {
-          "name": "Basic Mathematics",
-          "credits": 3,
-          "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
-        },
-        {
-          "name": "Digital Logic",
-          "credits": 3,
-          "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
-        },
-        {
-          "name": "C Programming",
-          "credits": 3,
-          "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
-        },
-        {
+          "code": "BIT101",
           "name": "Introduction to Information Technology",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/first-semester/introduction-to-IT/"
+        },
+        {
+          "code": "BIT102",
+          "name": "C Programming",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/first-semester/c-programming/"
+        },
+        {
+          "code": "BIT103",
+          "name": "Digital Logic",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/first-semester/digital-logics/"
+        },
+        {
+          "code": "MTH104",
+          "name": "Basic Mathematics",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/first-semester/mathematics/"
+        },
+        {
+          "code": "SCO105",
+          "name": "Sociology",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/first-semester/sociology/"
         }
       ]
     },
@@ -69,39 +69,39 @@
       "semester": 2,
       "courses": [
         {
-          "name": "Economics",
-          "credits": 3,
-          "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
-        },
-        {
-          "name": "Business Statistics",
-          "credits": 3,
-          "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
-        },
-        {
-          "name": "Object-Oriented Programming",
-          "credits": 3,
-          "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
-        },
-        {
-          "name": "Discrete Structure",
-          "credits": 3,
-          "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
-        },
-        {
+          "code": "BIT151",
           "name": "Microprocessor and Computer Architecture",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/second-semester/microprocessor/"
+        },
+        {
+          "code": "BIT152",
+          "name": "Discrete Structure",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/second-semester/discrete-structure/"
+        },
+        {
+          "code": "BIT153",
+          "name": "Object Oriented Programming",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/second-semester/oop/"
+        },
+        {
+          "code": "STA154",
+          "name": "Basic Statistics",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/second-semester/basic-statistics/"
+        },
+        {
+          "code": "ECO155",
+          "name": "Economics",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/second-semester/economics/"
         }
       ]
     },
@@ -109,39 +109,39 @@
       "semester": 3,
       "courses": [
         {
-          "name": "Principles of Management",
+          "code": "BIT201",
+          "name": "Data Structures and Algorithms",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/third-semester/data-structure-and-algorithms/"
         },
         {
-          "name": "Operating System",
-          "credits": 3,
-          "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
-        },
-        {
-          "name": "Numerical Methods",
-          "credits": 3,
-          "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
-        },
-        {
+          "code": "BIT202",
           "name": "Database Management System",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/third-semester/dbms/"
         },
         {
-          "name": "Data Structure and Algorithm",
+          "code": "BIT203",
+          "name": "Numerical Methods",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/third-semester/numerical-methods/"
+        },
+        {
+          "code": "BIT204",
+          "name": "Operating Systems",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/third-semester/operating-system/"
+        },
+        {
+          "code": "MGT205",
+          "name": "Principles of Management",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/third-semester/principles-of-management/"
         }
       ]
     },
@@ -149,39 +149,39 @@
       "semester": 4,
       "courses": [
         {
-          "name": "Operations Research",
+          "code": "BIT251",
+          "name": "Web Technology I",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/fourth-semester/web-technology-I/"
         },
         {
-          "name": "Network and Data Communications",
-          "credits": 3,
-          "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
-        },
-        {
-          "name": "System Analysis and Design",
-          "credits": 3,
-          "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
-        },
-        {
+          "code": "BIT252",
           "name": "Artificial Intelligence",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/fourth-semester/artifical-intelligence/"
         },
         {
-          "name": "Web Technology- I",
+          "code": "BIT253",
+          "name": "Systems Analysis and Design",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/fourth-semester/system-analysis-and-design/"
+        },
+        {
+          "code": "BIT254",
+          "name": "Network and Data Communications",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/fourth-semester/network-and-data-communications/"
+        },
+        {
+          "code": "ORS255",
+          "name": "Operations Research",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/fourth-semester/operations-research/"
         }
       ]
     },
@@ -189,39 +189,39 @@
       "semester": 5,
       "courses": [
         {
-          "name": "Technical Writing",
+          "code": "BIT301",
+          "name": "Web Technology II",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/fifth-semester/web-technology-II/"
         },
         {
-          "name": "Computer Graphics",
-          "credits": 3,
-          "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
-        },
-        {
-          "name": "Information Security",
-          "credits": 3,
-          "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
-        },
-        {
+          "code": "BIT302",
           "name": "Software Engineering",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/fifth-semester/software-engineering/"
         },
         {
-          "name": "Web Technology- II",
+          "code": "BIT303",
+          "name": "Information Security",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/fifth-semester/information-security/"
+        },
+        {
+          "code": "BIT304",
+          "name": "Computer Graphics",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/fifth-semester/computer-graphics/"
+        },
+        {
+          "code": "ENG305",
+          "name": "Technical Writing",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/fifth-semester/technical-writing/"
         }
       ]
     },
@@ -229,69 +229,69 @@
       "semester": 6,
       "courses": [
         {
-          "name": "Net-Centric Computing",
+          "code": "BIT351",
+          "name": "NET Centric Computing",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/sixth-semester/net-centric-computing/"
         },
         {
+          "code": "BIT352",
           "name": "Database Administration",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/sixth-semester/database-administration/"
         },
         {
+          "code": "BIT353",
           "name": "Management Information System",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/sixth-semester/management-information-system/"
         },
         {
+          "code": "RSM354",
           "name": "Research Methodology",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/sixth-semester/research-methodology/"
         }
       ],
       "electiveCourses": [
         {
+          "code": "BIT355",
           "name": "Geographical Information System",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
+          "code": "BIT356",
           "name": "Multimedia Computing",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
+          "code": "BIT357",
           "name": "Wireless Networking",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
+          "code": "BIT358",
           "name": "Society and Ethics in IT",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
+          "code": "PSY359",
           "name": "Psychology",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         }
       ]
     },
@@ -299,69 +299,69 @@
       "semester": 7,
       "courses": [
         {
+          "code": "BIT401",
           "name": "Advanced Java Programming",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/seventh-semester/advanced-java-programming/"
         },
         {
+          "code": "BIT402",
           "name": "Software Project Management",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/seventh-semester/software-project-management/"
         },
         {
-          "name": "e-Commerce",
+          "code": "BIT403",
+          "name": "E-commerce",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": "https://www.tupapers.com/course/bit/seventh-semester/e-commerce/"
         },
         {
+          "code": "BIT404",
           "name": "Project Work",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         }
       ],
       "electiveCourses": [
         {
+          "code": "BIT405",
           "name": "DSS and Expert System",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
+          "code": "BIT406",
           "name": "Mobile Application Development",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
+          "code": "BIT407",
           "name": "Simulation and Modeling",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
+          "code": "BIT408",
           "name": "Cloud Computing",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
+          "code": "MGT409",
           "name": "Marketing",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         }
       ]
     },
@@ -369,64 +369,76 @@
       "semester": 8,
       "courses": [
         {
-          "name": "Network System Administration",
+          "code": "BIT451",
+          "name": "Network and System Administration",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
-          "name": "e-Governance",
+          "code": "BIT452",
+          "name": "E-Governance",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
+          "code": "BIT453",
           "name": "Internship",
           "credits": 6,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         }
       ],
       "electiveCourses": [
         {
+          "code": "BIT454",
           "name": "Data Warehousing and Data Mining",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
+          "code": "BIT455",
           "name": "Knowledge Management",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
+          "code": "BIT456",
           "name": "Image Processing",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
+          "code": "BIT457",
           "name": "Network Security",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         },
         {
+          "code": "BIT458",
           "name": "Introduction to Telecommunications",
           "credits": 3,
           "notesLink": "",
-          "pastQuestionsLink": "",
-          "syllabusLink": ""
+          "pastQuestionsLink": ""
         }
       ]
+    }
+  ],
+  "curriculum": {
+    "name": "BIT Course of Study",
+    "issuer": "Institute of Science and Technology, TU",
+    "url": "https://www.tuiost.edu.np/storage/download/bit-corrected-1654.pdf"
+  },
+  "studySites": [
+    {
+      "name": "TUpapers",
+      "desc": "Past papers, syllabus and solutions per subject",
+      "url": "https://www.tupapers.com/course/bit/"
     }
   ]
 }

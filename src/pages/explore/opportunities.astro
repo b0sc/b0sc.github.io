@@ -2,34 +2,186 @@
 import Layout from "../../layouts/Layout.astro"
 import Container from "../../components/Container.astro"
 import ExploreNav from "../../components/ExploreNav.astro"
-import oData from "../../data/opportunities.json"
+import opportunitiesData from "../../data/opportunities.json"
 import OpportunityCard from "../../components/Cards/OpportunityCard.astro"
+import type { Opportunity } from "../../components/Cards/OpportunityCard.astro"
 
 export const prerender = true
+
+const opportunities: Opportunity[] = opportunitiesData
+
+const categories = [...new Set(opportunities.map((op) => op.category))]
+const scopes = [...new Set(opportunities.map((op) => op.scope))]
 ---
 
 <Layout
-  title="BOSC - IT Opportunities"
-  description="Find national and international IT jobs, internships, and opportunities curated by BOSC."
+  title="BOSC - Opportunities"
+  description="Verified open source programs, fellowships, competitions and student perks for IT students in Nepal and worldwide."
 >
   <main class="pt-7 pb-16">
     <Container>
       <div class="flex flex-col md:flex-row">
         <ExploreNav />
 
-        <div class="flex-1 p-4">
-          <div id="opportunities-content">
-            <h2
-              class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-[var(--text-color)] text-center"
+        <div class="flex-1 min-w-0 p-4">
+          <h2
+            class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-[var(--text-color)] text-center"
+          >
+            Opportunities
+          </h2>
+          <p class="mb-8 text-[var(--text-muted)] sm:text-lg text-center">
+            {opportunities.length} programs, fellowships, competitions and perks
+            for IT students. Each one is checked against its official page.
+          </p>
+
+          <div
+            class="flex flex-wrap justify-center gap-2 mb-3"
+            role="group"
+            aria-label="Filter by type"
+          >
+            <button
+              type="button"
+              data-filter="category"
+              data-value="all"
+              aria-pressed="true"
+              class="filter-chip"
             >
-              Opportunities in IT - International, National
-            </h2>
-            <div class="grid gap-8 lg:grid-cols-2 mt-12">
-              <OpportunityCard opportunities={oData} />
-            </div>
+              All
+            </button>
+            {
+              categories.map((category) => (
+                <button
+                  type="button"
+                  data-filter="category"
+                  data-value={category}
+                  aria-pressed="false"
+                  class="filter-chip"
+                >
+                  {category}
+                </button>
+              ))
+            }
           </div>
+          <div
+            class="flex flex-wrap justify-center gap-2 mb-10"
+            role="group"
+            aria-label="Filter by region"
+          >
+            <button
+              type="button"
+              data-filter="scope"
+              data-value="all"
+              aria-pressed="true"
+              class="filter-chip"
+            >
+              Everywhere
+            </button>
+            {
+              scopes.map((scope) => (
+                <button
+                  type="button"
+                  data-filter="scope"
+                  data-value={scope}
+                  aria-pressed="false"
+                  class="filter-chip"
+                >
+                  {scope}
+                </button>
+              ))
+            }
+          </div>
+
+          <div class="grid gap-8 lg:grid-cols-2" id="opportunity-list">
+            {
+              opportunities.map((opportunity) => (
+                <OpportunityCard opportunity={opportunity} />
+              ))
+            }
+          </div>
+          <p id="no-results" class="hidden text-center text-gray-500 mt-8">
+            No opportunities match these filters.
+          </p>
+
+          <p class="mt-12 text-sm text-center text-gray-500">
+            Dates and rules change. Always confirm on the official page before
+            applying. Know a legit opportunity we're missing?
+            <a
+              href="https://github.com/b0sc/b0sc.github.io/blob/main/src/data/opportunities.json"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="underline decoration-lime-500 decoration-2 underline-offset-4"
+              >Add it on GitHub</a
+            >.
+          </p>
         </div>
       </div>
     </Container>
   </main>
 </Layout>
+
+<style>
+  .filter-chip {
+    @apply px-4 py-1.5 rounded-full border border-zinc-900 text-sm hover:bg-zinc-100;
+  }
+  .filter-chip[aria-pressed="true"] {
+    @apply bg-zinc-900 text-white hover:bg-zinc-900;
+  }
+</style>
+
+<script>
+  // The site is static, so deadlines are checked in the browser: cards with
+  // an upcoming deadline move to the top and past deadline badges are hidden.
+  function sortByDeadline(list: HTMLElement) {
+    const now = Date.now()
+    const cards = [...list.querySelectorAll<HTMLElement>("article")]
+    const upcoming = (card: HTMLElement) => {
+      const badge = card.querySelector<HTMLElement>("[data-deadline]")
+      if (!badge) return Infinity
+      // Deadlines last until the end of that day
+      const time = new Date(badge.dataset.deadline!).getTime() + 86_400_000
+      badge.hidden = time < now
+      return time < now ? Infinity : time
+    }
+    const order = new Map(cards.map((card, i) => [card, i]))
+    cards
+      .sort(
+        (a, b) => upcoming(a) - upcoming(b) || order.get(a)! - order.get(b)!
+      )
+      .forEach((card) => list.appendChild(card))
+  }
+
+  function initFilters() {
+    const list = document.getElementById("opportunity-list")
+    if (!list) return
+    sortByDeadline(list)
+    const active: Record<string, string> = { category: "all", scope: "all" }
+    const cards = list.querySelectorAll<HTMLElement>("article")
+    const empty = document.getElementById("no-results")
+
+    document
+      .querySelectorAll<HTMLButtonElement>("[data-filter]")
+      .forEach((button) => {
+        button.addEventListener("click", () => {
+          const filter = button.dataset.filter!
+          active[filter] = button.dataset.value!
+          document
+            .querySelectorAll<HTMLButtonElement>(`[data-filter="${filter}"]`)
+            .forEach((b) =>
+              b.setAttribute("aria-pressed", String(b === button))
+            )
+
+          let shown = 0
+          cards.forEach((card) => {
+            const match = Object.entries(active).every(
+              ([key, value]) => value === "all" || card.dataset[key] === value
+            )
+            card.hidden = !match
+            if (match) shown++
+          })
+          empty?.classList.toggle("hidden", shown > 0)
+        })
+      })
+  }
+
+  document.addEventListener("astro:page-load", initFilters)
+</script>

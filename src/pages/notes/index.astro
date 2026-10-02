@@ -1,63 +1,88 @@
 ---
 import Container from "../../components/Container.astro"
 import NavbarNotes from "../../components/NavbarNotes.astro"
+import Topic from "../../components/Topic.astro"
 import Layout from "../../layouts/Layout.astro"
+import { faculties, getFaculty } from "../../utils/notes"
 
-const faculties = [
-  {
-    key: "csit",
-    name: "CSIT",
-    description: "Comprehensive CSIT semester-wise notes and resources.",
-  },
-  {
-    key: "bit",
-    name: "BIT",
-    description: "Bachelor of Information Technology resources from BOSC.",
-  },
-  {
-    key: "bca",
-    name: "BCA",
-    description: "BCA notes and guides curated semester-wise.",
-  },
-  {
-    key: "bicte",
-    name: "BICTE",
-    description: "Education-focused IT materials for BICTE.",
-  },
-]
+const programs = faculties.map((faculty) => {
+  const { data } = getFaculty(faculty.key)
+  const courses = data.semesters.reduce(
+    (sum, s) => sum + s.courses.length + (s.electiveCourses?.length ?? 0),
+    0
+  )
+  return { ...faculty, courses }
+})
 ---
 
 <Layout
-  title="IT Notes and Roadmap"
-  description="BOSC's Official Website. Read IT Notes and Blogs. Get Jobs, BCA. Join BIT and Mentorship Programs. Created by Open Source Enthusiasts from Nepal."
-  image="https://bosc.org.np/team.jpg"
-  url="https://bosc.org.np/notes"
+  title="BOSC - Notes"
+  description="Semester-wise courses, official TU syllabi, past papers and free learning resources for CSIT, BIT, BCA and BICTE students."
 >
-  <main class="space-y-20">
+  <main class="pt-7 pb-20">
     <Container>
-      <div class="flex flex-col md:flex-row">
+      <div class="flex flex-col md:flex-row gap-6">
         <NavbarNotes />
-        <div class="w-full px-4">
-          <h1 class="text-2xl font-bold mb-6">📚 Explore IT Notes</h1>
-          <p class="text-gray-600 mb-8 max-w-2xl">
-            BOSC provides organized, semester-wise notes and study materials
-            across major IT faculties in Nepal. Choose your faculty to begin.
-          </p>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+        <div class="flex-1 min-w-0">
+          <div class="relative flex flex-col items-center md:flex-row">
+            <Topic
+              title="Notes"
+              description="Every course in your program, with the official TU syllabus, past papers and free university-quality courses to learn from."
+            />
+          </div>
+
+          <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
             {
-              faculties.map((faculty) => (
+              programs.map((program) => (
                 <a
-                  href={`/notes/${faculty.key}`}
-                  class="block border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow bg-white"
+                  href={`/notes/${program.key}`}
+                  class="group flex flex-col p-6 bg-white rounded-3xl border border-zinc-900 shadow-card hover:bg-lime-500 transition-colors"
                 >
-                  <h2 class="text-xl font-semibold text-purple-700 mb-2">
-                    {faculty.name}
-                  </h2>
-                  <p class="text-gray-600 text-sm">{faculty.description}</p>
+                  <span class="text-3xl font-bold">{program.name}</span>
+                  <span class="mt-1 text-gray-700">{program.fullName}</span>
+                  {program.note && (
+                    <span class="mt-3 w-fit bg-zinc-100 text-xs font-medium px-2.5 py-0.5 rounded">
+                      {program.note}
+                    </span>
+                  )}
+                  <span class="mt-6 text-sm text-gray-500 group-hover:text-black">
+                    8 semesters · {program.courses} courses
+                  </span>
                 </a>
               ))
             }
           </div>
+
+          <section class="mt-12 p-6 md:p-10 bg-zinc-100 rounded-[45px]">
+            <h2 class="text-2xl font-bold mb-4">What you'll find</h2>
+            <ul class="grid gap-4 md:grid-cols-3">
+              <li>
+                <p class="font-bold">Official syllabus</p>
+                <p class="text-gray-700">
+                  The course of study published by Tribhuvan University.
+                </p>
+              </li>
+              <li>
+                <p class="font-bold">Past papers</p>
+                <p class="text-gray-700">
+                  Previous TU exam questions for each subject, many with
+                  solutions.
+                </p>
+              </li>
+              <li>
+                <p class="font-bold">Free courses</p>
+                <p class="text-gray-700">
+                  Open courses and books from MIT, Harvard, Google and others
+                  that cover the same topics.
+                </p>
+              </li>
+            </ul>
+            <p class="mt-6 text-sm text-gray-500">
+              Past papers and notes are hosted by independent student sites.
+              BOSC links to them but doesn't control their content. Have better
+              notes? Use "Upload resources" to share them.
+            </p>
+          </section>
         </div>
       </div>
     </Container>

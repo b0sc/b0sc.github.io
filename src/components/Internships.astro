@@ -139,149 +139,156 @@ function isExpired(expiryDate: string): boolean {
   </div>
 </div>
 
-<script define:vars={{ internshipsData }}>
-  // Store all internships
-  let allInternships = internshipsData
+<script is:inline>
+  // Wrapped in a function: inline scripts re-run on every client-side
+  // navigation, and top-level consts would clash on the second run.
+  ;(function () {
+    // Get DOM elements
+    const sortSelect = document.getElementById("sortSelect")
+    const locationSelect = document.getElementById("locationSelect")
+    const categorySelect = document.getElementById("categorySelect")
+    const clearFiltersBtn = document.getElementById("clearFilters")
+    const grid = document.getElementById("internshipsGrid")
+    const resultCount = document.getElementById("resultCount")
+    const plural = document.getElementById("plural")
+    const noResults = document.getElementById("noResults")
+    if (!grid) return
 
-  // Get DOM elements
-  const sortSelect = document.getElementById("sortSelect")
-  const locationSelect = document.getElementById("locationSelect")
-  const categorySelect = document.getElementById("categorySelect")
-  const clearFiltersBtn = document.getElementById("clearFilters")
-  const grid = document.getElementById("internshipsGrid")
-  const resultCount = document.getElementById("resultCount")
-  const plural = document.getElementById("plural")
-  const noResults = document.getElementById("noResults")
+    // Every card carries its internship as JSON
+    const allInternships = Array.from(
+      grid.querySelectorAll("[data-internship]")
+    ).map((card) => JSON.parse(card.getAttribute("data-internship")))
 
-  // Check if internship is expired
-  function isExpired(expiryDate) {
-    return new Date(expiryDate) < new Date()
-  }
-
-  // Add expired chips to cards
-  function addExpiredChips() {
-    const allCards = grid.querySelectorAll("[data-internship]")
-
-    allCards.forEach((card) => {
-      const internshipData = JSON.parse(card.getAttribute("data-internship"))
-      const expired = isExpired(internshipData.expiryDate)
-
-      if (expired) {
-        // Find the card content (InternshipCard component)
-        const cardElement =
-          card.querySelector('[class*="bg-white"]') || card.firstElementChild
-
-        if (cardElement && !card.querySelector(".expired-chip")) {
-          // Create expired chip
-          const expiredChip = document.createElement("div")
-          expiredChip.className =
-            "expired-chip absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-xs font-semibold shadow-lg z-10"
-          expiredChip.textContent = "EXPIRED"
-
-          // Make card relative if not already
-          if (cardElement.style.position !== "relative") {
-            cardElement.style.position = "relative"
-          }
-
-          cardElement.appendChild(expiredChip)
-
-          // Add opacity to expired cards
-          cardElement.style.opacity = "0.7"
-        }
-      }
-    })
-  }
-
-  // Filter and sort function
-  function filterAndSort() {
-    const sortBy = sortSelect.value
-    const location = locationSelect.value
-    const category = categorySelect.value
-
-    // Apply filters
-    let filtered = allInternships.filter((internship) => {
-      const locationMatch =
-        location === "all" ||
-        internship.location.toLowerCase().includes(location.toLowerCase())
-      const categoryMatch =
-        category === "all" || internship.category === category
-      return locationMatch && categoryMatch
-    })
-
-    // Apply sorting
-    filtered.sort((a, b) => {
-      if (sortBy === "newest") {
-        return (
-          new Date(b.postedDate).getTime() - new Date(a.postedDate).getTime()
-        )
-      } else if (sortBy === "stipend") {
-        return Number(b.stipend) - Number(a.stipend)
-      } else if (sortBy === "expiry") {
-        return (
-          new Date(a.expiryDate).getTime() - new Date(b.expiryDate).getTime()
-        )
-      }
-      return 0
-    })
-
-    // Update UI
-    updateGrid(filtered)
-  }
-
-  // Update grid display
-  function updateGrid(internships) {
-    const allCards = grid.querySelectorAll("[data-internship]")
-
-    // Hide all cards first
-    allCards.forEach((card) => {
-      card.style.display = "none"
-    })
-
-    // Show and reorder filtered cards
-    if (internships.length > 0) {
-      internships.forEach((internship, index) => {
-        const card = Array.from(allCards).find((c) => {
-          const data = JSON.parse(c.getAttribute("data-internship"))
-          return data.id === internship.id
-        })
-
-        if (card) {
-          card.style.display = "block"
-          card.style.order = index
-        }
-      })
-
-      noResults.classList.add("hidden")
-    } else {
-      noResults.classList.remove("hidden")
+    // Check if internship is expired
+    function isExpired(expiryDate) {
+      return new Date(expiryDate) < new Date()
     }
 
-    // Update count
-    resultCount.textContent = internships.length
-    plural.textContent = internships.length !== 1 ? "s" : ""
-  }
+    // Add expired chips to cards
+    function addExpiredChips() {
+      const allCards = grid.querySelectorAll("[data-internship]")
 
-  // Clear all filters
-  function clearAllFilters() {
-    sortSelect.value = "newest"
-    locationSelect.value = "all"
-    categorySelect.value = "all"
+      allCards.forEach((card) => {
+        const internshipData = JSON.parse(card.getAttribute("data-internship"))
+        const expired = isExpired(internshipData.expiryDate)
+
+        if (expired) {
+          // Find the card content (InternshipCard component)
+          const cardElement =
+            card.querySelector('[class*="bg-white"]') || card.firstElementChild
+
+          if (cardElement && !card.querySelector(".expired-chip")) {
+            // Create expired chip
+            const expiredChip = document.createElement("div")
+            expiredChip.className =
+              "expired-chip absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-xs font-semibold shadow-lg z-10"
+            expiredChip.textContent = "EXPIRED"
+
+            // Make card relative if not already
+            if (cardElement.style.position !== "relative") {
+              cardElement.style.position = "relative"
+            }
+
+            cardElement.appendChild(expiredChip)
+
+            // Add opacity to expired cards
+            cardElement.style.opacity = "0.7"
+          }
+        }
+      })
+    }
+
+    // Filter and sort function
+    function filterAndSort() {
+      const sortBy = sortSelect.value
+      const location = locationSelect.value
+      const category = categorySelect.value
+
+      // Apply filters
+      let filtered = allInternships.filter((internship) => {
+        const locationMatch =
+          location === "all" ||
+          internship.location.toLowerCase().includes(location.toLowerCase())
+        const categoryMatch =
+          category === "all" || internship.category === category
+        return locationMatch && categoryMatch
+      })
+
+      // Apply sorting
+      filtered.sort((a, b) => {
+        if (sortBy === "newest") {
+          return (
+            new Date(b.postedDate).getTime() - new Date(a.postedDate).getTime()
+          )
+        } else if (sortBy === "stipend") {
+          return Number(b.stipend) - Number(a.stipend)
+        } else if (sortBy === "expiry") {
+          return (
+            new Date(a.expiryDate).getTime() - new Date(b.expiryDate).getTime()
+          )
+        }
+        return 0
+      })
+
+      // Update UI
+      updateGrid(filtered)
+    }
+
+    // Update grid display
+    function updateGrid(internships) {
+      const allCards = grid.querySelectorAll("[data-internship]")
+
+      // Hide all cards first
+      allCards.forEach((card) => {
+        card.style.display = "none"
+      })
+
+      // Show and reorder filtered cards
+      if (internships.length > 0) {
+        internships.forEach((internship, index) => {
+          const card = Array.from(allCards).find((c) => {
+            const data = JSON.parse(c.getAttribute("data-internship"))
+            return data.id === internship.id
+          })
+
+          if (card) {
+            card.style.display = "block"
+            card.style.order = index
+          }
+        })
+
+        noResults.classList.add("hidden")
+      } else {
+        noResults.classList.remove("hidden")
+      }
+
+      // Update count
+      resultCount.textContent = internships.length
+      plural.textContent = internships.length !== 1 ? "s" : ""
+    }
+
+    // Clear all filters
+    function clearAllFilters() {
+      sortSelect.value = "newest"
+      locationSelect.value = "all"
+      categorySelect.value = "all"
+      filterAndSort()
+    }
+
+    // Add event listeners
+    sortSelect.addEventListener("change", filterAndSort)
+    locationSelect.addEventListener("change", filterAndSort)
+    categorySelect.addEventListener("change", filterAndSort)
+    clearFiltersBtn.addEventListener("click", clearAllFilters)
+
+    // Initial render
     filterAndSort()
-  }
 
-  // Add event listeners
-  sortSelect.addEventListener("change", filterAndSort)
-  locationSelect.addEventListener("change", filterAndSort)
-  categorySelect.addEventListener("change", filterAndSort)
-  clearFiltersBtn.addEventListener("click", clearAllFilters)
-
-  // Initial render
-  filterAndSort()
-
-  // Add expired chips after initial render
-  setTimeout(() => {
-    addExpiredChips()
-  }, 100)
+    // Add expired chips after initial render
+    setTimeout(() => {
+      addExpiredChips()
+    }, 100)
+  })()
 </script>
 
 <style>
