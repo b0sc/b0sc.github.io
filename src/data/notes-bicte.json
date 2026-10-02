@@ -17,7 +17,7 @@
     "eligibility": [
       "Students who have passed grade 12 or equivalent in the second division or secured C+ in aggregate (>2.01 GPA) are eligible to apply."
     ],
-    "curricularStructure": "138 credit hours, eight semesters, including core, major, minor, and practicum courses."
+    "curricularStructure": "132 credit hours over eight semesters: communication skills, professional education, ICT core, mathematics, life skills, electives, a capstone project and a teaching practicum."
   },
   "semesters": [
     {
@@ -186,7 +186,7 @@
           "pastQuestionsLink": ""
         },
         {
-          "code": "Ed. 447",
+          "code": "ICT Ed. 447",
           "name": "System Analysis and Design",
           "credits": 3,
           "notesLink": "",
@@ -200,8 +200,8 @@
           "pastQuestionsLink": ""
         },
         {
-          "code": "Ed. 442",
-          "name": "Leadership and Management",
+          "code": "Ed. 444",
+          "name": "Educational Leadership in Digital Era",
           "credits": 3,
           "notesLink": "",
           "pastQuestionsLink": ""
@@ -273,7 +273,7 @@
           "pastQuestionsLink": ""
         },
         {
-          "code": "Ed. 467",
+          "code": "ICT Ed. 467",
           "name": "Digital Pedagogy",
           "credits": 3,
           "notesLink": "",
@@ -293,7 +293,14 @@
       "courses": [
         {
           "code": "Ed. 472",
-          "name": "Research project",
+          "name": "Research Project",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "Ed. 476",
+          "name": "Artificial Intelligence in Education",
           "credits": 3,
           "notesLink": "",
           "pastQuestionsLink": ""
@@ -301,6 +308,13 @@
         {
           "code": "ICT Ed. 477",
           "name": "Teaching Methods for ICT",
+          "credits": 3,
+          "notesLink": "",
+          "pastQuestionsLink": ""
+        },
+        {
+          "code": "ICT Ed. 479",
+          "name": "Capstone Project",
           "credits": 3,
           "notesLink": "",
           "pastQuestionsLink": ""
@@ -320,13 +334,6 @@
           "credits": 3,
           "notesLink": "",
           "pastQuestionsLink": ""
-        },
-        {
-          "code": "ICT Ed. 479",
-          "name": "Capstone Project",
-          "credits": 3,
-          "notesLink": "",
-          "pastQuestionsLink": ""
         }
       ]
     },
@@ -341,21 +348,21 @@
           "pastQuestionsLink": ""
         },
         {
-          "code": "ICT. Ed. 481",
+          "code": "ICT Ed. 481",
           "name": "Teaching Practicum in ICT Education",
           "credits": 3,
           "notesLink": "",
           "pastQuestionsLink": ""
         },
         {
-          "code": "ICT. Ed. 484",
+          "code": "ICT Ed. 484",
           "name": "Artificial Intelligence in Education",
           "credits": 3,
           "notesLink": "",
           "pastQuestionsLink": ""
         },
         {
-          "code": "ICT. Ed. 486",
+          "code": "ICT Ed. 486",
           "name": "System Administration using Linux",
           "credits": 3,
           "notesLink": "",
@@ -364,26 +371,33 @@
       ],
       "electiveCourses": [
         {
-          "code": "ICT. Ed. 488",
+          "code": "ICT Ed. 488",
           "name": "Cloud Computing",
           "credits": 3,
           "notesLink": "",
           "pastQuestionsLink": ""
         },
         {
-          "code": "ICT. Ed. 489",
+          "code": "ICT Ed. 489",
           "name": "Big Data and Data Analysis",
           "credits": 3,
           "notesLink": "",
           "pastQuestionsLink": ""
         }
+      ],
+      "note": "The Faculty of Education revised semester 8 in 2025. The original 2078 curriculum had Python Programming, Multimedia Technology (elective) and Teaching Practicum here, with Artificial Intelligence in Education in semester 7. Check with your campus which version applies to your batch.",
+      "semesterLinks": [
+        {
+          "name": "Revised semester 8 syllabus",
+          "url": "https://portal.tu.edu.np/downloads/2025_05_05_12_33_28.pdf"
+        }
       ]
     }
   ],
   "curriculum": {
-    "name": "BICTE curriculum",
+    "name": "BICTE Curriculum (2078 batch onwards)",
     "issuer": "Faculty of Education, TU",
-    "url": "https://foe.tu.edu.np/downloads?category=481"
+    "url": "https://portal.tu.edu.np/downloads/2025_03_26_13_04_41.pdf"
   },
   "studySites": [
     {

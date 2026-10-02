@@ -14,6 +14,8 @@ export interface Semester {
   semester: number
   courses: Course[]
   electiveCourses?: Course[]
+  // Shown above the course list, e.g. when a curriculum was revised
+  note?: string
   semesterLinks?: { name: string; url: string }[]
 }
 
