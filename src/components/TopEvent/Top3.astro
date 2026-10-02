@@ -1,5 +1,5 @@
 ---
-import events from "../../components/Data/events.json"
+import events from "../../data/events.json"
 import VideoIcon from "./../Icons/VideoIcon.astro"
 ---
 
@@ -9,10 +9,9 @@ import VideoIcon from "./../Icons/VideoIcon.astro"
       Featured Events
     </h2>
     <p class="mb-4 font-light text-gray-500 sm:text-xl">
-      Since 2021, BOSC has sucessfully conducted
+      Since 2021, BOSC has successfully conducted
       <strong> {events.length}</strong> events and workshops.
-      <a class="inline font-normal" href="/blogs#events"> See All </a>
-      <!-- change href to /timeline when timeline is done -->
+      <a class="inline font-normal" href="/explore/events"> See All </a>
     </p>
   </div>
   <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
@@ -89,7 +88,7 @@ import VideoIcon from "./../Icons/VideoIcon.astro"
               </ul>
               <a
                 href={event.links.blog}
-                class="text-black hover:text-white bg-lime-500 hover:bg-black focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                class="text-black hover:text-white bg-lime-500 hover:bg-black focus:ring-4 focus:ring-lime-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
               >
                 Read More
               </a>

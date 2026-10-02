@@ -1,6 +1,14 @@
 ---
 import Container from "./Container.astro"
 const date = new Date().getFullYear()
+
+const footerLinks = [
+  { href: "/about", label: "About" },
+  { href: "/brand", label: "Brand" },
+  { href: "/privacy", label: "Privacy" },
+  { href: "/#contact", label: "Contact" },
+  { href: "https://github.com/b0sc/b0sc.github.io", label: "Source code" },
+]
 ---
 
 <footer class="bg-lime-500 bg-fixed bg-bottom text-black">
@@ -8,34 +16,56 @@ const date = new Date().getFullYear()
     <div class="py-6">
       <div class="flex flex-col items-center justify-between md:flex-row">
         <div class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img class="w-auto h-8" src="/logo.png" alt="Logo" />-B-O-S-C
+          <img class="w-auto h-8" src="/brand/bosc-mark.png" alt="" />
+          <span class="font-medium">Birendra Open Source Club</span>
         </div>
         <div class="flex justify-center items-center mt-4 md:m-0">
-          <a href="https://t.me/bosc_official" target="_blank">
-            <img class="h-10" src="/telegram.png" alt="telegram logo" />
+          <a
+            href="https://t.me/bosc_official"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img class="h-10 w-10" src="/telegram.png" alt="Telegram" />
           </a>
-          <a href="https://github.com/b0sc" target="_blank">
-            <img src="/github.png" alt="github logo" />
+          <a
+            href="https://github.com/b0sc"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img class="h-10 w-10" src="/github.png" alt="GitHub" />
           </a>
-          <a href="https://facebook.com/birendraopensourceclub" target="_blank">
-            <img src="/facebook.png" alt="facebook logo" />
+          <a
+            href="https://facebook.com/birendraopensourceclub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img class="h-10 w-10" src="/facebook.png" alt="Facebook" />
           </a>
-          <a href="https://www.linkedin.com/company/b0sc/" target="_blank">
-            <img src="/linkedin.png" alt="linkedin logo" />
+          <a
+            href="https://www.linkedin.com/company/b0sc/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img class="h-10 w-10" src="/linkedin.png" alt="LinkedIn" />
           </a>
 
           <a
             href="https://instagram.com/birendraopensourceclub"
             target="_blank"
+            rel="noopener noreferrer"
           >
-            <img src="/instagram.png" alt="instagram logo" />
+            <img class="h-10 w-10" src="/instagram.png" alt="Instagram" />
           </a>
 
-          <a href="https://discord.gg/3gjuqt64y8" target="_blank">
+          <a
+            href="https://discord.gg/3gjuqt64y8"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
-              class="h-10 rounded-xl"
+              class="h-10 w-10 rounded-xl"
               src="/discord.png"
-              alt="discord logo"
+              alt="Discord"
             />
           </a>
         </div>
@@ -45,11 +75,23 @@ const date = new Date().getFullYear()
               href="https://github.com/b0sc/b0sc.github.io"
               target="_blank"
               rel="noopener noreferrer"
-              >bosc@{date}
+              >© {date} BOSC
             </a>
           </div>
         </div>
       </div>
+      <nav
+        aria-label="Footer"
+        class="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2 mt-6 pt-4 border-t border-black/20 text-sm"
+      >
+        {
+          footerLinks.map((link) => (
+            <a href={link.href} class="hover:underline underline-offset-4">
+              {link.label}
+            </a>
+          ))
+        }
+      </nav>
     </div>
   </Container>
 </footer>

@@ -2,9 +2,8 @@
 title: "Understanding Open Source Licensing on GitHub"
 pubDate: 2025-12-31
 author: "Saroj Adhikari"
-# layout: ../../layouts/BlogLayout.astro
 authImage: "/team/tenure-2026/saroj.jpeg"
-coverImage: "/blogs_assets/open-source-heading.jpg"
+coverImage: "/blogs_assets/open-source-licensing/open_source_licence.webp"
 slug: github-open-source-licensing
 summary: "Choosing the right open source license is crucial for protecting your work and defining how others can use it. This guide will help you navigate the world of software licensing on GitHub, from permissive to protective licenses."
 type: "Article"

@@ -1,39 +1,54 @@
-<div id="disqus_thread"></div>
+---
+interface Props {
+  // Thread identifier. Defaults to the page path. Pages that moved keep
+  // their original identifier so existing comment threads stay attached.
+  identifier?: string
+}
+
+const { identifier = Astro.url.pathname } = Astro.props
+---
+
+<div id="disqus_thread" data-identifier={identifier}></div>
 <script is:inline>
-    function disqus(){
-        // Clear the thread first
-        const pageIdentifier = window.location.pathname;
-        const pageUrl = "https://bosc.org.np"+pageIdentifier;
-        console.log("pageUrl:", pageUrl);
-        const thread = document.getElementById('disqus_thread');
-        if (thread) thread.innerHTML = '';
-        
-        // If DISQUS already loaded, reset it
-        if (window.DISQUS) {
-            window.DISQUS.reset({
-                reload: true,
-                config: function () {
-                    this.page.url = pageUrl;
-                    this.page.identifier = pageIdentifier;
-                }
-            });
-        } else {
-            // First time loading
-            var disqus_config = function () {
-                    this.page.url = pageUrl;
-                    this.page.identifier = pageIdentifier;
-            };
-            
-            (function() {
-                var d = document, s = d.createElement('script');
-                s.src = 'https://bosc-1.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-            })();
-        }
+  function disqus() {
+    const thread = document.getElementById("disqus_thread")
+    if (!thread) return
+    const pageIdentifier = thread.dataset.identifier || window.location.pathname
+    const pageUrl = "https://bosc.org.np" + pageIdentifier
+    thread.innerHTML = ""
+
+    // If DISQUS already loaded, reset it
+    if (window.DISQUS) {
+      window.DISQUS.reset({
+        reload: true,
+        config: function () {
+          this.page.url = pageUrl
+          this.page.identifier = pageIdentifier
+        },
+      })
+    } else if (!window.__disqusRequested) {
+      // First time loading
+      window.__disqusRequested = true
+      window.disqus_config = function () {
+        this.page.url = pageUrl
+        this.page.identifier = pageIdentifier
+      }
+      const s = document.createElement("script")
+      s.src = "https://bosc-1.disqus.com/embed.js"
+      s.setAttribute("data-timestamp", String(+new Date()))
+      ;(document.head || document.body).appendChild(s)
     }
-    
-    disqus(); // Initial load
-    document.addEventListener('astro:page-load', disqus); // Note: no parentheses!
+  }
+
+  // astro:page-load also fires on the first load, so this covers both cases.
+  // Register once: inline scripts re-run after every client-side navigation.
+  if (!window.__disqusListener) {
+    window.__disqusListener = true
+    document.addEventListener("astro:page-load", disqus)
+  }
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<noscript
+  >Please enable JavaScript to view the <a
+    href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a
+  ></noscript
+>

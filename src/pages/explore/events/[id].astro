@@ -1,24 +1,22 @@
 ---
-import Container from "../../components/Container.astro";
-import Layout from "../../layouts/Layout.astro";
-import eventsData from "../../components/Data/events.json";
-import { formatDate } from "../../utils/utils";
+import Container from "../../../components/Container.astro"
+import Layout from "../../../layouts/Layout.astro"
+import eventsData from "../../../data/events.json"
+import { formatDate } from "../../../utils/utils"
+import Disqus from "../../../components/Disqus.astro"
 
 export async function getStaticPaths() {
   return eventsData.map((event) => ({
-    params: { id: event.id },
+    params: { id: String(event.id) },
     props: event,
-  }));
+  }))
 }
 
 const {
   id,
-  type,
-  featured,
   name_1,
   name_2,
   desc,
-  year,
   date,
   time,
   venue,
@@ -27,13 +25,12 @@ const {
   mentors,
   guests,
   cover_photo,
-  background,
   links,
   images,
   stats,
-} = Astro.props;
+} = Astro.props
 
-export const prerender = true;
+export const prerender = true
 ---
 
 <Layout
@@ -172,9 +169,13 @@ export const prerender = true;
               class="justify-start items-center gap-[15px] inline-flex"
               id="share"
             >
-              <div class="text-2xl font-normal leading-7 text-[var(--text-color)]">Share</div>
+              <div
+                class="text-2xl font-normal leading-7 text-[var(--text-color)]"
+              >
+                Share
+              </div>
               <div class="w-[41px] h-[41px] relative">
-                <img class="w-[41px] h-[41px] share-icon" src="/share.png" />
+                <img class="w-[41px] h-[41px]" src="/share.png" />
               </div>
             </button>
           </div>
@@ -191,7 +192,9 @@ export const prerender = true;
             {
               mentors && mentors.length > 0 && (
                 <div class="mb-8">
-                  <h3 class="text-xl font-semibold text-[var(--text-color)] mb-4">Mentors</h3>
+                  <h3 class="text-xl font-semibold text-[var(--text-color)] mb-4">
+                    Mentors
+                  </h3>
                   {mentors.map((mentor) => (
                     <div class="flex items-center space-x-4 mb-2">
                       <div>
@@ -223,7 +226,9 @@ export const prerender = true;
             {
               guests && guests.length > 0 && (
                 <div class="mb-8">
-                  <h3 class="text-xl font-semibold text-[var(--text-color)] mb-4">Guests</h3>
+                  <h3 class="text-xl font-semibold text-[var(--text-color)] mb-4">
+                    Guests
+                  </h3>
                   {guests.map((guest) => (
                     <div class="flex items-center space-x-4 mb-2">
                       <div>
@@ -254,7 +259,9 @@ export const prerender = true;
             }
 
             <div class="flex flex-col mb-4 mt-4">
-              <h3 class="text-xl font-semibold text-[var(--text-color)] mb-2">Additional Details</h3>
+              <h3 class="text-xl font-semibold text-[var(--text-color)] mb-2">
+                Additional Details
+              </h3>
               <span class="text-m font-medium"
                 >Participants: {stats.participants}</span
               >
@@ -265,6 +272,7 @@ export const prerender = true;
                 ? links.social
                 : links.registration}
               target="_blank"
+              rel="noopener noreferrer"
               class="px-5 py-1.5 bg-[var(--primary-btn-bg)] hover:bg-[var(--primary-btn-hover-bg)] text-[var(--primary-btn-text)] hover:text-[var(--primary-btn-hover-text)] border border-[var(--primary-btn-bg)] rounded-xl justify-center items-center inline-flex transition-colors duration-300"
             >
               <div class="text-xl font-normal leading-7">Participate</div>
@@ -282,22 +290,25 @@ export const prerender = true;
         </div>
       </section>
     </Container>
+    <div class="p-4 h-fit">
+      <Disqus identifier={`/blogs/${id}`} />
+    </div>
   </main>
 </Layout>
 
 <script>
-  import { NotifySuccess } from "../../utils/notify";
-  const shareBtn = document.getElementById("share") as HTMLButtonElement;
+  import { NotifySuccess } from "../../../utils/notify"
+  const shareBtn = document.getElementById("share") as HTMLButtonElement
   if (shareBtn) {
     shareBtn.addEventListener("click", () => {
-      navigator.clipboard.writeText(window.location.href);
-      NotifySuccess("Link copied to clipboard");
-    });
+      navigator.clipboard.writeText(window.location.href)
+      NotifySuccess("Link copied to clipboard")
+    })
   }
 </script>
 
 <style>
-  [data-theme='dark'] .share-icon {
+  [data-theme="dark"] .share-icon {
     filter: invert(1);
   }
 </style>

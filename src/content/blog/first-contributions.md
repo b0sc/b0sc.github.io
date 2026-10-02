@@ -2,7 +2,6 @@
 title: "Making Your First GitHub Contribution"
 pubDate: 2024-10-01
 author: "Achyut Koirala"
-# layout: ../../layouts/BlogLayout.astro
 authImage: "/team/tenure-2025/achyut-president.jpeg"
 coverImage: "/blogs_assets/first-contributions/clone.png"
 slug: first-contributions

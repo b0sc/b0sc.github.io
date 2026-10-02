@@ -1,26 +1,64 @@
 ---
+import eventsData from "../data/events.json"
 
+// Group events by year, newest year and newest event first
+const years = [...new Set(eventsData.map((event) => event.year))].sort(
+  (a, b) => b - a
+)
+const eventsByYear = years.map((year) => ({
+  year,
+  events: eventsData
+    .filter((event) => event.year === year)
+    .sort((a, b) => b.id - a.id),
+}))
+const firstYear = years[years.length - 1]
 ---
 
-<div>
-  <h1>BOSC EVENTS TIMELINE</h1>
-  <h2>
-    use the events.json file to map the events and display them in a timeline. <br
-    />
-    Will incorporate 2 ideas at once: History of BOSC and All the events throughout
-    the tenures in the timeline.
-  </h2>
-  <br />
-  <h1>
-    WE NEED YOUR HELP!!! <a
-      class="text-zinc-900 border border-lime-500"
-      href="https://github.com/b0sc/b0sc.github.io/issues/16"
-      >Contribute here https://github.com/b0sc/b0sc.github.io/issues/16</a
-    >
-  </h1>
-  <br />
-  <h1>
-    For now <a href="/explore">See Events from Blogs</a>
-  </h1>
-  <p>This page is under construction. Please check back later.</p>
+<div class="mt-8">
+  <p class="mb-12 font-light text-gray-500 sm:text-xl text-center">
+    From our first session in {firstYear} to today: {eventsData.length} events and
+    workshops by the BOSC community.
+  </p>
+
+  <ol class="relative border-s-2 border-zinc-900 ms-3 md:ms-6">
+    {
+      eventsByYear.map(({ year, events }) => (
+        <li class="mb-12 ms-6 md:ms-10">
+          <span class="absolute -start-[17px] flex items-center justify-center w-8 h-8 rounded-full bg-lime-500 border-2 border-zinc-900" />
+          <h3 class="mb-6 text-3xl font-extrabold tracking-tight text-gray-900">
+            <span class="px-1.5 bg-lime-500 rounded-md">{year}</span>
+            <span class="ms-2 text-base font-normal text-gray-500">
+              {events.length} {events.length === 1 ? "event" : "events"}
+            </span>
+          </h3>
+          <ol class="space-y-4">
+            {events.map((event) => (
+              <li>
+                <a
+                  href={`/explore/events/${event.id}`}
+                  class="group flex flex-col sm:flex-row gap-4 p-4 bg-white rounded-3xl border border-gray-200 shadow-card hover:border-zinc-900 transition-colors"
+                >
+                  <img
+                    src={event.cover_photo || "/services/Illustration.svg"}
+                    alt=""
+                    loading="lazy"
+                    class="w-full sm:w-32 h-32 sm:h-20 object-cover rounded-xl shrink-0"
+                  />
+                  <div class="min-w-0">
+                    <time class="text-sm font-medium text-gray-500">
+                      {event.date}
+                    </time>
+                    <h4 class="text-lg font-bold text-gray-900 group-hover:text-lime-700">
+                      {event.name_1} {event.name_2}
+                    </h4>
+                    <p class="text-sm text-gray-500">{event.venue}</p>
+                  </div>
+                </a>
+              </li>
+            ))}
+          </ol>
+        </li>
+      ))
+    }
+  </ol>
 </div>

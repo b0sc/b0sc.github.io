@@ -1,15 +1,17 @@
 ---
-interface Props {
-  partner: {
-    src: string;
-    alt: string;
-    height: string;
-    class: string;
-    name: string;
-  };
+export interface Partner {
+  src: string
+  alt: string
+  height: string
+  class: string
+  name: string
 }
 
-const { partner } = Astro.props;
+interface Props {
+  partner: Partner
+}
+
+const { partner } = Astro.props
 ---
 
 <div

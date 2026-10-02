@@ -16,7 +16,7 @@ import SearchBar from "./SearchBar.astro"
   <nav class="w-full bg-white">
     <Container>
       <div
-        class="flex flex-wrap md:flex-nowrap md: items-center justify-between mx-auto py-3"
+        class="flex flex-wrap md:flex-nowrap items-center justify-between mx-auto py-3"
       >
         <a
           href="/"
@@ -26,7 +26,7 @@ import SearchBar from "./SearchBar.astro"
         </a>
         <div class="flex">
           <div class="block xs:w-[135px] w-full md:hidden">
-            <SearchBar />
+            <SearchBar id="search-mobile" />
           </div>
           <button
             data-collapse-toggle="navbar-default"
@@ -76,6 +76,7 @@ import SearchBar from "./SearchBar.astro"
                 class="md:hidden px-6 py-3 rounded-2xl border border-zinc-900 bg-white hover:bg-black text-black hover:text-white inline-flex"
                 href="https://forms.gle/4u68mi1VRh8UPvSU7"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <h2 class="text-center text-xl font-normal leading-7">
                   Event with Us!
@@ -86,13 +87,14 @@ import SearchBar from "./SearchBar.astro"
         </div>
         <div
           class="hidden w-full min-w-[200px] md:flex items-center gap-2 md:w-auto"
-          id="navbar-default"
+          id="navbar-actions"
         >
-          <SearchBar />
+          <SearchBar id="search-desktop" />
           <a
             class="px-4 shrink-0 w-[157px] h-[46px] py-2 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex"
             href="https://forms.gle/4u68mi1VRh8UPvSU7"
             target="_blank"
+            rel="noopener noreferrer"
             ><h2 class="text-center text-lg font-normal leading-7">
               Event with Us!
             </h2>

@@ -1,7 +1,7 @@
 ---
 import ArticleIcon from "../../components/Icons/ArticleIcon.astro"
 import VideoIcon from "../../components/Icons/VideoIcon.astro"
-import EventsData from "../../components/Data/events.json"
+import EventsData from "../../data/events.json"
 import BoscIcon from "../Icons/BoscIcon.astro"
 
 interface Props {
@@ -37,7 +37,7 @@ const { eventsData } = Astro.props as Props
         {event.name_2}
       </h2>
 
-      <a href={`/blogs/${event.id}`}>
+      <a href={`/explore/events/${event.id}`}>
         <div class="flex flex-col sm:flex-row justify-between items-center">
           <div class="w-full flex justify-center items-center space-x-4 sm:m-4">
             <img
@@ -51,7 +51,7 @@ const { eventsData } = Astro.props as Props
               class="mb-5 font-light text-gray-500 text-center sm:text-left"
               style="white-space: pre-line"
             >
-              {event.desc.length > 100
+              {event.desc.length > 150
                 ? `${event.desc.substring(0, 150)}...`
                 : event.desc}{" "}
             </p>
@@ -60,7 +60,7 @@ const { eventsData } = Astro.props as Props
       </a>
       <div class="w-full justify-center items-center align-center inline-flex">
         <a
-          href={`/blogs/${event.id}`}
+          href={`/explore/events/${event.id}`}
           class="inline-flex items-center font-medium text-black hover:text-lime-500 "
         >
           Read more

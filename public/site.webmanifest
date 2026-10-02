@@ -1,0 +1,12 @@
+{
+  "name": "Birendra Open Source Club",
+  "short_name": "BOSC",
+  "icons": [
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/brand/bosc-avatar.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#B9FF66",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "start_url": "/"
+}

@@ -1,7 +1,7 @@
 ---
 import ArticleIcon from "../../components/Icons/ArticleIcon.astro"
 import VideoIcon from "../../components/Icons/VideoIcon.astro"
-import OpportunitiesData from "../../components/Data/opportunities.json"
+import OpportunitiesData from "../../data/opportunities.json"
 import BoscIcon from "../Icons/BoscIcon.astro"
 
 interface Props {
@@ -56,6 +56,7 @@ const { opportunities } = Astro.props as Props
               class="gap-[10px] flex sm:justify-start justify-center items-center"
               href={op.quicklinks.registration}
               target="_blank"
+              rel="noopener noreferrer"
             >
               <span class="font-medium">Visit</span>
               <img
@@ -119,6 +120,7 @@ const { opportunities } = Astro.props as Props
                   class="font-medium border-b border-dashed border-zinc-800"
                   href={mentor.connect}
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {mentor.name}
                 </a>
@@ -130,12 +132,13 @@ const { opportunities } = Astro.props as Props
         {op.guests.filter((guest) => guest.name !== "").length > 0 && (
           <span>
             Guests:{" "}
-            {op.guests.map((guest, i) => (
+            {op.guests.map((guest) => (
               <>
                 <a
                   class="font-medium border-b border-dashed border-zinc-800"
                   href={guest.connect}
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {guest.name}
                 </a>

@@ -12,7 +12,6 @@
     -webkit-text-stroke: 1.2px black;
     background-color: transparent;
   }
-
 }
 
 /* custom scrollbar */
@@ -30,4 +29,18 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+/* Theme tokens used by the /explore pages and ExploreNav */
+:root {
+  --bg-color: #ffffff;
+  --nav-bg: #ffffff;
+  --text-color: theme("colors.gray.900");
+  --text-muted: theme("colors.gray.500");
+  --card-border: theme("colors.gray.200");
+  --hover-bg: theme("colors.gray.100");
+  --primary-btn-bg: theme("colors.zinc.900");
+  --primary-btn-text: #ffffff;
+  --primary-btn-hover-bg: #ffffff;
+  --primary-btn-hover-text: #000000;
 }

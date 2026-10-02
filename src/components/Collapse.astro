@@ -6,22 +6,27 @@ const { label, index = null } = Astro.props
   <div
     class="accordion-header h-[170px] shadow-card bg-zinc-100 rounded-3xl flex justify-between px-4 py-3 items-center transition-colors ease duration-500 cursor-pointer pr-10 relative"
   >
-    <div class="flex items-center px-10 pt-10 w-full transition ease duration-500">
+    <div
+      class="flex items-center px-10 pt-10 w-full transition ease duration-500"
+    >
       <div class="flex pb-10 gap-5 w-full items-center">
         <div class="flex justify-between w-full items-center rounded-full">
           <div class="flex items-center gap-5">
-            {index && (
-              <>
-                <p class="text-5xl font-medium flex items-center">{index}</p>
-                <p class="text-xl px-4 overflow-hidden text-ellipsis line-clamp-2 transition-all duration-500">
-                  {label}
-                </p>
-              </>
-            )}
+            {
+              index && (
+                <>
+                  <p class="text-5xl font-medium flex items-center">{index}</p>
+                  <p class="text-xl px-4 overflow-hidden text-ellipsis line-clamp-2 transition-all duration-500">
+                    {label}
+                  </p>
+                </>
+              )
+            }
           </div>
           <div
             class="rounded-full after:h-[2px] relative accodion-chevron border-black md:border-2 flex md:items-center md:bg-zinc-100 h-10 w-10 px-4"
-          ></div>
+          >
+          </div>
         </div>
       </div>
     </div>
@@ -74,22 +79,22 @@ const { label, index = null } = Astro.props
 </style>
 
 <script>
-  const sections = document.querySelectorAll(".accordion-section");
+  const sections = document.querySelectorAll(".accordion-section")
 
   sections.forEach((section) => {
-    const header = section.querySelector(".accordion-header");
-    if (!header) return; // fix null warning
+    const header = section.querySelector(".accordion-header")
+    if (!header) return // fix null warning
 
     header.addEventListener("click", () => {
       // Close all other sections
       sections.forEach((s) => {
         if (s !== section) {
-          s.classList.remove("open");
+          s.classList.remove("open")
         }
-      });
+      })
 
       // Toggle this section
-      section.classList.toggle("open");
-    });
-  });
+      section.classList.toggle("open")
+    })
+  })
 </script>
