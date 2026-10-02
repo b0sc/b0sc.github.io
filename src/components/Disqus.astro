@@ -10,9 +10,9 @@ const { identifier = Astro.url.pathname } = Astro.props
 
 <div id="disqus_thread" data-identifier={identifier}></div>
 <script is:inline>
-  function disqus() {
-    const thread = document.getElementById("disqus_thread")
-    if (!thread) return
+  function load(thread) {
+    // The page may have changed since the observer was set up
+    if (!thread.isConnected) return
     const pageIdentifier = thread.dataset.identifier || window.location.pathname
     const pageUrl = "https://bosc.org.np" + pageIdentifier
     thread.innerHTML = ""
@@ -26,18 +26,38 @@ const { identifier = Astro.url.pathname } = Astro.props
           this.page.identifier = pageIdentifier
         },
       })
-    } else if (!window.__disqusRequested) {
-      // First time loading
-      window.__disqusRequested = true
+    } else {
+      // Refreshed on every call: if embed.js is still downloading when the
+      // visitor moves to another page, it must pick up that page's thread.
       window.disqus_config = function () {
         this.page.url = pageUrl
         this.page.identifier = pageIdentifier
       }
+      if (window.__disqusRequested) return
+      window.__disqusRequested = true
       const s = document.createElement("script")
       s.src = "https://bosc-1.disqus.com/embed.js"
       s.setAttribute("data-timestamp", String(+new Date()))
       ;(document.head || document.body).appendChild(s)
     }
+  }
+
+  // Load comments only when the thread is about to scroll into view. Loading
+  // on page load wasted bandwidth and made embed.js throw when the visitor
+  // navigated away before it finished, since the thread was gone by then.
+  function disqus() {
+    window.__disqusObserver?.disconnect()
+    const thread = document.getElementById("disqus_thread")
+    if (!thread) return
+    window.__disqusObserver = new IntersectionObserver(
+      (entries, observer) => {
+        if (!entries.some((entry) => entry.isIntersecting)) return
+        observer.disconnect()
+        load(thread)
+      },
+      { rootMargin: "400px" }
+    )
+    window.__disqusObserver.observe(thread)
   }
 
   // astro:page-load also fires on the first load, so this covers both cases.
