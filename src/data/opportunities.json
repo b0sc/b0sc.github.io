@@ -1,49 +1,437 @@
 [
   {
-    "id": 1,
-    "country": "International",
-    "name": "GitHub Campus Expert",
-    "desc": "GitHub Campus Experts are students who build technical communities on campus, with training and support from GitHub.",
-    "opens": "Feburary | August",
-    "every": "6 months",
-    "platform": "Virtual",
-    "organizer": ["GitHub"],
-    "partners": [],
-    "mentors": [
+    "id": "gsoc",
+    "name": "Google Summer of Code",
+    "organizer": "Google",
+    "category": "Open source",
+    "scope": "International",
+    "mode": "Remote",
+    "summary": "Work on a real open source project with mentors from the project for 12+ weeks, and get a stipend for it.",
+    "benefits": [
+      "Stipend, paid after passing evaluations; the amount depends on your country",
+      "Mentorship from experienced maintainers",
+      "Project sizes of about 90, 175 or 350 hours"
+    ],
+    "eligibility": [
+      "18 or older at registration",
+      "A student or an open source beginner",
+      "Accepted into GSoC no more than once before",
+      "Eligible to work in your country of residence"
+    ],
+    "timeline": "Contributor applications open in March. In 2026 they ran 16–31 March, and coding started 25 May.",
+    "stipend": "Paid stipend (varies by country)",
+    "url": "https://summerofcode.withgoogle.com/",
+    "lastVerified": "2026-10-02"
+  },
+  {
+    "id": "outreachy",
+    "name": "Outreachy",
+    "organizer": "Software Freedom Conservancy",
+    "category": "Open source",
+    "scope": "International",
+    "mode": "Remote",
+    "summary": "Paid three-month internships in open source and open science for people who are under-represented in tech.",
+    "benefits": [
+      "US$7,000 total stipend",
+      "Three months of mentored work on an open source project"
+    ],
+    "eligibility": [
+      "Anyone who faces under-representation, systemic bias or discrimination in the technology industry of their country",
+      "Check the full eligibility rules on the Outreachy site before applying"
+    ],
+    "timeline": "Two cohorts a year. Applications open in early February (May–August internships) and early to mid August (December–March internships).",
+    "stipend": "US$7,000",
+    "url": "https://www.outreachy.org/apply/",
+    "lastVerified": "2026-10-02"
+  },
+  {
+    "id": "lfx",
+    "name": "LFX Mentorship",
+    "organizer": "The Linux Foundation",
+    "category": "Open source",
+    "scope": "International",
+    "mode": "Remote",
+    "summary": "Mentored projects in Linux Foundation communities such as Kubernetes and the Linux kernel, three times a year.",
+    "benefits": [
+      "Stipend that depends on your country, paid half at midterm and half at the end",
+      "12 weeks full-time or 24 weeks part-time"
+    ],
+    "eligibility": [
+      "18 or older and legally able to work where you live",
+      "Not a previous or current Linux Foundation mentee",
+      "Apply to up to three programs per term and finish their prerequisite tasks"
+    ],
+    "timeline": "Three terms: Spring (March–May), Summer (June–August) and Fall (September–November).",
+    "stipend": "Paid stipend (varies by country)",
+    "url": "https://mentorship.lfx.linuxfoundation.org/",
+    "lastVerified": "2026-10-02"
+  },
+  {
+    "id": "mlh-fellowship",
+    "name": "MLH Fellowship",
+    "organizer": "Major League Hacking",
+    "category": "Open source",
+    "scope": "International",
+    "mode": "Remote",
+    "summary": "A 12-week remote internship alternative where you build real projects with mentors from companies like GitHub, Meta and Google.",
+    "benefits": [
+      "Educational stipend",
+      "Tracks in Software Engineering, Production Engineering (SRE) and Web3 Engineering",
+      "Professional mentors and a peer cohort"
+    ],
+    "eligibility": ["See the MLH Fellowship FAQ for current requirements"],
+    "timeline": "Several start dates a year. Apply for an upcoming batch on the site.",
+    "stipend": "Educational stipend",
+    "url": "https://fellowship.mlh.com/",
+    "lastVerified": "2026-10-02"
+  },
+  {
+    "id": "summer-of-bitcoin",
+    "name": "Summer of Bitcoin",
+    "organizer": "Summer of Bitcoin",
+    "category": "Open source",
+    "scope": "International",
+    "mode": "Remote",
+    "summary": "A summer internship for university students to contribute code or design to Bitcoin open source projects.",
+    "benefits": [
+      "Stipend of about US$6,600 paid in bitcoin, depending on location",
+      "Developer and designer tracks",
+      "A bootcamp before the project starts"
+    ],
+    "eligibility": [
+      "University students (undergraduate or graduate), 18 or older",
+      "No Bitcoin experience needed"
+    ],
+    "timeline": "Applications close in mid-February (15 February in 2026), followed by a bootcamp, proposals in April and coding from May to August.",
+    "stipend": "About US$6,600 in BTC",
+    "url": "https://www.summerofbitcoin.org/",
+    "lastVerified": "2026-10-02"
+  },
+  {
+    "id": "ieeextreme",
+    "name": "IEEEXtreme 20.0",
+    "organizer": "IEEE",
+    "category": "Competition",
+    "scope": "International",
+    "mode": "Remote",
+    "summary": "A 24-hour global programming competition for teams of IEEE student members.",
+    "benefits": [
+      "Compete against teams worldwide",
+      "Free to enter for IEEE student members"
+    ],
+    "eligibility": [
+      "IEEE Student membership is required to register",
+      "Teams are advised and proctored by an IEEE member"
+    ],
+    "timeline": "IEEEXtreme 20.0 takes place on 31 October 2026. Team and proctor registration is open.",
+    "deadline": "2026-10-31",
+    "url": "https://ieeextreme.org/",
+    "lastVerified": "2026-10-02"
+  },
+  {
+    "id": "hacktoberfest",
+    "name": "Hacktoberfest 2026",
+    "organizer": "DigitalOcean, MLH and DEV",
+    "category": "Competition",
+    "scope": "International",
+    "mode": "Hybrid",
+    "summary": "A month-long celebration of open source. In 2026 you take part through in-person Fests, online challenges and livestreams rather than pull requests.",
+    "benefits": [
+      "Virtual stickers for taking part, and a physical sticker pack once you collect three",
+      "More swag for continued participation",
+      "More than 300 in-person Fests worldwide"
+    ],
+    "eligibility": [
+      "Open to everyone; sign in with a MyMLH account",
+      "Pull requests no longer count toward rewards"
+    ],
+    "timeline": "All of October 2026. The participant dashboard opened on 1 October.",
+    "deadline": "2026-10-31",
+    "url": "https://hacktoberfest.com/",
+    "links": [
       {
-        "name": "Trainers from GitHub",
-        "image": "/default_mentor.jpg",
-        "designation": "GitHub Campus Expert",
-        "tag": "GitHub Employee",
-        "connect": "https://www.facebook.com/birendraopensourceclub"
+        "label": "Hack Day Kathmandu",
+        "url": "https://events.mlh.com/events/14763-hacktoberfest-hack-day-kathmandu"
       }
     ],
-    "guests": [
+    "lastVerified": "2026-10-02"
+  },
+  {
+    "id": "space-apps",
+    "name": "NASA Space Apps Challenge",
+    "organizer": "NASA",
+    "category": "Competition",
+    "scope": "International",
+    "mode": "Hybrid",
+    "summary": "The world's largest annual hackathon. Teams solve challenges using NASA's open data, online or at local events.",
+    "benefits": [
+      "Work with NASA and partner space agency data",
+      "Global awards for winning teams",
+      "Local events have been held in Kathmandu in past years"
+    ],
+    "eligibility": ["Anyone with an interest in space and science"],
+    "timeline": "14–15 November 2026. Registration is open now.",
+    "deadline": "2026-11-14",
+    "url": "https://www.spaceappschallenge.org/",
+    "lastVerified": "2026-10-02"
+  },
+  {
+    "id": "icpc",
+    "name": "ICPC",
+    "organizer": "International Collegiate Programming Contest",
+    "category": "Competition",
+    "scope": "International",
+    "mode": "In person",
+    "summary": "The best-known programming contest for university teams, with regional rounds that lead to the World Finals.",
+    "benefits": [
+      "Regional contests across Asia, with the best teams advancing to the World Finals",
+      "Teams from Nepal have competed in the Asia Dhaka regional"
+    ],
+    "eligibility": [
+      "Teams of three university students with a coach",
+      "Check the ICPC eligibility rules for year and age limits"
+    ],
+    "timeline": "Regional registrations usually open in August and September.",
+    "url": "https://icpc.global/",
+    "lastVerified": "2026-10-02"
+  },
+  {
+    "id": "advent-of-code",
+    "name": "Advent of Code",
+    "organizer": "Eric Wastl",
+    "category": "Competition",
+    "scope": "International",
+    "mode": "Remote",
+    "summary": "Daily programming puzzles in December that you can solve in any language. Great practice for DSA and for club challenges.",
+    "benefits": [
+      "Free, any programming language",
+      "Private leaderboards for your class or club"
+    ],
+    "eligibility": ["Everyone"],
+    "timeline": "Puzzles start on 1 December and now run until mid-December.",
+    "url": "https://adventofcode.com/",
+    "lastVerified": "2026-10-02"
+  },
+  {
+    "id": "kaggle",
+    "name": "Kaggle Competitions",
+    "organizer": "Kaggle (Google)",
+    "category": "Competition",
+    "scope": "International",
+    "mode": "Remote",
+    "summary": "Year-round data science and machine learning competitions, from beginner playgrounds to prize challenges.",
+    "benefits": [
+      "Real datasets and public notebooks to learn from",
+      "Some competitions offer prize money"
+    ],
+    "eligibility": ["Free account; each competition sets its own rules"],
+    "timeline": "Year-round.",
+    "url": "https://www.kaggle.com/competitions",
+    "lastVerified": "2026-10-02"
+  },
+  {
+    "id": "github-campus-experts",
+    "name": "GitHub Campus Experts",
+    "organizer": "GitHub Education",
+    "category": "Student community",
+    "scope": "International",
+    "mode": "Remote",
+    "summary": "A leadership program for students who build technical communities on their campus.",
+    "benefits": [
+      "Training in public speaking, technical writing and community management",
+      "Support from GitHub for running campus events"
+    ],
+    "eligibility": [
+      "Enrolled students with a verified GitHub Education account",
+      "Application cycles are announced on GitHub Education"
+    ],
+    "timeline": "Applications open in cycles. Watch the GitHub Education students page.",
+    "url": "https://github.com/education/students",
+    "lastVerified": "2026-10-02"
+  },
+  {
+    "id": "microsoft-student-ambassadors",
+    "name": "Microsoft Student Ambassadors",
+    "organizer": "Microsoft",
+    "category": "Student community",
+    "scope": "International",
+    "mode": "Remote",
+    "summary": "A student community for building AI skills and leadership. Since April 2026 anyone eligible can join without a competitive application.",
+    "benefits": [
+      "Progress through Alpha, Beta and Gold milestones by running events, creating content and mentoring",
+      "Access to Microsoft developer tools and Azure credits"
+    ],
+    "eligibility": [
+      "Enrolled at an accredited academic institution",
+      "Check the official page for age and other requirements"
+    ],
+    "timeline": "Open sign-up, year-round.",
+    "url": "https://mvp.microsoft.com/studentambassadors",
+    "lastVerified": "2026-10-02"
+  },
+  {
+    "id": "gdg-on-campus",
+    "name": "Google Developer Groups on Campus",
+    "organizer": "Google for Developers",
+    "category": "Student community",
+    "scope": "International",
+    "mode": "In person",
+    "summary": "University chapters for students who want to learn Google technologies and build projects together. Join a chapter or apply to lead one.",
+    "benefits": [
+      "Workshops, study jams and solution challenges",
+      "Organizer training and a global network"
+    ],
+    "eligibility": ["University students; organizers are selected per campus"],
+    "timeline": "Chapters choose new organizers each academic year.",
+    "url": "https://gdg.community.dev/",
+    "lastVerified": "2026-10-02"
+  },
+  {
+    "id": "github-student-pack",
+    "name": "GitHub Student Developer Pack",
+    "organizer": "GitHub Education",
+    "category": "Student perks",
+    "scope": "International",
+    "mode": "Remote",
+    "summary": "Free professional developer tools for verified students, including GitHub Copilot.",
+    "benefits": [
+      "Partner offers on developer tools and services",
+      "GitHub Copilot free for verified students",
+      "Codespaces hours for cloud development"
+    ],
+    "eligibility": [
+      "13 or older",
+      "Enrolled in a degree or diploma program",
+      "A school email address or official proof of enrollment"
+    ],
+    "timeline": "Apply any time.",
+    "url": "https://education.github.com/pack",
+    "links": [
       {
-        "name": "",
-        "image": "/default_mentor.jpg",
-        "designation": "GitHub Campus Expert",
-        "tag": "GitHub Employee",
-        "connect": "https://www.facebook.com/birendraopensourceclub"
+        "label": "BOSC guide",
+        "url": "/explore/article/github-education-benefit"
       }
     ],
-    "cover_photo": "/opportunities/github.jpg",
-    "quicklinks": {
-      "social": "https://www.facebook.com/birendraopensourceclub",
-      "registration": "https://education.github.com/campus_experts"
-    },
-    "stats": {
-      "applicants": 30000,
-      "certificate": true,
-      "prize": true,
-      "fee": 0,
-      "stipend": 0,
-      "duration": "3 months",
-      "commitment": "10 hours/week"
-    },
-    "requirements": [
-      "Must be a student with 1 year left",
-      "Must have GitHub Student Developer Pack"
-    ]
+    "lastVerified": "2026-10-02"
+  },
+  {
+    "id": "azure-for-students",
+    "name": "Azure for Students",
+    "organizer": "Microsoft",
+    "category": "Student perks",
+    "scope": "International",
+    "mode": "Remote",
+    "summary": "Cloud credits and free services to learn and build on Microsoft Azure.",
+    "benefits": [
+      "US$100 credit to use within 12 months",
+      "Free monthly amounts of popular services, renewable each year while you're a student",
+      "No credit card required"
+    ],
+    "eligibility": [
+      "Full-time university students at accredited institutions",
+      "Sign up with your school email"
+    ],
+    "timeline": "Apply any time.",
+    "url": "https://azure.microsoft.com/en-us/free/students",
+    "lastVerified": "2026-10-02"
+  },
+  {
+    "id": "aws-educate",
+    "name": "AWS Educate",
+    "organizer": "Amazon Web Services",
+    "category": "Student perks",
+    "scope": "International",
+    "mode": "Remote",
+    "summary": "Free cloud training with hands-on labs and badges, no credit card needed.",
+    "benefits": [
+      "Self-paced training and hands-on labs",
+      "Shareable digital badges",
+      "Job board for learners 18 and older"
+    ],
+    "eligibility": ["13 or older; sign up with an email address"],
+    "timeline": "Join any time.",
+    "url": "https://aws.amazon.com/education/awseducate/",
+    "lastVerified": "2026-10-02"
+  },
+  {
+    "id": "anais",
+    "name": "Annual Nepal AI School",
+    "organizer": "NAAMII",
+    "category": "Fellowship & training",
+    "scope": "Nepal",
+    "mode": "In person",
+    "summary": "An 11-day in-person school with AI lectures, labs and project work, taught by researchers from around the world.",
+    "benefits": [
+      "Lectures, hands-on labs and team projects",
+      "Scholarships for Nepali students"
+    ],
+    "eligibility": [
+      "Senior undergraduates, graduate and PhD students, faculty and industry professionals"
+    ],
+    "timeline": "7th edition: 28 December 2026 – 7 January 2027 at Kathmandu World School, Suryabinayak, Bhaktapur. Nepal Student Scholarship deadline 31 October 2026; non-scholarship deadline 15 November 2026.",
+    "deadline": "2026-10-31",
+    "url": "https://anais.naamii.org.np/",
+    "lastVerified": "2026-10-02"
+  },
+  {
+    "id": "fusemachines-ai-fellowship",
+    "name": "Fusemachines AI Fellowship",
+    "organizer": "Fusemachines",
+    "category": "Fellowship & training",
+    "scope": "Nepal",
+    "mode": "Hybrid",
+    "summary": "A 24-week AI and data science program with a full scholarship for selected Nepali fellows.",
+    "benefits": [
+      "Full scholarship",
+      "Microdegree in Artificial Intelligence (not university-accredited)",
+      "Capstone project and mentorship; evening classes"
+    ],
+    "eligibility": [
+      "Nepali nationals",
+      "Strong maths (linear algebra, calculus, probability, statistics), Python and data structures",
+      "Pass an online entrance assessment and interview"
+    ],
+    "timeline": "Applications open early in the year. For 2026 the deadline was 20 March, with 100 seats.",
+    "stipend": "Full scholarship",
+    "url": "https://fuse.ai/ai-fellowship/nepal/",
+    "lastVerified": "2026-10-02"
+  },
+  {
+    "id": "code-for-nepal-data-fellowship",
+    "name": "Code for Nepal Data Fellowship",
+    "organizer": "Code for Nepal",
+    "category": "Fellowship & training",
+    "scope": "Nepal",
+    "mode": "Remote",
+    "summary": "Free AI and data science training through a premium DataCamp subscription, for Nepalis anywhere in the world.",
+    "benefits": [
+      "DataCamp Premium access with courses and certificates",
+      "Chance to publish data stories on the Code for Nepal site",
+      "Career and networking support"
+    ],
+    "eligibility": [
+      "Nepalis in and outside Nepal",
+      "High school degree or above"
+    ],
+    "timeline": "The 2026 edition took applications from 5 July to 30 August for 1,000 participants. Watch for the next call.",
+    "url": "https://codefornepal.org/data-fellowship/",
+    "lastVerified": "2026-10-02"
+  },
+  {
+    "id": "locus",
+    "name": "LOCUS",
+    "organizer": "IOE Pulchowk Campus students",
+    "category": "Competition",
+    "scope": "Nepal",
+    "mode": "In person",
+    "summary": "Nepal's national technology exhibition, run by Pulchowk Campus students since 2003, with project exhibitions, hackathons and competitions.",
+    "benefits": [
+      "Exhibit projects to thousands of visitors",
+      "Hackathons such as Hack-A-Week and prize competitions"
+    ],
+    "eligibility": ["Students from schools and colleges across Nepal"],
+    "timeline": "Held early each year. LOCUS 2026 ran 30 January – 1 February 2026.",
+    "url": "https://www.locus.com.np/",
+    "lastVerified": "2026-10-02"
   }
 ]
