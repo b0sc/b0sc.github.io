@@ -2,7 +2,6 @@
 title: "BOSC Constitution"
 pubDate: 2021-10-30
 author: "Birendra Open Source Club"
-# layout: ../../layouts/BlogLayout.astro
 authImage: "/logo.png"
 coverImage: "/logo.png"
 slug: constitution

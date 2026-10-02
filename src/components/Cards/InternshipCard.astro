@@ -1,12 +1,12 @@
 ---
-interface Internship {
+export interface Internship {
   id: number
   title: string
   company: string
   location: string
   type: string
   duration: string
-  stipend: number
+  stipend: number | string
   description: string
   requirements: string[]
   applyLink: string
@@ -146,7 +146,7 @@ const { internship } = Astro.props
       <span
         class="bg-purple-100 text-purple-800 text-xs sm:text-sm font-semibold px-2 sm:px-3 py-1 rounded whitespace-nowrap"
       >
-        Rs. {internship.stipend.toLocaleString() || "Negotiable"}
+        {internship.stipend ? `Rs. ${Number(internship.stipend).toLocaleString()}` : "Negotiable"}
       </span>
       <span
         class="text-xs sm:text-sm text-red-600 font-medium whitespace-nowrap"
@@ -157,6 +157,7 @@ const { internship } = Astro.props
     <a
       href={internship.applyLink}
       target="_blank"
+ rel="noopener noreferrer"
       class="bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-lg text-sm font-medium transition-colors whitespace-nowrap w-full sm:w-auto text-center"
     >
       Apply Now

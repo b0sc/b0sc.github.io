@@ -17,18 +17,22 @@ All commands are run from the root of the project, from a terminal:
 
 Feel free to check [Contribution Methods](CONTRIBUTING.md) and follow [Code of Conduct](CODE_OF_CONDUCT.md) before contributing.
 
-**Make sure that Prettier is installed in your text editor.** Add this to your `settings.json` in VS Code, as Prettier alone will not format Astro files correctly. You need this additional formatter for Astro. The npm plugins are taken care with devDependencies you don't have to worry about that.
+**Make sure that Prettier is installed in your text editor.** Prettier alone will not format Astro files correctly, so add this to your VS Code `settings.json` (the npm plugins are already handled by `devDependencies`):
 
-`{
+```json
+{
   "prettier.documentSelectors": ["**/*.astro"],
   "[astro]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
-}`
+}
+```
 
-You can also run this command for installing the extension. Open up the terminal in vscode and paste this line .
+Also install the Astro extension by opening the VS Code command palette (`Ctrl+P`) and running:
 
-`ext install astro-build.astro-vscode`
+```
+ext install astro-build.astro-vscode
+```
 
 **Heads up for dev mode:** The search bar won’t magically work until you build the site first. Don’t worry `npm postinstall` takes care of an initial build right after installing. But if you add new content, you’ll need to run `npm run build` again so it gets indexed.
 Want the geeky details? Check out [astro-pagefind](https://github.com/shishkin/astro-pagefind)
@@ -39,7 +43,7 @@ If you do not find the issue you are looking for, please create a new [issue](ht
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 ## 🌟 Resources
 
@@ -49,40 +53,54 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Project Structure
 
-The project is built using Astro.js and Tailwind CSS. Here's a quick look at the project structure:
+The site is built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com).
 
-```bash
+```text
 .
-├── .astro
-│   ├── settings.json
-│   └── types.d.ts
+├── .github/                  # Issue and pull request templates
+├── public/                   # Static assets served as-is (images, icons, logos)
+│   ├── blogs_assets/<post>/  # Images for a blog post; folder name matches the post's file name
+│   ├── events/<id>/          # Event photos; <id> matches the event id in src/data/events.json
+│   └── team/, mentors/, ...  # Profile pictures and other images
+├── src/
+│   ├── components/           # Reusable Astro components
+│   │   ├── Cards/            # Card components (articles, events, members, ...)
+│   │   ├── Icons/            # SVG icon components
+│   │   └── TopEvent/         # Sections of the home page "events" block
+│   ├── content/
+│   │   └── blog/             # Blog articles in Markdown
+│   ├── data/                 # JSON data (events, team, notes, opportunities, ...)
+│   ├── layouts/
+│   │   └── Layout.astro      # Base HTML layout used by every page
+│   ├── pages/                # File-based routes (see below)
+│   ├── styles/               # Global styles and theme tokens
+│   ├── utils/                # Helper functions
+│   └── content.config.ts     # Content collection schema for blog articles
 ├── astro.config.mjs
-├── public/
-# Any static assets, like images, can be placed in the `public/` directory.
-├── src
-│   ├── components
-# There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-│   │   ├── Data/
-│   │   ├── Icons/
-│   │   ├── Navbar.astro
-│   │   └── Topic.astro
-│   ├── env.d.ts
-│   ├── layouts
-│   │   └── Layout.astro
-│   ├── pages
-# Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-│   │   ├── about.astro
-│   │   ├── blog.astro
-│   │   ├── blogs
-│   │   │   └── [id].astro
-│   │   └── index.astro
-│   └── styles
-│       └── global.css
-└── tsconfig.json
+└── tailwind.config.mjs       # Brand colors, breakpoints and fonts
 ```
 
-<!--
-references:
-https://github.com/manulthanura/Positivus
-https://github.com/godruoyi/gblog/tree/gblog-template
- -->
+### Routes
+
+| Route                         | Source                                      |
+| :---------------------------- | :------------------------------------------ |
+| `/`                           | `src/pages/index.astro`                     |
+| `/about`                      | `src/pages/about.astro`                     |
+| `/explore/<section>`          | `src/pages/explore/*.astro`                 |
+| `/explore/article/<slug>`     | `src/content/blog/*.md`                     |
+| `/explore/events/<id>`        | `src/data/events.json`                      |
+| `/notes/<faculty>/<semester>` | `src/data/notes-<faculty>.json`             |
+| `/internships`                | `src/data/internships.json`                 |
+| `/mentorship`                 | `src/pages/mentorship/`                     |
+| `/blogs/...`                  | Legacy URLs that redirect to `/explore/...` |
+
+### Adding content
+
+- **Blog article:** add `src/content/blog/<slug>.md` using kebab-case for the file name. The frontmatter fields (`title`, `pubDate`, `author`, `authImage`, `coverImage`, `slug`, `summary`, `type`) are validated by `src/content.config.ts`. Put images in `public/blogs_assets/<slug>/` and reference them with site-absolute paths such as `/blogs_assets/<slug>/cover.png`. Do not prefix paths with `/public`.
+- **Event:** add an entry to `src/data/events.json` and put its photos in `public/events/<id>/`.
+- **Member, executive or alumni:** edit `src/data/team.json`.
+
+### Styling
+
+- Use the brand colors from `tailwind.config.mjs`: `lime-500` for accents and `zinc-900` for primary buttons. They extend Tailwind's default palette, so standard utilities also work.
+- Pages under `/explore` use the CSS theme tokens (`--text-color`, `--text-muted`, ...) defined in `src/styles/global.css`.

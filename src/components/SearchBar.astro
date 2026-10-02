@@ -1,27 +1,34 @@
 ---
 import Search from "astro-pagefind/components/Search";
+
+interface Props {
+  // Must be unique per page: the navbar renders a mobile and a desktop bar
+  id: string;
+}
+
+const { id } = Astro.props;
 ---
 <!-- for this to work in dev mode build your site once -->
-<Search id="search" className="pagefind-ui" uiOptions={{ showImages: false }} />
+<Search id={id} className="pagefind-ui search-bar" uiOptions={{ showImages: false }} />
 
 <style is:inline>
 :root{
     --pagefind-ui-scale: 0.70; /* overall scale of the search bar */
 }
-#search{
+.search-bar{
     max-width: 300px;
     flex: 1 1 auto; /* Allow it to grow and shrink */
     min-width: 0; /* Important for flex shrinking */
 }
-#search .pagefind-ui{
+.search-bar .pagefind-ui{
     width: 100%;
 }
-#search .pagefind-ui__search-input{
+.search-bar .pagefind-ui__search-input{
     width: 100%;
     min-width: 30px;
     
 }
-#search .pagefind-ui__drawer {
+.search-bar .pagefind-ui__drawer {
   position: absolute;
   padding: 0.5rem;
   top: 100%;

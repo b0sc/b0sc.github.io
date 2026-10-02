@@ -1,6 +1,6 @@
 ---
 import Container from "./Container.astro"
-import freeSoftwareData from "./Data/free-software.json"
+import freeSoftwareData from "../data/free-software.json"
 ---
 
 <Container>
@@ -14,7 +14,7 @@ import freeSoftwareData from "./Data/free-software.json"
     </div>
     <div class="md:w-8/12">
       <h2 class="text-3xl font-bold">{freeSoftwareData["questions"].what}</h2>
-      <p class="mt-4 text-gray-700">{freeSoftwareData.defination}</p>
+      <p class="mt-4 text-gray-700">{freeSoftwareData.definition}</p>
       <h2 class="text-3xl font-bold mt-6">{freeSoftwareData["questions"].why}</h2>
       <ul class="mt-4 list-disc pl-4 text-gray-700" >
         {freeSoftwareData["features"].map((feature) => <li>{feature}</li>)

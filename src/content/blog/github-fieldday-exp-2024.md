@@ -2,7 +2,6 @@
 title: "GitHub Field Day Experience 2024"
 pubDate: 2024-12-15
 author: "Achyut Koirala"
-# layout: ../../layouts/BlogLayout.astro
 authImage: "/team/tenure-2025/achyut-president.jpeg"
 coverImage: "/blogs_assets/github-fieldday-exp-2024/cover.jpg"
 slug: github-fieldday-experience-2024

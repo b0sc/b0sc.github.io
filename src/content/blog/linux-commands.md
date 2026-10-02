@@ -1,23 +1,12 @@
 ---
-
 title: "Essential Basic commands for Beginners"
-
 pubDate: 2025-10-25
-
 author: "Sandesh Gadal"
-
-# layout: ../../layouts/BlogLayout.astro
-
 authImage: "/blogs_assets/linux-commands/sandesh-gadal.png"
-
-coverImage: "/public/blogs_assets/linux-commands/basic-linux-coverimg.png"
-
+coverImage: "/blogs_assets/linux-commands/basic-linux-coverimg.png"
 slug: basic-linux-commands
-
 summary: "The Linux terminal, or command-line interface (CLI), is a powerful tool for interacting directly with your operating system. Mastering a few fundamental commands is crucial for efficiency in development, system administration, and everyday computing."
-
 type: "Article"
-
 ---
 
 

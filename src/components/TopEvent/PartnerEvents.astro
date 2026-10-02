@@ -1,6 +1,6 @@
 ---
 import VideoIcon from "./../Icons/VideoIcon.astro"
-import eventsData from "../../components/Data/partners-events.json"
+import eventsData from "../../data/partners-events.json"
 import BoscIcon from "./../Icons/BoscIcon.astro"
 
 //ask for the object with the organizing club with the 0th object from the partners-events.json file
@@ -97,6 +97,7 @@ import BoscIcon from "./../Icons/BoscIcon.astro"
                         class="font-medium border-b border-dashed border-zinc-800"
                         href={mentor.connect}
                         target="_blank"
+ rel="noopener noreferrer"
                       >
                         {mentor.name}
                       </a>
@@ -109,12 +110,13 @@ import BoscIcon from "./../Icons/BoscIcon.astro"
               {event.guests.length > 0 && (
                 <span>
                   Guests:{" "}
-                  {event.guests.map((guest, i) => (
+                  {event.guests.map((guest) => (
                     <>
                       <a
                         class="font-medium border-b border-dashed border-zinc-800"
                         href={guest.connect}
                         target="_blank"
+ rel="noopener noreferrer"
                       >
                         {guest.name}
                       </a>

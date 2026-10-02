@@ -1,12 +1,14 @@
 ---
+export interface Partner {
+  src: string;
+  alt: string;
+  height: string;
+  class: string;
+  name: string;
+}
+
 interface Props {
-  partner: {
-    src: string;
-    alt: string;
-    height: string;
-    class: string;
-    name: string;
-  };
+  partner: Partner;
 }
 
 const { partner } = Astro.props;

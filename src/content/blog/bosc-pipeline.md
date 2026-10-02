@@ -2,7 +2,6 @@
 title: "Develop, Host, Deploy: Complete BOSC pipeline"
 pubDate: 2024-11-30
 author: "Achyut Koirala"
-# layout: ../../layouts/BlogLayout.astro
 authImage: "/team/tenure-2025/achyut-president.jpeg"
 coverImage: "/blogs_assets/bosc-pipeline/cover.png"
 slug: bosc-pipeline

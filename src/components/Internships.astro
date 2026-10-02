@@ -1,25 +1,9 @@
 ---
-import InternshipCard from "../../components/Cards/InternshipCard.astro"
-import internshipsData from "../../components/Data/internships.json"
+import InternshipCard from "./Cards/InternshipCard.astro"
+import type { Internship } from "./Cards/InternshipCard.astro"
+import internshipsData from "../data/internships.json"
 
-interface Internship {
-  id: number
-  title: string
-  company: string
-  location: string
-  type: string
-  duration: string
-  stipend: number
-  description: string
-  requirements: string[]
-  applyLink: string
-  postedDate: string
-  expiryDate: string
-  logo: string
-  poster: string
-  category: string
-  note: string
-}
+const internships: Internship[] = internshipsData
 
 // Check if internship is expired
 function isExpired(expiryDate: string): boolean {
@@ -118,7 +102,7 @@ function isExpired(expiryDate: string): boolean {
     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
   >
     {
-      internshipsData.map((internship) => (
+      internships.map((internship) => (
         <div
           data-internship={JSON.stringify(internship)}
           data-expired={isExpired(internship.expiryDate)}
@@ -231,7 +215,7 @@ function isExpired(expiryDate: string): boolean {
           new Date(b.postedDate).getTime() - new Date(a.postedDate).getTime()
         )
       } else if (sortBy === "stipend") {
-        return b.stipend - a.stipend
+        return Number(b.stipend) - Number(a.stipend)
       } else if (sortBy === "expiry") {
         return (
           new Date(a.expiryDate).getTime() - new Date(b.expiryDate).getTime()

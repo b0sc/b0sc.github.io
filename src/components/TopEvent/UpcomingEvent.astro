@@ -1,6 +1,6 @@
 ---
 import VideoIcon from "./../Icons/VideoIcon.astro"
-import eventsData from "../../components/Data/events.json"
+import eventsData from "../../data/events.json"
 import BoscIcon from "./../Icons/BoscIcon.astro"
 
 const upcomingE = eventsData[0]
@@ -98,6 +98,7 @@ const upcomingEImage =
                     class="font-medium border-b border-dashed border-zinc-800"
                     href={mentor.connect}
                     target="_blank"
+ rel="noopener noreferrer"
                   >
                     {mentor.name}
                   </a>
@@ -112,12 +113,13 @@ const upcomingEImage =
           upcomingE.guests.length > 0 && (
             <spa>
               Guests:{" "}
-              {upcomingE.guests.map((guest, i) => (
+              {upcomingE.guests.map((guest) => (
                 <>
                   <a
                     class="font-medium border-b border-dashed border-zinc-800"
                     href={guest.connect}
                     target="_blank"
+ rel="noopener noreferrer"
                   >
                     {guest.name}
                   </a>
