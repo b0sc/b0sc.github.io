@@ -1,23 +1,23 @@
 ---
-import Layout from "../../../layouts/Layout.astro";
-import Container from "../../../components/Container.astro";
-import Disqus from "../../../components/Disqus.astro";
-import { getCollection, render } from "astro:content";
-import { formatDate } from "../../../utils/utils";
-import "../../../styles/bloglayout.css";
-import "../../../styles/global.css";
-import type { CollectionEntry } from "astro:content";
+import Layout from "../../../layouts/Layout.astro"
+import Container from "../../../components/Container.astro"
+import Disqus from "../../../components/Disqus.astro"
+import { getCollection, render } from "astro:content"
+import { formatDate } from "../../../utils/utils"
+import "../../../styles/bloglayout.css"
+import "../../../styles/global.css"
+import type { CollectionEntry } from "astro:content"
 
 export async function getStaticPaths() {
-  const blogEntries = await getCollection("blog");
+  const blogEntries = await getCollection("blog")
   return blogEntries.map((entry) => ({
     params: { slug: entry.id },
     props: { entry },
-  }));
+  }))
 }
 
-const { entry } = Astro.props as { entry: CollectionEntry<"blog"> };
-const { Content } = await render(entry);
+const { entry } = Astro.props as { entry: CollectionEntry<"blog"> }
+const { Content } = await render(entry)
 ---
 
 <Layout
@@ -83,41 +83,41 @@ const { Content } = await render(entry);
     </div>
   </main>
   <script>
-    let copyButtonLabel = "Copy Code";
-    let codeBlocks = Array.from(document.querySelectorAll("pre"));
+    let copyButtonLabel = "Copy Code"
+    let codeBlocks = Array.from(document.querySelectorAll("pre"))
 
     for (let codeBlock of codeBlocks) {
-      let wrapper = document.createElement("div");
-      wrapper.style.position = "relative";
+      let wrapper = document.createElement("div")
+      wrapper.style.position = "relative"
 
-      let copyButton = document.createElement("button");
-      copyButton.className = "copy-code";
-      copyButton.innerHTML = copyButtonLabel;
+      let copyButton = document.createElement("button")
+      copyButton.className = "copy-code"
+      copyButton.innerHTML = copyButtonLabel
 
-      const parentNode = codeBlock.parentNode;
+      const parentNode = codeBlock.parentNode
       if (parentNode) {
-        codeBlock.setAttribute("tabindex", "0");
-        codeBlock.appendChild(copyButton);
-        parentNode.insertBefore(wrapper, codeBlock);
-        wrapper.appendChild(codeBlock);
+        codeBlock.setAttribute("tabindex", "0")
+        codeBlock.appendChild(copyButton)
+        parentNode.insertBefore(wrapper, codeBlock)
+        wrapper.appendChild(codeBlock)
 
         copyButton.addEventListener("click", async () => {
-          await copyCode(codeBlock, copyButton);
-        });
+          await copyCode(codeBlock, copyButton)
+        })
       }
     }
 
     async function copyCode(block: HTMLElement, button: HTMLButtonElement) {
-      let code = block.querySelector("code");
+      let code = block.querySelector("code")
       if (code) {
-        let text = code.innerText;
-        await navigator.clipboard.writeText(text);
+        let text = code.innerText
+        await navigator.clipboard.writeText(text)
 
-        button.innerText = "Code Copied";
+        button.innerText = "Code Copied"
 
         setTimeout(() => {
-          button.innerText = copyButtonLabel;
-        }, 700);
+          button.innerText = copyButtonLabel
+        }, 700)
       }
     }
   </script>

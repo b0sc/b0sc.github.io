@@ -1,15 +1,15 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import Container from "../../components/Container.astro";
-import ExploreNav from "../../components/ExploreNav.astro";
-import type { CollectionEntry } from "astro:content";
-import { getCollection } from "astro:content";
-import ArticleCard from "../../components/Cards/ArticleCard.astro";
+import Layout from "../../layouts/Layout.astro"
+import Container from "../../components/Container.astro"
+import ExploreNav from "../../components/ExploreNav.astro"
+import type { CollectionEntry } from "astro:content"
+import { getCollection } from "astro:content"
+import ArticleCard from "../../components/Cards/ArticleCard.astro"
 
 const articles: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
   (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
     b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
+)
 ---
 
 <Layout

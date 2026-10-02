@@ -1,7 +1,7 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import Container from "../../components/Container.astro";
-import Internships from "../../components/Internships.astro";
+import Layout from "../../layouts/Layout.astro"
+import Container from "../../components/Container.astro"
+import Internships from "../../components/Internships.astro"
 ---
 
 <Layout
@@ -12,20 +12,20 @@ import Internships from "../../components/Internships.astro";
 >
   <main class="pt-7 pb-16">
     <Container>
-        <div class="flex-1 p-4 md:p-8 lg:p-12">
-          <h2
-            class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-[var(--text-color)] text-center"
-          >
-            Internship Opportunities
-          </h2>
-          <p class="text-gray-600 text-center max-w-2xl mx-auto mb-8">
-            Explore curated internship opportunities from top companies. Filter by location, category, and find the perfect match for your skills.
-          </p>
-          
-          <!-- Internships Component -->
-          <Internships />
-        </div>
-   
+      <div class="flex-1 p-4 md:p-8 lg:p-12">
+        <h2
+          class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-[var(--text-color)] text-center"
+        >
+          Internship Opportunities
+        </h2>
+        <p class="text-gray-600 text-center max-w-2xl mx-auto mb-8">
+          Explore curated internship opportunities from top companies. Filter by
+          location, category, and find the perfect match for your skills.
+        </p>
+
+        <!-- Internships Component -->
+        <Internships />
+      </div>
     </Container>
   </main>
 </Layout>
