@@ -1,0 +1,122 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Container from "../components/Container.astro"
+import Topic from "../components/Topic.astro"
+
+const services = [
+  {
+    name: "Disqus",
+    purpose: "Comments on the home page, articles and event pages.",
+    href: "https://disqus.com/privacy-policy/",
+  },
+  {
+    name: "FormSubmit",
+    purpose: "Delivers messages sent through the contact form to our inbox.",
+    href: "https://formsubmit.co/",
+  },
+  {
+    name: "Google Fonts",
+    purpose: "Serves the Space Grotesk typeface.",
+    href: "https://policies.google.com/privacy",
+  },
+  {
+    name: "jsDelivr",
+    purpose: "Serves the script that shows on-screen notifications.",
+    href: "https://www.jsdelivr.com/terms",
+  },
+  {
+    name: "Keep Android Open",
+    purpose: "Serves the campaign banner shown at the top of every page.",
+    href: "https://keepandroidopen.org",
+  },
+  {
+    name: "Google Forms",
+    purpose:
+      "Event registrations, collaboration requests and note uploads, when you follow those links.",
+    href: "https://policies.google.com/privacy",
+  },
+]
+---
+
+<Layout
+  title="BOSC - Privacy"
+  description="What data the Birendra Open Source Club website collects, why, and who processes it."
+>
+  <main class="pt-7 pb-20">
+    <Container>
+      <div class="relative flex flex-col items-center md:flex-row">
+        <Topic
+          title="Privacy"
+          description="We keep this short because we collect very little. No ads, no analytics, no tracking by BOSC."
+        />
+      </div>
+
+      <div class="max-w-3xl space-y-10 text-gray-700 text-lg">
+        <section>
+          <h2 class="text-2xl font-bold text-black mb-3">What we collect</h2>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>
+              <strong>Newsletter sign-up:</strong> the name and email address you
+              enter, so we can send you club updates.
+            </li>
+            <li>
+              <strong>Contact form:</strong> your name, email address and message,
+              so we can reply to you.
+            </li>
+          </ul>
+          <p class="mt-3">
+            We don't sell or share this information, and we only use it for the
+            purpose you gave it to us for.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-black mb-3">
+            Third-party services
+          </h2>
+          <p class="mb-4">
+            Some features load content from other services. Those services may
+            receive your IP address and set their own cookies under their own
+            privacy policies.
+          </p>
+          <ul class="space-y-3">
+            {
+              services.map((service) => (
+                <li class="p-5 bg-white rounded-3xl border border-zinc-900 shadow-card">
+                  <a
+                    href={service.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="font-bold text-black underline decoration-lime-500 decoration-2 underline-offset-4"
+                  >
+                    {service.name}
+                  </a>
+                  <p class="text-base">{service.purpose}</p>
+                </li>
+              ))
+            }
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-black mb-3">Your choices</h2>
+          <p>
+            To unsubscribe, or to have your data corrected or deleted, email
+            <a
+              href="mailto:mail@bosc.org.np"
+              class="underline decoration-lime-500 decoration-2 underline-offset-4"
+              >mail@bosc.org.np</a
+            >. The website's source code is public on
+            <a
+              href="https://github.com/b0sc/b0sc.github.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="underline decoration-lime-500 decoration-2 underline-offset-4"
+              >GitHub</a
+            >, so you can check what it does.
+          </p>
+        </section>
+      </div>
+    </Container>
+  </main>
+</Layout>

@@ -1,0 +1,63 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Container from "../components/Container.astro"
+
+const links = [
+  { href: "/explore/articles", label: "Read articles" },
+  { href: "/explore/events", label: "Browse events" },
+  { href: "/notes", label: "Find notes" },
+]
+---
+
+<Layout
+  title="BOSC - Page not found"
+  description="The page you are looking for does not exist or has moved."
+>
+  <main class="py-20">
+    <Container>
+      <div
+        class="flex flex-col items-center text-center p-10 md:p-16 bg-zinc-100 rounded-[45px]"
+      >
+        <img src="/brand/bosc-mark.png" alt="" class="w-24 h-24 mb-6" />
+        <p class="text-8xl font-bold mb-2">
+          4<span class="px-2 bg-lime-500 rounded-md">0</span>4
+        </p>
+        <h1 class="text-3xl font-bold mb-4">
+          This page is not open source yet
+        </h1>
+        <p class="text-lg text-gray-600 max-w-xl mb-8">
+          The page you are looking for doesn't exist or has moved. Try the
+          search bar above, or head somewhere below.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a
+            href="/"
+            class="px-9 py-5 bg-zinc-900 hover:bg-white text-white hover:text-black border border-zinc-900 rounded-2xl inline-flex text-xl leading-7"
+          >
+            Go home
+          </a>
+          {
+            links.map((link) => (
+              <a
+                href={link.href}
+                class="px-9 py-5 bg-white hover:bg-black text-black hover:text-white border border-zinc-900 rounded-2xl inline-flex text-xl leading-7"
+              >
+                {link.label}
+              </a>
+            ))
+          }
+        </div>
+        <p class="mt-10 text-sm text-gray-500">
+          Found a broken link?
+          <a
+            href="https://github.com/b0sc/b0sc.github.io/issues/new"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="underline decoration-lime-500 decoration-2 underline-offset-4"
+            >Report it on GitHub</a
+          >.
+        </p>
+      </div>
+    </Container>
+  </main>
+</Layout>

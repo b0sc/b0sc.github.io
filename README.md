@@ -59,6 +59,7 @@ The site is built with [Astro](https://astro.build) and [Tailwind CSS](https://t
 .
 ├── .github/                  # Issue and pull request templates
 ├── public/                   # Static assets served as-is (images, icons, logos)
+│   ├── brand/                # Logo variants and the downloadable brand kit
 │   ├── blogs_assets/<post>/  # Images for a blog post; folder name matches the post's file name
 │   ├── events/<id>/          # Event photos; <id> matches the event id in src/data/events.json
 │   └── team/, mentors/, ...  # Profile pictures and other images
@@ -82,17 +83,19 @@ The site is built with [Astro](https://astro.build) and [Tailwind CSS](https://t
 
 ### Routes
 
-| Route                         | Source                                      |
-| :---------------------------- | :------------------------------------------ |
-| `/`                           | `src/pages/index.astro`                     |
-| `/about`                      | `src/pages/about.astro`                     |
-| `/explore/<section>`          | `src/pages/explore/*.astro`                 |
-| `/explore/article/<slug>`     | `src/content/blog/*.md`                     |
-| `/explore/events/<id>`        | `src/data/events.json`                      |
-| `/notes/<faculty>/<semester>` | `src/data/notes-<faculty>.json`             |
-| `/internships`                | `src/data/internships.json`                 |
-| `/mentorship`                 | `src/pages/mentorship/`                     |
-| `/blogs/...`                  | Legacy URLs that redirect to `/explore/...` |
+| Route                         | Source                                             |
+| :---------------------------- | :------------------------------------------------- |
+| `/`                           | `src/pages/index.astro`                            |
+| `/about`                      | `src/pages/about.astro`                            |
+| `/explore/<section>`          | `src/pages/explore/*.astro`                        |
+| `/explore/article/<slug>`     | `src/content/blog/*.md`                            |
+| `/explore/events/<id>`        | `src/data/events.json`                             |
+| `/notes/<faculty>/<semester>` | `src/data/notes-<faculty>.json`                    |
+| `/internships`                | `src/data/internships.json`                        |
+| `/mentorship`                 | `src/pages/mentorship/`                            |
+| `/brand`                      | `src/pages/brand.astro` (logos in `public/brand/`) |
+| `/privacy`                    | `src/pages/privacy.astro`                          |
+| `/blogs/...`                  | Legacy URLs that redirect to `/explore/...`        |
 
 ### Adding content
 

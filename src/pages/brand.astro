@@ -1,0 +1,630 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Container from "../components/Container.astro"
+import Topic from "../components/Topic.astro"
+
+const sections = [
+  { id: "name", label: "Name" },
+  { id: "logos", label: "Logos" },
+  { id: "usage", label: "Logo usage" },
+  { id: "colors", label: "Colors" },
+  { id: "typography", label: "Typography" },
+  { id: "ui", label: "UI elements" },
+  { id: "voice", label: "Voice & tone" },
+  { id: "channels", label: "Official channels" },
+]
+
+const logos = [
+  {
+    name: "Primary wordmark",
+    file: "bosc-wordmark.png",
+    bg: "bg-white",
+    use: "Default. Use on white or light backgrounds.",
+  },
+  {
+    name: "Reversed wordmark",
+    file: "bosc-wordmark-reversed.png",
+    bg: "bg-zinc-900",
+    use: "For dark backgrounds, slides and dark-mode UIs.",
+  },
+  {
+    name: "Black wordmark",
+    file: "bosc-wordmark-black.png",
+    bg: "bg-zinc-100",
+    use: "Single-color print, stamps, photocopies.",
+  },
+  {
+    name: "White wordmark",
+    file: "bosc-wordmark-white.png",
+    bg: "bg-[#12A200]",
+    use: "On brand green or on photos with a dark overlay.",
+  },
+  {
+    name: "Mark",
+    file: "bosc-mark.png",
+    bg: "bg-white",
+    use: "Favicons, avatars and small spaces where the wordmark is unreadable.",
+  },
+  {
+    name: "Reversed mark",
+    file: "bosc-mark-reversed.png",
+    bg: "bg-zinc-900",
+    use: "Mark on dark backgrounds.",
+  },
+  {
+    name: "Black mark",
+    file: "bosc-mark-black.png",
+    bg: "bg-zinc-100",
+    use: "Single-color mark.",
+  },
+  {
+    name: "White mark",
+    file: "bosc-mark-white.png",
+    bg: "bg-[#12A200]",
+    use: "Mark on brand green or dark photos.",
+  },
+]
+
+const logoColors = [
+  {
+    name: "BOSC Green",
+    hex: "#12A200",
+    rgb: "18, 162, 0",
+    text: "text-white",
+    use: "Logo green. The keyhole mark, the 1 in the B and the C.",
+  },
+  {
+    name: "BOSC Slate",
+    hex: "#2D3F4E",
+    rgb: "45, 63, 78",
+    text: "text-white",
+    use: "Logo slate. The B, the S and the keyhole center.",
+  },
+]
+
+const uiColors = [
+  {
+    name: "Lime",
+    hex: "#B9FF66",
+    rgb: "185, 255, 102",
+    text: "text-black",
+    token: "lime-500",
+    use: "Highlights, tags, section titles and the footer.",
+  },
+  {
+    name: "Ink",
+    hex: "#191A23",
+    rgb: "25, 26, 35",
+    text: "text-white",
+    token: "zinc-900",
+    use: "Primary buttons, card shadows and borders.",
+  },
+  {
+    name: "Mist",
+    hex: "#F3F3F3",
+    rgb: "243, 243, 243",
+    text: "text-black",
+    token: "zinc-100",
+    use: "Section backgrounds and panels.",
+  },
+  {
+    name: "White",
+    hex: "#FFFFFF",
+    rgb: "255, 255, 255",
+    text: "text-black",
+    token: "white",
+    use: "Page and card backgrounds.",
+  },
+  {
+    name: "Black",
+    hex: "#000000",
+    rgb: "0, 0, 0",
+    text: "text-white",
+    token: "black",
+    use: "Body text.",
+  },
+]
+
+const donts = [
+  "Don't change the logo colors or apply gradients.",
+  "Don't stretch, squash, skew or rotate the logo.",
+  "Don't add shadows, outlines, glows or other effects.",
+  "Don't rebuild the wordmark in another typeface.",
+  "Don't place the full-color logo on busy photos or low-contrast backgrounds.",
+  "Don't rearrange or remove parts of the wordmark.",
+]
+
+const channels = [
+  { name: "Website", handle: "bosc.org.np", href: "https://bosc.org.np" },
+  {
+    name: "Email",
+    handle: "mail@bosc.org.np",
+    href: "mailto:mail@bosc.org.np",
+  },
+  { name: "GitHub", handle: "@b0sc", href: "https://github.com/b0sc" },
+  {
+    name: "Facebook",
+    handle: "birendraopensourceclub",
+    href: "https://facebook.com/birendraopensourceclub",
+  },
+  {
+    name: "Instagram",
+    handle: "@birendraopensourceclub",
+    href: "https://instagram.com/birendraopensourceclub",
+  },
+  {
+    name: "LinkedIn",
+    handle: "company/b0sc",
+    href: "https://www.linkedin.com/company/b0sc/",
+  },
+  {
+    name: "Telegram",
+    handle: "@bosc_official",
+    href: "https://t.me/bosc_official",
+  },
+  { name: "Discord", handle: "BOSC", href: "https://discord.gg/3gjuqt64y8" },
+]
+---
+
+<Layout
+  title="BOSC - Brand Guidelines"
+  description="Logos, colors, typography and usage rules for the Birendra Open Source Club brand. Download the BOSC brand kit."
+  image="/brand/bosc-avatar.png"
+>
+  <main class="pt-7 pb-20">
+    <Container>
+      <div class="relative flex flex-col items-center md:flex-row">
+        <Topic
+          title="Brand"
+          description="Everything you need to represent the Birendra Open Source Club consistently: logos, colors, type and the rules for using them."
+        />
+      </div>
+
+      <div
+        class="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between p-6 md:p-10 bg-zinc-100 rounded-[45px]"
+      >
+        <p class="text-lg max-w-2xl">
+          Making a poster, slide deck or event banner? Download the brand kit
+          with every logo variant as a transparent PNG.
+        </p>
+        <a
+          href="/brand/bosc-brand-kit.zip"
+          download
+          class="shrink-0 px-9 py-5 bg-zinc-900 hover:bg-white text-white hover:text-black border border-zinc-900 rounded-2xl inline-flex text-xl leading-7"
+        >
+          Download brand kit
+        </a>
+      </div>
+
+      <nav
+        aria-label="Brand guideline sections"
+        class="flex gap-2 overflow-x-auto py-6 mt-4"
+      >
+        {
+          sections.map((section) => (
+            <a
+              href={`#${section.id}`}
+              class="whitespace-nowrap px-4 py-2 rounded-full border border-zinc-900 hover:bg-lime-500"
+            >
+              {section.label}
+            </a>
+          ))
+        }
+      </nav>
+
+      <div class="space-y-20">
+        <section id="name" class="scroll-mt-24">
+          <h2 class="text-3xl font-bold mb-6">
+            <span class="px-1.5 bg-lime-500 rounded-md">Name</span>
+          </h2>
+          <div class="grid gap-6 md:grid-cols-2">
+            <div
+              class="p-6 bg-white rounded-3xl border border-zinc-900 shadow-card"
+            >
+              <p class="text-sm text-gray-500 mb-1">Full name</p>
+              <p class="text-2xl font-bold mb-4">Birendra Open Source Club</p>
+              <p class="text-sm text-gray-500 mb-1">Short name</p>
+              <p class="text-2xl font-bold">BOSC</p>
+            </div>
+            <ul class="list-disc pl-6 space-y-2 text-gray-700 self-center">
+              <li>
+                Use the full name the first time you mention the club, then
+                <strong>BOSC</strong>.
+              </li>
+              <li>Always write BOSC in capitals: not Bosc, bosc or B.O.S.C.</li>
+              <li>
+                <code>b0sc</code> (with a zero) is only our GitHub and LinkedIn handle.
+                Don't use it as the club's name.
+              </li>
+              <li>
+                BOSC is based at Birendra Multiple Campus, Chitwan, Nepal.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="logos" class="scroll-mt-24">
+          <h2 class="text-3xl font-bold mb-2">
+            <span class="px-1.5 bg-lime-500 rounded-md">Logos</span>
+          </h2>
+          <p class="text-gray-700 mb-8 max-w-3xl">
+            The logo has two parts: the <strong>wordmark</strong> (BOSC) and the
+            <strong>mark</strong>, the open-source keyhole that forms the O. Use
+            the wordmark whenever there is room, and the mark alone only where
+            the wordmark would be too small to read.
+          </p>
+          <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {
+              logos.map((logo) => (
+                <figure class="flex flex-col bg-white rounded-3xl border border-zinc-900 shadow-card overflow-hidden">
+                  <div
+                    class={`${logo.bg} h-40 flex items-center justify-center p-6 border-b border-zinc-900`}
+                  >
+                    <img
+                      src={`/brand/${logo.file}`}
+                      alt={logo.name}
+                      loading="lazy"
+                      class="max-h-full max-w-full object-contain"
+                    />
+                  </div>
+                  <figcaption class="p-5 flex flex-col gap-2 grow">
+                    <span class="font-bold">{logo.name}</span>
+                    <span class="text-sm text-gray-500 grow">{logo.use}</span>
+                    <a
+                      href={`/brand/${logo.file}`}
+                      download
+                      class="text-sm font-medium underline decoration-lime-500 decoration-2 underline-offset-4 hover:text-lime-700"
+                    >
+                      Download PNG
+                    </a>
+                  </figcaption>
+                </figure>
+              ))
+            }
+          </div>
+        </section>
+
+        <section id="usage" class="scroll-mt-24">
+          <h2 class="text-3xl font-bold mb-8">
+            <span class="px-1.5 bg-lime-500 rounded-md">Logo usage</span>
+          </h2>
+          <div class="grid gap-6 lg:grid-cols-3">
+            <div
+              class="p-6 bg-white rounded-3xl border border-zinc-900 shadow-card"
+            >
+              <h3 class="text-xl font-bold mb-4">Clear space</h3>
+              <div class="bg-zinc-100 rounded-2xl p-6 mb-4">
+                <div class="border-2 border-dashed border-gray-400 p-6">
+                  <img
+                    src="/brand/bosc-wordmark.png"
+                    alt="Wordmark with clear space"
+                    class="w-full"
+                  />
+                </div>
+              </div>
+              <p class="text-sm text-gray-700">
+                Keep empty space around the logo equal to at least half the
+                height of the mark. Nothing else (text, images, other logos)
+                goes inside that area.
+              </p>
+            </div>
+            <div
+              class="p-6 bg-white rounded-3xl border border-zinc-900 shadow-card"
+            >
+              <h3 class="text-xl font-bold mb-4">Minimum size</h3>
+              <div
+                class="bg-zinc-100 rounded-2xl p-6 mb-4 flex items-end gap-6"
+              >
+                <img
+                  src="/brand/bosc-wordmark.png"
+                  alt="Wordmark at minimum size"
+                  class="w-[120px]"
+                />
+                <img
+                  src="/brand/bosc-mark.png"
+                  alt="Mark at minimum size"
+                  class="w-6"
+                />
+              </div>
+              <ul class="text-sm text-gray-700 space-y-1">
+                <li>Wordmark: 120px wide on screen, 30mm in print.</li>
+                <li>Mark: 24px on screen, 8mm in print.</li>
+                <li>Below that, switch from the wordmark to the mark.</li>
+              </ul>
+            </div>
+            <div
+              class="p-6 bg-white rounded-3xl border border-zinc-900 shadow-card"
+            >
+              <h3 class="text-xl font-bold mb-4">Collaborations</h3>
+              <p class="text-sm text-gray-700 mb-3">
+                When BOSC appears next to partner logos, give every logo the
+                same visual height and separate them with clear space or a thin
+                vertical line.
+              </p>
+              <p class="text-sm text-gray-700">
+                Use the black or white version when partner logos are all shown
+                in a single color.
+              </p>
+            </div>
+          </div>
+          <div
+            class="mt-6 p-6 bg-white rounded-3xl border border-zinc-900 shadow-card"
+          >
+            <h3 class="text-xl font-bold mb-4">Don't</h3>
+            <ul class="grid gap-3 sm:grid-cols-2">
+              {
+                donts.map((rule) => (
+                  <li class="flex gap-3 text-gray-700">
+                    <span
+                      class="shrink-0 w-6 h-6 rounded-full bg-red-100 text-red-700 inline-flex items-center justify-center font-bold"
+                      aria-hidden="true"
+                    >
+                      ✕
+                    </span>
+                    {rule}
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+        </section>
+
+        <section id="colors" class="scroll-mt-24">
+          <h2 class="text-3xl font-bold mb-2">
+            <span class="px-1.5 bg-lime-500 rounded-md">Colors</span>
+          </h2>
+          <p class="text-gray-700 mb-8 max-w-3xl">
+            The logo colors belong to the logo. The website and digital material
+            use the UI palette. Click a swatch to copy its hex code.
+          </p>
+
+          <h3 class="text-xl font-bold mb-4">Logo colors</h3>
+          <div class="grid gap-6 sm:grid-cols-2 mb-10">
+            {
+              logoColors.map((color) => (
+                <button
+                  type="button"
+                  data-copy={color.hex}
+                  class="flex flex-col w-full h-full text-left bg-white rounded-3xl border border-zinc-900 shadow-card overflow-hidden hover:-translate-y-0.5 transition-transform"
+                >
+                  <div
+                    class={`w-full h-32 p-5 flex items-end ${color.text}`}
+                    style={`background-color: ${color.hex}`}
+                  >
+                    <span class="text-2xl font-bold">{color.name}</span>
+                  </div>
+                  <div class="p-5 text-sm space-y-1">
+                    <p class="font-mono font-bold text-base">{color.hex}</p>
+                    <p class="text-gray-500">RGB {color.rgb}</p>
+                    <p class="text-gray-700">{color.use}</p>
+                  </div>
+                </button>
+              ))
+            }
+          </div>
+
+          <h3 class="text-xl font-bold mb-4">UI palette</h3>
+          <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
+            {
+              uiColors.map((color) => (
+                <button
+                  type="button"
+                  data-copy={color.hex}
+                  class="flex flex-col w-full h-full text-left bg-white rounded-3xl border border-zinc-900 shadow-card overflow-hidden hover:-translate-y-0.5 transition-transform"
+                >
+                  <div
+                    class={`w-full h-24 p-4 flex items-end border-b border-zinc-900 ${color.text}`}
+                    style={`background-color: ${color.hex}`}
+                  >
+                    <span class="text-xl font-bold">{color.name}</span>
+                  </div>
+                  <div class="p-4 text-sm space-y-1">
+                    <p class="font-mono font-bold text-base">{color.hex}</p>
+                    <p class="text-gray-500">RGB {color.rgb}</p>
+                    <p class="text-gray-500">
+                      Tailwind <code>{color.token}</code>
+                    </p>
+                    <p class="text-gray-700">{color.use}</p>
+                  </div>
+                </button>
+              ))
+            }
+          </div>
+        </section>
+
+        <section id="typography" class="scroll-mt-24">
+          <h2 class="text-3xl font-bold mb-8">
+            <span class="px-1.5 bg-lime-500 rounded-md">Typography</span>
+          </h2>
+          <div class="grid gap-6 lg:grid-cols-2">
+            <div class="p-6 md:p-10 bg-zinc-900 text-white rounded-[45px]">
+              <p class="text-sm text-lime-500 mb-2">Primary typeface</p>
+              <p class="text-6xl font-bold mb-6">Space Grotesk</p>
+              <p class="text-3xl break-words mb-2">
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ
+              </p>
+              <p class="text-3xl break-words mb-2">
+                abcdefghijklmnopqrstuvwxyz
+              </p>
+              <p class="text-3xl">0123456789 &amp; @ # {} &lt;/&gt;</p>
+            </div>
+            <div
+              class="p-6 md:p-10 bg-white rounded-[45px] border border-zinc-900 shadow-card space-y-5"
+            >
+              <div>
+                <p class="text-sm text-gray-500">Heading · Bold 700</p>
+                <p class="text-4xl font-bold">Free software, free minds</p>
+              </div>
+              <div>
+                <p class="text-sm text-gray-500">Subheading · Medium 500</p>
+                <p class="text-2xl font-medium">Join our next workshop</p>
+              </div>
+              <div>
+                <p class="text-sm text-gray-500">Body · Regular 400</p>
+                <p class="text-lg">
+                  We are a community of students learning, building and sharing
+                  open source software together.
+                </p>
+              </div>
+              <div>
+                <p class="text-sm text-gray-500">Caption · Light 300</p>
+                <p class="font-light text-gray-500">
+                  Birendra Multiple Campus, Chitwan
+                </p>
+              </div>
+              <p class="text-sm text-gray-700 pt-2 border-t border-gray-200">
+                Space Grotesk is free and open source (SIL Open Font License).
+                <a
+                  href="https://fonts.google.com/specimen/Space+Grotesk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="underline decoration-lime-500 decoration-2 underline-offset-4"
+                  >Get it from Google Fonts</a
+                >. For code, use any monospace font.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="ui" class="scroll-mt-24">
+          <h2 class="text-3xl font-bold mb-8">
+            <span class="px-1.5 bg-lime-500 rounded-md">UI elements</span>
+          </h2>
+          <div class="grid gap-6 lg:grid-cols-3">
+            <div class="p-6 bg-zinc-100 rounded-3xl space-y-4">
+              <h3 class="text-xl font-bold">Buttons</h3>
+              <div class="flex flex-wrap gap-3">
+                <a
+                  href="#ui"
+                  class="px-9 py-5 bg-zinc-900 hover:bg-white text-white hover:text-black border border-zinc-900 rounded-2xl inline-flex text-xl leading-7"
+                  >Primary</a
+                >
+                <a
+                  href="#ui"
+                  class="px-9 py-5 bg-white hover:bg-black text-black hover:text-white border border-zinc-900 rounded-2xl inline-flex text-xl leading-7"
+                  >Secondary</a
+                >
+              </div>
+              <p class="text-sm text-gray-700">
+                Rounded 16px corners. Buttons swap their colors on hover.
+              </p>
+            </div>
+            <div class="p-6 bg-zinc-100 rounded-3xl space-y-4">
+              <h3 class="text-xl font-bold">Cards</h3>
+              <div
+                class="p-6 bg-white rounded-3xl border border-zinc-900 shadow-card"
+              >
+                <span
+                  class="bg-lime-500 text-black text-xs font-medium px-2.5 py-0.5 rounded"
+                >
+                  Tag
+                </span>
+                <p class="mt-3 text-xl font-bold">Card title</p>
+                <p class="text-gray-500">Card body text.</p>
+              </div>
+              <p class="text-sm text-gray-700">
+                White, 1px Ink border, large rounded corners and a solid offset
+                shadow (<code>shadow-card</code>).
+              </p>
+            </div>
+            <div class="p-6 bg-zinc-100 rounded-3xl space-y-4">
+              <h3 class="text-xl font-bold">Section titles</h3>
+              <span
+                class="text-4xl px-1.5 font-medium bg-lime-500 rounded-md inline-block"
+              >
+                Events
+              </span>
+              <p class="text-sm text-gray-700">
+                Section titles sit on a Lime highlight. Use the
+                <code>Topic</code> component on the website.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="voice" class="scroll-mt-24">
+          <h2 class="text-3xl font-bold mb-8">
+            <span class="px-1.5 bg-lime-500 rounded-md">Voice &amp; tone</span>
+          </h2>
+          <div class="grid gap-6 md:grid-cols-3">
+            <div
+              class="p-6 bg-white rounded-3xl border border-zinc-900 shadow-card"
+            >
+              <h3 class="text-xl font-bold mb-2">Welcoming</h3>
+              <p class="text-gray-700">
+                Write for beginners. Explain jargon and never assume the reader
+                already knows Git or Linux.
+              </p>
+            </div>
+            <div
+              class="p-6 bg-white rounded-3xl border border-zinc-900 shadow-card"
+            >
+              <h3 class="text-xl font-bold mb-2">Clear</h3>
+              <p class="text-gray-700">
+                Lead with what, when and where. Short sentences, plain English,
+                one idea per paragraph.
+              </p>
+            </div>
+            <div
+              class="p-6 bg-white rounded-3xl border border-zinc-900 shadow-card"
+            >
+              <h3 class="text-xl font-bold mb-2">Open</h3>
+              <p class="text-gray-700">
+                Credit contributors, partners and upstream projects, and link to
+                the source whenever you can.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="channels" class="scroll-mt-24">
+          <h2 class="text-3xl font-bold mb-2">
+            <span class="px-1.5 bg-lime-500 rounded-md">Official channels</span>
+          </h2>
+          <p class="text-gray-700 mb-8 max-w-3xl">
+            These are the only official BOSC accounts. Link to them, and tag
+            them when you share BOSC events.
+          </p>
+          <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {
+              channels.map((channel) => (
+                <li>
+                  <a
+                    href={channel.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="block p-5 bg-white rounded-3xl border border-zinc-900 shadow-card hover:bg-lime-500 transition-colors"
+                  >
+                    <span class="block text-sm text-gray-500">
+                      {channel.name}
+                    </span>
+                    <span class="block font-bold break-all">
+                      {channel.handle}
+                    </span>
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </section>
+      </div>
+    </Container>
+  </main>
+</Layout>
+
+<script>
+  import { NotifySuccess } from "../utils/notify"
+
+  function initCopy() {
+    document.querySelectorAll<HTMLElement>("[data-copy]").forEach((el) => {
+      el.addEventListener("click", async () => {
+        const value = el.dataset.copy
+        if (!value) return
+        await navigator.clipboard.writeText(value)
+        NotifySuccess(`Copied ${value}`)
+      })
+    })
+  }
+
+  document.addEventListener("astro:page-load", initCopy)
+</script>
