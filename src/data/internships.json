@@ -106,5 +106,31 @@
     "poster": "/clients/internship/cloudsathi/poster.jpeg",
     "category": "Development",
     "note": "A brief introduction highlighting your tech stack and porfolio is preferred."
-  }
+  },
+  {
+    "id": 6,
+    "title": "Software Engineer (Backend)",
+    "company": "Pathao",
+    "location": "Kathmandu, Nepal",
+    "type": "Full-Time",
+    "duration": "",
+    "stipend": "",
+    "description": "Pathao is looking for a Software Engineer (Backend) to join their Fintech Engineering department and help build scalable, reliable services for digital payments and financial products. The role involves designing and maintaining backend services and APIs, building dependable transaction and payment workflows, working with distributed systems, and solving performance challenges in a transaction-heavy environment.",
+    "requirements": [
+        "Backend Development",
+        "APIs",
+        "Distributed Systems",
+        "Digital Payments",
+        "Financial Products",
+        "Transaction Workflows",
+        "Performance Optimization"
+    ],
+    "applyLink": "https://forms.gle/frZgPYRrvmKLKaZy5",
+    "postedDate": "2026-10-05",
+    "expiryDate": "2026-10-17",
+    "logo": "/clients/internship/pathao/pathaoLogo.jpg",
+    "poster": "/clients/internship/pathao/pathaoBackend.jpeg",
+    "category": "Development",
+    "note": "The position is part of Pathao's Fintech Engineering department. Applicants are encouraged to review the detailed job description before applying."
+}
 ]
