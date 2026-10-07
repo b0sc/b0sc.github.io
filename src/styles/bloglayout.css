@@ -84,6 +84,27 @@
     ul ul ul ::marker {
       font-size: 0.8rem;
     }
+
+    table {
+      display: block;
+      overflow-x: auto;
+      margin: 16px 0;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+
+    th,
+    td {
+      border: 1px solid var(--text-muted);
+      padding: 8px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      color: var(--text-color);
+      font-weight: 600;
+    }
   }
 }
 
