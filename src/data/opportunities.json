@@ -1,5 +1,43 @@
 [
   {
+  "id": "bimc-mini-research-2083-84",
+  "name": "Mini Research / Faculty Research Proposals, FY 2083/84 BS",
+  "organizer": "Birendra Multiple Campus, Research Management Cell (Tribhuvan University)",
+  "category": "Research grant",
+  "scope": "Institutional (faculty of BMC)",
+  "mode": "On-campus",
+  "summary": "Birendra Multiple Campus invites its faculty to submit Mini Research / Faculty Research proposals for FY 2083/84 BS. Proposals are sent by email with a scanned copy of the Rs. 1000 fee receipt.",
+  "benefits": [
+    "Promotion and recognition",
+    "A research record"
+  ],
+  "eligibility": [
+    "Faculty members of Birendra Multiple Campus"
+  ],
+  "requirements": [
+    "Submission fee of Rs. 1000/-, paid at the account section of the Campus, with a scanned copy of the receipt sent by email",
+    "Similarity index must be less than 15%",
+    "Proposal format as prescribed by the Tribhuvan University Research Management Cell Guidelines 2082"
+  ],
+  "timeline": "Notice dated 22-06-2083 BS. Proposals are invited for FY 2083/84 BS. The submission deadline is Mangsir 14, 2083 BS (30 November 2026 AD).",
+  "deadline": {
+    "bs": "2083-08-14",
+    "ad": "2026-11-30"
+  },
+  "fee": "Rs. 1000/-",
+  "submission": {
+    "method": "Email",
+    "emails": ["rmcbirendra@gmail.com", "rmc@bimc.tu.edu.np"]
+  },
+  "contact": {
+    "office": "Research Management Cell, Birendra Multiple Campus, Bharatpur, Chitwan, Nepal",
+    "phone": ["056-493253", "056-493153"],
+    "coordinator": "Prof. Dr. Harihar Paudyal"
+  },
+  "url": "https://bimc.tu.edu.np/pages/research-management-cell-939",
+  "lastVerified": "2026-10-08"
+},
+  {
     "id": "gsoc",
     "name": "Google Summer of Code",
     "organizer": "Google",
