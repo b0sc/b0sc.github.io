@@ -20,10 +20,8 @@
     "Proposal format as prescribed by the Tribhuvan University Research Management Cell Guidelines 2082"
   ],
   "timeline": "Notice dated 22-06-2083 BS. Proposals are invited for FY 2083/84 BS. The submission deadline is Mangsir 14, 2083 BS (30 November 2026 AD).",
-  "deadline": {
-    "bs": "2083-08-14",
-    "ad": "2026-11-30"
-  },
+  "deadline": "2026-11-30",
+  "deadlineBs": "2083-08-14",
   "fee": "Rs. 1000/-",
   "submission": {
     "method": "Email",
