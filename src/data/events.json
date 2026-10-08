@@ -1,5 +1,44 @@
 [
   {
+  "id": 43,
+  "type": "Event",
+  "featured": true,
+  "name_1": "BOSC presents:",
+  "name_2": "AIDA 2.0 Info Session",
+  "desc": "Learn about AIDA 2.0 Impact Challenge 2026, understand the motive behind AI for people with disabilities, and get complete guidance on registration and participation.",
+  "year": 2026,
+  "date": "2026-10-10",
+  "time": "8:00 PM NPT",
+  "venue": "Online",
+  "organizer": ["BOSC"],
+  "partners": [],
+  "mentors": [],
+  "guests": [],
+  "cover_photo": "/events/43/cover.jpg",
+  "background": "bg-lime-500",
+  "links": {
+    "blog": "/explore/events/43",
+    "social": "https://www.facebook.com/birendraopensourceclub",
+    "registration": "https://forms.gle/CUrg9iDfLX7j2afK7"
+  },
+  "images": [],
+  "stats": {
+    "participants": 0,
+    "time": "Online 8:00 PM NPT",
+    "certificate": false,
+    "prize": false,
+    "entry_fee": 0,
+    "points": [
+      "💡 The motive behind AIDA",
+      "📝 How to register",
+      "👥 Teams and eligibility",
+      "📅 Important deadlines",
+      "❓ Live doubt clearing",
+      "🤖 AI for people with disabilities"
+    ]
+  }
+},
+  {
     "id": 42,
     "type": "Event",
     "featured": true,
