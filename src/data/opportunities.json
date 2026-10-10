@@ -1,5 +1,34 @@
 [
   {
+    "id" : "Aida_2026",
+    "name": "Aida Impact challenges 2026",
+    "organizer": " Prateek Innovations",
+    "category": "Competition",
+    "scope": "National and International",
+    "mode":"Hybrid",
+    "summary":"AIDA invites students, researchers, developers, designers, and innovators to develop AI-powered solutions that improve accessibility and empower people with disabilities",
+    "benefits":[
+      "Compete against teams worldwide",
+      "Exhibit projects to thousands of visitors",
+      "Career and networking support"
+    ],
+    "eligibility" :[
+      "National and International Undergraduate Individuals.",
+      "Special Priorities to a team consisting of at least one member with disability"
+    ],
+    "requirements":[
+      "Adult individuals (strictly 18 or above 18 years)",
+      "Submission fee of Rs. 5000 for innovation challenge / Rs. 2000 for research challenge per team "
+      
+    ],
+    "timeline":"Applications open on 13 September and close on 16 October 2026. Semifinalists are announced on 6 November, followed by workshops, mentorship, and the ideathon. The Grand Finale takes place in Kathmandu from 17-19 December 2026.",
+    "deadline": "2026-10-16",
+    "deadlineBs" :"2083-06-30",
+    "fee" : "Rs.2000 - Rs.5000",
+    "url" : "https://aida.prateekinnovations.com/",
+    "lastVerified":"2026-10-10"
+  },
+  {
   "id": "bimc-mini-research-2083-84",
   "name": "Mini Research / Faculty Research Proposals, FY 2083/84 BS",
   "organizer": "Birendra Multiple Campus, Research Management Cell (Tribhuvan University)",
