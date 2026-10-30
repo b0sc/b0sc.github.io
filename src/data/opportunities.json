@@ -1,5 +1,44 @@
 [
   {
+    "id": "ntc-vacany-2083",
+    "name": "Nepal Telecom Vacancy 2083 - 80 Positions ",
+    "organizer": "Nepal Telecom",
+    "category": "JOb opportunity",
+    "scope": "National",
+    "mode": "Online application",
+    "summary": "Nepal Telecom announces 80 vacancies across engineering, administration, technical, accounting and management positions. Applications are submitted online, with examinations conducted by the Public Service Commission (Lok Sewa Aayog) .",
+    "benefits": [
+    "Permanent employment at Nepal Telecom",
+    "Opportunities across technical, engineering, administrative and business departments",
+    "Career growth and professional development",
+    "Government-regulated recruitment process"
+  ],
+    "eligibility": [
+    "Must be a Nepali citizen",
+    "Must meet the minimum educational qualifications for the selected position",
+    "Must meet the prescribed age requirements",
+    "Must not be disqualified under Clause 17 of the Employee Regulations",
+    "Must not have been barred from participating in examinations conducted by the Public Service Commission for examination irregularities"
+  ],
+  "requirements":[
+    "Nepali citizenship certificate",
+    "Recent passport-size photograph",
+    "Scanned signature",
+    "Academic certificates and transcripts",
+    "Training and experience certificates, where applicable",
+    "Professional registration certificate, where applicable",
+    "Equivalency certificate for foreign academic qualifications",
+    "Inclusive category eligibility certificate, where applicable",
+    "Pre-qualification examination pass certificate for relevant positions"
+  ],
+    "timeline": "Regular applications close on Mangsir 3, 2083 BS, with a late-fee application period until Mangsir 10, 2083 BS.",
+    "deadline": "2026-11-19",
+    "deadlineBs": "2083-08-03",
+    "stipend": "",
+    "url": "https://recruit.ntc.net.np/",
+    "lastVerified": "2026-10-30"
+  },
+  {
   "id": "bimc-mini-research-2083-84",
   "name": "Mini Research / Faculty Research Proposals, FY 2083/84 BS",
   "organizer": "Birendra Multiple Campus, Research Management Cell (Tribhuvan University)",
